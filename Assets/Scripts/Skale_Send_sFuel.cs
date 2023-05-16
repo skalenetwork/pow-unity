@@ -10,6 +10,7 @@ using Nethereum.Web3.Accounts;
 using UnityEngine.UI;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
+using TMPro;
 
 /**
  * In this class is where intended to send sFuel to a specific address. The send Fuel is associated with the main screen button.
@@ -21,9 +22,16 @@ public class Skale_Send_sFuel : MonoBehaviour
     public string receiverAddress;
     public Button btn;
 
+    public TextMeshProUGUI address;
+    public TextMeshProUGUI slected_chainLabel;
+    public TextMeshProUGUI chainInfo_url;
+
+    ChainName currentChain;
+
     private void Start()
     {
         btn.onClick.AddListener(OnButtonClick);
+        SetChain();
     }
 
 
@@ -32,12 +40,50 @@ public class Skale_Send_sFuel : MonoBehaviour
         await Send_sFuel();
     }
 
+    public void SetChain()
+    {
+        string chain = slected_chainLabel.text;
+
+
+        ChainName name ;
+        switch (chain)
+        {
+            case "calypso":
+                name = ChainName.calypso;
+                break;
+            case "chaos":
+                name = ChainName.chaos;
+                break;
+            case "europa":
+                name = ChainName.europa;
+                break;
+            case "nebula":
+                name = ChainName.nebula;
+                break;
+            case "titan":
+                name = ChainName.titan;
+                break;
+            default:
+                name = ChainName.chaos;
+                break;
+        }
+
+       // Debug.Log("aqui 2" + name.ToString());
+
+        currentChain = name;
+
+        NetworkDetails sNetwork_details = networks.GetNetworkDetails(currentChain, NetworkType.testnet);
+
+//        Debug.Log("aqui " + sNetwork_details.getChainInfoUrl());
+        chainInfo_url.text = sNetwork_details.getChainInfoUrl();
+    }
+
     public async Task Send_sFuel()
     {
         //For now I had my pk hardcoded in here
         string pk = "";
 
-        NetworkDetails sNetwork_details = networks.GetNetworkDetails(NetworkName.chaos, NetworkType.testnet);
+        NetworkDetails sNetwork_details = networks.GetNetworkDetails(currentChain, NetworkType.testnet);
 
         Web3 web3 = new Web3(sNetwork_details.getRpc());
 
