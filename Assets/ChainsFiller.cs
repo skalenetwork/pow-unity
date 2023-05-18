@@ -9,11 +9,12 @@ public class ChainsFiller : MonoBehaviour
 {
     public TMP_Dropdown dropdwn;
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         FillDropDown();
     }
 
+    //Fills the dropdown UI with the available chains - only the app starts
     public void FillDropDown()
     {
         Type enumType = typeof(ChainName);

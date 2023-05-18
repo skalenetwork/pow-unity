@@ -21,7 +21,9 @@ public class Skale_POW : MonoBehaviour
 {
     private static readonly BigInteger DIFFICULTY = new BigInteger(1);
 
-
+    /**
+     * Receives the transaction and returns the new gas price
+     */
     public async Task<string> MineGasForTransaction(Web3 web3, TransactionInput tx)
     {
         if (tx.From == null || tx.Nonce == null)
@@ -33,27 +35,24 @@ public class Skale_POW : MonoBehaviour
             tx.Gas = await web3.TransactionManager.EstimateGasAsync(tx);
         }
 
-        
-
         var address = tx.From;
-        //var nonce = Web3.IsNumber(tx.Nonce) ? BigInteger.Parse(tx.Nonce) : new BigInteger(tx.Nonce.HexToByteArray());
-        //var gas = Web3.IsNumber(tx.Gas) ? BigInteger.Parse(tx.Gas) : new BigInteger(tx.Gas.HexToByteArray());
         var nonce = (long)(tx.Nonce).Value;
         var gas = (long)(tx.Gas).Value;
-
-
-       // var BI = new BigInteger(Sha3Keccack.Current.CalculateHash(Encoding.UTF8.GetBytes(MineFreeGas(gas, address, nonce))));
-        //tx.GasPrice = new HexBigInteger(BI);
 
         return await MineFreeGas(gas, address, nonce);
 
     }
 
-    private async Task<string> MineFreeGas(long gasAmount, string address,long nonce,string bytes="")
+    /**
+     * This function generates a unice gas price
+     */
+    private async Task<string> MineFreeGas(long gasAmount, string address,long nonce)
     {
+
+        var externalGas = new BigInteger(0);
+
         var sha3 = new Sha3Keccack();
         
-
         var nonceIntTypeEncoder = new IntTypeEncoder().Encode(BigInteger.Parse(nonce.ToString()));
         var nonceHash = BigInteger.Parse(sha3.CalculateHash(nonceIntTypeEncoder).ToHex(), NumberStyles.HexNumber);
 
@@ -67,6 +66,8 @@ public class Skale_POW : MonoBehaviour
         BigInteger addressHash = new BigInteger(paddedHashBytes.Reverse().ToArray());
 
         var nonceAddressXOR = nonceHash ^ addressHash;
+
+
 
         var maxNumber = BigInteger.Pow(2, 256) - 1;
         var divConstant = maxNumber / DIFFICULTY;
@@ -82,20 +83,20 @@ public class Skale_POW : MonoBehaviour
                 random.GetBytes(candidateBytes);
             }
 
-            byte[] sha3HashBytes_candidate = sha3.CalculateHash(bytes.HexToByteArray() ?? candidateBytes);
+            byte[] sha3HashBytes_candidate = sha3.CalculateHash(candidateBytes);
 
-            string valToGo = bytes != "" ? bytes : sha3.CalculateHash(candidateBytes).ToHex();
 
-            candidate = BigInteger.Parse(valToGo, NumberStyles.HexNumber);
+            candidate = BigInteger.Parse(sha3.CalculateHash(candidateBytes).ToHex(), NumberStyles.HexNumber);
 
             byte[] paddedHashBytes2 = new byte[sha3HashBytes.Length + 1];
 
             Buffer.BlockCopy(sha3HashBytes_candidate, 0, paddedHashBytes2, 1, sha3HashBytes_candidate.Length);
 
             BigInteger candidateHash = new BigInteger(paddedHashBytes2.Reverse().ToArray());
+
             var resultHash = nonceAddressXOR^candidateHash;
 
-            var externalGas = BigInteger.Divide(divConstant, resultHash);
+            externalGas = BigInteger.Divide(divConstant, resultHash);
 
             if (externalGas >= gasAmount)
             {
@@ -109,8 +110,7 @@ public class Skale_POW : MonoBehaviour
 
         }
 
-        Debug.Log(candidate.ToString());
-        return candidate.ToString();
+        return externalGas.ToString();
     }
 
 }

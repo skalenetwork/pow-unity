@@ -7,7 +7,7 @@ using UnityEngine;
  */
 public class Skale_Networks: MonoBehaviour
 {
-
+    //By giving a name of the chain (and in the future a newtork type) it returns a class with the chain properties;
     public NetworkDetails GetNetworkDetails(ChainName name, NetworkType type)
     {
         NetworkDetails details = new NetworkDetails("https://staging-v3.skalenodes.com/v1/staging-utter-unripe-menkar", "0xa9eC34461791162Cae8c312C4237C9ddd1D64336", "0x0c11dedd", "https://staging-v3.skalenodes.com/#/chains/staging-utter-unripe-menkar");
@@ -43,6 +43,7 @@ public class NetworkDetails
     string address;
     string functionSignature;
     string chainInfo_URL;
+    
 
     public NetworkDetails(string _rpc, string _address,string _functionSignature,string _chaiInfo_URL)
     {
