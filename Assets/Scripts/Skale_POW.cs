@@ -52,13 +52,26 @@ public class Skale_POW : MonoBehaviour
         var externalGas = new BigInteger(0);
 
         var sha3 = new Sha3Keccack();
-        
-        var nonceIntTypeEncoder = new IntTypeEncoder().Encode(BigInteger.Parse(nonce.ToString()));
-        var nonceHash = BigInteger.Parse(sha3.CalculateHash(nonceIntTypeEncoder).ToHex(), NumberStyles.HexNumber);
+
+
+        byte[] nonceBytes = nonce.ToString().HexToByteArray();
+        byte[] sha3HashBytes_nonce;
+        sha3HashBytes_nonce = sha3.CalculateHash(nonceBytes);
+        byte[] paddedHashBytes_nonce = new byte[sha3HashBytes_nonce.Length + 1];
+        Buffer.BlockCopy(sha3HashBytes_nonce, 0, paddedHashBytes_nonce, 1, sha3HashBytes_nonce.Length);
+
+        BigInteger nonceHash = new BigInteger(paddedHashBytes_nonce.Reverse().ToArray());
+
+
+        //        var nonceIntTypeEncoder = new IntTypeEncoder().Encode(BigInteger.Parse(nonce.ToString()));
+        //      var nonceHash = BigInteger.Parse(sha3.CalculateHash(nonceIntTypeEncoder).ToHex(), NumberStyles.HexNumber);
+        Debug.Log(nonceHash);
+
+
+
 
         byte[] addressBytes = address.HexToByteArray();
         byte[] sha3HashBytes;
-
         sha3HashBytes = sha3.CalculateHash(addressBytes);
         byte[] paddedHashBytes = new byte[sha3HashBytes.Length + 1];
         Buffer.BlockCopy(sha3HashBytes, 0, paddedHashBytes, 1, sha3HashBytes.Length);

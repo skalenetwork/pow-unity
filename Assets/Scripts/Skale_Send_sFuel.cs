@@ -21,7 +21,7 @@ public class Skale_Send_sFuel : MonoBehaviour
     //Wallet address of the user (currently hardcoded it will be retrived from the connected wallet)
     public string receiverAddress;
 
-    public string private_key;
+    public string private_key ;
     //Btn to request sFuel
     public Button btn;
 
@@ -126,7 +126,10 @@ public class Skale_Send_sFuel : MonoBehaviour
     {
         string faucetAddress = network.getAddress();
 
-        string data = network.getFunctionSignature() + "000000000000000000000000" + receiverAddress.Substring(2);
+        string address = receiverAddress.Remove(0, 2);
+
+        Debug.Log(address);
+        string data = network.getFunctionSignature() + "000000000000000000000000" + address;
 
         string addressTo = faucetAddress;
         string addressFrom = receiverAddress;
