@@ -3078,9 +3078,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   powScript: {fileID: 1577056522}
   networks: {fileID: 1577056521}
-  receiverAddress: 2B3937Fe6Ef38CD4be0D9ceb05823087B716d689
+  receiverAddress: 
+  private_key: 
   btn: {fileID: 1577056518}
-  address: {fileID: 0}
   slected_chainLabel: {fileID: 1324950338}
   chainInfo_url: {fileID: 88433614}
   sfuelBalance: {fileID: 186996163}

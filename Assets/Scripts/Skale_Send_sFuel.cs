@@ -20,6 +20,8 @@ public class Skale_Send_sFuel : MonoBehaviour
     public Skale_Networks networks;
     //Wallet address of the user (currently hardcoded it will be retrived from the connected wallet)
     public string receiverAddress;
+
+    public string private_key;
     //Btn to request sFuel
     public Button btn;
 
@@ -95,14 +97,12 @@ public class Skale_Send_sFuel : MonoBehaviour
     //Make sFuel request to blockchain
     public async Task Send_sFuel()
     {
-        //For now I had my pk hardcoded in here
-        string pk = "e0329fa3997003b6ac8c52a62dbc9901c8efccd65a126316abbd5c79527b81f8";
 
         //Variable that contains the diferent chains details
         NetworkDetails sNetwork_details = networks.GetNetworkDetails(currentChain, NetworkType.testnet);
 
         //Setup of the web3 variable to communicate with blockchain
-        var account = new Account(pk);
+        var account = new Account(private_key);
         Web3 web3 = new Web3(account, sNetwork_details.getRpc());
 
         //Run the pow algorithm and get the new gas price
@@ -126,16 +126,16 @@ public class Skale_Send_sFuel : MonoBehaviour
     {
         string faucetAddress = network.getAddress();
 
-        string data = network.getFunctionSignature() + "000000000000000000000000" + receiverAddress;
+        string data = network.getFunctionSignature() + "000000000000000000000000" + receiverAddress.Substring(2);
 
         string addressTo = faucetAddress;
-        string addressFrom = "0x" + receiverAddress;
+        string addressFrom = receiverAddress;
         HexBigInteger gas = new HexBigInteger("65000");
         HexBigInteger value = new HexBigInteger("0");
 
 
         TransactionInput tx = new TransactionInput(data, addressTo, addressFrom, gas, value);
-        tx.Nonce = await web3.Eth.Transactions.GetTransactionCount.SendRequestAsync("0x" + receiverAddress);
+        tx.Nonce = await web3.Eth.Transactions.GetTransactionCount.SendRequestAsync(receiverAddress);
         return tx;
     }
 
@@ -147,7 +147,7 @@ public class Skale_Send_sFuel : MonoBehaviour
         NetworkDetails sNetwork_details = networks.GetNetworkDetails(currentChain, NetworkType.testnet);
         Web3 web3 = new Web3(sNetwork_details.getRpc());
 
-        var balance = await web3.Eth.GetBalance.SendRequestAsync("0x" + receiverAddress);
+        var balance = await web3.Eth.GetBalance.SendRequestAsync(receiverAddress);
 
         var balanceInEther = Web3.Convert.FromWei(balance.Value);
 
