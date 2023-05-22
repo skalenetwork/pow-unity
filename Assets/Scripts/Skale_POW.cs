@@ -1,18 +1,16 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using System.Numerics;
-using System.Globalization;
-using Nethereum.Util;
-using Nethereum.Hex.HexConvertors.Extensions;
-using System.Security.Cryptography;
 using System;
+using System.Numerics;
+using System.Security.Cryptography;
 using System.Threading.Tasks;
-using Nethereum.Web3;
+using Nethereum.Hex.HexConvertors.Extensions;
 using Nethereum.RPC.Eth.DTOs;
+using Nethereum.Util;
+using Nethereum.Web3;
+using UnityEngine;
+using Nethereum.Hex.HexTypes;
+using System.Text;
 
-using Nethereum.ABI.Encoders;
-using System.Linq;
+
 
 /**
  * This class implements the POW skale algorithm and is called in the Skale_Send_sFuel script
@@ -24,7 +22,7 @@ public class Skale_POW : MonoBehaviour
     /**
      * Receives the transaction and returns the new gas price
      */
-    public async Task<string> MineGasForTransaction(Web3 web3, TransactionInput tx)
+    public async Task<BigInteger> MineGasForTransaction(Web3 web3, TransactionInput tx)
     {
         if (tx.From == null || tx.Nonce == null)
         {
@@ -46,7 +44,7 @@ public class Skale_POW : MonoBehaviour
     /**
      * This function generates a unice gas price
      */
-    private async Task<string> MineFreeGas(long gasAmount, string address,long nonce)
+    private async Task<BigInteger> MineFreeGas(long gasAmount, string address,long nonce)
     {
 
         var externalGas = new BigInteger(0);
@@ -54,21 +52,13 @@ public class Skale_POW : MonoBehaviour
         var sha3 = new Sha3Keccack();
 
 
-        byte[] nonceBytes = nonce.ToString().HexToByteArray();
-        byte[] sha3HashBytes_nonce;
-        sha3HashBytes_nonce = sha3.CalculateHash(nonceBytes);
-        byte[] paddedHashBytes_nonce = new byte[sha3HashBytes_nonce.Length + 1];
-        Buffer.BlockCopy(sha3HashBytes_nonce, 0, paddedHashBytes_nonce, 1, sha3HashBytes_nonce.Length);
+       // Debug.Log("Nonce hash "  + sha3.CalculateHash(nonce.ToString()));
+        
 
-        BigInteger nonceHash = new BigInteger(paddedHashBytes_nonce.Reverse().ToArray());
+        ulong convertedNoceValue = Convert.ToUInt64(sha3.CalculateHash(nonce.ToString()));
+        BigInteger nonceHash = new BigInteger(convertedNoceValue);
 
-
-        //        var nonceIntTypeEncoder = new IntTypeEncoder().Encode(BigInteger.Parse(nonce.ToString()));
-        //      var nonceHash = BigInteger.Parse(sha3.CalculateHash(nonceIntTypeEncoder).ToHex(), NumberStyles.HexNumber);
         Debug.Log(nonceHash);
-
-
-
 
         byte[] addressBytes = address.HexToByteArray();
         byte[] sha3HashBytes;
@@ -76,10 +66,13 @@ public class Skale_POW : MonoBehaviour
         byte[] paddedHashBytes = new byte[sha3HashBytes.Length + 1];
         Buffer.BlockCopy(sha3HashBytes, 0, paddedHashBytes, 1, sha3HashBytes.Length);
 
-        BigInteger addressHash = new BigInteger(paddedHashBytes.Reverse().ToArray());
+
+        ulong convertedAddressValue = Convert.ToUInt64(sha3.CalculateHash(nonce.ToString()));
+
+        BigInteger addressHash = new BigInteger(addressBytes);
+        addressHash = BigInteger.Abs(addressHash);
 
         var nonceAddressXOR = nonceHash ^ addressHash;
-
 
 
         var maxNumber = BigInteger.Pow(2, 256) - 1;
@@ -96,34 +89,55 @@ public class Skale_POW : MonoBehaviour
                 random.GetBytes(candidateBytes);
             }
 
-            byte[] sha3HashBytes_candidate = sha3.CalculateHash(candidateBytes);
+            string hexString = BitConverter.ToString(candidateBytes).Replace("-","").ToLowerInvariant();
 
-
-            candidate = BigInteger.Parse(sha3.CalculateHash(candidateBytes).ToHex(), NumberStyles.HexNumber);
-
-            byte[] paddedHashBytes2 = new byte[sha3HashBytes.Length + 1];
-
-            Buffer.BlockCopy(sha3HashBytes_candidate, 0, paddedHashBytes2, 1, sha3HashBytes_candidate.Length);
-
-            BigInteger candidateHash = new BigInteger(paddedHashBytes2.Reverse().ToArray());
+            candidate = new BigInteger(hexString.HexToByteArray());
+            candidate = BigInteger.Abs(candidate);
+        
+        
+            BigInteger candidateHash = new BigInteger(sha3.CalculateHash(candidate.ToString()).HexToByteArray());
+            candidateHash = BigInteger.Abs(candidateHash);
 
             var resultHash = nonceAddressXOR^candidateHash;
-
             externalGas = BigInteger.Divide(divConstant, resultHash);
 
             if (externalGas >= gasAmount)
             {
-                break;
+                //Debug.Log("hexString " + hexString);
+                //Debug.Log("nonceAddressXOR " + nonceAddressXOR);
+                //Debug.Log("candidateHash " + candidateHash);
+                 break;
             }
 
             if (iterations++ % 2_000 == 0)
             {
                 await Task.Delay(0);
             }
+            if (iterations>= 10)
+            {
+                break;
+            }
 
         }
+        return candidate;
+    }
 
-        return externalGas.ToString();
+    static string ComputeSha256Hash(string rawData)
+    {
+        // Create a SHA256   
+        using (SHA256 sha256Hash = SHA256.Create())
+        {
+            // ComputeHash - returns byte array  
+            byte[] bytes = sha256Hash.ComputeHash(Encoding.UTF8.GetBytes(rawData));
+
+            // Convert byte array to a string   
+            StringBuilder builder = new StringBuilder();
+            for (int i = 0; i < bytes.Length; i++)
+            {
+                builder.Append(bytes[i].ToString("x2"));
+            }
+            return builder.ToString();
+        }
     }
 
 }
