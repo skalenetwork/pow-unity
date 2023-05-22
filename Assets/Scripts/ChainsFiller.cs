@@ -9,7 +9,7 @@ public class ChainsFiller : MonoBehaviour
 {
     public TMP_Dropdown dropdwn;
     // Start is called before the first frame update
-    void Awake()
+    void Start()
     {
         FillDropDown();
     }
@@ -21,11 +21,12 @@ public class ChainsFiller : MonoBehaviour
 
         if (enumType.IsEnum)
         {
-            Array enumValues = Enum.GetValues(enumType);
+
+            List<Chains> chains = SkaleManager.instance.chains_list;
             List<TMP_Dropdown.OptionData> options = new List<TMP_Dropdown.OptionData>();
-            foreach (var value in enumValues)
+            foreach (var chain in chains)
             {
-                options.Add(new TMP_Dropdown.OptionData(value.ToString()));
+                options.Add(new TMP_Dropdown.OptionData(chain.name.ToString()));
             }
 
             dropdwn.AddOptions(options);

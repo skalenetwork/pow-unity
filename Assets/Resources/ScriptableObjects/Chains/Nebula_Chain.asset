@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc6c71f0da48146a59542ca05dd321e7, type: 3}
+  m_Name: Nebula_Chain
+  m_EditorClassIdentifier: 
+  name: 3
+  type: 0
+  rpc: https://staging-v3.skalenodes.com/v1/staging-faint-slimy-achird
+  address: 0xfd56A3456fbAB0fc013213edCc830B9d32403C8B
+  functionSignature: 0x0c11dedd
+  chainInfo_URL: https://staging-v3.skalenodes.com/#/chains/staging-faint-slimy-achird
+  chain_id: 503129905

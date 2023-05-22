@@ -1,0 +1,45 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/manuelbarbas/Downloads/BNSharp-1.0.0/BNSharp/BNSharp.csproj": {}
+  },
+  "projects": {
+    "/Users/manuelbarbas/Downloads/BNSharp-1.0.0/BNSharp/BNSharp.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/manuelbarbas/Downloads/BNSharp-1.0.0/BNSharp/BNSharp.csproj",
+        "projectName": "BNSharp",
+        "projectPath": "/Users/manuelbarbas/Downloads/BNSharp-1.0.0/BNSharp/BNSharp.csproj",
+        "packagesPath": "/Users/manuelbarbas/.nuget/packages/",
+        "outputPath": "/Users/manuelbarbas/Downloads/BNSharp-1.0.0/BNSharp/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/manuelbarbas/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "runtimeIdentifierGraphPath": "/Users/manuelbarbas/Library/Caches/VisualStudio/8.0/MSBuild/19412_1/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

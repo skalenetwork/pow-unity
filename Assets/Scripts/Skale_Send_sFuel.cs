@@ -22,13 +22,9 @@ using Nethereum.HdWallet;
 public class Skale_Send_sFuel : MonoBehaviour
 {
     //Skale_POW script pointer
-    public Skale_POW powScript;
-    //Skale_Networks script pointer
-    public Skale_Networks networks;
+    private Skale_POW powScript;
     //Wallet address of the user (currently hardcoded it will be retrived from the connected wallet)
     public string receiverAddress;
-
-    public string private_key ;
     //Btn to request sFuel
     public Button btn;
 
@@ -52,9 +48,10 @@ public class Skale_Send_sFuel : MonoBehaviour
     {
         //Add listerner to button click
         btn.onClick.AddListener(OnButtonClick);
-        
+        //Add POW algorithm script to variable
+        powScript = SkaleManager.instance.pow_algorithm;
+        //Set current init chain
         SetChain();
-
     }
 
 
@@ -67,8 +64,6 @@ public class Skale_Send_sFuel : MonoBehaviour
     public async void SetChain()
     {
         string chain = slected_chainLabel.text;
-
-        Debug.Log(chain);
 
         ChainName name;
         switch (chain)
@@ -95,9 +90,9 @@ public class Skale_Send_sFuel : MonoBehaviour
 
         currentChain = name;
 
-        NetworkDetails sNetwork_details = networks.GetNetworkDetails(currentChain, NetworkType.testnet);
+        Chains chain_object = SkaleManager.instance.GetChainByName(currentChain);
 
-        chainInfo_url.text = sNetwork_details.getChainInfoUrl();
+        chainInfo_url.text = chain_object.chainInfo_URL;
 
         await SetFuelBalance();
     }
@@ -107,50 +102,50 @@ public class Skale_Send_sFuel : MonoBehaviour
     {
 
         //Variable that contains the diferent chains details
-        NetworkDetails sNetwork_details = networks.GetNetworkDetails(currentChain, NetworkType.testnet);
+        Chains chain_object = SkaleManager.instance.GetChainByName(currentChain);
 
-        
+
         //Setup of the web3 variable to communicate with blockchain
         //var mnemonic = new MnemonicUtil().GenerateRandomMnemonic();
         var ecKey = Nethereum.Signer.EthECKey.GenerateKey();
         byte[] privateKey = ecKey.GetPrivateKeyAsBytes();
         string hexString = BitConverter.ToString(privateKey).Replace("-", string.Empty);
 
-        var account = new Account(hexString, 344106930);
+        var account = new Account(hexString);
 
         Debug.Log("ADDRESS " + account.Address);
         Debug.Log("PRIVATE KEY " + account.PrivateKey);
 
-
-        Web3 web3 = new Web3(account, sNetwork_details.getRpc());
-        Debug.Log("balance " + await web3.Eth.GetBalance.SendRequestAsync(account.Address));
-
+        Web3 web3 = new Web3(account, chain_object.rpc);
 
         //Run the pow algorithm and get the new gas price
-        TransactionInput tx = await SetTx(web3, sNetwork_details, account.Address);
+        TransactionInput tx = await SetTx(web3, chain_object, account.Address);
         var pow_gasprice = await powScript.MineGasForTransaction(web3, tx);
+
         //Set the new gas price
-        tx.GasPrice = new HexBigInteger(pow_gasprice);
-       /* Debug.Log("tx.GasPrice " + tx.GasPrice);
+        tx.GasPrice = new HexBigInteger(BigInteger.Parse(pow_gasprice));
+
+
+         Debug.Log("tx.Gas " + tx.Gas);
 
         //Send the request to the blockchain
-        var transactionReceipt = await web3.Eth.TransactionManager.SendTransactionAndWaitForReceiptAsync(tx);
+         var transactionReceipt = await web3.Eth.TransactionManager.SendTransactionAndWaitForReceiptAsync(tx);
 
-        //Set UI data - sFuel, block, hash
-        await SetFuelBalance();
-        transaction_block.text = transactionReceipt.BlockNumber.ToString();
-        transaction_hash.text = transactionReceipt.BlockHash.ToString();*/
+         //Set UI data - sFuel, block, hash
+         await SetFuelBalance();
+         transaction_block.text = transactionReceipt.BlockNumber.ToString();
+         transaction_hash.text = transactionReceipt.BlockHash.ToString();
     }
 
-    private async Task<TransactionInput> SetTx(Web3 web3, NetworkDetails network, string caller)
+    private async Task<TransactionInput> SetTx(Web3 web3, Chains chain_object, string caller)
     {
-        string faucetAddress = network.getAddress();
+        string faucetAddress = chain_object.address;
 
         string address = receiverAddress.Remove(0, 2);
 
         string caller_aux = caller.Remove(0, 2);
 
-        string data = network.getFunctionSignature() + "000000000000000000000000" + address;
+        string data = chain_object.functionSignature + "000000000000000000000000" + address;
 
         string addressTo = faucetAddress;
         string addressFrom = caller_aux.ToUpper();
@@ -169,8 +164,8 @@ public class Skale_Send_sFuel : MonoBehaviour
     {
 
         //Variable that contains the diferent chains details
-        NetworkDetails sNetwork_details = networks.GetNetworkDetails(currentChain, NetworkType.testnet);
-        Web3 web3 = new Web3(sNetwork_details.getRpc());
+        Chains chain_object = SkaleManager.instance.GetChainByName(currentChain);
+        Web3 web3 = new Web3(chain_object.rpc);
 
         var balance = await web3.Eth.GetBalance.SendRequestAsync(receiverAddress);
 
@@ -179,8 +174,6 @@ public class Skale_Send_sFuel : MonoBehaviour
         float newVal = float.Parse(balanceInEther.ToString());
 
         sfuelBalance.text = newVal.ToString();
-
-
     }
 
 }
