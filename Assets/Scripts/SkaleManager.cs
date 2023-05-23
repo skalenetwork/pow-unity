@@ -6,7 +6,9 @@ public class SkaleManager : MonoBehaviour
 {
     public static SkaleManager instance;
 
-    public Skale_POW pow_algorithm;
+    public Miner pow_algorithm;
+
+    public GameObject canvas_popups;
 
     public List<Chains> chains_list;
 

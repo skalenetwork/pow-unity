@@ -14,14 +14,14 @@ using Nethereum.ABI;
 /**
  * This class implements the POW skale algorithm and is called in the Skale_Send_sFuel script
  */
-public class Skale_POW : MonoBehaviour
+public class Miner : MonoBehaviour
 {
-    private static Sha3Keccack kecckak = new Sha3Keccack();
+   
 
-    /**
-     * Receives the transaction and returns the new gas price
-     */
-    public async Task<string> MineGasForTransaction(Web3 web3, TransactionInput tx)
+/**
+* Receives the transaction and returns the new gas price
+*/
+        public async Task<string> MineGasForTransaction(Web3 web3, TransactionInput tx)
     {
         if (tx.From == null || tx.Nonce == null)
         {
@@ -45,22 +45,16 @@ public class Skale_POW : MonoBehaviour
      */
     private async Task<string> MineFreeGas(long gasAmount, string address,long nonce)
     {
-        long externalGas = 0;
-
-        var sha3 = new Sha3Keccack();
-
         BN bn_noce_hash = new BN(GetSoliditySha3(nonce),16);
 
-        string newAdress = address.Remove(0, 2);
+        BN bn_address_hash = new BN(GetSoliditySha3(address.HexToByteArray()), 16);
 
-        BN bn_address_hash = new BN(GetSoliditySha3(newAdress.HexToByteArray()), 16);
+        BN nonceAddressXOR = bn_noce_hash.Xor(bn_address_hash);
 
-        var nonceAddressXOR = bn_noce_hash.Xor(bn_address_hash);
-
-        var maxNumber = new BN(2).Pow(new BN(256)).Sub(new BN(1));
-        var DIFFICULTY = new BN(1);
-        var divConstant = maxNumber.Div(DIFFICULTY);
-        var candidate = new BN(0);
+        BN maxNumber = new BN(2).Pow(new BN(256)).Sub(new BN(1));
+        BN DIFFICULTY = new BN(1);
+        BN divConstant = maxNumber.Div(DIFFICULTY);
+        BN candidate = new BN(0);
 
         long iterations = 0;
 
@@ -74,19 +68,19 @@ public class Skale_POW : MonoBehaviour
 
             string hexString = BitConverter.ToString(candidateBytes).Replace("-","").ToLowerInvariant();
 
-            candidate = new BN(hexString,16);
-        
-            BN candidateHash = new BN(GetSoliditySha3((candidate.ToString()).HexToByteArray()),16);
+            candidate = new BN(hexString, 16);
 
-            var resultHash = nonceAddressXOR.Xor(candidateHash);
+            BigInteger candidate_to_bi = BigInteger.Parse(candidate.ToString());
+
+            BN candidateHash = new BN(GetSoliditySha3(candidate_to_bi),16);
 
 
-            externalGas = divConstant.Div(resultHash).ToNumber();
+            BN resultHash = nonceAddressXOR.Xor(candidateHash);
+
+            long externalGas = divConstant.Div(resultHash).ToNumber();
 
             if (externalGas >= gasAmount)
-            {
-                Debug.Log("externalGas " + externalGas);
-                Debug.Log("candidate " + candidate);
+            { 
                  break;
             }
 
@@ -94,15 +88,12 @@ public class Skale_POW : MonoBehaviour
             {
                 await Task.Delay(0);
             }
-            
-
         }
 
         return candidate.ToString();
     }
 
    
-
     /**
      * It works like the function soliditySha3 from the JS package web3-utils 
      */
@@ -111,7 +102,12 @@ public class Skale_POW : MonoBehaviour
         var abiEncode = new ABIEncode();
         var result = abiEncode.GetSha3ABIEncodedPacked(val);
         return result.ToHex();
-
     }
 
+    private string GetSoliditySha3_2(string type, object value)
+    {
+        var abiEncode = new ABIEncode();
+        var result = abiEncode.GetSha3ABIEncodedPacked(new ABIValue(type, value));
+        return result.ToHex();
+    }
 }

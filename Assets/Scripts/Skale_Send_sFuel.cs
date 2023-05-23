@@ -22,9 +22,9 @@ using Nethereum.HdWallet;
 public class Skale_Send_sFuel : MonoBehaviour
 {
     //Skale_POW script pointer
-    private Skale_POW powScript;
+    private Miner powScript;
     //Wallet address of the user (currently hardcoded it will be retrived from the connected wallet)
-    public string receiverAddress;
+    private Account account_receiver;
     //Btn to request sFuel
     public Button btn;
 
@@ -46,6 +46,8 @@ public class Skale_Send_sFuel : MonoBehaviour
 
     void Start()
     {
+        //Random receiver
+        account_receiver = new AnonymousWallet().GenerateRandomAccount();
         //Add listerner to button click
         btn.onClick.AddListener(OnButtonClick);
         //Add POW algorithm script to variable
@@ -104,17 +106,7 @@ public class Skale_Send_sFuel : MonoBehaviour
         //Variable that contains the diferent chains details
         Chains chain_object = SkaleManager.instance.GetChainByName(currentChain);
 
-
-        //Setup of the web3 variable to communicate with blockchain
-        //var mnemonic = new MnemonicUtil().GenerateRandomMnemonic();
-        var ecKey = Nethereum.Signer.EthECKey.GenerateKey();
-        byte[] privateKey = ecKey.GetPrivateKeyAsBytes();
-        string hexString = BitConverter.ToString(privateKey).Replace("-", string.Empty);
-
-        var account = new Account(hexString);
-
-        Debug.Log("ADDRESS " + account.Address);
-        Debug.Log("PRIVATE KEY " + account.PrivateKey);
+        var account = new AnonymousWallet().GenerateRandomAccount();
 
         Web3 web3 = new Web3(account, chain_object.rpc);
 
@@ -125,33 +117,31 @@ public class Skale_Send_sFuel : MonoBehaviour
         //Set the new gas price
         tx.GasPrice = new HexBigInteger(BigInteger.Parse(pow_gasprice));
 
-
-         Debug.Log("tx.Gas " + tx.Gas);
-
-        //Send the request to the blockchain
+         //Send the request to the blockchain
          var transactionReceipt = await web3.Eth.TransactionManager.SendTransactionAndWaitForReceiptAsync(tx);
 
          //Set UI data - sFuel, block, hash
          await SetFuelBalance();
          transaction_block.text = transactionReceipt.BlockNumber.ToString();
+         Debug.Log("transactionReceipt.BlockHash.ToString() " + transactionReceipt.BlockHash.ToString());
          transaction_hash.text = transactionReceipt.BlockHash.ToString();
     }
 
+    /**
+     * Created transaction details for sFuel mining 
+     */
     private async Task<TransactionInput> SetTx(Web3 web3, Chains chain_object, string caller)
     {
         string faucetAddress = chain_object.address;
 
-        string address = receiverAddress.Remove(0, 2);
-
-        string caller_aux = caller.Remove(0, 2);
+        string address = account_receiver.Address.Remove(0, 2);
 
         string data = chain_object.functionSignature + "000000000000000000000000" + address;
 
         string addressTo = faucetAddress;
-        string addressFrom = caller_aux.ToUpper();
+        string addressFrom = caller;
         HexBigInteger gas = new HexBigInteger("65000");
         HexBigInteger value = new HexBigInteger("0");
-
 
         TransactionInput tx = new TransactionInput(data, addressTo, addressFrom, gas, value);
 
@@ -167,7 +157,7 @@ public class Skale_Send_sFuel : MonoBehaviour
         Chains chain_object = SkaleManager.instance.GetChainByName(currentChain);
         Web3 web3 = new Web3(chain_object.rpc);
 
-        var balance = await web3.Eth.GetBalance.SendRequestAsync(receiverAddress);
+        var balance = await web3.Eth.GetBalance.SendRequestAsync(account_receiver.Address);
 
         var balanceInEther = Web3.Convert.FromWei(balance.Value);
 
