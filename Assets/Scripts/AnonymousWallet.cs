@@ -4,15 +4,14 @@ using UnityEngine;
 using Nethereum.Web3.Accounts;
 using System;
 
-public class AnonymousWallet
+public class AnonymousWallet: WalletPow
 {
 
-    public AnonymousWallet()
+    public AnonymousWallet(Chains chain): base(GenerateRandomAccount(), chain)
     {
-
     }
 
-    public Account GenerateRandomAccount()
+    public static Account GenerateRandomAccount()
     {
         var ecKey = Nethereum.Signer.EthECKey.GenerateKey();
         byte[] privateKey = ecKey.GetPrivateKeyAsBytes();

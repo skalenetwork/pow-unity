@@ -14,14 +14,14 @@ using Nethereum.ABI;
 /**
  * This class implements the POW skale algorithm and is called in the Skale_Send_sFuel script
  */
-public class Miner : MonoBehaviour
+public class Miner
 {
    
 
-/**
-* Receives the transaction and returns the new gas price
-*/
-        public async Task<string> MineGasForTransaction(Web3 web3, TransactionInput tx)
+    /**
+    * Receives the transaction and returns the new gas price
+    */
+    public async Task<string> MineGasForTransaction(Web3 web3, TransactionInput tx)
     {
         if (tx.From == null || tx.Nonce == null)
         {
@@ -101,13 +101,6 @@ public class Miner : MonoBehaviour
     {
         var abiEncode = new ABIEncode();
         var result = abiEncode.GetSha3ABIEncodedPacked(val);
-        return result.ToHex();
-    }
-
-    private string GetSoliditySha3_2(string type, object value)
-    {
-        var abiEncode = new ABIEncode();
-        var result = abiEncode.GetSha3ABIEncodedPacked(new ABIValue(type, value));
         return result.ToHex();
     }
 }
