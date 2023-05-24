@@ -6,10 +6,13 @@ using TMPro;
 using System.Threading.Tasks;
 using Nethereum.Web3;
 using Nethereum.RPC.Eth.DTOs;
-
+using System;
 
 public class UIController : MonoBehaviour
 {
+    public Image background;
+
+    public Sprite[] backgrounds_formats;
     //Btn to request sFuel
     public Button btn;
 
@@ -28,6 +31,10 @@ public class UIController : MonoBehaviour
     //Current selected chain
     ChainName currentChain;
 
+    private void Awake()
+    {
+        SetBackground();
+    }
 
     private void Start()
     {
@@ -39,6 +46,19 @@ public class UIController : MonoBehaviour
     private async void OnButtonClick()
     {
         await SkaleManager.instance.SendFuel();
+    }
+
+    public void SetBackground()
+    {
+     
+        if (Screen.width <= Screen.height)
+        {
+            background.sprite = backgrounds_formats[0];
+        }
+        else
+        {
+            background.sprite = backgrounds_formats[1];
+        }
     }
 
     //Set chain variables
@@ -84,7 +104,15 @@ public class UIController : MonoBehaviour
     {
         //Variable that contains the diferent chains details
         Chains chain_object = SkaleManager.instance.GetChainByName(currentChain);
+
+        Console.WriteLine("currentChain " + currentChain);
+        Console.WriteLine("chain_object.rpc " + chain_object.rpc);
+
         Web3 web3 = new Web3(chain_object.rpc);
+
+
+        Console.WriteLine("SkaleManager.instance.account_receiver " + SkaleManager.instance.account_receiver);
+
 
         var balance = await web3.Eth.GetBalance.SendRequestAsync(SkaleManager.instance.account_receiver);
 
