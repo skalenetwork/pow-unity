@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Threading.Tasks;
 using Nethereum.RPC.Eth.DTOs;
-
+using System;
 
 public class SkaleManager : MonoBehaviour
 {
@@ -41,7 +41,7 @@ public class SkaleManager : MonoBehaviour
         return chains_list[0];
     }
 
-    public async Task SendFuel()
+    public async void SendFuel()
     {
         Chains currentChain = GetChainByName(ui_script.GetCurrentChain_name());
 
@@ -50,16 +50,19 @@ public class SkaleManager : MonoBehaviour
             account_receiver = new AnonymousWallet(currentChain).GetAddress();
         }
 
+        
         AnonymousWallet wallet = new AnonymousWallet(currentChain);
+
+        Console.WriteLine("account received " + account_receiver);
+
 
         TransactionReceipt transactionReceipt = await wallet.Send(account_receiver);
 
-
-        if(ui_script != null)
-        {
-           await ui_script.SetFuelBalance();
-           ui_script.SetTransactionUI(transactionReceipt);
-        }
-    } 
+         if(ui_script != null)
+         {          
+            StartCoroutine(ui_script.SetFuelBalance());
+            ui_script.SetTransactionUI(transactionReceipt);
+         }
+    }
 
 }
