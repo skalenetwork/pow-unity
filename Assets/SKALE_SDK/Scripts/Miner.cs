@@ -35,9 +35,6 @@ public class Miner
             tx.Gas = await web3.TransactionManager.EstimateGasAsync(tx);
         }
 
-        Console.WriteLine("entrou 1");
-
-
         var address = tx.From;
         var nonce = (long)(tx.Nonce).Value;
         var gas = (long)(tx.Gas).Value;
@@ -63,9 +60,6 @@ public class Miner
         BN candidate = new BN(0);
 
         double iterations = 0;
-
-        Console.WriteLine("quase");
-
 
         while (true)
         {

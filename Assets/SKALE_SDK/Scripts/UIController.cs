@@ -37,7 +37,7 @@ public class UIController : MonoBehaviour
         SetBackground();
     }
 
-    private void OnEnable()
+    private void Start()
     {
         
         SetChain();
@@ -98,7 +98,6 @@ public class UIController : MonoBehaviour
 
         chainInfo_url.text = chain_object.chainInfo_URL;
         StartCoroutine(SetFuelBalance());
-     //   await SetFuelBalance();
     }
 
     public IEnumerator SetFuelBalance()
@@ -107,7 +106,6 @@ public class UIController : MonoBehaviour
 
         var balanceRequest = new EthGetBalanceUnityRequest(chain_object.rpc);
         yield return balanceRequest.SendRequest(SkaleManager.instance.account_receiver, BlockParameter.CreateLatest());
-        //       Console.WriteLine("Balance of account:" + Web3.Convert.FromWei(balanceRequest.Result.Value));
         var balanceInEther = Web3.Convert.FromWei(balanceRequest.Result.Value);
 
         float newVal = float.Parse(balanceInEther.ToString());
@@ -115,32 +113,6 @@ public class UIController : MonoBehaviour
         sfuelBalance.text = newVal.ToString();
     }
 
-
-    //Set the sFuel wallet balance
-  /*  public async Task SetFuelBalance()
-    {
-        //Variable that contains the diferent chains details
-        Chains chain_object = SkaleManager.instance.GetChainByName(currentChain);
-
-        Console.WriteLine("currentChain " + currentChain);
-        Console.WriteLine("chain_object.rpc " + chain_object.rpc);
-
-        Web3 web3 = new Web3(chain_object.rpc);
-       // Web3 web3 = new Web3(new UnityWebRequestRpcTaskClient(new Uri(chain_object.rpc)));
-
-        Console.WriteLine("SkaleManager.instance.account_receiver " + SkaleManager.instance.account_receiver);
-
-        var wait = 1000;
-        await Task.Delay(wait);
-
-        var balance = await web3.Eth.GetBalance.SendRequestAsync(SkaleManager.instance.account_receiver);
-
-        var balanceInEther = Web3.Convert.FromWei(balance.Value);
-
-        float newVal = float.Parse(balanceInEther.ToString());
-
-        sfuelBalance.text = newVal.ToString();
-    }*/
 
     public void SetTransactionUI(TransactionReceipt transactionReceipt)
     {

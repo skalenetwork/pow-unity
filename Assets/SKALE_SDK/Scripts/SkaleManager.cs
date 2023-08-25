@@ -25,7 +25,6 @@ public class SkaleManager : MonoBehaviour
         {
             account_receiver = new AnonymousWallet(currentChain).GetAddress();
         }
-
     }
 
     public Chains GetChainByName(ChainName name)
@@ -53,15 +52,12 @@ public class SkaleManager : MonoBehaviour
         
         AnonymousWallet wallet = new AnonymousWallet(currentChain);
 
-        Console.WriteLine("account received " + account_receiver);
-
-
         TransactionReceipt transactionReceipt = await wallet.Send(account_receiver);
 
-         if(ui_script != null)
-         {          
-            StartCoroutine(ui_script.SetFuelBalance());
-            ui_script.SetTransactionUI(transactionReceipt);
+        if(ui_script != null)
+        {          
+           StartCoroutine(ui_script.SetFuelBalance());
+           ui_script.SetTransactionUI(transactionReceipt);
          }
     }
 

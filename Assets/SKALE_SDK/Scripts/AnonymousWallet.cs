@@ -17,6 +17,6 @@ public class AnonymousWallet: WalletPow
         byte[] privateKey = ecKey.GetPrivateKeyAsBytes();
         string hexString = BitConverter.ToString(privateKey).Replace("-", string.Empty);
 
-        return new Account(hexString, 344106930);
+        return new Account(hexString);
     }
 }
