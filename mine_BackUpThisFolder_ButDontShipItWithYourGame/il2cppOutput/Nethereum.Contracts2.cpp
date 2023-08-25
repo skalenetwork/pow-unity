@@ -1,0 +1,6959 @@
+﻿#include "pch-cpp.hpp"
+
+#ifndef _MSC_VER
+# include <alloca.h>
+#else
+# include <malloc.h>
+#endif
+
+
+#include <limits>
+#include <stdint.h>
+
+
+template <typename T1>
+struct VirtualActionInvoker1
+{
+	typedef void (*Action)(void*, T1, const RuntimeMethod*);
+
+	static inline void Invoke (Il2CppMethodSlot slot, RuntimeObject* obj, T1 p1)
+	{
+		const VirtualInvokeData& invokeData = il2cpp_codegen_get_virtual_invoke_data(slot, obj);
+		((Action)invokeData.methodPtr)(obj, p1, invokeData.method);
+	}
+};
+template <typename R>
+struct VirtualFuncInvoker0
+{
+	typedef R (*Func)(void*, const RuntimeMethod*);
+
+	static inline R Invoke (Il2CppMethodSlot slot, RuntimeObject* obj)
+	{
+		const VirtualInvokeData& invokeData = il2cpp_codegen_get_virtual_invoke_data(slot, obj);
+		return ((Func)invokeData.methodPtr)(obj, invokeData.method);
+	}
+};
+struct InterfaceActionInvoker0
+{
+	typedef void (*Action)(void*, const RuntimeMethod*);
+
+	static inline void Invoke (Il2CppMethodSlot slot, RuntimeClass* declaringInterface, RuntimeObject* obj)
+	{
+		const VirtualInvokeData& invokeData = il2cpp_codegen_get_interface_invoke_data(slot, obj, declaringInterface);
+		((Action)invokeData.methodPtr)(obj, invokeData.method);
+	}
+};
+template <typename T1>
+struct InterfaceActionInvoker1
+{
+	typedef void (*Action)(void*, T1, const RuntimeMethod*);
+
+	static inline void Invoke (Il2CppMethodSlot slot, RuntimeClass* declaringInterface, RuntimeObject* obj, T1 p1)
+	{
+		const VirtualInvokeData& invokeData = il2cpp_codegen_get_interface_invoke_data(slot, obj, declaringInterface);
+		((Action)invokeData.methodPtr)(obj, p1, invokeData.method);
+	}
+};
+template <typename R>
+struct InterfaceFuncInvoker0
+{
+	typedef R (*Func)(void*, const RuntimeMethod*);
+
+	static inline R Invoke (Il2CppMethodSlot slot, RuntimeClass* declaringInterface, RuntimeObject* obj)
+	{
+		const VirtualInvokeData& invokeData = il2cpp_codegen_get_interface_invoke_data(slot, obj, declaringInterface);
+		return ((Func)invokeData.methodPtr)(obj, invokeData.method);
+	}
+};
+template <typename R, typename T1, typename T2>
+struct InterfaceFuncInvoker2
+{
+	typedef R (*Func)(void*, T1, T2, const RuntimeMethod*);
+
+	static inline R Invoke (Il2CppMethodSlot slot, RuntimeClass* declaringInterface, RuntimeObject* obj, T1 p1, T2 p2)
+	{
+		const VirtualInvokeData& invokeData = il2cpp_codegen_get_interface_invoke_data(slot, obj, declaringInterface);
+		return ((Func)invokeData.methodPtr)(obj, p1, p2, invokeData.method);
+	}
+};
+template <typename R, typename T1, typename T2, typename T3>
+struct InterfaceFuncInvoker3
+{
+	typedef R (*Func)(void*, T1, T2, T3, const RuntimeMethod*);
+
+	static inline R Invoke (Il2CppMethodSlot slot, RuntimeClass* declaringInterface, RuntimeObject* obj, T1 p1, T2 p2, T3 p3)
+	{
+		const VirtualInvokeData& invokeData = il2cpp_codegen_get_interface_invoke_data(slot, obj, declaringInterface);
+		return ((Func)invokeData.methodPtr)(obj, p1, p2, p3, invokeData.method);
+	}
+};
+
+// System.Action`1<System.Object>
+struct Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87;
+// System.Collections.Generic.Dictionary`2<System.Int32,System.Threading.Tasks.Task>
+struct Dictionary_2_t403063CE4960B4F46C688912237C6A27E550FF55;
+// System.Func`1<System.Threading.Tasks.Task/ContingentProperties>
+struct Func_1_tD59A12717D79BFB403BF973694B1BE5B85474BD1;
+// System.Func`2<Nethereum.Contracts.QueryHandlers.MultiCall.IMulticallInputOutput,System.Boolean>
+struct Func_2_tC7D8CC18CA3EE41739FE11EB4C3AF3F712E0FAA8;
+// System.Func`2<System.Object,System.Boolean>
+struct Func_2_tE1F0D41563EE092E5E5540B061449FDE88F1DC00;
+// Nethereum.Hex.HexTypes.HexRPCType`1<System.Numerics.BigInteger>
+struct HexRPCType_1_t0AEB726E19D5EA8BB4CC3B441C661B409A663DE0;
+// System.Collections.Generic.IEnumerable`1<System.Collections.Generic.IEnumerable`1<Nethereum.Contracts.QueryHandlers.MultiCall.IMulticallInputOutput>>
+struct IEnumerable_1_t745534CF81650D4254BC02BFCD2B1B8820E7BF29;
+// System.Collections.Generic.IEnumerable`1<System.Collections.Generic.IEnumerable`1<System.Object>>
+struct IEnumerable_1_t0398225B3E7062E0EE1C2E68DE56DC0CE9C0F5D7;
+// System.Collections.Generic.IEnumerable`1<System.Byte>
+struct IEnumerable_1_tEE97FB3EBFE8765D0E2FC164B95E82BA5D0EAE86;
+// System.Collections.Generic.IEnumerable`1<Nethereum.Contracts.QueryHandlers.MultiCall.IMulticallInputOutput>
+struct IEnumerable_1_t44EC2B417A72A41ECF9FD69EF8C384E088A8515B;
+// System.Collections.Generic.IEnumerable`1<System.Object>
+struct IEnumerable_1_tF95C9E01A913DD50575531C8305932628663D9E9;
+// System.Collections.Generic.IEnumerable`1<Nethereum.Contracts.QueryHandlers.MultiCall.Result>
+struct IEnumerable_1_tFFF269C7459BF7BBE805FBF0E70654080F991FBF;
+// System.Collections.Generic.IEnumerator`1<System.Collections.Generic.IEnumerable`1<Nethereum.Contracts.QueryHandlers.MultiCall.IMulticallInputOutput>>
+struct IEnumerator_1_tCF8E0EFC32EEDED984386ADF4EA697E26CEED336;
+// Nethereum.Hex.HexConvertors.IHexConvertor`1<System.Numerics.BigInteger>
+struct IHexConvertor_1_t065D8C7F14D94EDF4E83EE3837AA95C741793015;
+// System.Collections.Generic.List`1<System.Byte[]>
+struct List_1_tBFF9DD9FFA06F20E74F9D7AD36610BD754D353A4;
+// System.Collections.Generic.List`1<Nethereum.RPC.Eth.DTOs.AccessList>
+struct List_1_t4E11F5D2075471CC5269E680568592D8D061C750;
+// System.Collections.Generic.List`1<System.Byte>
+struct List_1_t7D15BE3246500BBF1A24C24DBF963B89A876255B;
+// System.Collections.Generic.List`1<Nethereum.Contracts.QueryHandlers.MultiCall.Call>
+struct List_1_t1CFC44309FCDA176EA29234D4ABE7C7F1C7195FE;
+// System.Collections.Generic.List`1<Nethereum.Contracts.QueryHandlers.MultiCall.Call3>
+struct List_1_t913451B7A13CEE27B44C60CE4E1378612824AE38;
+// System.Collections.Generic.List`1<Nethereum.Contracts.QueryHandlers.MultiCall.Call3Value>
+struct List_1_t376C4E85EFA0FB2C83DA6AEC65B0D3D437A82B0E;
+// System.Collections.Generic.List`1<System.Object>
+struct List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D;
+// System.Collections.Generic.List`1<Nethereum.Contracts.QueryHandlers.MultiCall.Result>
+struct List_1_t4C68E546060D764C99C1B962BB2C011B0A5EBA19;
+// System.Predicate`1<System.Object>
+struct Predicate_1_t8342C85FF4E41CD1F7024AC0CDC3E5312A32CB12;
+// System.Predicate`1<System.Threading.Tasks.Task>
+struct Predicate_1_t7F48518B008C1472339EEEBABA3DE203FE1F26ED;
+// Nethereum.Contracts.QueryHandlers.QueryDecoderBaseHandler`2<Nethereum.Contracts.QueryHandlers.MultiCall.Aggregate3Function,Nethereum.Contracts.QueryHandlers.MultiCall.Aggregate3OutputDTO>
+struct QueryDecoderBaseHandler_2_t08FE3A73CCE55581281E2C0024779BB19E26AB1A;
+// Nethereum.Contracts.QueryHandlers.QueryDecoderBaseHandler`2<Nethereum.Contracts.QueryHandlers.MultiCall.Aggregate3ValueFunction,Nethereum.Contracts.QueryHandlers.MultiCall.Aggregate3ValueOutputDTO>
+struct QueryDecoderBaseHandler_2_tB4222E2288471D78079D35681CEDE89D5895BB43;
+// Nethereum.Contracts.QueryHandlers.QueryDecoderBaseHandler`2<Nethereum.Contracts.QueryHandlers.MultiCall.AggregateFunction,Nethereum.Contracts.QueryHandlers.MultiCall.AggregateOutputDTO>
+struct QueryDecoderBaseHandler_2_t6C60BB3092F1A5B8450054CA473071243BC7D1D3;
+// Nethereum.Contracts.QueryHandlers.QueryDecoderBaseHandler`2<System.Object,System.Object>
+struct QueryDecoderBaseHandler_2_t69B68E41C7181344838F15DE0036F86D07346AF3;
+// Nethereum.Contracts.QueryHandlers.QueryRawHandler`1<Nethereum.Contracts.QueryHandlers.MultiCall.Aggregate3Function>
+struct QueryRawHandler_1_tBC23097A789BB359CD2E172A0E29267DDC356357;
+// Nethereum.Contracts.QueryHandlers.QueryRawHandler`1<Nethereum.Contracts.QueryHandlers.MultiCall.Aggregate3ValueFunction>
+struct QueryRawHandler_1_tDA5ED37F8AB2AC9BD443E76C45E05F4546A09797;
+// Nethereum.Contracts.QueryHandlers.QueryRawHandler`1<Nethereum.Contracts.QueryHandlers.MultiCall.AggregateFunction>
+struct QueryRawHandler_1_t3D4F4A22A0F7070290AEA67589C38C7BD62FCA7F;
+// Nethereum.Contracts.QueryHandlers.QueryToDTOHandler`2<Nethereum.Contracts.QueryHandlers.MultiCall.Aggregate3Function,Nethereum.Contracts.QueryHandlers.MultiCall.Aggregate3OutputDTO>
+struct QueryToDTOHandler_2_t7D6D14A0D064D41148382C0FCC8E4921D012F2F6;
+// Nethereum.Contracts.QueryHandlers.QueryToDTOHandler`2<Nethereum.Contracts.QueryHandlers.MultiCall.Aggregate3ValueFunction,Nethereum.Contracts.QueryHandlers.MultiCall.Aggregate3ValueOutputDTO>
+struct QueryToDTOHandler_2_tC8135E5F07B2BB7F4F689C6CD58C234921665415;
+// Nethereum.Contracts.QueryHandlers.QueryToDTOHandler`2<Nethereum.Contracts.QueryHandlers.MultiCall.AggregateFunction,Nethereum.Contracts.QueryHandlers.MultiCall.AggregateOutputDTO>
+struct QueryToDTOHandler_2_t64FE28F3E7A92C671B9E70A24D8300951F42BBF7;
+// Nethereum.Contracts.QueryHandlers.QueryToDTOHandler`2<System.Object,System.Object>
+struct QueryToDTOHandler_2_tF7049444AAFEA216FC818B285A22A5A1958B369A;
+// System.Threading.Tasks.TaskFactory`1<Nethereum.Contracts.QueryHandlers.MultiCall.IMulticallInputOutput[]>
+struct TaskFactory_1_t153E7CB9B7723DC4CEA0C703190475825313FBC5;
+// System.Threading.Tasks.TaskFactory`1<Nethereum.Contracts.QueryHandlers.MultiCall.Aggregate3OutputDTO>
+struct TaskFactory_1_tC55060519CA99F9EC12F77BECC8ACF003C5795C1;
+// System.Threading.Tasks.TaskFactory`1<Nethereum.Contracts.QueryHandlers.MultiCall.Aggregate3ValueOutputDTO>
+struct TaskFactory_1_t3151E00F5E391EC4A01C9E643CC39217168AD4B5;
+// System.Threading.Tasks.TaskFactory`1<Nethereum.Contracts.QueryHandlers.MultiCall.AggregateOutputDTO>
+struct TaskFactory_1_t25981280752CB5A132CF3B0E312EC8E73F7EE90F;
+// System.Threading.Tasks.TaskFactory`1<System.String>
+struct TaskFactory_1_t7ABCD7F9503486A075E0B072E6EB95956CFE3106;
+// System.Threading.Tasks.TaskFactory`1<Nethereum.RPC.Eth.DTOs.Transaction>
+struct TaskFactory_1_t52E361437DD936C7FCE04E170E843CFA31BAAF40;
+// System.Threading.Tasks.Task`1<Nethereum.Contracts.QueryHandlers.MultiCall.IMulticallInputOutput[]>
+struct Task_1_t42FA6B88BB8F441CF56D1DCEF1570387FCEC4DE9;
+// System.Threading.Tasks.Task`1<Nethereum.Contracts.QueryHandlers.MultiCall.Aggregate3OutputDTO>
+struct Task_1_t843D0B7FB99859F077CD3346AAB26D9728AC86A7;
+// System.Threading.Tasks.Task`1<Nethereum.Contracts.QueryHandlers.MultiCall.Aggregate3ValueOutputDTO>
+struct Task_1_tD3F902260C8A6DA85461A6EF5CF3A103F3E9AE63;
+// System.Threading.Tasks.Task`1<Nethereum.Contracts.QueryHandlers.MultiCall.AggregateOutputDTO>
+struct Task_1_tA3CF95FC9CBC3CA5879B274CBE93339D68A5CA95;
+// System.Threading.Tasks.Task`1<System.Object>
+struct Task_1_t0C4CD3A5BB93A184420D73218644C56C70FDA7E2;
+// System.Threading.Tasks.Task`1<System.String>
+struct Task_1_t3D7638C82ED289AF156EDBAE76842D8DF4C4A9E0;
+// System.Threading.Tasks.Task`1<Nethereum.RPC.Eth.DTOs.Transaction>
+struct Task_1_t07835DF0935336A37DEF7C2A1C6E5057615D6092;
+// System.Byte[][]
+struct ByteU5BU5DU5BU5D_t19A0C6D66F22DF673E9CDB37DEF566FE0EC947FA;
+// Nethereum.ABI.ABIValue[]
+struct ABIValueU5BU5D_t5053A4AB39A1EDA3F954A7A8BAD52DF73676F8E5;
+// Nethereum.RPC.Eth.DTOs.AccessList[]
+struct AccessListU5BU5D_t923FFC19CDD93DD1C54788C39B7D7EA3B9716498;
+// System.Byte[]
+struct ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031;
+// Nethereum.Contracts.QueryHandlers.MultiCall.Call[]
+struct CallU5BU5D_t6056D48DE0924D33B75B3310C6AEC5244B657874;
+// Nethereum.Contracts.QueryHandlers.MultiCall.Call3[]
+struct Call3U5BU5D_t6AE118085174010B0C4A8D0E13ED3CB46515205E;
+// Nethereum.Contracts.QueryHandlers.MultiCall.Call3Value[]
+struct Call3ValueU5BU5D_t42FBCFE3413ECA25816A4901C03A38399CCDA956;
+// System.Delegate[]
+struct DelegateU5BU5D_tC5AB7E8F745616680F337909D3A8E6C722CDF771;
+// Nethereum.Contracts.TransactionHandlers.MultiSend.IMultiSendInput[]
+struct IMultiSendInputU5BU5D_t0A5262003FB6442DE35A0573C6BDE76A153EDE8F;
+// Nethereum.Contracts.QueryHandlers.MultiCall.IMulticallInputOutput[]
+struct IMulticallInputOutputU5BU5D_t7D33DBDC42EE714A687264BC9F3C6C6AED3885F7;
+// System.IntPtr[]
+struct IntPtrU5BU5D_tFD177F8C806A6921AD7150264CCC62FA00CAD832;
+// System.Object[]
+struct ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918;
+// Nethereum.Contracts.QueryHandlers.MultiCall.Result[]
+struct ResultU5BU5D_tABB84DEC32743FA205347BF1E50EE4F1B6FAC180;
+// System.Diagnostics.StackTrace[]
+struct StackTraceU5BU5D_t32FBCB20930EAF5BAE3F450FF75228E5450DA0DF;
+// System.UInt32[]
+struct UInt32U5BU5D_t02FBD658AD156A17574ECE6106CF1FBFCC9807FA;
+// Nethereum.ABI.ABIEncode
+struct ABIEncode_t95CFC96B6E0E5D79DC62FF6969A0768A6C90C5CD;
+// Nethereum.ABI.ABIType
+struct ABIType_t172E4E77CEE1BB01CC15258100F24C2F01C78EE6;
+// Nethereum.ABI.ABIValue
+struct ABIValue_t53C363B3F7F73B7F8F0D7804041B2B3ED1041567;
+// System.Action
+struct Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07;
+// Nethereum.Contracts.QueryHandlers.MultiCall.Aggregate3Function
+struct Aggregate3Function_t22B497CF7B74F9B7EAE57E49F180946D62DE0A80;
+// Nethereum.Contracts.QueryHandlers.MultiCall.Aggregate3FunctionBase
+struct Aggregate3FunctionBase_t598C9701594935BF1D7F126FAE3A698C5D285C36;
+// Nethereum.Contracts.QueryHandlers.MultiCall.Aggregate3OutputDTO
+struct Aggregate3OutputDTO_t9CA62E1FF9DC2592189ADE0D667CD29C287867DB;
+// Nethereum.Contracts.QueryHandlers.MultiCall.Aggregate3OutputDTOBase
+struct Aggregate3OutputDTOBase_tB7BB06CA8F766C33AF48AD8E5D67D74E0317D126;
+// Nethereum.Contracts.QueryHandlers.MultiCall.Aggregate3ValueFunction
+struct Aggregate3ValueFunction_t7255D88599D2644B8FD0B19D72639F0F5D2521CC;
+// Nethereum.Contracts.QueryHandlers.MultiCall.Aggregate3ValueFunctionBase
+struct Aggregate3ValueFunctionBase_t771A483E57D1D3F216B1DFF5AD95F952BFA640F4;
+// Nethereum.Contracts.QueryHandlers.MultiCall.Aggregate3ValueOutputDTO
+struct Aggregate3ValueOutputDTO_t2FF1DDFC969071DBBB8DA771D7B60CA9C378093E;
+// Nethereum.Contracts.QueryHandlers.MultiCall.Aggregate3ValueOutputDTOBase
+struct Aggregate3ValueOutputDTOBase_tDC53C967E48195592E4D38448A65DA8A8388FDF7;
+// Nethereum.Contracts.QueryHandlers.MultiCall.AggregateFunction
+struct AggregateFunction_tFEE01853E17B270CE0A401F2931520B99AE9A0A7;
+// Nethereum.Contracts.QueryHandlers.MultiCall.AggregateFunctionBase
+struct AggregateFunctionBase_tED9275D4B009322E4C25321783EF2376CC47A98D;
+// Nethereum.Contracts.QueryHandlers.MultiCall.AggregateOutputDTO
+struct AggregateOutputDTO_t04A6B814396B3EFE20568FF857DC66DEDADB011C;
+// Nethereum.Contracts.QueryHandlers.MultiCall.AggregateOutputDTOBase
+struct AggregateOutputDTOBase_tBD69D9D5ECA62C1432573218AD544A42BD82ACA6;
+// Nethereum.ABI.FunctionEncoding.Attributes.AttributesToABIExtractor
+struct AttributesToABIExtractor_t52FA9A8580A1D0127D530545BB0DAA843B153881;
+// Nethereum.RPC.Eth.DTOs.BlockParameter
+struct BlockParameter_t13CF5CC9CDE990ACD945748B2FA7F19EA0A06AD9;
+// Nethereum.Contracts.QueryHandlers.MultiCall.Call
+struct Call_t924086EAD3B3E4D52DE52E6E060F04753C2B15A7;
+// Nethereum.Contracts.QueryHandlers.MultiCall.Call3
+struct Call3_t7D0A3BDA2EE93E4FE48F20496F1A5C2723BABB8D;
+// Nethereum.Contracts.QueryHandlers.MultiCall.Call3Base
+struct Call3Base_t2A9271175C8D98BBDC18239AAFEC4C820E539B2E;
+// Nethereum.Contracts.QueryHandlers.MultiCall.Call3Value
+struct Call3Value_t18A4350E7B502FCB224229CDA7B21BF37C8C6DA6;
+// Nethereum.Contracts.QueryHandlers.MultiCall.Call3ValueBase
+struct Call3ValueBase_t43018F8986C4307D6CE2C2BCE8C2E1ACB8E84978;
+// Nethereum.Contracts.QueryHandlers.MultiCall.CallBase
+struct CallBase_tDE3DC215CB2F6161608011057953C24D0C5F2D3F;
+// Nethereum.RPC.Eth.DTOs.CallInput
+struct CallInput_t134727ED6D63AA0F8722CB06FEC85207CC5D3F9C;
+// Nethereum.Contracts.Constants.CommonAddresses
+struct CommonAddresses_tF9534712CEDF086A47D6D13662A614F84F29BACE;
+// System.Threading.ContextCallback
+struct ContextCallback_tE8AFBDBFCC040FDA8DA8C1EEFE9BD66B16BDA007;
+// Nethereum.Contracts.Contract
+struct Contract_t519479FAD68F68E0E702B217CB2E26140F39C974;
+// Nethereum.Contracts.ContractBuilder
+struct ContractBuilder_t14BF3287A496067FA2F4197DA0D8A8F29F60C11B;
+// Nethereum.Contracts.ContractHandlers.ContractHandler
+struct ContractHandler_t3CC1E74BCBEFB5D4531C7BA554B008F0149B1DF7;
+// Nethereum.Contracts.CQS.ContractMessageBase
+struct ContractMessageBase_tA9C9FCA2DAE63DE7A525580AC6E60DD85EBE2EAF;
+// Nethereum.Contracts.ContractHandlers.ContractTransactionHandlerBase
+struct ContractTransactionHandlerBase_t8D5503838C4576B88F52071D89FFF2CAC2ACCF29;
+// System.Delegate
+struct Delegate_t;
+// System.DelegateData
+struct DelegateData_t9B286B493293CD2D23A5B2B5EF0E5B1324C2B77E;
+// Nethereum.Contracts.DeployContract
+struct DeployContract_tDA5FAC0330CF3A47EE209848EBC4585CDAC09782;
+// Nethereum.Contracts.DeployContractTransactionBuilder
+struct DeployContractTransactionBuilder_t5D54EB077FC26399F32850CD5678C48C0CA0F681;
+// Nethereum.Contracts.Standards.ENS.ENSRegistryService
+struct ENSRegistryService_t74BEAF552EBFB25B0B4E9226A211B4A34745795C;
+// Nethereum.Contracts.Standards.ENS.ENSService
+struct ENSService_t1AF55C7FB4B642A1E34630FECB36139454F7ACB9;
+// Nethereum.Contracts.Standards.ERC1155.ERC1155Service
+struct ERC1155Service_t5929D51764AC25462FF1071BAA5AFD39D39AC0E4;
+// Nethereum.Contracts.Standards.ERC1271.ERC1271Service
+struct ERC1271Service_t5D362FEC8F9FB4A4A43BC1094CDC1E4EFE768893;
+// Nethereum.Contracts.Standards.ERC20.ERC20Service
+struct ERC20Service_tBAC6D3868CE498F01EA1A11F8850CE3724737332;
+// Nethereum.Contracts.Standards.ERC721.ERC721Service
+struct ERC721Service_tF8C45C07FEEFDEBBD4948DAC26C8BD00047C7EAA;
+// Nethereum.Contracts.Standards.ENS.ETHRegistrarControllerService
+struct ETHRegistrarControllerService_t09E959A092BA2FC12452828AF6D92D77C643858A;
+// Nethereum.Contracts.Standards.ENS.EnsUtil
+struct EnsUtil_tBA50C42CACE832035518B570425CE5B85114CE6E;
+// Nethereum.Contracts.Services.EthApiContractService
+struct EthApiContractService_t59E062A2A158CB66E96C7858A003A32427F337B5;
+// Nethereum.RPC.EthApiService
+struct EthApiService_tD9B555F28B0008E999D5B0EEC8A063418522921A;
+// Nethereum.Contracts.Services.EthGetContractTransactionErrorReason
+struct EthGetContractTransactionErrorReason_t8880DCF9896FE345F9F9416989019ADDA609BC32;
+// Nethereum.Contracts.Standards.ENS.EthTLSService
+struct EthTLSService_t79D14B3001E560EF02929D4DE7B8AE45E4F53C86;
+// System.Exception
+struct Exception_t;
+// Nethereum.ABI.FunctionEncoding.FunctionCallDecoder
+struct FunctionCallDecoder_tBF1B971B077F309052FE8984C9EA3C169FF8C150;
+// Nethereum.Contracts.FunctionMessage
+struct FunctionMessage_t6C573C6BC76231A80D41D066556324BB97620287;
+// Nethereum.Hex.HexTypes.HexBigInteger
+struct HexBigInteger_tFD9189302CC4BD35091F94D48E460B5D2D5CA811;
+// Nethereum.RPC.Accounts.IAccount
+struct IAccount_t2D498E1E6AF11CFDB79F07A7D78532E396F852D0;
+// Nethereum.RPC.AccountSigning.IAccountSigningService
+struct IAccountSigningService_t6AE095CD4297AB3ED57A1F6B4ABEC8A9C5B684DC;
+// System.Runtime.CompilerServices.IAsyncStateMachine
+struct IAsyncStateMachine_t0680C7F905C553076B552D5A1A6E39E2F0F36AA2;
+// Nethereum.JsonRpc.Client.IClient
+struct IClient_t3F4473F20A6C2C4B7F392E89E960C7F7D2792ABA;
+// Nethereum.Contracts.IDeployContract
+struct IDeployContract_tB71C991EE3474A64152F5EE64A1E527D4B425975;
+// System.Collections.IDictionary
+struct IDictionary_t6D03155AF1FA9083817AA5B6AD7DEEACC26AB220;
+// Nethereum.Contracts.Standards.ENS.IEnsCCIPService
+struct IEnsCCIPService_tFB23B56352CB78DE2C9D2516E2FB98877A25CE5B;
+// Nethereum.RPC.Eth.IEthAccounts
+struct IEthAccounts_t00546381284D96A6BFE1E34CA9EA01066FCE2819;
+// Nethereum.RPC.Eth.Services.IEthApiBlockService
+struct IEthApiBlockService_tDE24E9F997691035A6DE6DD5C7D60CD6FFFED796;
+// Nethereum.RPC.Eth.Services.IEthApiCompilerService
+struct IEthApiCompilerService_t21A90D2994D8E1BF7B8941C2037DF10DE51242AC;
+// Nethereum.Contracts.Services.IEthApiContractService
+struct IEthApiContractService_t13C3A411F7A2BF56D2D15CA1A9386FAF0EE30FFE;
+// Nethereum.RPC.Eth.Services.IEthApiFilterService
+struct IEthApiFilterService_t7FC961F91D2EDB9E547465D975C80EA4D3C0A117;
+// Nethereum.RPC.Eth.Services.IEthApiMiningService
+struct IEthApiMiningService_t6F3A7CBA6CD519192BECE73AD8195281D944416B;
+// Nethereum.RPC.Eth.Services.IEthApiTransactionsService
+struct IEthApiTransactionsService_t684CA7A5B2E064233016F734CC936F8BA278C99B;
+// Nethereum.RPC.Eth.Services.IEthApiUncleService
+struct IEthApiUncleService_t90FBF238AC2059D7B92F2810FD67D6D6E88AF831;
+// Nethereum.RPC.Eth.IEthChainId
+struct IEthChainId_t6F760A47BFCA5F57656DC498816F4C54D37C5522;
+// Nethereum.RPC.Eth.ChainValidation.IEthChainProofValidationService
+struct IEthChainProofValidationService_t1AE8DB0621189F5E275A823C09B416EA291ED5E2;
+// Nethereum.RPC.Eth.IEthCoinBase
+struct IEthCoinBase_tE799E14FD780B2C19DA572043A3ECE7746F462AD;
+// Nethereum.RPC.Eth.IEthCreateAccessList
+struct IEthCreateAccessList_tF506A08C22A9576C6CFC50CF7626BE76E5B533B7;
+// Nethereum.RPC.Eth.Transactions.IEthFeeHistory
+struct IEthFeeHistory_tA3BA01E561868B9B539D5D9854C9EF6A7AE390A9;
+// Nethereum.RPC.Eth.IEthGasPrice
+struct IEthGasPrice_tA3DD174251A19B128C6544CA281A2BD1042B85B4;
+// Nethereum.RPC.Eth.IEthGetBalance
+struct IEthGetBalance_tECB93783C8EF2253FC04F8528B370E8B8C718AB7;
+// Nethereum.RPC.Eth.IEthGetCode
+struct IEthGetCode_t3B50E9B3581622F9DA69B3351C51719655D894ED;
+// Nethereum.Contracts.Services.IEthGetContractTransactionErrorReason
+struct IEthGetContractTransactionErrorReason_t53F0793622ABBAC4EF249B61A98E83168A36A3F1;
+// Nethereum.RPC.Eth.IEthGetProof
+struct IEthGetProof_tC4A9005CB6B9AA0493D2D2DEC4D0546CBA02DC2B;
+// Nethereum.RPC.Eth.IEthGetStorageAt
+struct IEthGetStorageAt_t64D1336D1F0F7914CBE0BEA48E0D4C4135D25A9B;
+// Nethereum.RPC.Eth.IEthProtocolVersion
+struct IEthProtocolVersion_tAB6C87FA0CEFAA5948EFA49A991BCA6D5E5161FB;
+// Nethereum.RPC.Eth.IEthSign
+struct IEthSign_t44ACEA3A928C4FA5869E47B65D4D225485AFE387;
+// Nethereum.RPC.Eth.IEthSyncing
+struct IEthSyncing_t6A1F2AA50A134297DA89F36C7BAAAB44724A52DC;
+// Nethereum.RPC.HostWallet.IHostWalletService
+struct IHostWalletService_t6D1558919E6ABC8BF51FDFEB8AABD471916DCC98;
+// Nethereum.Contracts.TransactionHandlers.MultiSend.IMultiSendInput
+struct IMultiSendInput_t2E4EFCD4930C58011CC9678D8F9F5F8B704C2C33;
+// Nethereum.Contracts.QueryHandlers.MultiCall.IMulticallInputOutput
+struct IMulticallInputOutput_t72FE874FCD4D853123B64A7D57DEDF51D2660F7D;
+// Nethereum.RPC.TransactionManagers.ITransactionManager
+struct ITransactionManager_t93C7C810748D626CB18E930ADCB2A2571F8426A1;
+// System.Reflection.MethodInfo
+struct MethodInfo_t;
+// Nethereum.Contracts.QueryHandlers.MultiCall.MultiQueryHandler
+struct MultiQueryHandler_tD5E9074899A83693F74D77C94F903D4AA15753CE;
+// Nethereum.Contracts.TransactionHandlers.MultiSend.MultiSendEncoder
+struct MultiSendEncoder_t29F9D54EF46EAA3CB6436DF5F12E4E3372D8EF09;
+// Nethereum.Contracts.TransactionHandlers.MultiSend.MultiSendFunction
+struct MultiSendFunction_t283117F8190279FA3307712FD93408FF3B0EE292;
+// Nethereum.Contracts.Standards.ENS.ENSRegistry.ContractDefinition.NewOwnerEventDTO
+struct NewOwnerEventDTO_tB3ABBA316EFFA6FEA8C4DCE23B41B015FA121FF9;
+// Nethereum.Contracts.Standards.ENS.ENSRegistry.ContractDefinition.NewOwnerEventDTOBase
+struct NewOwnerEventDTOBase_t4F993F65DA1CF39F8C7D70E6FD87B50F4B015AE1;
+// Nethereum.Contracts.Standards.ENS.ENSRegistry.ContractDefinition.NewResolverEventDTO
+struct NewResolverEventDTO_t86B8DF397561CAA7804E5A35CBA8CBA918A9CC83;
+// Nethereum.Contracts.Standards.ENS.ENSRegistry.ContractDefinition.NewResolverEventDTOBase
+struct NewResolverEventDTOBase_t152850104E6A8E393DBBAEEE524EC6EA5ADC88B7;
+// Nethereum.Contracts.Standards.ENS.ENSRegistry.ContractDefinition.NewTTLEventDTO
+struct NewTTLEventDTO_t69EC8E72E9CE4B7A187EA528944DBB2BF546040E;
+// Nethereum.Contracts.Standards.ENS.ENSRegistry.ContractDefinition.NewTTLEventDTOBase
+struct NewTTLEventDTOBase_t75B6BF9AFE182206553103335F8A3846297A2684;
+// Nethereum.Contracts.Standards.ENS.ENSRegistry.ContractDefinition.OwnerOutputDTO
+struct OwnerOutputDTO_t3F2685122A23340F2CB8C78DFBACC55F23636457;
+// Nethereum.Contracts.Standards.ENS.ENSRegistry.ContractDefinition.OwnerOutputDTOBase
+struct OwnerOutputDTOBase_t47ACEBC9D43D5A131E505BD251667FC04917D4B4;
+// Nethereum.Contracts.Standards.ProofOfHumanity.ProofOfHumanityService
+struct ProofOfHumanityService_t9FE5FAAF5CE7C444E3C02617BB45765D9D18E0EB;
+// Nethereum.Contracts.Standards.ENS.PublicResolverService
+struct PublicResolverService_tCECF093D533E6885D5C1289439204183C489CD15;
+// Nethereum.Contracts.Standards.ENS.ENSRegistry.ContractDefinition.ResolverOutputDTO
+struct ResolverOutputDTO_t347A5FFBC91FF2890808777A977A44D4ED316BF1;
+// Nethereum.Contracts.Standards.ENS.ENSRegistry.ContractDefinition.ResolverOutputDTOBase
+struct ResolverOutputDTOBase_t0CDAA5919146EB924331972B02CE06B77995BCFD;
+// Nethereum.Contracts.QueryHandlers.MultiCall.Result
+struct Result_t865E183DF9D3C68AAB7A99BD699A08BD8CBC9CF4;
+// Nethereum.Contracts.QueryHandlers.MultiCall.ResultBase
+struct ResultBase_t3EE4F4314BE00242DA42DCAE822CB8859C6A95E5;
+// Nethereum.RPC.RpcClientWrapper
+struct RpcClientWrapper_t639264795AA92FB47F8CBBE7183EEBFE0A565854;
+// Nethereum.JsonRpc.Client.RpcError
+struct RpcError_tAD1135D857DA241213F9FB00B8F3DED920AD00E3;
+// Nethereum.JsonRpc.Client.RpcResponseException
+struct RpcResponseException_tC6370C6CDE2D7E420D34DC0EDC15FF7CDD7B062F;
+// System.Runtime.Serialization.SafeSerializationManager
+struct SafeSerializationManager_tCBB85B95DFD1634237140CD892E82D06ECB3F5E6;
+// System.Threading.Tasks.StackGuard
+struct StackGuard_tACE063A1B7374BDF4AD472DE4585D05AD8745352;
+// System.String
+struct String_t;
+// System.Threading.Tasks.TaskFactory
+struct TaskFactory_tF781BD37BE23917412AD83424D1497C7C1509DF0;
+// System.Threading.Tasks.TaskScheduler
+struct TaskScheduler_t3F0550EBEF7C41F74EC8C08FF4BED0D8CE66006E;
+// Nethereum.RPC.Eth.DTOs.Transaction
+struct Transaction_t42AF58898C5DCF5C2ECE238B8C471CD48B389A33;
+// Nethereum.RPC.Eth.DTOs.TransactionInput
+struct TransactionInput_t1B3DDEE42CE0171754109975B2FEF1C660E20EF2;
+// Nethereum.Contracts.Standards.ENS.ENSRegistry.ContractDefinition.TransferEventDTO
+struct TransferEventDTO_tD8B5A15190F98A22919D5CFC9AB36EAC39E8572E;
+// Nethereum.Contracts.Standards.ENS.ENSRegistry.ContractDefinition.TransferEventDTOBase
+struct TransferEventDTOBase_t51D219DAA28F2C3153574E724F5DE845D80E7DF2;
+// Nethereum.Contracts.Standards.ENS.ENSRegistry.ContractDefinition.TtlOutputDTO
+struct TtlOutputDTO_t6CE15EC754EC089DB2F604C281B7363C82F23C8E;
+// Nethereum.Contracts.Standards.ENS.ENSRegistry.ContractDefinition.TtlOutputDTOBase
+struct TtlOutputDTOBase_tF9B8C65D01AB7B3CD9AB43F3F58629CE0735080C;
+// System.Void
+struct Void_t4861ACF8F4594C3437BB48B6E56783494B843915;
+// Nethereum.Contracts.QueryHandlers.MultiCall.MultiQueryHandler/<>c
+struct U3CU3Ec_t00AE82A6DB248488B8693FE413EA91A294DF7971;
+// System.Threading.Tasks.Task/ContingentProperties
+struct ContingentProperties_t3FA59480914505CEA917B1002EC675F29D0CB540;
+
+IL2CPP_EXTERN_C RuntimeClass* ABIEncode_t95CFC96B6E0E5D79DC62FF6969A0768A6C90C5CD_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* ABIValueU5BU5D_t5053A4AB39A1EDA3F954A7A8BAD52DF73676F8E5_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* ABIValue_t53C363B3F7F73B7F8F0D7804041B2B3ED1041567_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Aggregate3Function_t22B497CF7B74F9B7EAE57E49F180946D62DE0A80_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Aggregate3ValueFunction_t7255D88599D2644B8FD0B19D72639F0F5D2521CC_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* AggregateFunction_tFEE01853E17B270CE0A401F2931520B99AE9A0A7_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* AsyncTaskMethodBuilder_1_tA28B0962049DC249BEC0054E2394B1962E28E90E_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* AsyncTaskMethodBuilder_1_tFF884780053FBFD2BEEA42DC0DFF882656BBE992_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* BigInteger_tF7779A0AA6D6B9BE0E0C1C293E7708765DEF7D0F_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* BlockParameter_t13CF5CC9CDE990ACD945748B2FA7F19EA0A06AD9_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Call3Value_t18A4350E7B502FCB224229CDA7B21BF37C8C6DA6_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Call3_t7D0A3BDA2EE93E4FE48F20496F1A5C2723BABB8D_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Call_t924086EAD3B3E4D52DE52E6E060F04753C2B15A7_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* ContractHandler_t3CC1E74BCBEFB5D4531C7BA554B008F0149B1DF7_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Contract_t519479FAD68F68E0E702B217CB2E26140F39C974_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* DeployContract_tDA5FAC0330CF3A47EE209848EBC4585CDAC09782_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* ENSService_t1AF55C7FB4B642A1E34630FECB36139454F7ACB9_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* ERC1155Service_t5929D51764AC25462FF1071BAA5AFD39D39AC0E4_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* ERC1271Service_t5D362FEC8F9FB4A4A43BC1094CDC1E4EFE768893_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* ERC20Service_tBAC6D3868CE498F01EA1A11F8850CE3724737332_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* ERC721Service_tF8C45C07FEEFDEBBD4948DAC26C8BD00047C7EAA_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* EthGetContractTransactionErrorReason_t8880DCF9896FE345F9F9416989019ADDA609BC32_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* EthTLSService_t79D14B3001E560EF02929D4DE7B8AE45E4F53C86_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Exception_t_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Func_2_tC7D8CC18CA3EE41739FE11EB4C3AF3F712E0FAA8_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* FunctionCallDecoder_tBF1B971B077F309052FE8984C9EA3C169FF8C150_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* IAccount_t2D498E1E6AF11CFDB79F07A7D78532E396F852D0_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* IEnumerable_1_t44EC2B417A72A41ECF9FD69EF8C384E088A8515B_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* IEnumerable_1_t745534CF81650D4254BC02BFCD2B1B8820E7BF29_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* IEnumerator_1_tC8E01656282D76E53F1878036BBE73A4500CBF53_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* IEnumerator_1_tCF8E0EFC32EEDED984386ADF4EA697E26CEED336_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* IEnumerator_t7B609C2FFA6EB5167D9C62A0C32A21DE2F666DAA_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* IEthApiTransactionsService_t684CA7A5B2E064233016F734CC936F8BA278C99B_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* IEthCall_t148594ABBBFFA77CC739613326CA891F33BB4658_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* IEthGetTransactionByHash_t0D1C62F99A1E9573145B6BD73A68A4240B3890BE_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* IMultiSendInput_t2E4EFCD4930C58011CC9678D8F9F5F8B704C2C33_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* IMulticallInputOutput_t72FE874FCD4D853123B64A7D57DEDF51D2660F7D_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* ITransactionManager_t93C7C810748D626CB18E930ADCB2A2571F8426A1_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* List_1_t1CFC44309FCDA176EA29234D4ABE7C7F1C7195FE_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* List_1_t376C4E85EFA0FB2C83DA6AEC65B0D3D437A82B0E_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* List_1_t4C68E546060D764C99C1B962BB2C011B0A5EBA19_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* List_1_t7D15BE3246500BBF1A24C24DBF963B89A876255B_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* List_1_t913451B7A13CEE27B44C60CE4E1378612824AE38_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* MultiQueryHandler_tD5E9074899A83693F74D77C94F903D4AA15753CE_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* ProofOfHumanityService_t9FE5FAAF5CE7C444E3C02617BB45765D9D18E0EB_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* QueryToDTOHandler_2_t64FE28F3E7A92C671B9E70A24D8300951F42BBF7_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* QueryToDTOHandler_2_t7D6D14A0D064D41148382C0FCC8E4921D012F2F6_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* QueryToDTOHandler_2_tC8135E5F07B2BB7F4F689C6CD58C234921665415_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* RpcResponseException_tC6370C6CDE2D7E420D34DC0EDC15FF7CDD7B062F_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* String_t_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* U3CU3Ec_t00AE82A6DB248488B8693FE413EA91A294DF7971_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C String_t* _stringLiteral686CC5FDF9B42C500A69583F7174DE583365E0B8;
+IL2CPP_EXTERN_C String_t* _stringLiteral77B615B8ED1ABB8FC1395D85A5AE524A9789D947;
+IL2CPP_EXTERN_C String_t* _stringLiteral8A577A5A6848BEDC7A1DBA1211A06E627EEF0057;
+IL2CPP_EXTERN_C String_t* _stringLiteral9515720F4DC1A9394D26692B94A1D522D54DED9A;
+IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisConfiguredTaskAwaiter_t09B651400CE1B2687A813877C97A9E352E771CA5_TisU3CSendRequestAsyncU3Ed__2_t620A679FE13A3D919AFF550C2DB3D598D630D84F_m065557E89174F30396CDAEAA063115FE61958D28_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisConfiguredTaskAwaiter_t2FB4C6E80ED7E994AC6CEEEB6572E51978E07756_TisU3CMultiCallAsyncU3Ed__13_t7A391C1FA6573DA0FC973869DE104C0D039BBC62_m4C47F510C9613FE345CDFF6C20F9320C3448CF9E_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisConfiguredTaskAwaiter_t4E5F0C451DB5E8CE300D5CA0DFA6DB7EBF62A859_TisU3CSendRequestAsyncU3Ed__2_t620A679FE13A3D919AFF550C2DB3D598D630D84F_m81DAE2339E73D43CD44ABAE0969F79B0198BB1AD_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisConfiguredTaskAwaiter_tBFC63C1299C54709ABE6BDEB21685AA9B3534BB9_TisU3CMultiCallV1AsyncU3Ed__10_t6910A8C2210A3573C94630F3B1F18F910914F89B_mCDDB7B2805DAC327EB71B6DF672686F17C1C507D_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisConfiguredTaskAwaiter_tEDA8191B4B5EA1357682A9F21488544BE1C12100_TisU3CMultiCallAsyncU3Ed__13_t7A391C1FA6573DA0FC973869DE104C0D039BBC62_m8F32A56B1A2F50A23E021F6155437462690E5FB8_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_Create_m197A98AAF3107177592BEB247F89AA1031D34F04_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_Create_mDEA9352DE851695421F6488EC71FDD8FA221422D_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_SetException_m0ACCACB23B9915B4A6998DE6F99A36C4E2A6C813_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_SetException_m897218C2DB8D7BA446EB263573085805B8F0638C_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_SetResult_mB79121C0ACAC704500FAA7350ED0FE6604DDA05E_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_SetResult_mD06C693C6C2515CCBE2063E73AB019F42D162F5D_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_SetStateMachine_mCC41F473635FB600B7EAF175A3E2950D1F875697_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_SetStateMachine_mE4D48B78E50CA2A3650A856ACF86A3CFBA249C30_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_Start_TisU3CMultiCallAsyncU3Ed__13_t7A391C1FA6573DA0FC973869DE104C0D039BBC62_m07E08B26709F71422F875F8CC3E8A83EEFC433C9_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_Start_TisU3CMultiCallV1AsyncU3Ed__10_t6910A8C2210A3573C94630F3B1F18F910914F89B_mF89E7F8E89F2F692DDC77FA5369701D03D6DB834_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_Start_TisU3CSendRequestAsyncU3Ed__2_t620A679FE13A3D919AFF550C2DB3D598D630D84F_m1C61C0A0E6DAC3B0D7AD3B05F3D66F34ECC828D2_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_get_Task_m01EB243CF4396C9A2645F71572B47CF12151974E_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_get_Task_mAF86E2BC0C8EC0F757C00619A9215EA8084DD705_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* ConfiguredTaskAwaitable_1_GetAwaiter_m1B0B397082EEAA03681ABED612D63AC1E7E429F1_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* ConfiguredTaskAwaitable_1_GetAwaiter_m499517F289AF7608AFB263C64EFF096A2AB6FFD2_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* ConfiguredTaskAwaitable_1_GetAwaiter_m9F29BD0034E006094B8D9568472CD418F3918817_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* ConfiguredTaskAwaitable_1_GetAwaiter_mC383D8B5E3F54D598A9E5121F4705FF46889A617_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* ConfiguredTaskAwaitable_1_GetAwaiter_mD759E8CEA360EE798DDC6FA31F3DD751A0716921_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* ConfiguredTaskAwaiter_GetResult_m09C74DFD8415A124C885DF96C8F7CE7D85EED9E8_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* ConfiguredTaskAwaiter_GetResult_m2B760215FB834DEDFFD926EF768005D4105C9BF2_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* ConfiguredTaskAwaiter_GetResult_m6658C545A7073EF424111F058F5C7E902D3A13FC_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* ConfiguredTaskAwaiter_GetResult_m9668EE538C7E4E8263EBB5A75BF504D7D9F52CEE_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* ConfiguredTaskAwaiter_GetResult_mA9FAFA1779F3BA781AEF8E4D1ABCF6AAF9AAEC92_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* ConfiguredTaskAwaiter_get_IsCompleted_m00EDE1ABFF674F0D8F1558BAFAA61CF3F5D95CF2_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* ConfiguredTaskAwaiter_get_IsCompleted_m3588018AD46B52E87753241CB7F14FADAF179B06_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* ConfiguredTaskAwaiter_get_IsCompleted_m41C944A82DCBFB2F5D4D1607A8127B06D3A11CB0_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* ConfiguredTaskAwaiter_get_IsCompleted_m8D4E06776CC3D1BCF8762CF6059A4CB0BEBA01AE_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* ConfiguredTaskAwaiter_get_IsCompleted_mAC1C73BA777A087D963C01165753A73AC932B5A1_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* EnumerableExtensions_Batch_TisIMulticallInputOutput_t72FE874FCD4D853123B64A7D57DEDF51D2660F7D_m4F5C7CDEFE512961CD86B9AE752ACDF140598484_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Enumerable_Any_TisIMulticallInputOutput_t72FE874FCD4D853123B64A7D57DEDF51D2660F7D_m438E5DF4C41F2F395150B23440552AEBF4EA9E3F_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* HexRPCType_1_op_Inequality_mABC696C29299C847083DB8364B468AEB2428264F_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1_AddRange_m4E73F27EF20C2FEFA3C915E077897B44B81AB3ED_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1_AddRange_mF51C7242A9710C837B9158D0D120549E49E4FB67_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1_Add_m4C91A565FE73573B12913F69B8E7A133EB249306_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1_Add_m5B0347BAF9AB096A5225AAEC5789F1F9F197742F_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1_Add_m8EBF3734BC2E70B315260F2E835D3E0CAA8D49D1_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1_ToArray_m23F8BB7CABADC11EBCAB5AB701B75F56C865BE24_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1__ctor_m610C0A18A37462C4A1E9690E11480C43E03E9037_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1__ctor_m92A69918A8E69207437628E483BD3228129B0A53_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1__ctor_mA4C23E545EC9157AD620B777B5A48468C399D99E_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1__ctor_mB94853C492429E068CE0F34FD22E6F6CF58228C4_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1__ctor_mC411581553467A7DB76C06E5E5FCA34E4EC621B9_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1_get_Count_m88FEB2D94E35C258B61F53400F7CA20E99A7DAD3_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1_get_Count_m8F228A7E2CCAB2F477D8C2F7BB27E6993FF5A8F5_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1_get_Item_m2C6A207D8824FE873045A66C942593AE67D90CA6_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1_get_Item_mD79820936BC671C6A1F274AECEDF5055A0D441C6_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* QueryDecoderBaseHandler_2_QueryAsync_m28A5D30F0D4BD1C7BCFA9BCE726DB7663B29A6DB_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* QueryDecoderBaseHandler_2_QueryAsync_m454BDD4BDB95AD7364754A4E35D76B686BDB15EE_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* QueryDecoderBaseHandler_2_QueryAsync_m862AE7AF6A7CF60A0252E0696CE231A3C21C486B_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* QueryToDTOHandler_2__ctor_m4A57C1F8A844F4DC1353B3BEF8955734DC42BC7A_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* QueryToDTOHandler_2__ctor_m793B56FA96BC10E5889BC2ADB2946F952E77000C_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* QueryToDTOHandler_2__ctor_mED56E92453BE3550B2614270409F077A76CAC156_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Task_1_ConfigureAwait_m02A78FAEA35BD451D79DC5320BC6ACAAC3B4B9BB_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Task_1_ConfigureAwait_m4F07E8910F092E0463273871F61F91B755100DBF_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Task_1_ConfigureAwait_mAC8032B38D47D60D57BF1E421E6774C1C50A0CB8_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Task_1_ConfigureAwait_mC8640660BF0553DAB850EB5EAA4412E8C813DE46_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Task_1_ConfigureAwait_mF1D45A54CCDC655FB468D91EBA2D10610F36F8C7_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec_U3CMultiCallAsyncU3Eb__13_0_m9085E65816C8AA2400803ABA0B2FE7EFC7087D67_RuntimeMethod_var;
+struct Delegate_t_marshaled_com;
+struct Delegate_t_marshaled_pinvoke;
+struct Exception_t_marshaled_com;
+struct Exception_t_marshaled_pinvoke;
+
+struct ABIValueU5BU5D_t5053A4AB39A1EDA3F954A7A8BAD52DF73676F8E5;
+struct ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031;
+struct IMultiSendInputU5BU5D_t0A5262003FB6442DE35A0573C6BDE76A153EDE8F;
+struct IMulticallInputOutputU5BU5D_t7D33DBDC42EE714A687264BC9F3C6C6AED3885F7;
+struct ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918;
+
+IL2CPP_EXTERN_C_BEGIN
+IL2CPP_EXTERN_C_END
+
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// System.Collections.Generic.List`1<System.Byte[]>
+struct List_1_tBFF9DD9FFA06F20E74F9D7AD36610BD754D353A4  : public RuntimeObject
+{
+	// T[] System.Collections.Generic.List`1::_items
+	ByteU5BU5DU5BU5D_t19A0C6D66F22DF673E9CDB37DEF566FE0EC947FA* ____items_1;
+	// System.Int32 System.Collections.Generic.List`1::_size
+	int32_t ____size_2;
+	// System.Int32 System.Collections.Generic.List`1::_version
+	int32_t ____version_3;
+	// System.Object System.Collections.Generic.List`1::_syncRoot
+	RuntimeObject* ____syncRoot_4;
+};
+
+struct List_1_tBFF9DD9FFA06F20E74F9D7AD36610BD754D353A4_StaticFields
+{
+	// T[] System.Collections.Generic.List`1::s_emptyArray
+	ByteU5BU5DU5BU5D_t19A0C6D66F22DF673E9CDB37DEF566FE0EC947FA* ___s_emptyArray_5;
+};
+
+// System.Collections.Generic.List`1<Nethereum.RPC.Eth.DTOs.AccessList>
+struct List_1_t4E11F5D2075471CC5269E680568592D8D061C750  : public RuntimeObject
+{
+	// T[] System.Collections.Generic.List`1::_items
+	AccessListU5BU5D_t923FFC19CDD93DD1C54788C39B7D7EA3B9716498* ____items_1;
+	// System.Int32 System.Collections.Generic.List`1::_size
+	int32_t ____size_2;
+	// System.Int32 System.Collections.Generic.List`1::_version
+	int32_t ____version_3;
+	// System.Object System.Collections.Generic.List`1::_syncRoot
+	RuntimeObject* ____syncRoot_4;
+};
+
+struct List_1_t4E11F5D2075471CC5269E680568592D8D061C750_StaticFields
+{
+	// T[] System.Collections.Generic.List`1::s_emptyArray
+	AccessListU5BU5D_t923FFC19CDD93DD1C54788C39B7D7EA3B9716498* ___s_emptyArray_5;
+};
+
+// System.Collections.Generic.List`1<System.Byte>
+struct List_1_t7D15BE3246500BBF1A24C24DBF963B89A876255B  : public RuntimeObject
+{
+	// T[] System.Collections.Generic.List`1::_items
+	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ____items_1;
+	// System.Int32 System.Collections.Generic.List`1::_size
+	int32_t ____size_2;
+	// System.Int32 System.Collections.Generic.List`1::_version
+	int32_t ____version_3;
+	// System.Object System.Collections.Generic.List`1::_syncRoot
+	RuntimeObject* ____syncRoot_4;
+};
+
+struct List_1_t7D15BE3246500BBF1A24C24DBF963B89A876255B_StaticFields
+{
+	// T[] System.Collections.Generic.List`1::s_emptyArray
+	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___s_emptyArray_5;
+};
+
+// System.Collections.Generic.List`1<Nethereum.Contracts.QueryHandlers.MultiCall.Call>
+struct List_1_t1CFC44309FCDA176EA29234D4ABE7C7F1C7195FE  : public RuntimeObject
+{
+	// T[] System.Collections.Generic.List`1::_items
+	CallU5BU5D_t6056D48DE0924D33B75B3310C6AEC5244B657874* ____items_1;
+	// System.Int32 System.Collections.Generic.List`1::_size
+	int32_t ____size_2;
+	// System.Int32 System.Collections.Generic.List`1::_version
+	int32_t ____version_3;
+	// System.Object System.Collections.Generic.List`1::_syncRoot
+	RuntimeObject* ____syncRoot_4;
+};
+
+struct List_1_t1CFC44309FCDA176EA29234D4ABE7C7F1C7195FE_StaticFields
+{
+	// T[] System.Collections.Generic.List`1::s_emptyArray
+	CallU5BU5D_t6056D48DE0924D33B75B3310C6AEC5244B657874* ___s_emptyArray_5;
+};
+
+// System.Collections.Generic.List`1<Nethereum.Contracts.QueryHandlers.MultiCall.Call3>
+struct List_1_t913451B7A13CEE27B44C60CE4E1378612824AE38  : public RuntimeObject
+{
+	// T[] System.Collections.Generic.List`1::_items
+	Call3U5BU5D_t6AE118085174010B0C4A8D0E13ED3CB46515205E* ____items_1;
+	// System.Int32 System.Collections.Generic.List`1::_size
+	int32_t ____size_2;
+	// System.Int32 System.Collections.Generic.List`1::_version
+	int32_t ____version_3;
+	// System.Object System.Collections.Generic.List`1::_syncRoot
+	RuntimeObject* ____syncRoot_4;
+};
+
+struct List_1_t913451B7A13CEE27B44C60CE4E1378612824AE38_StaticFields
+{
+	// T[] System.Collections.Generic.List`1::s_emptyArray
+	Call3U5BU5D_t6AE118085174010B0C4A8D0E13ED3CB46515205E* ___s_emptyArray_5;
+};
+
+// System.Collections.Generic.List`1<Nethereum.Contracts.QueryHandlers.MultiCall.Call3Value>
+struct List_1_t376C4E85EFA0FB2C83DA6AEC65B0D3D437A82B0E  : public RuntimeObject
+{
+	// T[] System.Collections.Generic.List`1::_items
+	Call3ValueU5BU5D_t42FBCFE3413ECA25816A4901C03A38399CCDA956* ____items_1;
+	// System.Int32 System.Collections.Generic.List`1::_size
+	int32_t ____size_2;
+	// System.Int32 System.Collections.Generic.List`1::_version
+	int32_t ____version_3;
+	// System.Object System.Collections.Generic.List`1::_syncRoot
+	RuntimeObject* ____syncRoot_4;
+};
+
+struct List_1_t376C4E85EFA0FB2C83DA6AEC65B0D3D437A82B0E_StaticFields
+{
+	// T[] System.Collections.Generic.List`1::s_emptyArray
+	Call3ValueU5BU5D_t42FBCFE3413ECA25816A4901C03A38399CCDA956* ___s_emptyArray_5;
+};
+
+// System.Collections.Generic.List`1<System.Object>
+struct List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D  : public RuntimeObject
+{
+	// T[] System.Collections.Generic.List`1::_items
+	ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ____items_1;
+	// System.Int32 System.Collections.Generic.List`1::_size
+	int32_t ____size_2;
+	// System.Int32 System.Collections.Generic.List`1::_version
+	int32_t ____version_3;
+	// System.Object System.Collections.Generic.List`1::_syncRoot
+	RuntimeObject* ____syncRoot_4;
+};
+
+struct List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D_StaticFields
+{
+	// T[] System.Collections.Generic.List`1::s_emptyArray
+	ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ___s_emptyArray_5;
+};
+
+// System.Collections.Generic.List`1<Nethereum.Contracts.QueryHandlers.MultiCall.Result>
+struct List_1_t4C68E546060D764C99C1B962BB2C011B0A5EBA19  : public RuntimeObject
+{
+	// T[] System.Collections.Generic.List`1::_items
+	ResultU5BU5D_tABB84DEC32743FA205347BF1E50EE4F1B6FAC180* ____items_1;
+	// System.Int32 System.Collections.Generic.List`1::_size
+	int32_t ____size_2;
+	// System.Int32 System.Collections.Generic.List`1::_version
+	int32_t ____version_3;
+	// System.Object System.Collections.Generic.List`1::_syncRoot
+	RuntimeObject* ____syncRoot_4;
+};
+
+struct List_1_t4C68E546060D764C99C1B962BB2C011B0A5EBA19_StaticFields
+{
+	// T[] System.Collections.Generic.List`1::s_emptyArray
+	ResultU5BU5D_tABB84DEC32743FA205347BF1E50EE4F1B6FAC180* ___s_emptyArray_5;
+};
+
+// Nethereum.Contracts.QueryHandlers.QueryDecoderBaseHandler`2<Nethereum.Contracts.QueryHandlers.MultiCall.Aggregate3Function,Nethereum.Contracts.QueryHandlers.MultiCall.Aggregate3OutputDTO>
+struct QueryDecoderBaseHandler_2_t08FE3A73CCE55581281E2C0024779BB19E26AB1A  : public RuntimeObject
+{
+	// Nethereum.Contracts.QueryHandlers.QueryRawHandler`1<TFunctionMessage> Nethereum.Contracts.QueryHandlers.QueryDecoderBaseHandler`2::<QueryRawHandler>k__BackingField
+	QueryRawHandler_1_tBC23097A789BB359CD2E172A0E29267DDC356357* ___U3CQueryRawHandlerU3Ek__BackingField_0;
+};
+
+// Nethereum.Contracts.QueryHandlers.QueryDecoderBaseHandler`2<Nethereum.Contracts.QueryHandlers.MultiCall.Aggregate3ValueFunction,Nethereum.Contracts.QueryHandlers.MultiCall.Aggregate3ValueOutputDTO>
+struct QueryDecoderBaseHandler_2_tB4222E2288471D78079D35681CEDE89D5895BB43  : public RuntimeObject
+{
+	// Nethereum.Contracts.QueryHandlers.QueryRawHandler`1<TFunctionMessage> Nethereum.Contracts.QueryHandlers.QueryDecoderBaseHandler`2::<QueryRawHandler>k__BackingField
+	QueryRawHandler_1_tDA5ED37F8AB2AC9BD443E76C45E05F4546A09797* ___U3CQueryRawHandlerU3Ek__BackingField_0;
+};
+
+// Nethereum.Contracts.QueryHandlers.QueryDecoderBaseHandler`2<Nethereum.Contracts.QueryHandlers.MultiCall.AggregateFunction,Nethereum.Contracts.QueryHandlers.MultiCall.AggregateOutputDTO>
+struct QueryDecoderBaseHandler_2_t6C60BB3092F1A5B8450054CA473071243BC7D1D3  : public RuntimeObject
+{
+	// Nethereum.Contracts.QueryHandlers.QueryRawHandler`1<TFunctionMessage> Nethereum.Contracts.QueryHandlers.QueryDecoderBaseHandler`2::<QueryRawHandler>k__BackingField
+	QueryRawHandler_1_t3D4F4A22A0F7070290AEA67589C38C7BD62FCA7F* ___U3CQueryRawHandlerU3Ek__BackingField_0;
+};
+
+// Nethereum.ABI.ABIEncode
+struct ABIEncode_t95CFC96B6E0E5D79DC62FF6969A0768A6C90C5CD  : public RuntimeObject
+{
+};
+
+// Nethereum.ABI.ABIValue
+struct ABIValue_t53C363B3F7F73B7F8F0D7804041B2B3ED1041567  : public RuntimeObject
+{
+	// Nethereum.ABI.ABIType Nethereum.ABI.ABIValue::<ABIType>k__BackingField
+	ABIType_t172E4E77CEE1BB01CC15258100F24C2F01C78EE6* ___U3CABITypeU3Ek__BackingField_0;
+	// System.Object Nethereum.ABI.ABIValue::<Value>k__BackingField
+	RuntimeObject* ___U3CValueU3Ek__BackingField_1;
+};
+
+// Nethereum.Contracts.QueryHandlers.MultiCall.Aggregate3OutputDTOBase
+struct Aggregate3OutputDTOBase_tB7BB06CA8F766C33AF48AD8E5D67D74E0317D126  : public RuntimeObject
+{
+	// System.Collections.Generic.List`1<Nethereum.Contracts.QueryHandlers.MultiCall.Result> Nethereum.Contracts.QueryHandlers.MultiCall.Aggregate3OutputDTOBase::<ReturnData>k__BackingField
+	List_1_t4C68E546060D764C99C1B962BB2C011B0A5EBA19* ___U3CReturnDataU3Ek__BackingField_0;
+};
+
+// Nethereum.Contracts.QueryHandlers.MultiCall.Aggregate3ValueOutputDTOBase
+struct Aggregate3ValueOutputDTOBase_tDC53C967E48195592E4D38448A65DA8A8388FDF7  : public RuntimeObject
+{
+	// System.Collections.Generic.List`1<Nethereum.Contracts.QueryHandlers.MultiCall.Result> Nethereum.Contracts.QueryHandlers.MultiCall.Aggregate3ValueOutputDTOBase::<ReturnData>k__BackingField
+	List_1_t4C68E546060D764C99C1B962BB2C011B0A5EBA19* ___U3CReturnDataU3Ek__BackingField_0;
+};
+struct Il2CppArrayBounds;
+
+// Nethereum.RPC.Eth.DTOs.BlockParameter
+struct BlockParameter_t13CF5CC9CDE990ACD945748B2FA7F19EA0A06AD9  : public RuntimeObject
+{
+	// Nethereum.Hex.HexTypes.HexBigInteger Nethereum.RPC.Eth.DTOs.BlockParameter::<BlockNumber>k__BackingField
+	HexBigInteger_tFD9189302CC4BD35091F94D48E460B5D2D5CA811* ___U3CBlockNumberU3Ek__BackingField_0;
+	// Nethereum.RPC.Eth.DTOs.BlockParameter/BlockParameterType Nethereum.RPC.Eth.DTOs.BlockParameter::<ParameterType>k__BackingField
+	int32_t ___U3CParameterTypeU3Ek__BackingField_1;
+};
+
+// Nethereum.Contracts.QueryHandlers.MultiCall.Call3Base
+struct Call3Base_t2A9271175C8D98BBDC18239AAFEC4C820E539B2E  : public RuntimeObject
+{
+	// System.String Nethereum.Contracts.QueryHandlers.MultiCall.Call3Base::<Target>k__BackingField
+	String_t* ___U3CTargetU3Ek__BackingField_0;
+	// System.Boolean Nethereum.Contracts.QueryHandlers.MultiCall.Call3Base::<AllowFailure>k__BackingField
+	bool ___U3CAllowFailureU3Ek__BackingField_1;
+	// System.Byte[] Nethereum.Contracts.QueryHandlers.MultiCall.Call3Base::<CallData>k__BackingField
+	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___U3CCallDataU3Ek__BackingField_2;
+};
+
+// Nethereum.Contracts.QueryHandlers.MultiCall.CallBase
+struct CallBase_tDE3DC215CB2F6161608011057953C24D0C5F2D3F  : public RuntimeObject
+{
+	// System.String Nethereum.Contracts.QueryHandlers.MultiCall.CallBase::<Target>k__BackingField
+	String_t* ___U3CTargetU3Ek__BackingField_0;
+	// System.Byte[] Nethereum.Contracts.QueryHandlers.MultiCall.CallBase::<CallData>k__BackingField
+	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___U3CCallDataU3Ek__BackingField_1;
+};
+
+// Nethereum.RPC.Eth.DTOs.CallInput
+struct CallInput_t134727ED6D63AA0F8722CB06FEC85207CC5D3F9C  : public RuntimeObject
+{
+	// System.String Nethereum.RPC.Eth.DTOs.CallInput::_from
+	String_t* ____from_0;
+	// System.String Nethereum.RPC.Eth.DTOs.CallInput::_to
+	String_t* ____to_1;
+	// System.String Nethereum.RPC.Eth.DTOs.CallInput::_data
+	String_t* ____data_2;
+	// Nethereum.Hex.HexTypes.HexBigInteger Nethereum.RPC.Eth.DTOs.CallInput::<Gas>k__BackingField
+	HexBigInteger_tFD9189302CC4BD35091F94D48E460B5D2D5CA811* ___U3CGasU3Ek__BackingField_3;
+	// Nethereum.Hex.HexTypes.HexBigInteger Nethereum.RPC.Eth.DTOs.CallInput::<GasPrice>k__BackingField
+	HexBigInteger_tFD9189302CC4BD35091F94D48E460B5D2D5CA811* ___U3CGasPriceU3Ek__BackingField_4;
+	// Nethereum.Hex.HexTypes.HexBigInteger Nethereum.RPC.Eth.DTOs.CallInput::<Value>k__BackingField
+	HexBigInteger_tFD9189302CC4BD35091F94D48E460B5D2D5CA811* ___U3CValueU3Ek__BackingField_5;
+	// Nethereum.Hex.HexTypes.HexBigInteger Nethereum.RPC.Eth.DTOs.CallInput::<MaxFeePerGas>k__BackingField
+	HexBigInteger_tFD9189302CC4BD35091F94D48E460B5D2D5CA811* ___U3CMaxFeePerGasU3Ek__BackingField_6;
+	// Nethereum.Hex.HexTypes.HexBigInteger Nethereum.RPC.Eth.DTOs.CallInput::<MaxPriorityFeePerGas>k__BackingField
+	HexBigInteger_tFD9189302CC4BD35091F94D48E460B5D2D5CA811* ___U3CMaxPriorityFeePerGasU3Ek__BackingField_7;
+	// Nethereum.Hex.HexTypes.HexBigInteger Nethereum.RPC.Eth.DTOs.CallInput::<Type>k__BackingField
+	HexBigInteger_tFD9189302CC4BD35091F94D48E460B5D2D5CA811* ___U3CTypeU3Ek__BackingField_8;
+	// Nethereum.Hex.HexTypes.HexBigInteger Nethereum.RPC.Eth.DTOs.CallInput::<ChainId>k__BackingField
+	HexBigInteger_tFD9189302CC4BD35091F94D48E460B5D2D5CA811* ___U3CChainIdU3Ek__BackingField_9;
+};
+
+// Nethereum.Contracts.Constants.CommonAddresses
+struct CommonAddresses_tF9534712CEDF086A47D6D13662A614F84F29BACE  : public RuntimeObject
+{
+};
+
+// Nethereum.Contracts.Contract
+struct Contract_t519479FAD68F68E0E702B217CB2E26140F39C974  : public RuntimeObject
+{
+	// Nethereum.Contracts.ContractBuilder Nethereum.Contracts.Contract::<ContractBuilder>k__BackingField
+	ContractBuilder_t14BF3287A496067FA2F4197DA0D8A8F29F60C11B* ___U3CContractBuilderU3Ek__BackingField_0;
+	// Nethereum.RPC.EthApiService Nethereum.Contracts.Contract::<Eth>k__BackingField
+	EthApiService_tD9B555F28B0008E999D5B0EEC8A063418522921A* ___U3CEthU3Ek__BackingField_1;
+};
+
+// Nethereum.Contracts.ContractHandlers.ContractHandler
+struct ContractHandler_t3CC1E74BCBEFB5D4531C7BA554B008F0149B1DF7  : public RuntimeObject
+{
+	// System.String Nethereum.Contracts.ContractHandlers.ContractHandler::<AddressFrom>k__BackingField
+	String_t* ___U3CAddressFromU3Ek__BackingField_0;
+	// System.String Nethereum.Contracts.ContractHandlers.ContractHandler::<ContractAddress>k__BackingField
+	String_t* ___U3CContractAddressU3Ek__BackingField_1;
+	// Nethereum.Contracts.Services.EthApiContractService Nethereum.Contracts.ContractHandlers.ContractHandler::<EthApiContractService>k__BackingField
+	EthApiContractService_t59E062A2A158CB66E96C7858A003A32427F337B5* ___U3CEthApiContractServiceU3Ek__BackingField_2;
+};
+
+// Nethereum.Contracts.ContractHandlers.ContractTransactionHandlerBase
+struct ContractTransactionHandlerBase_t8D5503838C4576B88F52071D89FFF2CAC2ACCF29  : public RuntimeObject
+{
+	// Nethereum.JsonRpc.Client.IClient Nethereum.Contracts.ContractHandlers.ContractTransactionHandlerBase::<Client>k__BackingField
+	RuntimeObject* ___U3CClientU3Ek__BackingField_0;
+	// Nethereum.RPC.Accounts.IAccount Nethereum.Contracts.ContractHandlers.ContractTransactionHandlerBase::<Account>k__BackingField
+	RuntimeObject* ___U3CAccountU3Ek__BackingField_1;
+	// Nethereum.RPC.TransactionManagers.ITransactionManager Nethereum.Contracts.ContractHandlers.ContractTransactionHandlerBase::<TransactionManager>k__BackingField
+	RuntimeObject* ___U3CTransactionManagerU3Ek__BackingField_2;
+};
+
+// Nethereum.Contracts.DeployContract
+struct DeployContract_tDA5FAC0330CF3A47EE209848EBC4585CDAC09782  : public RuntimeObject
+{
+	// Nethereum.Contracts.DeployContractTransactionBuilder Nethereum.Contracts.DeployContract::_deployContractTransactionBuilder
+	DeployContractTransactionBuilder_t5D54EB077FC26399F32850CD5678C48C0CA0F681* ____deployContractTransactionBuilder_0;
+	// Nethereum.RPC.TransactionManagers.ITransactionManager Nethereum.Contracts.DeployContract::<TransactionManager>k__BackingField
+	RuntimeObject* ___U3CTransactionManagerU3Ek__BackingField_1;
+};
+
+// Nethereum.Contracts.Extensions.DeploymentMessageExtensions
+struct DeploymentMessageExtensions_t1103985D6609224FDA05E8D49AA3B0BB7A1BCF6E  : public RuntimeObject
+{
+};
+
+// Nethereum.Contracts.Standards.ENS.ENSService
+struct ENSService_t1AF55C7FB4B642A1E34630FECB36139454F7ACB9  : public RuntimeObject
+{
+	// Nethereum.Contracts.Services.IEthApiContractService Nethereum.Contracts.Standards.ENS.ENSService::_ethApiContractService
+	RuntimeObject* ____ethApiContractService_0;
+	// System.String Nethereum.Contracts.Standards.ENS.ENSService::<EnsRegistryAddress>k__BackingField
+	String_t* ___U3CEnsRegistryAddressU3Ek__BackingField_4;
+	// Nethereum.Contracts.Standards.ENS.IEnsCCIPService Nethereum.Contracts.Standards.ENS.ENSService::<CCIPService>k__BackingField
+	RuntimeObject* ___U3CCCIPServiceU3Ek__BackingField_5;
+	// Nethereum.Contracts.Standards.ENS.ENSRegistryService Nethereum.Contracts.Standards.ENS.ENSService::<ENSRegistryService>k__BackingField
+	ENSRegistryService_t74BEAF552EBFB25B0B4E9226A211B4A34745795C* ___U3CENSRegistryServiceU3Ek__BackingField_6;
+	// Nethereum.Contracts.Standards.ENS.EnsUtil Nethereum.Contracts.Standards.ENS.ENSService::_ensUtil
+	EnsUtil_tBA50C42CACE832035518B570425CE5B85114CE6E* ____ensUtil_7;
+};
+
+struct ENSService_t1AF55C7FB4B642A1E34630FECB36139454F7ACB9_StaticFields
+{
+	// System.String Nethereum.Contracts.Standards.ENS.ENSService::REVERSE_NAME_SUFFIX
+	String_t* ___REVERSE_NAME_SUFFIX_1;
+	// System.Int32 Nethereum.Contracts.Standards.ENS.ENSService::<MaxLookupRedirects>k__BackingField
+	int32_t ___U3CMaxLookupRedirectsU3Ek__BackingField_3;
+};
+
+// Nethereum.Contracts.Standards.ERC1155.ERC1155Service
+struct ERC1155Service_t5929D51764AC25462FF1071BAA5AFD39D39AC0E4  : public RuntimeObject
+{
+	// Nethereum.Contracts.Services.IEthApiContractService Nethereum.Contracts.Standards.ERC1155.ERC1155Service::_ethApiContractService
+	RuntimeObject* ____ethApiContractService_0;
+};
+
+// Nethereum.Contracts.Standards.ERC1271.ERC1271Service
+struct ERC1271Service_t5D362FEC8F9FB4A4A43BC1094CDC1E4EFE768893  : public RuntimeObject
+{
+	// Nethereum.Contracts.Services.IEthApiContractService Nethereum.Contracts.Standards.ERC1271.ERC1271Service::_ethApiContractService
+	RuntimeObject* ____ethApiContractService_0;
+};
+
+// Nethereum.Contracts.Standards.ERC20.ERC20Service
+struct ERC20Service_tBAC6D3868CE498F01EA1A11F8850CE3724737332  : public RuntimeObject
+{
+	// Nethereum.Contracts.Services.IEthApiContractService Nethereum.Contracts.Standards.ERC20.ERC20Service::_ethApiContractService
+	RuntimeObject* ____ethApiContractService_0;
+};
+
+// Nethereum.Contracts.Standards.ERC721.ERC721Service
+struct ERC721Service_tF8C45C07FEEFDEBBD4948DAC26C8BD00047C7EAA  : public RuntimeObject
+{
+	// Nethereum.Contracts.Services.IEthApiContractService Nethereum.Contracts.Standards.ERC721.ERC721Service::_ethApiContractService
+	RuntimeObject* ____ethApiContractService_0;
+};
+
+// Nethereum.Contracts.Services.EthGetContractTransactionErrorReason
+struct EthGetContractTransactionErrorReason_t8880DCF9896FE345F9F9416989019ADDA609BC32  : public RuntimeObject
+{
+	// Nethereum.RPC.Eth.Services.IEthApiTransactionsService Nethereum.Contracts.Services.EthGetContractTransactionErrorReason::_apiTransactionsService
+	RuntimeObject* ____apiTransactionsService_0;
+};
+
+// Nethereum.Contracts.Standards.ENS.EthTLSService
+struct EthTLSService_t79D14B3001E560EF02929D4DE7B8AE45E4F53C86  : public RuntimeObject
+{
+	// Nethereum.Contracts.Services.IEthApiContractService Nethereum.Contracts.Standards.ENS.EthTLSService::_ethApiContractService
+	RuntimeObject* ____ethApiContractService_0;
+	// System.String Nethereum.Contracts.Standards.ENS.EthTLSService::<EnsRegistryAddress>k__BackingField
+	String_t* ___U3CEnsRegistryAddressU3Ek__BackingField_1;
+	// System.String Nethereum.Contracts.Standards.ENS.EthTLSService::<TLS>k__BackingField
+	String_t* ___U3CTLSU3Ek__BackingField_2;
+	// System.Byte[] Nethereum.Contracts.Standards.ENS.EthTLSService::<TLSNameHash>k__BackingField
+	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___U3CTLSNameHashU3Ek__BackingField_3;
+	// System.String Nethereum.Contracts.Standards.ENS.EthTLSService::<TLSRegisterAddress>k__BackingField
+	String_t* ___U3CTLSRegisterAddressU3Ek__BackingField_4;
+	// System.String Nethereum.Contracts.Standards.ENS.EthTLSService::<TLSResolverAddress>k__BackingField
+	String_t* ___U3CTLSResolverAddressU3Ek__BackingField_5;
+	// System.String Nethereum.Contracts.Standards.ENS.EthTLSService::<TLSControllerAddress>k__BackingField
+	String_t* ___U3CTLSControllerAddressU3Ek__BackingField_6;
+	// Nethereum.Contracts.Standards.ENS.ENSRegistryService Nethereum.Contracts.Standards.ENS.EthTLSService::<ENSRegistryService>k__BackingField
+	ENSRegistryService_t74BEAF552EBFB25B0B4E9226A211B4A34745795C* ___U3CENSRegistryServiceU3Ek__BackingField_7;
+	// Nethereum.Contracts.Standards.ENS.PublicResolverService Nethereum.Contracts.Standards.ENS.EthTLSService::<TLSResolverService>k__BackingField
+	PublicResolverService_tCECF093D533E6885D5C1289439204183C489CD15* ___U3CTLSResolverServiceU3Ek__BackingField_8;
+	// Nethereum.Contracts.Standards.ENS.ETHRegistrarControllerService Nethereum.Contracts.Standards.ENS.EthTLSService::<TLSRegistrarControllerService>k__BackingField
+	ETHRegistrarControllerService_t09E959A092BA2FC12452828AF6D92D77C643858A* ___U3CTLSRegistrarControllerServiceU3Ek__BackingField_9;
+	// System.Int32 Nethereum.Contracts.Standards.ENS.EthTLSService::<MinimunDurationRegistrationInSeconds>k__BackingField
+	int32_t ___U3CMinimunDurationRegistrationInSecondsU3Ek__BackingField_10;
+	// Nethereum.Contracts.Standards.ENS.EnsUtil Nethereum.Contracts.Standards.ENS.EthTLSService::_ensUtil
+	EnsUtil_tBA50C42CACE832035518B570425CE5B85114CE6E* ____ensUtil_11;
+};
+
+// Nethereum.Contracts.QueryHandlers.MultiCall.MultiQueryHandler
+struct MultiQueryHandler_tD5E9074899A83693F74D77C94F903D4AA15753CE  : public RuntimeObject
+{
+	// System.String Nethereum.Contracts.QueryHandlers.MultiCall.MultiQueryHandler::<ContractAddress>k__BackingField
+	String_t* ___U3CContractAddressU3Ek__BackingField_1;
+	// Nethereum.Contracts.QueryHandlers.QueryToDTOHandler`2<Nethereum.Contracts.QueryHandlers.MultiCall.AggregateFunction,Nethereum.Contracts.QueryHandlers.MultiCall.AggregateOutputDTO> Nethereum.Contracts.QueryHandlers.MultiCall.MultiQueryHandler::_multiQueryV1ToDtoHandler
+	QueryToDTOHandler_2_t64FE28F3E7A92C671B9E70A24D8300951F42BBF7* ____multiQueryV1ToDtoHandler_2;
+	// Nethereum.Contracts.QueryHandlers.QueryToDTOHandler`2<Nethereum.Contracts.QueryHandlers.MultiCall.Aggregate3Function,Nethereum.Contracts.QueryHandlers.MultiCall.Aggregate3OutputDTO> Nethereum.Contracts.QueryHandlers.MultiCall.MultiQueryHandler::_multiQueryToDtoHandler
+	QueryToDTOHandler_2_t7D6D14A0D064D41148382C0FCC8E4921D012F2F6* ____multiQueryToDtoHandler_3;
+	// Nethereum.Contracts.QueryHandlers.QueryToDTOHandler`2<Nethereum.Contracts.QueryHandlers.MultiCall.Aggregate3ValueFunction,Nethereum.Contracts.QueryHandlers.MultiCall.Aggregate3ValueOutputDTO> Nethereum.Contracts.QueryHandlers.MultiCall.MultiQueryHandler::_multiQueryToValueDtoHandler
+	QueryToDTOHandler_2_tC8135E5F07B2BB7F4F689C6CD58C234921665415* ____multiQueryToValueDtoHandler_4;
+};
+
+// Nethereum.Contracts.TransactionHandlers.MultiSend.MultiSendEncoder
+struct MultiSendEncoder_t29F9D54EF46EAA3CB6436DF5F12E4E3372D8EF09  : public RuntimeObject
+{
+};
+
+// Nethereum.Contracts.Standards.ENS.ENSRegistry.ContractDefinition.NewOwnerEventDTOBase
+struct NewOwnerEventDTOBase_t4F993F65DA1CF39F8C7D70E6FD87B50F4B015AE1  : public RuntimeObject
+{
+	// System.Byte[] Nethereum.Contracts.Standards.ENS.ENSRegistry.ContractDefinition.NewOwnerEventDTOBase::<Node>k__BackingField
+	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___U3CNodeU3Ek__BackingField_0;
+	// System.Byte[] Nethereum.Contracts.Standards.ENS.ENSRegistry.ContractDefinition.NewOwnerEventDTOBase::<Label>k__BackingField
+	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___U3CLabelU3Ek__BackingField_1;
+	// System.String Nethereum.Contracts.Standards.ENS.ENSRegistry.ContractDefinition.NewOwnerEventDTOBase::<Owner>k__BackingField
+	String_t* ___U3COwnerU3Ek__BackingField_2;
+};
+
+// Nethereum.Contracts.Standards.ENS.ENSRegistry.ContractDefinition.NewResolverEventDTOBase
+struct NewResolverEventDTOBase_t152850104E6A8E393DBBAEEE524EC6EA5ADC88B7  : public RuntimeObject
+{
+	// System.Byte[] Nethereum.Contracts.Standards.ENS.ENSRegistry.ContractDefinition.NewResolverEventDTOBase::<Node>k__BackingField
+	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___U3CNodeU3Ek__BackingField_0;
+	// System.String Nethereum.Contracts.Standards.ENS.ENSRegistry.ContractDefinition.NewResolverEventDTOBase::<Resolver>k__BackingField
+	String_t* ___U3CResolverU3Ek__BackingField_1;
+};
+
+// Nethereum.Contracts.Standards.ENS.ENSRegistry.ContractDefinition.NewTTLEventDTOBase
+struct NewTTLEventDTOBase_t75B6BF9AFE182206553103335F8A3846297A2684  : public RuntimeObject
+{
+	// System.Byte[] Nethereum.Contracts.Standards.ENS.ENSRegistry.ContractDefinition.NewTTLEventDTOBase::<Node>k__BackingField
+	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___U3CNodeU3Ek__BackingField_0;
+	// System.UInt64 Nethereum.Contracts.Standards.ENS.ENSRegistry.ContractDefinition.NewTTLEventDTOBase::<Ttl>k__BackingField
+	uint64_t ___U3CTtlU3Ek__BackingField_1;
+};
+
+// Nethereum.Contracts.Standards.ENS.ENSRegistry.ContractDefinition.OwnerOutputDTOBase
+struct OwnerOutputDTOBase_t47ACEBC9D43D5A131E505BD251667FC04917D4B4  : public RuntimeObject
+{
+	// System.String Nethereum.Contracts.Standards.ENS.ENSRegistry.ContractDefinition.OwnerOutputDTOBase::<ReturnValue1>k__BackingField
+	String_t* ___U3CReturnValue1U3Ek__BackingField_0;
+};
+
+// Nethereum.ABI.FunctionEncoding.ParameterDecoder
+struct ParameterDecoder_tA39954DC1D58819821BD1AA500F0E73C58B38053  : public RuntimeObject
+{
+	// Nethereum.ABI.FunctionEncoding.Attributes.AttributesToABIExtractor Nethereum.ABI.FunctionEncoding.ParameterDecoder::attributesToABIExtractor
+	AttributesToABIExtractor_t52FA9A8580A1D0127D530545BB0DAA843B153881* ___attributesToABIExtractor_0;
+};
+
+// Nethereum.Contracts.Standards.ProofOfHumanity.ProofOfHumanityService
+struct ProofOfHumanityService_t9FE5FAAF5CE7C444E3C02617BB45765D9D18E0EB  : public RuntimeObject
+{
+	// Nethereum.Contracts.Services.IEthApiContractService Nethereum.Contracts.Standards.ProofOfHumanity.ProofOfHumanityService::_ethApiContractService
+	RuntimeObject* ____ethApiContractService_0;
+};
+
+// Nethereum.Contracts.Standards.ENS.ENSRegistry.ContractDefinition.ResolverOutputDTOBase
+struct ResolverOutputDTOBase_t0CDAA5919146EB924331972B02CE06B77995BCFD  : public RuntimeObject
+{
+	// System.String Nethereum.Contracts.Standards.ENS.ENSRegistry.ContractDefinition.ResolverOutputDTOBase::<ReturnValue1>k__BackingField
+	String_t* ___U3CReturnValue1U3Ek__BackingField_0;
+};
+
+// Nethereum.Contracts.QueryHandlers.MultiCall.ResultBase
+struct ResultBase_t3EE4F4314BE00242DA42DCAE822CB8859C6A95E5  : public RuntimeObject
+{
+	// System.Boolean Nethereum.Contracts.QueryHandlers.MultiCall.ResultBase::<Success>k__BackingField
+	bool ___U3CSuccessU3Ek__BackingField_0;
+	// System.Byte[] Nethereum.Contracts.QueryHandlers.MultiCall.ResultBase::<ReturnData>k__BackingField
+	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___U3CReturnDataU3Ek__BackingField_1;
+};
+
+// Nethereum.RPC.RpcClientWrapper
+struct RpcClientWrapper_t639264795AA92FB47F8CBBE7183EEBFE0A565854  : public RuntimeObject
+{
+	// Nethereum.JsonRpc.Client.IClient Nethereum.RPC.RpcClientWrapper::<Client>k__BackingField
+	RuntimeObject* ___U3CClientU3Ek__BackingField_0;
+};
+
+// System.String
+struct String_t  : public RuntimeObject
+{
+	// System.Int32 System.String::_stringLength
+	int32_t ____stringLength_4;
+	// System.Char System.String::_firstChar
+	Il2CppChar ____firstChar_5;
+};
+
+struct String_t_StaticFields
+{
+	// System.String System.String::Empty
+	String_t* ___Empty_6;
+};
+
+// System.Threading.Tasks.Task
+struct Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572  : public RuntimeObject
+{
+	// System.Int32 modreq(System.Runtime.CompilerServices.IsVolatile) System.Threading.Tasks.Task::m_taskId
+	int32_t ___m_taskId_1;
+	// System.Delegate System.Threading.Tasks.Task::m_action
+	Delegate_t* ___m_action_2;
+	// System.Object System.Threading.Tasks.Task::m_stateObject
+	RuntimeObject* ___m_stateObject_3;
+	// System.Threading.Tasks.TaskScheduler System.Threading.Tasks.Task::m_taskScheduler
+	TaskScheduler_t3F0550EBEF7C41F74EC8C08FF4BED0D8CE66006E* ___m_taskScheduler_4;
+	// System.Threading.Tasks.Task System.Threading.Tasks.Task::m_parent
+	Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* ___m_parent_5;
+	// System.Int32 modreq(System.Runtime.CompilerServices.IsVolatile) System.Threading.Tasks.Task::m_stateFlags
+	int32_t ___m_stateFlags_6;
+	// System.Object modreq(System.Runtime.CompilerServices.IsVolatile) System.Threading.Tasks.Task::m_continuationObject
+	RuntimeObject* ___m_continuationObject_7;
+	// System.Threading.Tasks.Task/ContingentProperties modreq(System.Runtime.CompilerServices.IsVolatile) System.Threading.Tasks.Task::m_contingentProperties
+	ContingentProperties_t3FA59480914505CEA917B1002EC675F29D0CB540* ___m_contingentProperties_10;
+};
+
+struct Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572_StaticFields
+{
+	// System.Int32 System.Threading.Tasks.Task::s_taskIdCounter
+	int32_t ___s_taskIdCounter_0;
+	// System.Object System.Threading.Tasks.Task::s_taskCompletionSentinel
+	RuntimeObject* ___s_taskCompletionSentinel_8;
+	// System.Boolean System.Threading.Tasks.Task::s_asyncDebuggingEnabled
+	bool ___s_asyncDebuggingEnabled_9;
+	// System.Action`1<System.Object> System.Threading.Tasks.Task::s_taskCancelCallback
+	Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* ___s_taskCancelCallback_11;
+	// System.Func`1<System.Threading.Tasks.Task/ContingentProperties> System.Threading.Tasks.Task::s_createContingentProperties
+	Func_1_tD59A12717D79BFB403BF973694B1BE5B85474BD1* ___s_createContingentProperties_14;
+	// System.Threading.Tasks.TaskFactory System.Threading.Tasks.Task::<Factory>k__BackingField
+	TaskFactory_tF781BD37BE23917412AD83424D1497C7C1509DF0* ___U3CFactoryU3Ek__BackingField_15;
+	// System.Threading.Tasks.Task System.Threading.Tasks.Task::<CompletedTask>k__BackingField
+	Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* ___U3CCompletedTaskU3Ek__BackingField_16;
+	// System.Predicate`1<System.Threading.Tasks.Task> System.Threading.Tasks.Task::s_IsExceptionObservedByParentPredicate
+	Predicate_1_t7F48518B008C1472339EEEBABA3DE203FE1F26ED* ___s_IsExceptionObservedByParentPredicate_17;
+	// System.Threading.ContextCallback System.Threading.Tasks.Task::s_ecCallback
+	ContextCallback_tE8AFBDBFCC040FDA8DA8C1EEFE9BD66B16BDA007* ___s_ecCallback_18;
+	// System.Predicate`1<System.Object> System.Threading.Tasks.Task::s_IsTaskContinuationNullPredicate
+	Predicate_1_t8342C85FF4E41CD1F7024AC0CDC3E5312A32CB12* ___s_IsTaskContinuationNullPredicate_19;
+	// System.Collections.Generic.Dictionary`2<System.Int32,System.Threading.Tasks.Task> System.Threading.Tasks.Task::s_currentActiveTasks
+	Dictionary_2_t403063CE4960B4F46C688912237C6A27E550FF55* ___s_currentActiveTasks_20;
+	// System.Object System.Threading.Tasks.Task::s_activeTasksLock
+	RuntimeObject* ___s_activeTasksLock_21;
+};
+
+struct Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572_ThreadStaticFields
+{
+	// System.Threading.Tasks.Task System.Threading.Tasks.Task::t_currentTask
+	Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* ___t_currentTask_12;
+	// System.Threading.Tasks.StackGuard System.Threading.Tasks.Task::t_stackGuard
+	StackGuard_tACE063A1B7374BDF4AD472DE4585D05AD8745352* ___t_stackGuard_13;
+};
+
+// Nethereum.RPC.Eth.DTOs.Transaction
+struct Transaction_t42AF58898C5DCF5C2ECE238B8C471CD48B389A33  : public RuntimeObject
+{
+	// System.String Nethereum.RPC.Eth.DTOs.Transaction::<TransactionHash>k__BackingField
+	String_t* ___U3CTransactionHashU3Ek__BackingField_0;
+	// Nethereum.Hex.HexTypes.HexBigInteger Nethereum.RPC.Eth.DTOs.Transaction::<TransactionIndex>k__BackingField
+	HexBigInteger_tFD9189302CC4BD35091F94D48E460B5D2D5CA811* ___U3CTransactionIndexU3Ek__BackingField_1;
+	// Nethereum.Hex.HexTypes.HexBigInteger Nethereum.RPC.Eth.DTOs.Transaction::<Type>k__BackingField
+	HexBigInteger_tFD9189302CC4BD35091F94D48E460B5D2D5CA811* ___U3CTypeU3Ek__BackingField_2;
+	// System.String Nethereum.RPC.Eth.DTOs.Transaction::<BlockHash>k__BackingField
+	String_t* ___U3CBlockHashU3Ek__BackingField_3;
+	// Nethereum.Hex.HexTypes.HexBigInteger Nethereum.RPC.Eth.DTOs.Transaction::<BlockNumber>k__BackingField
+	HexBigInteger_tFD9189302CC4BD35091F94D48E460B5D2D5CA811* ___U3CBlockNumberU3Ek__BackingField_4;
+	// System.String Nethereum.RPC.Eth.DTOs.Transaction::<From>k__BackingField
+	String_t* ___U3CFromU3Ek__BackingField_5;
+	// System.String Nethereum.RPC.Eth.DTOs.Transaction::<To>k__BackingField
+	String_t* ___U3CToU3Ek__BackingField_6;
+	// Nethereum.Hex.HexTypes.HexBigInteger Nethereum.RPC.Eth.DTOs.Transaction::<Gas>k__BackingField
+	HexBigInteger_tFD9189302CC4BD35091F94D48E460B5D2D5CA811* ___U3CGasU3Ek__BackingField_7;
+	// Nethereum.Hex.HexTypes.HexBigInteger Nethereum.RPC.Eth.DTOs.Transaction::<GasPrice>k__BackingField
+	HexBigInteger_tFD9189302CC4BD35091F94D48E460B5D2D5CA811* ___U3CGasPriceU3Ek__BackingField_8;
+	// Nethereum.Hex.HexTypes.HexBigInteger Nethereum.RPC.Eth.DTOs.Transaction::<MaxFeePerGas>k__BackingField
+	HexBigInteger_tFD9189302CC4BD35091F94D48E460B5D2D5CA811* ___U3CMaxFeePerGasU3Ek__BackingField_9;
+	// Nethereum.Hex.HexTypes.HexBigInteger Nethereum.RPC.Eth.DTOs.Transaction::<MaxPriorityFeePerGas>k__BackingField
+	HexBigInteger_tFD9189302CC4BD35091F94D48E460B5D2D5CA811* ___U3CMaxPriorityFeePerGasU3Ek__BackingField_10;
+	// Nethereum.Hex.HexTypes.HexBigInteger Nethereum.RPC.Eth.DTOs.Transaction::<Value>k__BackingField
+	HexBigInteger_tFD9189302CC4BD35091F94D48E460B5D2D5CA811* ___U3CValueU3Ek__BackingField_11;
+	// System.String Nethereum.RPC.Eth.DTOs.Transaction::<Input>k__BackingField
+	String_t* ___U3CInputU3Ek__BackingField_12;
+	// Nethereum.Hex.HexTypes.HexBigInteger Nethereum.RPC.Eth.DTOs.Transaction::<Nonce>k__BackingField
+	HexBigInteger_tFD9189302CC4BD35091F94D48E460B5D2D5CA811* ___U3CNonceU3Ek__BackingField_13;
+	// System.String Nethereum.RPC.Eth.DTOs.Transaction::<R>k__BackingField
+	String_t* ___U3CRU3Ek__BackingField_14;
+	// System.String Nethereum.RPC.Eth.DTOs.Transaction::<S>k__BackingField
+	String_t* ___U3CSU3Ek__BackingField_15;
+	// System.String Nethereum.RPC.Eth.DTOs.Transaction::<V>k__BackingField
+	String_t* ___U3CVU3Ek__BackingField_16;
+	// System.Collections.Generic.List`1<Nethereum.RPC.Eth.DTOs.AccessList> Nethereum.RPC.Eth.DTOs.Transaction::<AccessList>k__BackingField
+	List_1_t4E11F5D2075471CC5269E680568592D8D061C750* ___U3CAccessListU3Ek__BackingField_17;
+};
+
+// Nethereum.Contracts.Standards.ENS.ENSRegistry.ContractDefinition.TransferEventDTOBase
+struct TransferEventDTOBase_t51D219DAA28F2C3153574E724F5DE845D80E7DF2  : public RuntimeObject
+{
+	// System.Byte[] Nethereum.Contracts.Standards.ENS.ENSRegistry.ContractDefinition.TransferEventDTOBase::<Node>k__BackingField
+	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___U3CNodeU3Ek__BackingField_0;
+	// System.String Nethereum.Contracts.Standards.ENS.ENSRegistry.ContractDefinition.TransferEventDTOBase::<Owner>k__BackingField
+	String_t* ___U3COwnerU3Ek__BackingField_1;
+};
+
+// Nethereum.Contracts.Standards.ENS.ENSRegistry.ContractDefinition.TtlOutputDTOBase
+struct TtlOutputDTOBase_tF9B8C65D01AB7B3CD9AB43F3F58629CE0735080C  : public RuntimeObject
+{
+	// System.UInt64 Nethereum.Contracts.Standards.ENS.ENSRegistry.ContractDefinition.TtlOutputDTOBase::<ReturnValue1>k__BackingField
+	uint64_t ___U3CReturnValue1U3Ek__BackingField_0;
+};
+
+// System.ValueType
+struct ValueType_t6D9B272BD21782F0A9A14F2E41F85A50E97A986F  : public RuntimeObject
+{
+};
+// Native definition for P/Invoke marshalling of System.ValueType
+struct ValueType_t6D9B272BD21782F0A9A14F2E41F85A50E97A986F_marshaled_pinvoke
+{
+};
+// Native definition for COM marshalling of System.ValueType
+struct ValueType_t6D9B272BD21782F0A9A14F2E41F85A50E97A986F_marshaled_com
+{
+};
+
+// Nethereum.Contracts.QueryHandlers.MultiCall.MultiQueryHandler/<>c
+struct U3CU3Ec_t00AE82A6DB248488B8693FE413EA91A294DF7971  : public RuntimeObject
+{
+};
+
+struct U3CU3Ec_t00AE82A6DB248488B8693FE413EA91A294DF7971_StaticFields
+{
+	// Nethereum.Contracts.QueryHandlers.MultiCall.MultiQueryHandler/<>c Nethereum.Contracts.QueryHandlers.MultiCall.MultiQueryHandler/<>c::<>9
+	U3CU3Ec_t00AE82A6DB248488B8693FE413EA91A294DF7971* ___U3CU3E9_0;
+	// System.Func`2<Nethereum.Contracts.QueryHandlers.MultiCall.IMulticallInputOutput,System.Boolean> Nethereum.Contracts.QueryHandlers.MultiCall.MultiQueryHandler/<>c::<>9__13_0
+	Func_2_tC7D8CC18CA3EE41739FE11EB4C3AF3F712E0FAA8* ___U3CU3E9__13_0_1;
+};
+
+// System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1/ConfiguredTaskAwaiter<Nethereum.Contracts.QueryHandlers.MultiCall.Aggregate3OutputDTO>
+struct ConfiguredTaskAwaiter_t2FB4C6E80ED7E994AC6CEEEB6572E51978E07756 
+{
+	// System.Threading.Tasks.Task`1<TResult> System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1/ConfiguredTaskAwaiter::m_task
+	Task_1_t843D0B7FB99859F077CD3346AAB26D9728AC86A7* ___m_task_0;
+	// System.Boolean System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1/ConfiguredTaskAwaiter::m_continueOnCapturedContext
+	bool ___m_continueOnCapturedContext_1;
+};
+
+// System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1/ConfiguredTaskAwaiter<Nethereum.Contracts.QueryHandlers.MultiCall.Aggregate3ValueOutputDTO>
+struct ConfiguredTaskAwaiter_tEDA8191B4B5EA1357682A9F21488544BE1C12100 
+{
+	// System.Threading.Tasks.Task`1<TResult> System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1/ConfiguredTaskAwaiter::m_task
+	Task_1_tD3F902260C8A6DA85461A6EF5CF3A103F3E9AE63* ___m_task_0;
+	// System.Boolean System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1/ConfiguredTaskAwaiter::m_continueOnCapturedContext
+	bool ___m_continueOnCapturedContext_1;
+};
+
+// System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1/ConfiguredTaskAwaiter<Nethereum.Contracts.QueryHandlers.MultiCall.AggregateOutputDTO>
+struct ConfiguredTaskAwaiter_tBFC63C1299C54709ABE6BDEB21685AA9B3534BB9 
+{
+	// System.Threading.Tasks.Task`1<TResult> System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1/ConfiguredTaskAwaiter::m_task
+	Task_1_tA3CF95FC9CBC3CA5879B274CBE93339D68A5CA95* ___m_task_0;
+	// System.Boolean System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1/ConfiguredTaskAwaiter::m_continueOnCapturedContext
+	bool ___m_continueOnCapturedContext_1;
+};
+
+// System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1/ConfiguredTaskAwaiter<System.Object>
+struct ConfiguredTaskAwaiter_t28A5A60199BBE7F1F31159301DD211EFDCF955E2 
+{
+	// System.Threading.Tasks.Task`1<TResult> System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1/ConfiguredTaskAwaiter::m_task
+	Task_1_t0C4CD3A5BB93A184420D73218644C56C70FDA7E2* ___m_task_0;
+	// System.Boolean System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1/ConfiguredTaskAwaiter::m_continueOnCapturedContext
+	bool ___m_continueOnCapturedContext_1;
+};
+
+// System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1/ConfiguredTaskAwaiter<System.String>
+struct ConfiguredTaskAwaiter_t09B651400CE1B2687A813877C97A9E352E771CA5 
+{
+	// System.Threading.Tasks.Task`1<TResult> System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1/ConfiguredTaskAwaiter::m_task
+	Task_1_t3D7638C82ED289AF156EDBAE76842D8DF4C4A9E0* ___m_task_0;
+	// System.Boolean System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1/ConfiguredTaskAwaiter::m_continueOnCapturedContext
+	bool ___m_continueOnCapturedContext_1;
+};
+
+// System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1/ConfiguredTaskAwaiter<Nethereum.RPC.Eth.DTOs.Transaction>
+struct ConfiguredTaskAwaiter_t4E5F0C451DB5E8CE300D5CA0DFA6DB7EBF62A859 
+{
+	// System.Threading.Tasks.Task`1<TResult> System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1/ConfiguredTaskAwaiter::m_task
+	Task_1_t07835DF0935336A37DEF7C2A1C6E5057615D6092* ___m_task_0;
+	// System.Boolean System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1/ConfiguredTaskAwaiter::m_continueOnCapturedContext
+	bool ___m_continueOnCapturedContext_1;
+};
+
+// System.Nullable`1<System.Byte>
+struct Nullable_1_tEB6689CC9747A3600689077DCBF77B8E8B510505 
+{
+	// System.Boolean System.Nullable`1::hasValue
+	bool ___hasValue_0;
+	// T System.Nullable`1::value
+	uint8_t ___value_1;
+};
+
+// Nethereum.Contracts.QueryHandlers.QueryToDTOHandler`2<Nethereum.Contracts.QueryHandlers.MultiCall.Aggregate3Function,Nethereum.Contracts.QueryHandlers.MultiCall.Aggregate3OutputDTO>
+struct QueryToDTOHandler_2_t7D6D14A0D064D41148382C0FCC8E4921D012F2F6  : public QueryDecoderBaseHandler_2_t08FE3A73CCE55581281E2C0024779BB19E26AB1A
+{
+};
+
+// Nethereum.Contracts.QueryHandlers.QueryToDTOHandler`2<Nethereum.Contracts.QueryHandlers.MultiCall.Aggregate3ValueFunction,Nethereum.Contracts.QueryHandlers.MultiCall.Aggregate3ValueOutputDTO>
+struct QueryToDTOHandler_2_tC8135E5F07B2BB7F4F689C6CD58C234921665415  : public QueryDecoderBaseHandler_2_tB4222E2288471D78079D35681CEDE89D5895BB43
+{
+};
+
+// Nethereum.Contracts.QueryHandlers.QueryToDTOHandler`2<Nethereum.Contracts.QueryHandlers.MultiCall.AggregateFunction,Nethereum.Contracts.QueryHandlers.MultiCall.AggregateOutputDTO>
+struct QueryToDTOHandler_2_t64FE28F3E7A92C671B9E70A24D8300951F42BBF7  : public QueryDecoderBaseHandler_2_t6C60BB3092F1A5B8450054CA473071243BC7D1D3
+{
+};
+
+// System.Threading.Tasks.Task`1<Nethereum.Contracts.QueryHandlers.MultiCall.IMulticallInputOutput[]>
+struct Task_1_t42FA6B88BB8F441CF56D1DCEF1570387FCEC4DE9  : public Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572
+{
+	// TResult System.Threading.Tasks.Task`1::m_result
+	IMulticallInputOutputU5BU5D_t7D33DBDC42EE714A687264BC9F3C6C6AED3885F7* ___m_result_22;
+};
+
+struct Task_1_t42FA6B88BB8F441CF56D1DCEF1570387FCEC4DE9_StaticFields
+{
+	// System.Threading.Tasks.TaskFactory`1<TResult> System.Threading.Tasks.Task`1::s_defaultFactory
+	TaskFactory_1_t153E7CB9B7723DC4CEA0C703190475825313FBC5* ___s_defaultFactory_23;
+};
+
+// System.Threading.Tasks.Task`1<Nethereum.Contracts.QueryHandlers.MultiCall.Aggregate3OutputDTO>
+struct Task_1_t843D0B7FB99859F077CD3346AAB26D9728AC86A7  : public Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572
+{
+	// TResult System.Threading.Tasks.Task`1::m_result
+	Aggregate3OutputDTO_t9CA62E1FF9DC2592189ADE0D667CD29C287867DB* ___m_result_22;
+};
+
+struct Task_1_t843D0B7FB99859F077CD3346AAB26D9728AC86A7_StaticFields
+{
+	// System.Threading.Tasks.TaskFactory`1<TResult> System.Threading.Tasks.Task`1::s_defaultFactory
+	TaskFactory_1_tC55060519CA99F9EC12F77BECC8ACF003C5795C1* ___s_defaultFactory_23;
+};
+
+// System.Threading.Tasks.Task`1<Nethereum.Contracts.QueryHandlers.MultiCall.Aggregate3ValueOutputDTO>
+struct Task_1_tD3F902260C8A6DA85461A6EF5CF3A103F3E9AE63  : public Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572
+{
+	// TResult System.Threading.Tasks.Task`1::m_result
+	Aggregate3ValueOutputDTO_t2FF1DDFC969071DBBB8DA771D7B60CA9C378093E* ___m_result_22;
+};
+
+struct Task_1_tD3F902260C8A6DA85461A6EF5CF3A103F3E9AE63_StaticFields
+{
+	// System.Threading.Tasks.TaskFactory`1<TResult> System.Threading.Tasks.Task`1::s_defaultFactory
+	TaskFactory_1_t3151E00F5E391EC4A01C9E643CC39217168AD4B5* ___s_defaultFactory_23;
+};
+
+// System.Threading.Tasks.Task`1<Nethereum.Contracts.QueryHandlers.MultiCall.AggregateOutputDTO>
+struct Task_1_tA3CF95FC9CBC3CA5879B274CBE93339D68A5CA95  : public Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572
+{
+	// TResult System.Threading.Tasks.Task`1::m_result
+	AggregateOutputDTO_t04A6B814396B3EFE20568FF857DC66DEDADB011C* ___m_result_22;
+};
+
+struct Task_1_tA3CF95FC9CBC3CA5879B274CBE93339D68A5CA95_StaticFields
+{
+	// System.Threading.Tasks.TaskFactory`1<TResult> System.Threading.Tasks.Task`1::s_defaultFactory
+	TaskFactory_1_t25981280752CB5A132CF3B0E312EC8E73F7EE90F* ___s_defaultFactory_23;
+};
+
+// System.Threading.Tasks.Task`1<System.String>
+struct Task_1_t3D7638C82ED289AF156EDBAE76842D8DF4C4A9E0  : public Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572
+{
+	// TResult System.Threading.Tasks.Task`1::m_result
+	String_t* ___m_result_22;
+};
+
+struct Task_1_t3D7638C82ED289AF156EDBAE76842D8DF4C4A9E0_StaticFields
+{
+	// System.Threading.Tasks.TaskFactory`1<TResult> System.Threading.Tasks.Task`1::s_defaultFactory
+	TaskFactory_1_t7ABCD7F9503486A075E0B072E6EB95956CFE3106* ___s_defaultFactory_23;
+};
+
+// System.Threading.Tasks.Task`1<Nethereum.RPC.Eth.DTOs.Transaction>
+struct Task_1_t07835DF0935336A37DEF7C2A1C6E5057615D6092  : public Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572
+{
+	// TResult System.Threading.Tasks.Task`1::m_result
+	Transaction_t42AF58898C5DCF5C2ECE238B8C471CD48B389A33* ___m_result_22;
+};
+
+struct Task_1_t07835DF0935336A37DEF7C2A1C6E5057615D6092_StaticFields
+{
+	// System.Threading.Tasks.TaskFactory`1<TResult> System.Threading.Tasks.Task`1::s_defaultFactory
+	TaskFactory_1_t52E361437DD936C7FCE04E170E843CFA31BAAF40* ___s_defaultFactory_23;
+};
+
+// Nethereum.Contracts.QueryHandlers.MultiCall.Aggregate3OutputDTO
+struct Aggregate3OutputDTO_t9CA62E1FF9DC2592189ADE0D667CD29C287867DB  : public Aggregate3OutputDTOBase_tB7BB06CA8F766C33AF48AD8E5D67D74E0317D126
+{
+};
+
+// Nethereum.Contracts.QueryHandlers.MultiCall.Aggregate3ValueOutputDTO
+struct Aggregate3ValueOutputDTO_t2FF1DDFC969071DBBB8DA771D7B60CA9C378093E  : public Aggregate3ValueOutputDTOBase_tDC53C967E48195592E4D38448A65DA8A8388FDF7
+{
+};
+
+// System.Runtime.CompilerServices.AsyncMethodBuilderCore
+struct AsyncMethodBuilderCore_tD5ABB3A2536319A3345B32A5481E37E23DD8CEDF 
+{
+	// System.Runtime.CompilerServices.IAsyncStateMachine System.Runtime.CompilerServices.AsyncMethodBuilderCore::m_stateMachine
+	RuntimeObject* ___m_stateMachine_0;
+	// System.Action System.Runtime.CompilerServices.AsyncMethodBuilderCore::m_defaultContextAction
+	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* ___m_defaultContextAction_1;
+};
+// Native definition for P/Invoke marshalling of System.Runtime.CompilerServices.AsyncMethodBuilderCore
+struct AsyncMethodBuilderCore_tD5ABB3A2536319A3345B32A5481E37E23DD8CEDF_marshaled_pinvoke
+{
+	RuntimeObject* ___m_stateMachine_0;
+	Il2CppMethodPointer ___m_defaultContextAction_1;
+};
+// Native definition for COM marshalling of System.Runtime.CompilerServices.AsyncMethodBuilderCore
+struct AsyncMethodBuilderCore_tD5ABB3A2536319A3345B32A5481E37E23DD8CEDF_marshaled_com
+{
+	RuntimeObject* ___m_stateMachine_0;
+	Il2CppMethodPointer ___m_defaultContextAction_1;
+};
+
+// System.Numerics.BigInteger
+struct BigInteger_tF7779A0AA6D6B9BE0E0C1C293E7708765DEF7D0F 
+{
+	// System.Int32 System.Numerics.BigInteger::_sign
+	int32_t ____sign_0;
+	// System.UInt32[] System.Numerics.BigInteger::_bits
+	UInt32U5BU5D_t02FBD658AD156A17574ECE6106CF1FBFCC9807FA* ____bits_1;
+};
+
+struct BigInteger_tF7779A0AA6D6B9BE0E0C1C293E7708765DEF7D0F_StaticFields
+{
+	// System.Numerics.BigInteger System.Numerics.BigInteger::s_bnMinInt
+	BigInteger_tF7779A0AA6D6B9BE0E0C1C293E7708765DEF7D0F ___s_bnMinInt_2;
+	// System.Numerics.BigInteger System.Numerics.BigInteger::s_bnOneInt
+	BigInteger_tF7779A0AA6D6B9BE0E0C1C293E7708765DEF7D0F ___s_bnOneInt_3;
+	// System.Numerics.BigInteger System.Numerics.BigInteger::s_bnZeroInt
+	BigInteger_tF7779A0AA6D6B9BE0E0C1C293E7708765DEF7D0F ___s_bnZeroInt_4;
+	// System.Numerics.BigInteger System.Numerics.BigInteger::s_bnMinusOneInt
+	BigInteger_tF7779A0AA6D6B9BE0E0C1C293E7708765DEF7D0F ___s_bnMinusOneInt_5;
+	// System.Byte[] System.Numerics.BigInteger::s_success
+	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___s_success_6;
+};
+// Native definition for P/Invoke marshalling of System.Numerics.BigInteger
+struct BigInteger_tF7779A0AA6D6B9BE0E0C1C293E7708765DEF7D0F_marshaled_pinvoke
+{
+	int32_t ____sign_0;
+	Il2CppSafeArray/*NONE*/* ____bits_1;
+};
+// Native definition for COM marshalling of System.Numerics.BigInteger
+struct BigInteger_tF7779A0AA6D6B9BE0E0C1C293E7708765DEF7D0F_marshaled_com
+{
+	int32_t ____sign_0;
+	Il2CppSafeArray/*NONE*/* ____bits_1;
+};
+
+// System.Boolean
+struct Boolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22 
+{
+	// System.Boolean System.Boolean::m_value
+	bool ___m_value_0;
+};
+
+struct Boolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_StaticFields
+{
+	// System.String System.Boolean::TrueString
+	String_t* ___TrueString_5;
+	// System.String System.Boolean::FalseString
+	String_t* ___FalseString_6;
+};
+
+// System.Byte
+struct Byte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3 
+{
+	// System.Byte System.Byte::m_value
+	uint8_t ___m_value_0;
+};
+
+// Nethereum.Contracts.QueryHandlers.MultiCall.Call
+struct Call_t924086EAD3B3E4D52DE52E6E060F04753C2B15A7  : public CallBase_tDE3DC215CB2F6161608011057953C24D0C5F2D3F
+{
+};
+
+// Nethereum.Contracts.QueryHandlers.MultiCall.Call3
+struct Call3_t7D0A3BDA2EE93E4FE48F20496F1A5C2723BABB8D  : public Call3Base_t2A9271175C8D98BBDC18239AAFEC4C820E539B2E
+{
+};
+
+// Nethereum.RPC.EthApiService
+struct EthApiService_tD9B555F28B0008E999D5B0EEC8A063418522921A  : public RpcClientWrapper_t639264795AA92FB47F8CBBE7183EEBFE0A565854
+{
+	// Nethereum.RPC.Eth.DTOs.BlockParameter Nethereum.RPC.EthApiService::_defaultBlock
+	BlockParameter_t13CF5CC9CDE990ACD945748B2FA7F19EA0A06AD9* ____defaultBlock_1;
+	// Nethereum.RPC.TransactionManagers.ITransactionManager Nethereum.RPC.EthApiService::_transactionManager
+	RuntimeObject* ____transactionManager_2;
+	// Nethereum.RPC.Eth.IEthChainId Nethereum.RPC.EthApiService::<ChainId>k__BackingField
+	RuntimeObject* ___U3CChainIdU3Ek__BackingField_3;
+	// Nethereum.RPC.Eth.IEthAccounts Nethereum.RPC.EthApiService::<Accounts>k__BackingField
+	RuntimeObject* ___U3CAccountsU3Ek__BackingField_4;
+	// Nethereum.RPC.Eth.IEthCoinBase Nethereum.RPC.EthApiService::<CoinBase>k__BackingField
+	RuntimeObject* ___U3CCoinBaseU3Ek__BackingField_5;
+	// Nethereum.RPC.Eth.IEthGasPrice Nethereum.RPC.EthApiService::<GasPrice>k__BackingField
+	RuntimeObject* ___U3CGasPriceU3Ek__BackingField_6;
+	// Nethereum.RPC.Eth.IEthGetBalance Nethereum.RPC.EthApiService::<GetBalance>k__BackingField
+	RuntimeObject* ___U3CGetBalanceU3Ek__BackingField_7;
+	// Nethereum.RPC.Eth.IEthGetCode Nethereum.RPC.EthApiService::<GetCode>k__BackingField
+	RuntimeObject* ___U3CGetCodeU3Ek__BackingField_8;
+	// Nethereum.RPC.Eth.IEthGetStorageAt Nethereum.RPC.EthApiService::<GetStorageAt>k__BackingField
+	RuntimeObject* ___U3CGetStorageAtU3Ek__BackingField_9;
+	// Nethereum.RPC.Eth.IEthProtocolVersion Nethereum.RPC.EthApiService::<ProtocolVersion>k__BackingField
+	RuntimeObject* ___U3CProtocolVersionU3Ek__BackingField_10;
+	// Nethereum.RPC.Eth.IEthSign Nethereum.RPC.EthApiService::<Sign>k__BackingField
+	RuntimeObject* ___U3CSignU3Ek__BackingField_11;
+	// Nethereum.RPC.Eth.IEthSyncing Nethereum.RPC.EthApiService::<Syncing>k__BackingField
+	RuntimeObject* ___U3CSyncingU3Ek__BackingField_12;
+	// Nethereum.RPC.Eth.Services.IEthApiTransactionsService Nethereum.RPC.EthApiService::<Transactions>k__BackingField
+	RuntimeObject* ___U3CTransactionsU3Ek__BackingField_13;
+	// Nethereum.RPC.Eth.Services.IEthApiUncleService Nethereum.RPC.EthApiService::<Uncles>k__BackingField
+	RuntimeObject* ___U3CUnclesU3Ek__BackingField_14;
+	// Nethereum.RPC.Eth.Services.IEthApiMiningService Nethereum.RPC.EthApiService::<Mining>k__BackingField
+	RuntimeObject* ___U3CMiningU3Ek__BackingField_15;
+	// Nethereum.RPC.Eth.Services.IEthApiBlockService Nethereum.RPC.EthApiService::<Blocks>k__BackingField
+	RuntimeObject* ___U3CBlocksU3Ek__BackingField_16;
+	// Nethereum.RPC.Eth.Services.IEthApiFilterService Nethereum.RPC.EthApiService::<Filters>k__BackingField
+	RuntimeObject* ___U3CFiltersU3Ek__BackingField_17;
+	// Nethereum.RPC.Eth.Transactions.IEthFeeHistory Nethereum.RPC.EthApiService::<FeeHistory>k__BackingField
+	RuntimeObject* ___U3CFeeHistoryU3Ek__BackingField_18;
+	// Nethereum.RPC.Eth.Services.IEthApiCompilerService Nethereum.RPC.EthApiService::<Compile>k__BackingField
+	RuntimeObject* ___U3CCompileU3Ek__BackingField_19;
+	// Nethereum.RPC.HostWallet.IHostWalletService Nethereum.RPC.EthApiService::<HostWallet>k__BackingField
+	RuntimeObject* ___U3CHostWalletU3Ek__BackingField_20;
+	// Nethereum.RPC.Eth.IEthGetProof Nethereum.RPC.EthApiService::<GetProof>k__BackingField
+	RuntimeObject* ___U3CGetProofU3Ek__BackingField_21;
+	// Nethereum.RPC.Eth.IEthCreateAccessList Nethereum.RPC.EthApiService::<CreateAccessList>k__BackingField
+	RuntimeObject* ___U3CCreateAccessListU3Ek__BackingField_22;
+	// Nethereum.RPC.Eth.ChainValidation.IEthChainProofValidationService Nethereum.RPC.EthApiService::<ChainProofValidation>k__BackingField
+	RuntimeObject* ___U3CChainProofValidationU3Ek__BackingField_23;
+	// Nethereum.RPC.AccountSigning.IAccountSigningService Nethereum.RPC.EthApiService::<AccountSigning>k__BackingField
+	RuntimeObject* ___U3CAccountSigningU3Ek__BackingField_24;
+};
+
+// Nethereum.ABI.FunctionEncoding.FunctionCallDecoder
+struct FunctionCallDecoder_tBF1B971B077F309052FE8984C9EA3C169FF8C150  : public ParameterDecoder_tA39954DC1D58819821BD1AA500F0E73C58B38053
+{
+};
+
+// System.Int32
+struct Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C 
+{
+	// System.Int32 System.Int32::m_value
+	int32_t ___m_value_0;
+};
+
+// System.Int64
+struct Int64_t092CFB123BE63C28ACDAF65C68F21A526050DBA3 
+{
+	// System.Int64 System.Int64::m_value
+	int64_t ___m_value_0;
+};
+
+// System.IntPtr
+struct IntPtr_t 
+{
+	// System.Void* System.IntPtr::m_value
+	void* ___m_value_0;
+};
+
+struct IntPtr_t_StaticFields
+{
+	// System.IntPtr System.IntPtr::Zero
+	intptr_t ___Zero_1;
+};
+
+// Nethereum.Contracts.Standards.ENS.ENSRegistry.ContractDefinition.NewOwnerEventDTO
+struct NewOwnerEventDTO_tB3ABBA316EFFA6FEA8C4DCE23B41B015FA121FF9  : public NewOwnerEventDTOBase_t4F993F65DA1CF39F8C7D70E6FD87B50F4B015AE1
+{
+};
+
+// Nethereum.Contracts.Standards.ENS.ENSRegistry.ContractDefinition.NewResolverEventDTO
+struct NewResolverEventDTO_t86B8DF397561CAA7804E5A35CBA8CBA918A9CC83  : public NewResolverEventDTOBase_t152850104E6A8E393DBBAEEE524EC6EA5ADC88B7
+{
+};
+
+// Nethereum.Contracts.Standards.ENS.ENSRegistry.ContractDefinition.NewTTLEventDTO
+struct NewTTLEventDTO_t69EC8E72E9CE4B7A187EA528944DBB2BF546040E  : public NewTTLEventDTOBase_t75B6BF9AFE182206553103335F8A3846297A2684
+{
+};
+
+// Nethereum.Contracts.Standards.ENS.ENSRegistry.ContractDefinition.OwnerOutputDTO
+struct OwnerOutputDTO_t3F2685122A23340F2CB8C78DFBACC55F23636457  : public OwnerOutputDTOBase_t47ACEBC9D43D5A131E505BD251667FC04917D4B4
+{
+};
+
+// Nethereum.Contracts.Standards.ENS.ENSRegistry.ContractDefinition.ResolverOutputDTO
+struct ResolverOutputDTO_t347A5FFBC91FF2890808777A977A44D4ED316BF1  : public ResolverOutputDTOBase_t0CDAA5919146EB924331972B02CE06B77995BCFD
+{
+};
+
+// Nethereum.Contracts.QueryHandlers.MultiCall.Result
+struct Result_t865E183DF9D3C68AAB7A99BD699A08BD8CBC9CF4  : public ResultBase_t3EE4F4314BE00242DA42DCAE822CB8859C6A95E5
+{
+};
+
+// Nethereum.RPC.Eth.DTOs.TransactionInput
+struct TransactionInput_t1B3DDEE42CE0171754109975B2FEF1C660E20EF2  : public CallInput_t134727ED6D63AA0F8722CB06FEC85207CC5D3F9C
+{
+	// Nethereum.Hex.HexTypes.HexBigInteger Nethereum.RPC.Eth.DTOs.TransactionInput::<Nonce>k__BackingField
+	HexBigInteger_tFD9189302CC4BD35091F94D48E460B5D2D5CA811* ___U3CNonceU3Ek__BackingField_10;
+	// System.Collections.Generic.List`1<Nethereum.RPC.Eth.DTOs.AccessList> Nethereum.RPC.Eth.DTOs.TransactionInput::<AccessList>k__BackingField
+	List_1_t4E11F5D2075471CC5269E680568592D8D061C750* ___U3CAccessListU3Ek__BackingField_11;
+};
+
+// Nethereum.Contracts.Standards.ENS.ENSRegistry.ContractDefinition.TransferEventDTO
+struct TransferEventDTO_tD8B5A15190F98A22919D5CFC9AB36EAC39E8572E  : public TransferEventDTOBase_t51D219DAA28F2C3153574E724F5DE845D80E7DF2
+{
+};
+
+// Nethereum.Contracts.Standards.ENS.ENSRegistry.ContractDefinition.TtlOutputDTO
+struct TtlOutputDTO_t6CE15EC754EC089DB2F604C281B7363C82F23C8E  : public TtlOutputDTOBase_tF9B8C65D01AB7B3CD9AB43F3F58629CE0735080C
+{
+};
+
+// System.UInt64
+struct UInt64_t8F12534CC8FC4B5860F2A2CD1EE79D322E7A41AF 
+{
+	// System.UInt64 System.UInt64::m_value
+	uint64_t ___m_value_0;
+};
+
+// System.Void
+struct Void_t4861ACF8F4594C3437BB48B6E56783494B843915 
+{
+	union
+	{
+		struct
+		{
+		};
+		uint8_t Void_t4861ACF8F4594C3437BB48B6E56783494B843915__padding[1];
+	};
+};
+
+// System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<Nethereum.Contracts.QueryHandlers.MultiCall.IMulticallInputOutput[]>
+struct AsyncTaskMethodBuilder_1_tFF884780053FBFD2BEEA42DC0DFF882656BBE992 
+{
+	// System.Runtime.CompilerServices.AsyncMethodBuilderCore System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1::m_coreState
+	AsyncMethodBuilderCore_tD5ABB3A2536319A3345B32A5481E37E23DD8CEDF ___m_coreState_1;
+	// System.Threading.Tasks.Task`1<TResult> System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1::m_task
+	Task_1_t42FA6B88BB8F441CF56D1DCEF1570387FCEC4DE9* ___m_task_2;
+};
+
+struct AsyncTaskMethodBuilder_1_tFF884780053FBFD2BEEA42DC0DFF882656BBE992_StaticFields
+{
+	// System.Threading.Tasks.Task`1<TResult> System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1::s_defaultResultTask
+	Task_1_t42FA6B88BB8F441CF56D1DCEF1570387FCEC4DE9* ___s_defaultResultTask_0;
+};
+
+// System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Object>
+struct AsyncTaskMethodBuilder_1_tE810F083929D7952F192036D298085BD4B048AD0 
+{
+	// System.Runtime.CompilerServices.AsyncMethodBuilderCore System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1::m_coreState
+	AsyncMethodBuilderCore_tD5ABB3A2536319A3345B32A5481E37E23DD8CEDF ___m_coreState_1;
+	// System.Threading.Tasks.Task`1<TResult> System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1::m_task
+	Task_1_t0C4CD3A5BB93A184420D73218644C56C70FDA7E2* ___m_task_2;
+};
+
+struct AsyncTaskMethodBuilder_1_tE810F083929D7952F192036D298085BD4B048AD0_StaticFields
+{
+	// System.Threading.Tasks.Task`1<TResult> System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1::s_defaultResultTask
+	Task_1_t0C4CD3A5BB93A184420D73218644C56C70FDA7E2* ___s_defaultResultTask_0;
+};
+
+// System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.String>
+struct AsyncTaskMethodBuilder_1_tA28B0962049DC249BEC0054E2394B1962E28E90E 
+{
+	// System.Runtime.CompilerServices.AsyncMethodBuilderCore System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1::m_coreState
+	AsyncMethodBuilderCore_tD5ABB3A2536319A3345B32A5481E37E23DD8CEDF ___m_coreState_1;
+	// System.Threading.Tasks.Task`1<TResult> System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1::m_task
+	Task_1_t3D7638C82ED289AF156EDBAE76842D8DF4C4A9E0* ___m_task_2;
+};
+
+struct AsyncTaskMethodBuilder_1_tA28B0962049DC249BEC0054E2394B1962E28E90E_StaticFields
+{
+	// System.Threading.Tasks.Task`1<TResult> System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1::s_defaultResultTask
+	Task_1_t3D7638C82ED289AF156EDBAE76842D8DF4C4A9E0* ___s_defaultResultTask_0;
+};
+
+// System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1<Nethereum.Contracts.QueryHandlers.MultiCall.Aggregate3OutputDTO>
+struct ConfiguredTaskAwaitable_1_tF3AC4E3112F1EDA66879A90506A46AD05294E357 
+{
+	// System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1/ConfiguredTaskAwaiter<TResult> System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1::m_configuredTaskAwaiter
+	ConfiguredTaskAwaiter_t2FB4C6E80ED7E994AC6CEEEB6572E51978E07756 ___m_configuredTaskAwaiter_0;
+};
+
+// System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1<Nethereum.Contracts.QueryHandlers.MultiCall.Aggregate3ValueOutputDTO>
+struct ConfiguredTaskAwaitable_1_tD71E26673BB72B8E28E8980B13ED24DD0D0B27BE 
+{
+	// System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1/ConfiguredTaskAwaiter<TResult> System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1::m_configuredTaskAwaiter
+	ConfiguredTaskAwaiter_tEDA8191B4B5EA1357682A9F21488544BE1C12100 ___m_configuredTaskAwaiter_0;
+};
+
+// System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1<Nethereum.Contracts.QueryHandlers.MultiCall.AggregateOutputDTO>
+struct ConfiguredTaskAwaitable_1_t5A674999AC76583775E037D3DEB36E00D9D59F81 
+{
+	// System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1/ConfiguredTaskAwaiter<TResult> System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1::m_configuredTaskAwaiter
+	ConfiguredTaskAwaiter_tBFC63C1299C54709ABE6BDEB21685AA9B3534BB9 ___m_configuredTaskAwaiter_0;
+};
+
+// System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1<System.Object>
+struct ConfiguredTaskAwaitable_1_t97C129EA63015240E6F9E767F4A120CC9122FEF8 
+{
+	// System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1/ConfiguredTaskAwaiter<TResult> System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1::m_configuredTaskAwaiter
+	ConfiguredTaskAwaiter_t28A5A60199BBE7F1F31159301DD211EFDCF955E2 ___m_configuredTaskAwaiter_0;
+};
+
+// System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1<System.String>
+struct ConfiguredTaskAwaitable_1_t5D41ABD05FA368A9CDB3329C907B4DCD69A7A2CC 
+{
+	// System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1/ConfiguredTaskAwaiter<TResult> System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1::m_configuredTaskAwaiter
+	ConfiguredTaskAwaiter_t09B651400CE1B2687A813877C97A9E352E771CA5 ___m_configuredTaskAwaiter_0;
+};
+
+// System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1<Nethereum.RPC.Eth.DTOs.Transaction>
+struct ConfiguredTaskAwaitable_1_t97A3F079869809316CDCF23480421084E5D17CDD 
+{
+	// System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1/ConfiguredTaskAwaiter<TResult> System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1::m_configuredTaskAwaiter
+	ConfiguredTaskAwaiter_t4E5F0C451DB5E8CE300D5CA0DFA6DB7EBF62A859 ___m_configuredTaskAwaiter_0;
+};
+
+// Nethereum.Hex.HexTypes.HexRPCType`1<System.Numerics.BigInteger>
+struct HexRPCType_1_t0AEB726E19D5EA8BB4CC3B441C661B409A663DE0  : public RuntimeObject
+{
+	// Nethereum.Hex.HexConvertors.IHexConvertor`1<T> Nethereum.Hex.HexTypes.HexRPCType`1::convertor
+	RuntimeObject* ___convertor_0;
+	// System.String Nethereum.Hex.HexTypes.HexRPCType`1::hexValue
+	String_t* ___hexValue_1;
+	// T Nethereum.Hex.HexTypes.HexRPCType`1::value
+	BigInteger_tF7779A0AA6D6B9BE0E0C1C293E7708765DEF7D0F ___value_2;
+	// System.Object Nethereum.Hex.HexTypes.HexRPCType`1::lockingObject
+	RuntimeObject* ___lockingObject_3;
+	// System.Boolean Nethereum.Hex.HexTypes.HexRPCType`1::needsInitialisingValue
+	bool ___needsInitialisingValue_4;
+};
+
+// System.Nullable`1<System.Numerics.BigInteger>
+struct Nullable_1_t4926B6730CE7D5D65A9903F48CFD632867A41E72 
+{
+	// System.Boolean System.Nullable`1::hasValue
+	bool ___hasValue_0;
+	// T System.Nullable`1::value
+	BigInteger_tF7779A0AA6D6B9BE0E0C1C293E7708765DEF7D0F ___value_1;
+};
+
+// Nethereum.Contracts.QueryHandlers.MultiCall.AggregateOutputDTOBase
+struct AggregateOutputDTOBase_tBD69D9D5ECA62C1432573218AD544A42BD82ACA6  : public RuntimeObject
+{
+	// System.Numerics.BigInteger Nethereum.Contracts.QueryHandlers.MultiCall.AggregateOutputDTOBase::<BlockNumber>k__BackingField
+	BigInteger_tF7779A0AA6D6B9BE0E0C1C293E7708765DEF7D0F ___U3CBlockNumberU3Ek__BackingField_0;
+	// System.Collections.Generic.List`1<System.Byte[]> Nethereum.Contracts.QueryHandlers.MultiCall.AggregateOutputDTOBase::<ReturnData>k__BackingField
+	List_1_tBFF9DD9FFA06F20E74F9D7AD36610BD754D353A4* ___U3CReturnDataU3Ek__BackingField_1;
+};
+
+// Nethereum.Contracts.QueryHandlers.MultiCall.Call3ValueBase
+struct Call3ValueBase_t43018F8986C4307D6CE2C2BCE8C2E1ACB8E84978  : public RuntimeObject
+{
+	// System.String Nethereum.Contracts.QueryHandlers.MultiCall.Call3ValueBase::<Target>k__BackingField
+	String_t* ___U3CTargetU3Ek__BackingField_0;
+	// System.Boolean Nethereum.Contracts.QueryHandlers.MultiCall.Call3ValueBase::<AllowFailure>k__BackingField
+	bool ___U3CAllowFailureU3Ek__BackingField_1;
+	// System.Numerics.BigInteger Nethereum.Contracts.QueryHandlers.MultiCall.Call3ValueBase::<Value>k__BackingField
+	BigInteger_tF7779A0AA6D6B9BE0E0C1C293E7708765DEF7D0F ___U3CValueU3Ek__BackingField_2;
+	// System.Byte[] Nethereum.Contracts.QueryHandlers.MultiCall.Call3ValueBase::<CallData>k__BackingField
+	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___U3CCallDataU3Ek__BackingField_3;
+};
+
+// System.Delegate
+struct Delegate_t  : public RuntimeObject
+{
+	// System.IntPtr System.Delegate::method_ptr
+	Il2CppMethodPointer ___method_ptr_0;
+	// System.IntPtr System.Delegate::invoke_impl
+	intptr_t ___invoke_impl_1;
+	// System.Object System.Delegate::m_target
+	RuntimeObject* ___m_target_2;
+	// System.IntPtr System.Delegate::method
+	intptr_t ___method_3;
+	// System.IntPtr System.Delegate::delegate_trampoline
+	intptr_t ___delegate_trampoline_4;
+	// System.IntPtr System.Delegate::extra_arg
+	intptr_t ___extra_arg_5;
+	// System.IntPtr System.Delegate::method_code
+	intptr_t ___method_code_6;
+	// System.IntPtr System.Delegate::interp_method
+	intptr_t ___interp_method_7;
+	// System.IntPtr System.Delegate::interp_invoke_impl
+	intptr_t ___interp_invoke_impl_8;
+	// System.Reflection.MethodInfo System.Delegate::method_info
+	MethodInfo_t* ___method_info_9;
+	// System.Reflection.MethodInfo System.Delegate::original_method_info
+	MethodInfo_t* ___original_method_info_10;
+	// System.DelegateData System.Delegate::data
+	DelegateData_t9B286B493293CD2D23A5B2B5EF0E5B1324C2B77E* ___data_11;
+	// System.Boolean System.Delegate::method_is_virtual
+	bool ___method_is_virtual_12;
+};
+// Native definition for P/Invoke marshalling of System.Delegate
+struct Delegate_t_marshaled_pinvoke
+{
+	intptr_t ___method_ptr_0;
+	intptr_t ___invoke_impl_1;
+	Il2CppIUnknown* ___m_target_2;
+	intptr_t ___method_3;
+	intptr_t ___delegate_trampoline_4;
+	intptr_t ___extra_arg_5;
+	intptr_t ___method_code_6;
+	intptr_t ___interp_method_7;
+	intptr_t ___interp_invoke_impl_8;
+	MethodInfo_t* ___method_info_9;
+	MethodInfo_t* ___original_method_info_10;
+	DelegateData_t9B286B493293CD2D23A5B2B5EF0E5B1324C2B77E* ___data_11;
+	int32_t ___method_is_virtual_12;
+};
+// Native definition for COM marshalling of System.Delegate
+struct Delegate_t_marshaled_com
+{
+	intptr_t ___method_ptr_0;
+	intptr_t ___invoke_impl_1;
+	Il2CppIUnknown* ___m_target_2;
+	intptr_t ___method_3;
+	intptr_t ___delegate_trampoline_4;
+	intptr_t ___extra_arg_5;
+	intptr_t ___method_code_6;
+	intptr_t ___interp_method_7;
+	intptr_t ___interp_invoke_impl_8;
+	MethodInfo_t* ___method_info_9;
+	MethodInfo_t* ___original_method_info_10;
+	DelegateData_t9B286B493293CD2D23A5B2B5EF0E5B1324C2B77E* ___data_11;
+	int32_t ___method_is_virtual_12;
+};
+
+// Nethereum.Contracts.Services.EthApiContractService
+struct EthApiContractService_t59E062A2A158CB66E96C7858A003A32427F337B5  : public EthApiService_tD9B555F28B0008E999D5B0EEC8A063418522921A
+{
+	// Nethereum.Contracts.Standards.ERC20.ERC20Service Nethereum.Contracts.Services.EthApiContractService::<ERC20>k__BackingField
+	ERC20Service_tBAC6D3868CE498F01EA1A11F8850CE3724737332* ___U3CERC20U3Ek__BackingField_25;
+	// Nethereum.Contracts.Standards.ERC721.ERC721Service Nethereum.Contracts.Services.EthApiContractService::<ERC721>k__BackingField
+	ERC721Service_tF8C45C07FEEFDEBBD4948DAC26C8BD00047C7EAA* ___U3CERC721U3Ek__BackingField_26;
+	// Nethereum.Contracts.Standards.ERC1155.ERC1155Service Nethereum.Contracts.Services.EthApiContractService::<ERC1155>k__BackingField
+	ERC1155Service_t5929D51764AC25462FF1071BAA5AFD39D39AC0E4* ___U3CERC1155U3Ek__BackingField_27;
+	// Nethereum.Contracts.Standards.ERC1271.ERC1271Service Nethereum.Contracts.Services.EthApiContractService::<ERC1271>k__BackingField
+	ERC1271Service_t5D362FEC8F9FB4A4A43BC1094CDC1E4EFE768893* ___U3CERC1271U3Ek__BackingField_28;
+	// Nethereum.Contracts.Standards.ProofOfHumanity.ProofOfHumanityService Nethereum.Contracts.Services.EthApiContractService::<ProofOfHumanity>k__BackingField
+	ProofOfHumanityService_t9FE5FAAF5CE7C444E3C02617BB45765D9D18E0EB* ___U3CProofOfHumanityU3Ek__BackingField_29;
+	// Nethereum.Contracts.Services.IEthGetContractTransactionErrorReason Nethereum.Contracts.Services.EthApiContractService::<GetContractTransactionErrorReason>k__BackingField
+	RuntimeObject* ___U3CGetContractTransactionErrorReasonU3Ek__BackingField_30;
+};
+
+// System.Exception
+struct Exception_t  : public RuntimeObject
+{
+	// System.String System.Exception::_className
+	String_t* ____className_1;
+	// System.String System.Exception::_message
+	String_t* ____message_2;
+	// System.Collections.IDictionary System.Exception::_data
+	RuntimeObject* ____data_3;
+	// System.Exception System.Exception::_innerException
+	Exception_t* ____innerException_4;
+	// System.String System.Exception::_helpURL
+	String_t* ____helpURL_5;
+	// System.Object System.Exception::_stackTrace
+	RuntimeObject* ____stackTrace_6;
+	// System.String System.Exception::_stackTraceString
+	String_t* ____stackTraceString_7;
+	// System.String System.Exception::_remoteStackTraceString
+	String_t* ____remoteStackTraceString_8;
+	// System.Int32 System.Exception::_remoteStackIndex
+	int32_t ____remoteStackIndex_9;
+	// System.Object System.Exception::_dynamicMethods
+	RuntimeObject* ____dynamicMethods_10;
+	// System.Int32 System.Exception::_HResult
+	int32_t ____HResult_11;
+	// System.String System.Exception::_source
+	String_t* ____source_12;
+	// System.Runtime.Serialization.SafeSerializationManager System.Exception::_safeSerializationManager
+	SafeSerializationManager_tCBB85B95DFD1634237140CD892E82D06ECB3F5E6* ____safeSerializationManager_13;
+	// System.Diagnostics.StackTrace[] System.Exception::captured_traces
+	StackTraceU5BU5D_t32FBCB20930EAF5BAE3F450FF75228E5450DA0DF* ___captured_traces_14;
+	// System.IntPtr[] System.Exception::native_trace_ips
+	IntPtrU5BU5D_tFD177F8C806A6921AD7150264CCC62FA00CAD832* ___native_trace_ips_15;
+	// System.Int32 System.Exception::caught_in_unmanaged
+	int32_t ___caught_in_unmanaged_16;
+};
+
+struct Exception_t_StaticFields
+{
+	// System.Object System.Exception::s_EDILock
+	RuntimeObject* ___s_EDILock_0;
+};
+// Native definition for P/Invoke marshalling of System.Exception
+struct Exception_t_marshaled_pinvoke
+{
+	char* ____className_1;
+	char* ____message_2;
+	RuntimeObject* ____data_3;
+	Exception_t_marshaled_pinvoke* ____innerException_4;
+	char* ____helpURL_5;
+	Il2CppIUnknown* ____stackTrace_6;
+	char* ____stackTraceString_7;
+	char* ____remoteStackTraceString_8;
+	int32_t ____remoteStackIndex_9;
+	Il2CppIUnknown* ____dynamicMethods_10;
+	int32_t ____HResult_11;
+	char* ____source_12;
+	SafeSerializationManager_tCBB85B95DFD1634237140CD892E82D06ECB3F5E6* ____safeSerializationManager_13;
+	StackTraceU5BU5D_t32FBCB20930EAF5BAE3F450FF75228E5450DA0DF* ___captured_traces_14;
+	Il2CppSafeArray/*NONE*/* ___native_trace_ips_15;
+	int32_t ___caught_in_unmanaged_16;
+};
+// Native definition for COM marshalling of System.Exception
+struct Exception_t_marshaled_com
+{
+	Il2CppChar* ____className_1;
+	Il2CppChar* ____message_2;
+	RuntimeObject* ____data_3;
+	Exception_t_marshaled_com* ____innerException_4;
+	Il2CppChar* ____helpURL_5;
+	Il2CppIUnknown* ____stackTrace_6;
+	Il2CppChar* ____stackTraceString_7;
+	Il2CppChar* ____remoteStackTraceString_8;
+	int32_t ____remoteStackIndex_9;
+	Il2CppIUnknown* ____dynamicMethods_10;
+	int32_t ____HResult_11;
+	Il2CppChar* ____source_12;
+	SafeSerializationManager_tCBB85B95DFD1634237140CD892E82D06ECB3F5E6* ____safeSerializationManager_13;
+	StackTraceU5BU5D_t32FBCB20930EAF5BAE3F450FF75228E5450DA0DF* ___captured_traces_14;
+	Il2CppSafeArray/*NONE*/* ___native_trace_ips_15;
+	int32_t ___caught_in_unmanaged_16;
+};
+
+// Nethereum.Contracts.QueryHandlers.MultiCall.AggregateOutputDTO
+struct AggregateOutputDTO_t04A6B814396B3EFE20568FF857DC66DEDADB011C  : public AggregateOutputDTOBase_tBD69D9D5ECA62C1432573218AD544A42BD82ACA6
+{
+};
+
+// Nethereum.Contracts.QueryHandlers.MultiCall.Call3Value
+struct Call3Value_t18A4350E7B502FCB224229CDA7B21BF37C8C6DA6  : public Call3ValueBase_t43018F8986C4307D6CE2C2BCE8C2E1ACB8E84978
+{
+};
+
+// Nethereum.Contracts.CQS.ContractMessageBase
+struct ContractMessageBase_tA9C9FCA2DAE63DE7A525580AC6E60DD85EBE2EAF  : public RuntimeObject
+{
+	// System.Numerics.BigInteger Nethereum.Contracts.CQS.ContractMessageBase::<AmountToSend>k__BackingField
+	BigInteger_tF7779A0AA6D6B9BE0E0C1C293E7708765DEF7D0F ___U3CAmountToSendU3Ek__BackingField_0;
+	// System.Nullable`1<System.Numerics.BigInteger> Nethereum.Contracts.CQS.ContractMessageBase::<Gas>k__BackingField
+	Nullable_1_t4926B6730CE7D5D65A9903F48CFD632867A41E72 ___U3CGasU3Ek__BackingField_1;
+	// System.Nullable`1<System.Numerics.BigInteger> Nethereum.Contracts.CQS.ContractMessageBase::<GasPrice>k__BackingField
+	Nullable_1_t4926B6730CE7D5D65A9903F48CFD632867A41E72 ___U3CGasPriceU3Ek__BackingField_2;
+	// System.String Nethereum.Contracts.CQS.ContractMessageBase::<FromAddress>k__BackingField
+	String_t* ___U3CFromAddressU3Ek__BackingField_3;
+	// System.Nullable`1<System.Numerics.BigInteger> Nethereum.Contracts.CQS.ContractMessageBase::<Nonce>k__BackingField
+	Nullable_1_t4926B6730CE7D5D65A9903F48CFD632867A41E72 ___U3CNonceU3Ek__BackingField_4;
+	// System.Nullable`1<System.Numerics.BigInteger> Nethereum.Contracts.CQS.ContractMessageBase::<MaxFeePerGas>k__BackingField
+	Nullable_1_t4926B6730CE7D5D65A9903F48CFD632867A41E72 ___U3CMaxFeePerGasU3Ek__BackingField_5;
+	// System.Nullable`1<System.Numerics.BigInteger> Nethereum.Contracts.CQS.ContractMessageBase::<MaxPriorityFeePerGas>k__BackingField
+	Nullable_1_t4926B6730CE7D5D65A9903F48CFD632867A41E72 ___U3CMaxPriorityFeePerGasU3Ek__BackingField_6;
+	// System.Nullable`1<System.Byte> Nethereum.Contracts.CQS.ContractMessageBase::<TransactionType>k__BackingField
+	Nullable_1_tEB6689CC9747A3600689077DCBF77B8E8B510505 ___U3CTransactionTypeU3Ek__BackingField_7;
+	// System.Collections.Generic.List`1<Nethereum.RPC.Eth.DTOs.AccessList> Nethereum.Contracts.CQS.ContractMessageBase::<AccessList>k__BackingField
+	List_1_t4E11F5D2075471CC5269E680568592D8D061C750* ___U3CAccessListU3Ek__BackingField_8;
+};
+
+// Nethereum.Hex.HexTypes.HexBigInteger
+struct HexBigInteger_tFD9189302CC4BD35091F94D48E460B5D2D5CA811  : public HexRPCType_1_t0AEB726E19D5EA8BB4CC3B441C661B409A663DE0
+{
+};
+
+// System.MulticastDelegate
+struct MulticastDelegate_t  : public Delegate_t
+{
+	// System.Delegate[] System.MulticastDelegate::delegates
+	DelegateU5BU5D_tC5AB7E8F745616680F337909D3A8E6C722CDF771* ___delegates_13;
+};
+// Native definition for P/Invoke marshalling of System.MulticastDelegate
+struct MulticastDelegate_t_marshaled_pinvoke : public Delegate_t_marshaled_pinvoke
+{
+	Delegate_t_marshaled_pinvoke** ___delegates_13;
+};
+// Native definition for COM marshalling of System.MulticastDelegate
+struct MulticastDelegate_t_marshaled_com : public Delegate_t_marshaled_com
+{
+	Delegate_t_marshaled_com** ___delegates_13;
+};
+
+// Nethereum.JsonRpc.Client.RpcResponseException
+struct RpcResponseException_tC6370C6CDE2D7E420D34DC0EDC15FF7CDD7B062F  : public Exception_t
+{
+	// Nethereum.JsonRpc.Client.RpcError Nethereum.JsonRpc.Client.RpcResponseException::<RpcError>k__BackingField
+	RpcError_tAD1135D857DA241213F9FB00B8F3DED920AD00E3* ___U3CRpcErrorU3Ek__BackingField_18;
+};
+
+// Nethereum.Contracts.Services.EthGetContractTransactionErrorReason/<SendRequestAsync>d__2
+struct U3CSendRequestAsyncU3Ed__2_t620A679FE13A3D919AFF550C2DB3D598D630D84F 
+{
+	// System.Int32 Nethereum.Contracts.Services.EthGetContractTransactionErrorReason/<SendRequestAsync>d__2::<>1__state
+	int32_t ___U3CU3E1__state_0;
+	// System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.String> Nethereum.Contracts.Services.EthGetContractTransactionErrorReason/<SendRequestAsync>d__2::<>t__builder
+	AsyncTaskMethodBuilder_1_tA28B0962049DC249BEC0054E2394B1962E28E90E ___U3CU3Et__builder_1;
+	// Nethereum.Contracts.Services.EthGetContractTransactionErrorReason Nethereum.Contracts.Services.EthGetContractTransactionErrorReason/<SendRequestAsync>d__2::<>4__this
+	EthGetContractTransactionErrorReason_t8880DCF9896FE345F9F9416989019ADDA609BC32* ___U3CU3E4__this_2;
+	// System.String Nethereum.Contracts.Services.EthGetContractTransactionErrorReason/<SendRequestAsync>d__2::transactionHash
+	String_t* ___transactionHash_3;
+	// Nethereum.ABI.FunctionEncoding.FunctionCallDecoder Nethereum.Contracts.Services.EthGetContractTransactionErrorReason/<SendRequestAsync>d__2::<functionCallDecoder>5__2
+	FunctionCallDecoder_tBF1B971B077F309052FE8984C9EA3C169FF8C150* ___U3CfunctionCallDecoderU3E5__2_4;
+	// System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1/ConfiguredTaskAwaiter<Nethereum.RPC.Eth.DTOs.Transaction> Nethereum.Contracts.Services.EthGetContractTransactionErrorReason/<SendRequestAsync>d__2::<>u__1
+	ConfiguredTaskAwaiter_t4E5F0C451DB5E8CE300D5CA0DFA6DB7EBF62A859 ___U3CU3Eu__1_5;
+	// System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1/ConfiguredTaskAwaiter<System.String> Nethereum.Contracts.Services.EthGetContractTransactionErrorReason/<SendRequestAsync>d__2::<>u__2
+	ConfiguredTaskAwaiter_t09B651400CE1B2687A813877C97A9E352E771CA5 ___U3CU3Eu__2_6;
+};
+
+// Nethereum.Contracts.QueryHandlers.MultiCall.MultiQueryHandler/<MultiCallAsync>d__13
+struct U3CMultiCallAsyncU3Ed__13_t7A391C1FA6573DA0FC973869DE104C0D039BBC62 
+{
+	// System.Int32 Nethereum.Contracts.QueryHandlers.MultiCall.MultiQueryHandler/<MultiCallAsync>d__13::<>1__state
+	int32_t ___U3CU3E1__state_0;
+	// System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<Nethereum.Contracts.QueryHandlers.MultiCall.IMulticallInputOutput[]> Nethereum.Contracts.QueryHandlers.MultiCall.MultiQueryHandler/<MultiCallAsync>d__13::<>t__builder
+	AsyncTaskMethodBuilder_1_tFF884780053FBFD2BEEA42DC0DFF882656BBE992 ___U3CU3Et__builder_1;
+	// Nethereum.Contracts.QueryHandlers.MultiCall.IMulticallInputOutput[] Nethereum.Contracts.QueryHandlers.MultiCall.MultiQueryHandler/<MultiCallAsync>d__13::multiCalls
+	IMulticallInputOutputU5BU5D_t7D33DBDC42EE714A687264BC9F3C6C6AED3885F7* ___multiCalls_2;
+	// System.Int32 Nethereum.Contracts.QueryHandlers.MultiCall.MultiQueryHandler/<MultiCallAsync>d__13::pageSize
+	int32_t ___pageSize_3;
+	// Nethereum.Contracts.QueryHandlers.MultiCall.MultiQueryHandler Nethereum.Contracts.QueryHandlers.MultiCall.MultiQueryHandler/<MultiCallAsync>d__13::<>4__this
+	MultiQueryHandler_tD5E9074899A83693F74D77C94F903D4AA15753CE* ___U3CU3E4__this_4;
+	// Nethereum.RPC.Eth.DTOs.BlockParameter Nethereum.Contracts.QueryHandlers.MultiCall.MultiQueryHandler/<MultiCallAsync>d__13::block
+	BlockParameter_t13CF5CC9CDE990ACD945748B2FA7F19EA0A06AD9* ___block_5;
+	// System.Collections.Generic.List`1<Nethereum.Contracts.QueryHandlers.MultiCall.Result> Nethereum.Contracts.QueryHandlers.MultiCall.MultiQueryHandler/<MultiCallAsync>d__13::<results>5__2
+	List_1_t4C68E546060D764C99C1B962BB2C011B0A5EBA19* ___U3CresultsU3E5__2_6;
+	// System.Collections.Generic.IEnumerator`1<System.Collections.Generic.IEnumerable`1<Nethereum.Contracts.QueryHandlers.MultiCall.IMulticallInputOutput>> Nethereum.Contracts.QueryHandlers.MultiCall.MultiQueryHandler/<MultiCallAsync>d__13::<>7__wrap2
+	RuntimeObject* ___U3CU3E7__wrap2_7;
+	// System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1/ConfiguredTaskAwaiter<Nethereum.Contracts.QueryHandlers.MultiCall.Aggregate3ValueOutputDTO> Nethereum.Contracts.QueryHandlers.MultiCall.MultiQueryHandler/<MultiCallAsync>d__13::<>u__1
+	ConfiguredTaskAwaiter_tEDA8191B4B5EA1357682A9F21488544BE1C12100 ___U3CU3Eu__1_8;
+	// System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1/ConfiguredTaskAwaiter<Nethereum.Contracts.QueryHandlers.MultiCall.Aggregate3OutputDTO> Nethereum.Contracts.QueryHandlers.MultiCall.MultiQueryHandler/<MultiCallAsync>d__13::<>u__2
+	ConfiguredTaskAwaiter_t2FB4C6E80ED7E994AC6CEEEB6572E51978E07756 ___U3CU3Eu__2_9;
+};
+
+// Nethereum.Contracts.QueryHandlers.MultiCall.MultiQueryHandler/<MultiCallV1Async>d__10
+struct U3CMultiCallV1AsyncU3Ed__10_t6910A8C2210A3573C94630F3B1F18F910914F89B 
+{
+	// System.Int32 Nethereum.Contracts.QueryHandlers.MultiCall.MultiQueryHandler/<MultiCallV1Async>d__10::<>1__state
+	int32_t ___U3CU3E1__state_0;
+	// System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<Nethereum.Contracts.QueryHandlers.MultiCall.IMulticallInputOutput[]> Nethereum.Contracts.QueryHandlers.MultiCall.MultiQueryHandler/<MultiCallV1Async>d__10::<>t__builder
+	AsyncTaskMethodBuilder_1_tFF884780053FBFD2BEEA42DC0DFF882656BBE992 ___U3CU3Et__builder_1;
+	// Nethereum.Contracts.QueryHandlers.MultiCall.IMulticallInputOutput[] Nethereum.Contracts.QueryHandlers.MultiCall.MultiQueryHandler/<MultiCallV1Async>d__10::multiCalls
+	IMulticallInputOutputU5BU5D_t7D33DBDC42EE714A687264BC9F3C6C6AED3885F7* ___multiCalls_2;
+	// Nethereum.Contracts.QueryHandlers.MultiCall.MultiQueryHandler Nethereum.Contracts.QueryHandlers.MultiCall.MultiQueryHandler/<MultiCallV1Async>d__10::<>4__this
+	MultiQueryHandler_tD5E9074899A83693F74D77C94F903D4AA15753CE* ___U3CU3E4__this_3;
+	// Nethereum.RPC.Eth.DTOs.BlockParameter Nethereum.Contracts.QueryHandlers.MultiCall.MultiQueryHandler/<MultiCallV1Async>d__10::block
+	BlockParameter_t13CF5CC9CDE990ACD945748B2FA7F19EA0A06AD9* ___block_4;
+	// System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1/ConfiguredTaskAwaiter<Nethereum.Contracts.QueryHandlers.MultiCall.AggregateOutputDTO> Nethereum.Contracts.QueryHandlers.MultiCall.MultiQueryHandler/<MultiCallV1Async>d__10::<>u__1
+	ConfiguredTaskAwaiter_tBFC63C1299C54709ABE6BDEB21685AA9B3534BB9 ___U3CU3Eu__1_5;
+};
+
+// System.Func`2<Nethereum.Contracts.QueryHandlers.MultiCall.IMulticallInputOutput,System.Boolean>
+struct Func_2_tC7D8CC18CA3EE41739FE11EB4C3AF3F712E0FAA8  : public MulticastDelegate_t
+{
+};
+
+// Nethereum.Contracts.FunctionMessage
+struct FunctionMessage_t6C573C6BC76231A80D41D066556324BB97620287  : public ContractMessageBase_tA9C9FCA2DAE63DE7A525580AC6E60DD85EBE2EAF
+{
+};
+
+// Nethereum.Contracts.QueryHandlers.MultiCall.Aggregate3FunctionBase
+struct Aggregate3FunctionBase_t598C9701594935BF1D7F126FAE3A698C5D285C36  : public FunctionMessage_t6C573C6BC76231A80D41D066556324BB97620287
+{
+	// System.Collections.Generic.List`1<Nethereum.Contracts.QueryHandlers.MultiCall.Call3> Nethereum.Contracts.QueryHandlers.MultiCall.Aggregate3FunctionBase::<Calls>k__BackingField
+	List_1_t913451B7A13CEE27B44C60CE4E1378612824AE38* ___U3CCallsU3Ek__BackingField_9;
+};
+
+// Nethereum.Contracts.QueryHandlers.MultiCall.Aggregate3ValueFunctionBase
+struct Aggregate3ValueFunctionBase_t771A483E57D1D3F216B1DFF5AD95F952BFA640F4  : public FunctionMessage_t6C573C6BC76231A80D41D066556324BB97620287
+{
+	// System.Collections.Generic.List`1<Nethereum.Contracts.QueryHandlers.MultiCall.Call3Value> Nethereum.Contracts.QueryHandlers.MultiCall.Aggregate3ValueFunctionBase::<Calls>k__BackingField
+	List_1_t376C4E85EFA0FB2C83DA6AEC65B0D3D437A82B0E* ___U3CCallsU3Ek__BackingField_9;
+};
+
+// Nethereum.Contracts.QueryHandlers.MultiCall.AggregateFunctionBase
+struct AggregateFunctionBase_tED9275D4B009322E4C25321783EF2376CC47A98D  : public FunctionMessage_t6C573C6BC76231A80D41D066556324BB97620287
+{
+	// System.Collections.Generic.List`1<Nethereum.Contracts.QueryHandlers.MultiCall.Call> Nethereum.Contracts.QueryHandlers.MultiCall.AggregateFunctionBase::<Calls>k__BackingField
+	List_1_t1CFC44309FCDA176EA29234D4ABE7C7F1C7195FE* ___U3CCallsU3Ek__BackingField_9;
+};
+
+// Nethereum.Contracts.TransactionHandlers.MultiSend.MultiSendFunction
+struct MultiSendFunction_t283117F8190279FA3307712FD93408FF3B0EE292  : public FunctionMessage_t6C573C6BC76231A80D41D066556324BB97620287
+{
+	// System.Byte[] Nethereum.Contracts.TransactionHandlers.MultiSend.MultiSendFunction::<Transactions>k__BackingField
+	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___U3CTransactionsU3Ek__BackingField_9;
+};
+
+// Nethereum.Contracts.QueryHandlers.MultiCall.Aggregate3Function
+struct Aggregate3Function_t22B497CF7B74F9B7EAE57E49F180946D62DE0A80  : public Aggregate3FunctionBase_t598C9701594935BF1D7F126FAE3A698C5D285C36
+{
+};
+
+// Nethereum.Contracts.QueryHandlers.MultiCall.Aggregate3ValueFunction
+struct Aggregate3ValueFunction_t7255D88599D2644B8FD0B19D72639F0F5D2521CC  : public Aggregate3ValueFunctionBase_t771A483E57D1D3F216B1DFF5AD95F952BFA640F4
+{
+};
+
+// Nethereum.Contracts.QueryHandlers.MultiCall.AggregateFunction
+struct AggregateFunction_tFEE01853E17B270CE0A401F2931520B99AE9A0A7  : public AggregateFunctionBase_tED9275D4B009322E4C25321783EF2376CC47A98D
+{
+};
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+// System.Byte[]
+struct ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031  : public RuntimeArray
+{
+	ALIGN_FIELD (8) uint8_t m_Items[1];
+
+	inline uint8_t GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline uint8_t* GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, uint8_t value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+	}
+	inline uint8_t GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline uint8_t* GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, uint8_t value)
+	{
+		m_Items[index] = value;
+	}
+};
+// Nethereum.Contracts.QueryHandlers.MultiCall.IMulticallInputOutput[]
+struct IMulticallInputOutputU5BU5D_t7D33DBDC42EE714A687264BC9F3C6C6AED3885F7  : public RuntimeArray
+{
+	ALIGN_FIELD (8) RuntimeObject* m_Items[1];
+
+	inline RuntimeObject* GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline RuntimeObject** GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, RuntimeObject* value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
+	}
+	inline RuntimeObject* GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline RuntimeObject** GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, RuntimeObject* value)
+	{
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
+	}
+};
+// Nethereum.Contracts.TransactionHandlers.MultiSend.IMultiSendInput[]
+struct IMultiSendInputU5BU5D_t0A5262003FB6442DE35A0573C6BDE76A153EDE8F  : public RuntimeArray
+{
+	ALIGN_FIELD (8) RuntimeObject* m_Items[1];
+
+	inline RuntimeObject* GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline RuntimeObject** GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, RuntimeObject* value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
+	}
+	inline RuntimeObject* GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline RuntimeObject** GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, RuntimeObject* value)
+	{
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
+	}
+};
+// Nethereum.ABI.ABIValue[]
+struct ABIValueU5BU5D_t5053A4AB39A1EDA3F954A7A8BAD52DF73676F8E5  : public RuntimeArray
+{
+	ALIGN_FIELD (8) ABIValue_t53C363B3F7F73B7F8F0D7804041B2B3ED1041567* m_Items[1];
+
+	inline ABIValue_t53C363B3F7F73B7F8F0D7804041B2B3ED1041567* GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline ABIValue_t53C363B3F7F73B7F8F0D7804041B2B3ED1041567** GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, ABIValue_t53C363B3F7F73B7F8F0D7804041B2B3ED1041567* value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
+	}
+	inline ABIValue_t53C363B3F7F73B7F8F0D7804041B2B3ED1041567* GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline ABIValue_t53C363B3F7F73B7F8F0D7804041B2B3ED1041567** GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, ABIValue_t53C363B3F7F73B7F8F0D7804041B2B3ED1041567* value)
+	{
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
+	}
+};
+// System.Object[]
+struct ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918  : public RuntimeArray
+{
+	ALIGN_FIELD (8) RuntimeObject* m_Items[1];
+
+	inline RuntimeObject* GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline RuntimeObject** GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, RuntimeObject* value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
+	}
+	inline RuntimeObject* GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline RuntimeObject** GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, RuntimeObject* value)
+	{
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
+	}
+};
+
+
+// System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<TResult> System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Object>::Create()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AsyncTaskMethodBuilder_1_tE810F083929D7952F192036D298085BD4B048AD0 AsyncTaskMethodBuilder_1_Create_m6A59453D00C0143F178809ADFD98C90E8C291ABB_gshared (const RuntimeMethod* method) ;
+// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Object>::Start<Nethereum.Contracts.Services.EthGetContractTransactionErrorReason/<SendRequestAsync>d__2>(TStateMachine&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncTaskMethodBuilder_1_Start_TisU3CSendRequestAsyncU3Ed__2_t620A679FE13A3D919AFF550C2DB3D598D630D84F_m767F9424D233EAD8CCB12C5C8E65069E79D19523_gshared (AsyncTaskMethodBuilder_1_tE810F083929D7952F192036D298085BD4B048AD0* __this, U3CSendRequestAsyncU3Ed__2_t620A679FE13A3D919AFF550C2DB3D598D630D84F* ___stateMachine0, const RuntimeMethod* method) ;
+// System.Threading.Tasks.Task`1<TResult> System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Object>::get_Task()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Task_1_t0C4CD3A5BB93A184420D73218644C56C70FDA7E2* AsyncTaskMethodBuilder_1_get_Task_mEA092EC6F1324A9D694CF6056FA8583F2A2BDC89_gshared (AsyncTaskMethodBuilder_1_tE810F083929D7952F192036D298085BD4B048AD0* __this, const RuntimeMethod* method) ;
+// System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1<TResult> System.Threading.Tasks.Task`1<System.Object>::ConfigureAwait(System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ConfiguredTaskAwaitable_1_t97C129EA63015240E6F9E767F4A120CC9122FEF8 Task_1_ConfigureAwait_m9D6420C859925B7C250DED7586DD770C91632070_gshared (Task_1_t0C4CD3A5BB93A184420D73218644C56C70FDA7E2* __this, bool ___continueOnCapturedContext0, const RuntimeMethod* method) ;
+// System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1/ConfiguredTaskAwaiter<TResult> System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1<System.Object>::GetAwaiter()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ConfiguredTaskAwaiter_t28A5A60199BBE7F1F31159301DD211EFDCF955E2 ConfiguredTaskAwaitable_1_GetAwaiter_m10364C3B0A904803E890B2D75674665F986BDAB2_gshared_inline (ConfiguredTaskAwaitable_1_t97C129EA63015240E6F9E767F4A120CC9122FEF8* __this, const RuntimeMethod* method) ;
+// System.Boolean System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1/ConfiguredTaskAwaiter<System.Object>::get_IsCompleted()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ConfiguredTaskAwaiter_get_IsCompleted_mD6243A7544181F96816A5F81459F4B66908ADB5E_gshared (ConfiguredTaskAwaiter_t28A5A60199BBE7F1F31159301DD211EFDCF955E2* __this, const RuntimeMethod* method) ;
+// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Object>::AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1/ConfiguredTaskAwaiter<System.Object>,Nethereum.Contracts.Services.EthGetContractTransactionErrorReason/<SendRequestAsync>d__2>(TAwaiter&,TStateMachine&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisConfiguredTaskAwaiter_t28A5A60199BBE7F1F31159301DD211EFDCF955E2_TisU3CSendRequestAsyncU3Ed__2_t620A679FE13A3D919AFF550C2DB3D598D630D84F_mE3BBEA92A623FB1838BBC0724F93F98B3139F6BB_gshared (AsyncTaskMethodBuilder_1_tE810F083929D7952F192036D298085BD4B048AD0* __this, ConfiguredTaskAwaiter_t28A5A60199BBE7F1F31159301DD211EFDCF955E2* ___awaiter0, U3CSendRequestAsyncU3Ed__2_t620A679FE13A3D919AFF550C2DB3D598D630D84F* ___stateMachine1, const RuntimeMethod* method) ;
+// TResult System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1/ConfiguredTaskAwaiter<System.Object>::GetResult()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* ConfiguredTaskAwaiter_GetResult_m00ABE5C46A983C38086438B7A7CB2C62296B3383_gshared (ConfiguredTaskAwaiter_t28A5A60199BBE7F1F31159301DD211EFDCF955E2* __this, const RuntimeMethod* method) ;
+// System.Boolean Nethereum.Hex.HexTypes.HexRPCType`1<System.Numerics.BigInteger>::op_Inequality(Nethereum.Hex.HexTypes.HexRPCType`1<T>,Nethereum.Hex.HexTypes.HexRPCType`1<T>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HexRPCType_1_op_Inequality_mABC696C29299C847083DB8364B468AEB2428264F_gshared (HexRPCType_1_t0AEB726E19D5EA8BB4CC3B441C661B409A663DE0* ___lhs0, HexRPCType_1_t0AEB726E19D5EA8BB4CC3B441C661B409A663DE0* ___rhs1, const RuntimeMethod* method) ;
+// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Object>::SetException(System.Exception)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncTaskMethodBuilder_1_SetException_mC2F74B26F5303F9F960965220E2866D777F1A5C6_gshared (AsyncTaskMethodBuilder_1_tE810F083929D7952F192036D298085BD4B048AD0* __this, Exception_t* ___exception0, const RuntimeMethod* method) ;
+// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Object>::SetResult(TResult)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncTaskMethodBuilder_1_SetResult_m0D83195F995F9825D7A6DCDC3835D6917C43B5A6_gshared (AsyncTaskMethodBuilder_1_tE810F083929D7952F192036D298085BD4B048AD0* __this, RuntimeObject* ___result0, const RuntimeMethod* method) ;
+// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Object>::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncTaskMethodBuilder_1_SetStateMachine_m3BE54983634ABF5BE05200C7894AD0F9F20BDD65_gshared (AsyncTaskMethodBuilder_1_tE810F083929D7952F192036D298085BD4B048AD0* __this, RuntimeObject* ___stateMachine0, const RuntimeMethod* method) ;
+// System.Void Nethereum.Contracts.QueryHandlers.QueryToDTOHandler`2<System.Object,System.Object>::.ctor(Nethereum.JsonRpc.Client.IClient,System.String,Nethereum.RPC.Eth.DTOs.BlockParameter)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void QueryToDTOHandler_2__ctor_m4D7557CFD6BC4AE48ADE13F1127C1B16926A0B90_gshared (QueryToDTOHandler_2_tF7049444AAFEA216FC818B285A22A5A1958B369A* __this, RuntimeObject* ___client0, String_t* ___defaultAddressFrom1, BlockParameter_t13CF5CC9CDE990ACD945748B2FA7F19EA0A06AD9* ___defaultBlockParameter2, const RuntimeMethod* method) ;
+// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Object>::Start<Nethereum.Contracts.QueryHandlers.MultiCall.MultiQueryHandler/<MultiCallV1Async>d__10>(TStateMachine&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncTaskMethodBuilder_1_Start_TisU3CMultiCallV1AsyncU3Ed__10_t6910A8C2210A3573C94630F3B1F18F910914F89B_mBF6CE6978B95637D4AA3732D51886CB99A456235_gshared (AsyncTaskMethodBuilder_1_tE810F083929D7952F192036D298085BD4B048AD0* __this, U3CMultiCallV1AsyncU3Ed__10_t6910A8C2210A3573C94630F3B1F18F910914F89B* ___stateMachine0, const RuntimeMethod* method) ;
+// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Object>::Start<Nethereum.Contracts.QueryHandlers.MultiCall.MultiQueryHandler/<MultiCallAsync>d__13>(TStateMachine&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncTaskMethodBuilder_1_Start_TisU3CMultiCallAsyncU3Ed__13_t7A391C1FA6573DA0FC973869DE104C0D039BBC62_m34F7037990E13CFA9E3A10F40DB3E199D72E515A_gshared (AsyncTaskMethodBuilder_1_tE810F083929D7952F192036D298085BD4B048AD0* __this, U3CMultiCallAsyncU3Ed__13_t7A391C1FA6573DA0FC973869DE104C0D039BBC62* ___stateMachine0, const RuntimeMethod* method) ;
+// System.Void System.Func`2<System.Object,System.Boolean>::.ctor(System.Object,System.IntPtr)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Func_2__ctor_m13C0A7F33154D861E2A041B52E88461832DA1697_gshared (Func_2_tE1F0D41563EE092E5E5540B061449FDE88F1DC00* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method) ;
+// System.Boolean System.Linq.Enumerable::Any<System.Object>(System.Collections.Generic.IEnumerable`1<TSource>,System.Func`2<TSource,System.Boolean>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerable_Any_TisRuntimeObject_mF6C6AC8DF8971883615734832D09C9210B956F0F_gshared (RuntimeObject* ___source0, Func_2_tE1F0D41563EE092E5E5540B061449FDE88F1DC00* ___predicate1, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.List`1<System.Object>::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1__ctor_m7F078BB342729BDF11327FD89D7872265328F690_gshared (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, const RuntimeMethod* method) ;
+// System.Collections.Generic.IEnumerable`1<System.Collections.Generic.IEnumerable`1<T>> Nethereum.Util.EnumerableExtensions::Batch<System.Object>(System.Collections.Generic.IEnumerable`1<T>,System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* EnumerableExtensions_Batch_TisRuntimeObject_mA509C55AA52324E7EA7E11C7E6AC8DF24F239A6A_gshared (RuntimeObject* ___source0, int32_t ___size1, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.List`1<System.Object>::Add(T)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void List_1_Add_mEBCF994CC3814631017F46A387B1A192ED6C85C7_gshared_inline (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, RuntimeObject* ___item0, const RuntimeMethod* method) ;
+// System.Threading.Tasks.Task`1<TFunctionOutput> Nethereum.Contracts.QueryHandlers.QueryDecoderBaseHandler`2<System.Object,System.Object>::QueryAsync(System.String,TFunctionMessage,Nethereum.RPC.Eth.DTOs.BlockParameter)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Task_1_t0C4CD3A5BB93A184420D73218644C56C70FDA7E2* QueryDecoderBaseHandler_2_QueryAsync_m02A5FF9F3738CF9544DE5898CDAD544599FF73C3_gshared (QueryDecoderBaseHandler_2_t69B68E41C7181344838F15DE0036F86D07346AF3* __this, String_t* ___contractAddress0, RuntimeObject* ___functionMessage1, BlockParameter_t13CF5CC9CDE990ACD945748B2FA7F19EA0A06AD9* ___block2, const RuntimeMethod* method) ;
+// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Object>::AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1/ConfiguredTaskAwaiter<System.Object>,Nethereum.Contracts.QueryHandlers.MultiCall.MultiQueryHandler/<MultiCallAsync>d__13>(TAwaiter&,TStateMachine&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisConfiguredTaskAwaiter_t28A5A60199BBE7F1F31159301DD211EFDCF955E2_TisU3CMultiCallAsyncU3Ed__13_t7A391C1FA6573DA0FC973869DE104C0D039BBC62_m256962C2F6D7196426D006E57205A4C842F5855F_gshared (AsyncTaskMethodBuilder_1_tE810F083929D7952F192036D298085BD4B048AD0* __this, ConfiguredTaskAwaiter_t28A5A60199BBE7F1F31159301DD211EFDCF955E2* ___awaiter0, U3CMultiCallAsyncU3Ed__13_t7A391C1FA6573DA0FC973869DE104C0D039BBC62* ___stateMachine1, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.List`1<System.Object>::AddRange(System.Collections.Generic.IEnumerable`1<T>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1_AddRange_m1F76B300133150E6046C5FED00E88B5DE0A02E17_gshared (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, RuntimeObject* ___collection0, const RuntimeMethod* method) ;
+// T System.Collections.Generic.List`1<System.Object>::get_Item(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* List_1_get_Item_m33561245D64798C2AB07584C0EC4F240E4839A38_gshared (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, int32_t ___index0, const RuntimeMethod* method) ;
+// System.Int32 System.Collections.Generic.List`1<System.Object>::get_Count()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t List_1_get_Count_m4407E4C389F22B8CEC282C15D56516658746C383_gshared_inline (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, const RuntimeMethod* method) ;
+// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Object>::AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1/ConfiguredTaskAwaiter<System.Object>,Nethereum.Contracts.QueryHandlers.MultiCall.MultiQueryHandler/<MultiCallV1Async>d__10>(TAwaiter&,TStateMachine&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisConfiguredTaskAwaiter_t28A5A60199BBE7F1F31159301DD211EFDCF955E2_TisU3CMultiCallV1AsyncU3Ed__10_t6910A8C2210A3573C94630F3B1F18F910914F89B_m0F1FD67F6848D615D0109A9E6554EB934D959722_gshared (AsyncTaskMethodBuilder_1_tE810F083929D7952F192036D298085BD4B048AD0* __this, ConfiguredTaskAwaiter_t28A5A60199BBE7F1F31159301DD211EFDCF955E2* ___awaiter0, U3CMultiCallV1AsyncU3Ed__10_t6910A8C2210A3573C94630F3B1F18F910914F89B* ___stateMachine1, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.List`1<System.Byte>::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1__ctor_mC411581553467A7DB76C06E5E5FCA34E4EC621B9_gshared (List_1_t7D15BE3246500BBF1A24C24DBF963B89A876255B* __this, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.List`1<System.Byte>::AddRange(System.Collections.Generic.IEnumerable`1<T>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1_AddRange_mF51C7242A9710C837B9158D0D120549E49E4FB67_gshared (List_1_t7D15BE3246500BBF1A24C24DBF963B89A876255B* __this, RuntimeObject* ___collection0, const RuntimeMethod* method) ;
+// T[] System.Collections.Generic.List`1<System.Byte>::ToArray()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* List_1_ToArray_m23F8BB7CABADC11EBCAB5AB701B75F56C865BE24_gshared (List_1_t7D15BE3246500BBF1A24C24DBF963B89A876255B* __this, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.List`1<System.Object>::AddWithResize(T)
+IL2CPP_EXTERN_C IL2CPP_NO_INLINE IL2CPP_METHOD_ATTR void List_1_AddWithResize_m79A9BF770BEF9C06BE40D5401E55E375F2726CC4_gshared (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, RuntimeObject* ___item0, const RuntimeMethod* method) ;
+
+// System.Void Nethereum.Contracts.Standards.ENS.ENSRegistry.ContractDefinition.TransferEventDTOBase::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TransferEventDTOBase__ctor_m763BDC6F1F069EB5B247BB150FB74BD5650D94CA (TransferEventDTOBase_t51D219DAA28F2C3153574E724F5DE845D80E7DF2* __this, const RuntimeMethod* method) ;
+// System.Void System.Object::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2 (RuntimeObject* __this, const RuntimeMethod* method) ;
+// System.Void Nethereum.Contracts.Standards.ENS.ENSRegistry.ContractDefinition.NewOwnerEventDTOBase::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NewOwnerEventDTOBase__ctor_m01A3635DD8BBA2B8B08969A0BF3C15171D061924 (NewOwnerEventDTOBase_t4F993F65DA1CF39F8C7D70E6FD87B50F4B015AE1* __this, const RuntimeMethod* method) ;
+// System.Void Nethereum.Contracts.Standards.ENS.ENSRegistry.ContractDefinition.NewResolverEventDTOBase::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NewResolverEventDTOBase__ctor_m7CF80CF98660846D99DEC8FAD03AE871382ABA7B (NewResolverEventDTOBase_t152850104E6A8E393DBBAEEE524EC6EA5ADC88B7* __this, const RuntimeMethod* method) ;
+// System.Void Nethereum.Contracts.Standards.ENS.ENSRegistry.ContractDefinition.NewTTLEventDTOBase::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NewTTLEventDTOBase__ctor_mE12F22BA3985095B605E08FA86E60021639951E5 (NewTTLEventDTOBase_t75B6BF9AFE182206553103335F8A3846297A2684* __this, const RuntimeMethod* method) ;
+// System.Void Nethereum.Contracts.Standards.ENS.ENSRegistry.ContractDefinition.ResolverOutputDTOBase::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ResolverOutputDTOBase__ctor_mE2EDB849876C6F0B3AB99485153138690E120B69 (ResolverOutputDTOBase_t0CDAA5919146EB924331972B02CE06B77995BCFD* __this, const RuntimeMethod* method) ;
+// System.Void Nethereum.Contracts.Standards.ENS.ENSRegistry.ContractDefinition.OwnerOutputDTOBase::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OwnerOutputDTOBase__ctor_m3144C6DCCED2B58ECD905CBCE1FE54A33F205A2F (OwnerOutputDTOBase_t47ACEBC9D43D5A131E505BD251667FC04917D4B4* __this, const RuntimeMethod* method) ;
+// System.Void Nethereum.Contracts.Standards.ENS.ENSRegistry.ContractDefinition.TtlOutputDTOBase::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TtlOutputDTOBase__ctor_m6C163836D29C020FC243B54477D4273899465306 (TtlOutputDTOBase_tF9B8C65D01AB7B3CD9AB43F3F58629CE0735080C* __this, const RuntimeMethod* method) ;
+// System.Void Nethereum.RPC.EthApiService::.ctor(Nethereum.JsonRpc.Client.IClient)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EthApiService__ctor_mEFF1038DB28442E1FBCD48BFDBBEB81FD7D2F006 (EthApiService_tD9B555F28B0008E999D5B0EEC8A063418522921A* __this, RuntimeObject* ___client0, const RuntimeMethod* method) ;
+// Nethereum.RPC.Eth.Services.IEthApiTransactionsService Nethereum.RPC.EthApiService::get_Transactions()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* EthApiService_get_Transactions_m4B7097A8A710C878E1DF28A6A6C26D2C674C4A98_inline (EthApiService_tD9B555F28B0008E999D5B0EEC8A063418522921A* __this, const RuntimeMethod* method) ;
+// System.Void Nethereum.Contracts.Services.EthGetContractTransactionErrorReason::.ctor(Nethereum.RPC.Eth.Services.IEthApiTransactionsService)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EthGetContractTransactionErrorReason__ctor_mBFBDFF70FD43E98EB9AAC700249D860AF12C3485 (EthGetContractTransactionErrorReason_t8880DCF9896FE345F9F9416989019ADDA609BC32* __this, RuntimeObject* ___apiTransactionsService0, const RuntimeMethod* method) ;
+// System.Void Nethereum.Contracts.Standards.ERC721.ERC721Service::.ctor(Nethereum.Contracts.Services.IEthApiContractService)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ERC721Service__ctor_mF1F78FBDBE331F844B8B29239377518F82CEF286 (ERC721Service_tF8C45C07FEEFDEBBD4948DAC26C8BD00047C7EAA* __this, RuntimeObject* ___ethApiContractService0, const RuntimeMethod* method) ;
+// System.Void Nethereum.Contracts.Services.EthApiContractService::set_ERC721(Nethereum.Contracts.Standards.ERC721.ERC721Service)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void EthApiContractService_set_ERC721_m91197F6E4ED9F194F72A1B200B02A9BA50616486_inline (EthApiContractService_t59E062A2A158CB66E96C7858A003A32427F337B5* __this, ERC721Service_tF8C45C07FEEFDEBBD4948DAC26C8BD00047C7EAA* ___value0, const RuntimeMethod* method) ;
+// System.Void Nethereum.Contracts.Standards.ERC20.ERC20Service::.ctor(Nethereum.Contracts.Services.IEthApiContractService)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ERC20Service__ctor_mCC02F073A5A14E336EC469497D56E08BB9E9EDB5 (ERC20Service_tBAC6D3868CE498F01EA1A11F8850CE3724737332* __this, RuntimeObject* ___ethApiContractService0, const RuntimeMethod* method) ;
+// System.Void Nethereum.Contracts.Services.EthApiContractService::set_ERC20(Nethereum.Contracts.Standards.ERC20.ERC20Service)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void EthApiContractService_set_ERC20_mEFE42BB33ABAFA2C8A95D7BA4016796D77BE8C53_inline (EthApiContractService_t59E062A2A158CB66E96C7858A003A32427F337B5* __this, ERC20Service_tBAC6D3868CE498F01EA1A11F8850CE3724737332* ___value0, const RuntimeMethod* method) ;
+// System.Void Nethereum.Contracts.Standards.ERC1155.ERC1155Service::.ctor(Nethereum.Contracts.Services.IEthApiContractService)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ERC1155Service__ctor_mA256C24471EA1C8040545F8D6F830D792ED8C8CA (ERC1155Service_t5929D51764AC25462FF1071BAA5AFD39D39AC0E4* __this, RuntimeObject* ___ethApiContractService0, const RuntimeMethod* method) ;
+// System.Void Nethereum.Contracts.Services.EthApiContractService::set_ERC1155(Nethereum.Contracts.Standards.ERC1155.ERC1155Service)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void EthApiContractService_set_ERC1155_mFE87E92E9CD0DECA7D68BABA3DBED9FDB89FFBDF_inline (EthApiContractService_t59E062A2A158CB66E96C7858A003A32427F337B5* __this, ERC1155Service_t5929D51764AC25462FF1071BAA5AFD39D39AC0E4* ___value0, const RuntimeMethod* method) ;
+// System.Void Nethereum.Contracts.Standards.ERC1271.ERC1271Service::.ctor(Nethereum.Contracts.Services.IEthApiContractService)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ERC1271Service__ctor_mACF1E7BAEFDE6750A1AD58F9EE91BC5FA379B5CD (ERC1271Service_t5D362FEC8F9FB4A4A43BC1094CDC1E4EFE768893* __this, RuntimeObject* ___ethApiContractService0, const RuntimeMethod* method) ;
+// System.Void Nethereum.Contracts.Services.EthApiContractService::set_ERC1271(Nethereum.Contracts.Standards.ERC1271.ERC1271Service)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void EthApiContractService_set_ERC1271_mB4485253ECE12D1A18B3B5962091D5C370244081_inline (EthApiContractService_t59E062A2A158CB66E96C7858A003A32427F337B5* __this, ERC1271Service_t5D362FEC8F9FB4A4A43BC1094CDC1E4EFE768893* ___value0, const RuntimeMethod* method) ;
+// System.Void Nethereum.Contracts.Standards.ProofOfHumanity.ProofOfHumanityService::.ctor(Nethereum.Contracts.Services.IEthApiContractService)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ProofOfHumanityService__ctor_mEA98523C2F9B796F9F1A9E6F6A3F7FA25ADF0264 (ProofOfHumanityService_t9FE5FAAF5CE7C444E3C02617BB45765D9D18E0EB* __this, RuntimeObject* ___ethApiContractService0, const RuntimeMethod* method) ;
+// System.Void Nethereum.Contracts.Services.EthApiContractService::set_ProofOfHumanity(Nethereum.Contracts.Standards.ProofOfHumanity.ProofOfHumanityService)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void EthApiContractService_set_ProofOfHumanity_m088F7E4EDD29B0ECAC3733725EB6378F55D29122_inline (EthApiContractService_t59E062A2A158CB66E96C7858A003A32427F337B5* __this, ProofOfHumanityService_t9FE5FAAF5CE7C444E3C02617BB45765D9D18E0EB* ___value0, const RuntimeMethod* method) ;
+// System.Void Nethereum.RPC.EthApiService::.ctor(Nethereum.JsonRpc.Client.IClient,Nethereum.RPC.TransactionManagers.ITransactionManager)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EthApiService__ctor_m37BEBAA3F11DB23D5F649BF66B98D245DE36E9D3 (EthApiService_tD9B555F28B0008E999D5B0EEC8A063418522921A* __this, RuntimeObject* ___client0, RuntimeObject* ___transactionManager1, const RuntimeMethod* method) ;
+// System.Void Nethereum.Contracts.DeployContract::.ctor(Nethereum.RPC.TransactionManagers.ITransactionManager)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DeployContract__ctor_mD06CCD12597A2F995AF58CDD510D74BA2D00FE3A (DeployContract_tDA5FAC0330CF3A47EE209848EBC4585CDAC09782* __this, RuntimeObject* ___transactionManager0, const RuntimeMethod* method) ;
+// System.Void Nethereum.Contracts.Contract::.ctor(Nethereum.RPC.EthApiService,System.String,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Contract__ctor_m361B8C78A0C962D14BC77F175871AF3CD96D2C2C (Contract_t519479FAD68F68E0E702B217CB2E26140F39C974* __this, EthApiService_tD9B555F28B0008E999D5B0EEC8A063418522921A* ___eth0, String_t* ___abi1, String_t* ___contractAddress2, const RuntimeMethod* method) ;
+// System.Void Nethereum.Contracts.ContractHandlers.ContractHandler::.ctor(System.String,Nethereum.Contracts.Services.EthApiContractService,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ContractHandler__ctor_mFCCFE10FD4263A411D09BCD02C96CDFF3CDFCB6E (ContractHandler_t3CC1E74BCBEFB5D4531C7BA554B008F0149B1DF7* __this, String_t* ___contractAddress0, EthApiContractService_t59E062A2A158CB66E96C7858A003A32427F337B5* ___ethApiContractService1, String_t* ___addressFrom2, const RuntimeMethod* method) ;
+// Nethereum.JsonRpc.Client.IClient Nethereum.RPC.RpcClientWrapper::get_Client()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* RpcClientWrapper_get_Client_m5B5B22840834B279EF50CC2897D0CB69D8E3C059_inline (RpcClientWrapper_t639264795AA92FB47F8CBBE7183EEBFE0A565854* __this, const RuntimeMethod* method) ;
+// Nethereum.RPC.Eth.DTOs.BlockParameter Nethereum.RPC.EthApiService::get_DefaultBlock()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR BlockParameter_t13CF5CC9CDE990ACD945748B2FA7F19EA0A06AD9* EthApiService_get_DefaultBlock_m41019BB33B51EA84371191C927EAF9105725D7ED_inline (EthApiService_tD9B555F28B0008E999D5B0EEC8A063418522921A* __this, const RuntimeMethod* method) ;
+// System.Void Nethereum.Contracts.QueryHandlers.MultiCall.MultiQueryHandler::.ctor(Nethereum.JsonRpc.Client.IClient,System.String,System.String,Nethereum.RPC.Eth.DTOs.BlockParameter)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MultiQueryHandler__ctor_m55A94E956618A8B631FBD680D423FA2C3C2257E7 (MultiQueryHandler_tD5E9074899A83693F74D77C94F903D4AA15753CE* __this, RuntimeObject* ___client0, String_t* ___multiCallContractAdress1, String_t* ___defaultAddressFrom2, BlockParameter_t13CF5CC9CDE990ACD945748B2FA7F19EA0A06AD9* ___defaultBlockParameter3, const RuntimeMethod* method) ;
+// System.Void Nethereum.Contracts.Standards.ENS.ENSService::.ctor(Nethereum.Contracts.Services.IEthApiContractService,System.String,Nethereum.Contracts.Standards.ENS.IEnsCCIPService)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ENSService__ctor_m69AAAF005ACC6FA5A1689FBFAD9590F31C495E28 (ENSService_t1AF55C7FB4B642A1E34630FECB36139454F7ACB9* __this, RuntimeObject* ___ethApiContractService0, String_t* ___ensRegistryAddress1, RuntimeObject* ___ccipService2, const RuntimeMethod* method) ;
+// System.Void Nethereum.Contracts.Standards.ENS.EthTLSService::.ctor(Nethereum.Contracts.Services.IEthApiContractService,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EthTLSService__ctor_m5D39DC336114C8589FF0A4DE1875FC0E3802E3FA (EthTLSService_t79D14B3001E560EF02929D4DE7B8AE45E4F53C86* __this, RuntimeObject* ___ethApiContractService0, String_t* ___ensRegistryAddress1, const RuntimeMethod* method) ;
+// System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<TResult> System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.String>::Create()
+inline AsyncTaskMethodBuilder_1_tA28B0962049DC249BEC0054E2394B1962E28E90E AsyncTaskMethodBuilder_1_Create_mDEA9352DE851695421F6488EC71FDD8FA221422D (const RuntimeMethod* method)
+{
+	return ((  AsyncTaskMethodBuilder_1_tA28B0962049DC249BEC0054E2394B1962E28E90E (*) (const RuntimeMethod*))AsyncTaskMethodBuilder_1_Create_m6A59453D00C0143F178809ADFD98C90E8C291ABB_gshared)(method);
+}
+// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.String>::Start<Nethereum.Contracts.Services.EthGetContractTransactionErrorReason/<SendRequestAsync>d__2>(TStateMachine&)
+inline void AsyncTaskMethodBuilder_1_Start_TisU3CSendRequestAsyncU3Ed__2_t620A679FE13A3D919AFF550C2DB3D598D630D84F_m1C61C0A0E6DAC3B0D7AD3B05F3D66F34ECC828D2 (AsyncTaskMethodBuilder_1_tA28B0962049DC249BEC0054E2394B1962E28E90E* __this, U3CSendRequestAsyncU3Ed__2_t620A679FE13A3D919AFF550C2DB3D598D630D84F* ___stateMachine0, const RuntimeMethod* method)
+{
+	((  void (*) (AsyncTaskMethodBuilder_1_tA28B0962049DC249BEC0054E2394B1962E28E90E*, U3CSendRequestAsyncU3Ed__2_t620A679FE13A3D919AFF550C2DB3D598D630D84F*, const RuntimeMethod*))AsyncTaskMethodBuilder_1_Start_TisU3CSendRequestAsyncU3Ed__2_t620A679FE13A3D919AFF550C2DB3D598D630D84F_m767F9424D233EAD8CCB12C5C8E65069E79D19523_gshared)(__this, ___stateMachine0, method);
+}
+// System.Threading.Tasks.Task`1<TResult> System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.String>::get_Task()
+inline Task_1_t3D7638C82ED289AF156EDBAE76842D8DF4C4A9E0* AsyncTaskMethodBuilder_1_get_Task_m01EB243CF4396C9A2645F71572B47CF12151974E (AsyncTaskMethodBuilder_1_tA28B0962049DC249BEC0054E2394B1962E28E90E* __this, const RuntimeMethod* method)
+{
+	return ((  Task_1_t3D7638C82ED289AF156EDBAE76842D8DF4C4A9E0* (*) (AsyncTaskMethodBuilder_1_tA28B0962049DC249BEC0054E2394B1962E28E90E*, const RuntimeMethod*))AsyncTaskMethodBuilder_1_get_Task_mEA092EC6F1324A9D694CF6056FA8583F2A2BDC89_gshared)(__this, method);
+}
+// System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1<TResult> System.Threading.Tasks.Task`1<Nethereum.RPC.Eth.DTOs.Transaction>::ConfigureAwait(System.Boolean)
+inline ConfiguredTaskAwaitable_1_t97A3F079869809316CDCF23480421084E5D17CDD Task_1_ConfigureAwait_mF1D45A54CCDC655FB468D91EBA2D10610F36F8C7 (Task_1_t07835DF0935336A37DEF7C2A1C6E5057615D6092* __this, bool ___continueOnCapturedContext0, const RuntimeMethod* method)
+{
+	return ((  ConfiguredTaskAwaitable_1_t97A3F079869809316CDCF23480421084E5D17CDD (*) (Task_1_t07835DF0935336A37DEF7C2A1C6E5057615D6092*, bool, const RuntimeMethod*))Task_1_ConfigureAwait_m9D6420C859925B7C250DED7586DD770C91632070_gshared)(__this, ___continueOnCapturedContext0, method);
+}
+// System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1/ConfiguredTaskAwaiter<TResult> System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1<Nethereum.RPC.Eth.DTOs.Transaction>::GetAwaiter()
+inline ConfiguredTaskAwaiter_t4E5F0C451DB5E8CE300D5CA0DFA6DB7EBF62A859 ConfiguredTaskAwaitable_1_GetAwaiter_m9F29BD0034E006094B8D9568472CD418F3918817_inline (ConfiguredTaskAwaitable_1_t97A3F079869809316CDCF23480421084E5D17CDD* __this, const RuntimeMethod* method)
+{
+	return ((  ConfiguredTaskAwaiter_t4E5F0C451DB5E8CE300D5CA0DFA6DB7EBF62A859 (*) (ConfiguredTaskAwaitable_1_t97A3F079869809316CDCF23480421084E5D17CDD*, const RuntimeMethod*))ConfiguredTaskAwaitable_1_GetAwaiter_m10364C3B0A904803E890B2D75674665F986BDAB2_gshared_inline)(__this, method);
+}
+// System.Boolean System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1/ConfiguredTaskAwaiter<Nethereum.RPC.Eth.DTOs.Transaction>::get_IsCompleted()
+inline bool ConfiguredTaskAwaiter_get_IsCompleted_m3588018AD46B52E87753241CB7F14FADAF179B06 (ConfiguredTaskAwaiter_t4E5F0C451DB5E8CE300D5CA0DFA6DB7EBF62A859* __this, const RuntimeMethod* method)
+{
+	return ((  bool (*) (ConfiguredTaskAwaiter_t4E5F0C451DB5E8CE300D5CA0DFA6DB7EBF62A859*, const RuntimeMethod*))ConfiguredTaskAwaiter_get_IsCompleted_mD6243A7544181F96816A5F81459F4B66908ADB5E_gshared)(__this, method);
+}
+// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.String>::AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1/ConfiguredTaskAwaiter<Nethereum.RPC.Eth.DTOs.Transaction>,Nethereum.Contracts.Services.EthGetContractTransactionErrorReason/<SendRequestAsync>d__2>(TAwaiter&,TStateMachine&)
+inline void AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisConfiguredTaskAwaiter_t4E5F0C451DB5E8CE300D5CA0DFA6DB7EBF62A859_TisU3CSendRequestAsyncU3Ed__2_t620A679FE13A3D919AFF550C2DB3D598D630D84F_m81DAE2339E73D43CD44ABAE0969F79B0198BB1AD (AsyncTaskMethodBuilder_1_tA28B0962049DC249BEC0054E2394B1962E28E90E* __this, ConfiguredTaskAwaiter_t4E5F0C451DB5E8CE300D5CA0DFA6DB7EBF62A859* ___awaiter0, U3CSendRequestAsyncU3Ed__2_t620A679FE13A3D919AFF550C2DB3D598D630D84F* ___stateMachine1, const RuntimeMethod* method)
+{
+	((  void (*) (AsyncTaskMethodBuilder_1_tA28B0962049DC249BEC0054E2394B1962E28E90E*, ConfiguredTaskAwaiter_t4E5F0C451DB5E8CE300D5CA0DFA6DB7EBF62A859*, U3CSendRequestAsyncU3Ed__2_t620A679FE13A3D919AFF550C2DB3D598D630D84F*, const RuntimeMethod*))AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisConfiguredTaskAwaiter_t28A5A60199BBE7F1F31159301DD211EFDCF955E2_TisU3CSendRequestAsyncU3Ed__2_t620A679FE13A3D919AFF550C2DB3D598D630D84F_mE3BBEA92A623FB1838BBC0724F93F98B3139F6BB_gshared)(__this, ___awaiter0, ___stateMachine1, method);
+}
+// TResult System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1/ConfiguredTaskAwaiter<Nethereum.RPC.Eth.DTOs.Transaction>::GetResult()
+inline Transaction_t42AF58898C5DCF5C2ECE238B8C471CD48B389A33* ConfiguredTaskAwaiter_GetResult_m2B760215FB834DEDFFD926EF768005D4105C9BF2 (ConfiguredTaskAwaiter_t4E5F0C451DB5E8CE300D5CA0DFA6DB7EBF62A859* __this, const RuntimeMethod* method)
+{
+	return ((  Transaction_t42AF58898C5DCF5C2ECE238B8C471CD48B389A33* (*) (ConfiguredTaskAwaiter_t4E5F0C451DB5E8CE300D5CA0DFA6DB7EBF62A859*, const RuntimeMethod*))ConfiguredTaskAwaiter_GetResult_m00ABE5C46A983C38086438B7A7CB2C62296B3383_gshared)(__this, method);
+}
+// Nethereum.RPC.Eth.DTOs.TransactionInput Nethereum.RPC.Eth.DTOs.TransactionExtensions::ConvertToTransactionInput(Nethereum.RPC.Eth.DTOs.Transaction)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR TransactionInput_t1B3DDEE42CE0171754109975B2FEF1C660E20EF2* TransactionExtensions_ConvertToTransactionInput_m558C80A723C98270DE86BE2757C440C2945F68B3 (Transaction_t42AF58898C5DCF5C2ECE238B8C471CD48B389A33* ___txn0, const RuntimeMethod* method) ;
+// System.Void Nethereum.ABI.FunctionEncoding.FunctionCallDecoder::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FunctionCallDecoder__ctor_m8A87A93A715C22E9E7C132E60F196DC57794B3B4 (FunctionCallDecoder_tBF1B971B077F309052FE8984C9EA3C169FF8C150* __this, const RuntimeMethod* method) ;
+// Nethereum.Hex.HexTypes.HexBigInteger Nethereum.RPC.Eth.DTOs.CallInput::get_MaxFeePerGas()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR HexBigInteger_tFD9189302CC4BD35091F94D48E460B5D2D5CA811* CallInput_get_MaxFeePerGas_m7F2F78062F61F145F95095D15F4D2FB8B130E58E_inline (CallInput_t134727ED6D63AA0F8722CB06FEC85207CC5D3F9C* __this, const RuntimeMethod* method) ;
+// System.Boolean Nethereum.Hex.HexTypes.HexRPCType`1<System.Numerics.BigInteger>::op_Inequality(Nethereum.Hex.HexTypes.HexRPCType`1<T>,Nethereum.Hex.HexTypes.HexRPCType`1<T>)
+inline bool HexRPCType_1_op_Inequality_mABC696C29299C847083DB8364B468AEB2428264F (HexRPCType_1_t0AEB726E19D5EA8BB4CC3B441C661B409A663DE0* ___lhs0, HexRPCType_1_t0AEB726E19D5EA8BB4CC3B441C661B409A663DE0* ___rhs1, const RuntimeMethod* method)
+{
+	return ((  bool (*) (HexRPCType_1_t0AEB726E19D5EA8BB4CC3B441C661B409A663DE0*, HexRPCType_1_t0AEB726E19D5EA8BB4CC3B441C661B409A663DE0*, const RuntimeMethod*))HexRPCType_1_op_Inequality_mABC696C29299C847083DB8364B468AEB2428264F_gshared)(___lhs0, ___rhs1, method);
+}
+// System.Void Nethereum.RPC.Eth.DTOs.CallInput::set_GasPrice(Nethereum.Hex.HexTypes.HexBigInteger)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void CallInput_set_GasPrice_m0ACD61757CB8A102B2973AB5663E58BF7C1C4950_inline (CallInput_t134727ED6D63AA0F8722CB06FEC85207CC5D3F9C* __this, HexBigInteger_tFD9189302CC4BD35091F94D48E460B5D2D5CA811* ___value0, const RuntimeMethod* method) ;
+// Nethereum.Hex.HexTypes.HexBigInteger Nethereum.RPC.Eth.DTOs.Transaction::get_BlockNumber()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR HexBigInteger_tFD9189302CC4BD35091F94D48E460B5D2D5CA811* Transaction_get_BlockNumber_m349407369794699D9B18BB6C7A9225033954191F_inline (Transaction_t42AF58898C5DCF5C2ECE238B8C471CD48B389A33* __this, const RuntimeMethod* method) ;
+// System.Void Nethereum.RPC.Eth.DTOs.BlockParameter::.ctor(Nethereum.Hex.HexTypes.HexBigInteger)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BlockParameter__ctor_mBEA912394A68B85B1F99EA39DD83B54007CB8D65 (BlockParameter_t13CF5CC9CDE990ACD945748B2FA7F19EA0A06AD9* __this, HexBigInteger_tFD9189302CC4BD35091F94D48E460B5D2D5CA811* ___blockNumber0, const RuntimeMethod* method) ;
+// System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1<TResult> System.Threading.Tasks.Task`1<System.String>::ConfigureAwait(System.Boolean)
+inline ConfiguredTaskAwaitable_1_t5D41ABD05FA368A9CDB3329C907B4DCD69A7A2CC Task_1_ConfigureAwait_mAC8032B38D47D60D57BF1E421E6774C1C50A0CB8 (Task_1_t3D7638C82ED289AF156EDBAE76842D8DF4C4A9E0* __this, bool ___continueOnCapturedContext0, const RuntimeMethod* method)
+{
+	return ((  ConfiguredTaskAwaitable_1_t5D41ABD05FA368A9CDB3329C907B4DCD69A7A2CC (*) (Task_1_t3D7638C82ED289AF156EDBAE76842D8DF4C4A9E0*, bool, const RuntimeMethod*))Task_1_ConfigureAwait_m9D6420C859925B7C250DED7586DD770C91632070_gshared)(__this, ___continueOnCapturedContext0, method);
+}
+// System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1/ConfiguredTaskAwaiter<TResult> System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1<System.String>::GetAwaiter()
+inline ConfiguredTaskAwaiter_t09B651400CE1B2687A813877C97A9E352E771CA5 ConfiguredTaskAwaitable_1_GetAwaiter_mC383D8B5E3F54D598A9E5121F4705FF46889A617_inline (ConfiguredTaskAwaitable_1_t5D41ABD05FA368A9CDB3329C907B4DCD69A7A2CC* __this, const RuntimeMethod* method)
+{
+	return ((  ConfiguredTaskAwaiter_t09B651400CE1B2687A813877C97A9E352E771CA5 (*) (ConfiguredTaskAwaitable_1_t5D41ABD05FA368A9CDB3329C907B4DCD69A7A2CC*, const RuntimeMethod*))ConfiguredTaskAwaitable_1_GetAwaiter_m10364C3B0A904803E890B2D75674665F986BDAB2_gshared_inline)(__this, method);
+}
+// System.Boolean System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1/ConfiguredTaskAwaiter<System.String>::get_IsCompleted()
+inline bool ConfiguredTaskAwaiter_get_IsCompleted_mAC1C73BA777A087D963C01165753A73AC932B5A1 (ConfiguredTaskAwaiter_t09B651400CE1B2687A813877C97A9E352E771CA5* __this, const RuntimeMethod* method)
+{
+	return ((  bool (*) (ConfiguredTaskAwaiter_t09B651400CE1B2687A813877C97A9E352E771CA5*, const RuntimeMethod*))ConfiguredTaskAwaiter_get_IsCompleted_mD6243A7544181F96816A5F81459F4B66908ADB5E_gshared)(__this, method);
+}
+// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.String>::AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1/ConfiguredTaskAwaiter<System.String>,Nethereum.Contracts.Services.EthGetContractTransactionErrorReason/<SendRequestAsync>d__2>(TAwaiter&,TStateMachine&)
+inline void AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisConfiguredTaskAwaiter_t09B651400CE1B2687A813877C97A9E352E771CA5_TisU3CSendRequestAsyncU3Ed__2_t620A679FE13A3D919AFF550C2DB3D598D630D84F_m065557E89174F30396CDAEAA063115FE61958D28 (AsyncTaskMethodBuilder_1_tA28B0962049DC249BEC0054E2394B1962E28E90E* __this, ConfiguredTaskAwaiter_t09B651400CE1B2687A813877C97A9E352E771CA5* ___awaiter0, U3CSendRequestAsyncU3Ed__2_t620A679FE13A3D919AFF550C2DB3D598D630D84F* ___stateMachine1, const RuntimeMethod* method)
+{
+	((  void (*) (AsyncTaskMethodBuilder_1_tA28B0962049DC249BEC0054E2394B1962E28E90E*, ConfiguredTaskAwaiter_t09B651400CE1B2687A813877C97A9E352E771CA5*, U3CSendRequestAsyncU3Ed__2_t620A679FE13A3D919AFF550C2DB3D598D630D84F*, const RuntimeMethod*))AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisConfiguredTaskAwaiter_t28A5A60199BBE7F1F31159301DD211EFDCF955E2_TisU3CSendRequestAsyncU3Ed__2_t620A679FE13A3D919AFF550C2DB3D598D630D84F_mE3BBEA92A623FB1838BBC0724F93F98B3139F6BB_gshared)(__this, ___awaiter0, ___stateMachine1, method);
+}
+// TResult System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1/ConfiguredTaskAwaiter<System.String>::GetResult()
+inline String_t* ConfiguredTaskAwaiter_GetResult_m09C74DFD8415A124C885DF96C8F7CE7D85EED9E8 (ConfiguredTaskAwaiter_t09B651400CE1B2687A813877C97A9E352E771CA5* __this, const RuntimeMethod* method)
+{
+	return ((  String_t* (*) (ConfiguredTaskAwaiter_t09B651400CE1B2687A813877C97A9E352E771CA5*, const RuntimeMethod*))ConfiguredTaskAwaiter_GetResult_m00ABE5C46A983C38086438B7A7CB2C62296B3383_gshared)(__this, method);
+}
+// System.Boolean Nethereum.ABI.FunctionEncoding.ErrorFunction::IsErrorData(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ErrorFunction_IsErrorData_m096A6F42918BE73C8DEA8F7569FDDD52E4B03A08 (String_t* ___dataHex0, const RuntimeMethod* method) ;
+// System.String Nethereum.ABI.FunctionEncoding.FunctionCallDecoder::DecodeFunctionErrorMessage(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* FunctionCallDecoder_DecodeFunctionErrorMessage_m56696ED69E76865CBD09FE525C67690F0F9B820A (FunctionCallDecoder_tBF1B971B077F309052FE8984C9EA3C169FF8C150* __this, String_t* ___output0, const RuntimeMethod* method) ;
+// System.Void Nethereum.Contracts.ContractRevertExceptionHandler::HandleContractRevertException(Nethereum.JsonRpc.Client.RpcResponseException)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ContractRevertExceptionHandler_HandleContractRevertException_m17EC269000DCCB148B09887F2338153C87B4FC41 (RpcResponseException_tC6370C6CDE2D7E420D34DC0EDC15FF7CDD7B062F* ___rpcException0, const RuntimeMethod* method) ;
+// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.String>::SetException(System.Exception)
+inline void AsyncTaskMethodBuilder_1_SetException_m897218C2DB8D7BA446EB263573085805B8F0638C (AsyncTaskMethodBuilder_1_tA28B0962049DC249BEC0054E2394B1962E28E90E* __this, Exception_t* ___exception0, const RuntimeMethod* method)
+{
+	((  void (*) (AsyncTaskMethodBuilder_1_tA28B0962049DC249BEC0054E2394B1962E28E90E*, Exception_t*, const RuntimeMethod*))AsyncTaskMethodBuilder_1_SetException_mC2F74B26F5303F9F960965220E2866D777F1A5C6_gshared)(__this, ___exception0, method);
+}
+// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.String>::SetResult(TResult)
+inline void AsyncTaskMethodBuilder_1_SetResult_mB79121C0ACAC704500FAA7350ED0FE6604DDA05E (AsyncTaskMethodBuilder_1_tA28B0962049DC249BEC0054E2394B1962E28E90E* __this, String_t* ___result0, const RuntimeMethod* method)
+{
+	((  void (*) (AsyncTaskMethodBuilder_1_tA28B0962049DC249BEC0054E2394B1962E28E90E*, String_t*, const RuntimeMethod*))AsyncTaskMethodBuilder_1_SetResult_m0D83195F995F9825D7A6DCDC3835D6917C43B5A6_gshared)(__this, ___result0, method);
+}
+// System.Void Nethereum.Contracts.Services.EthGetContractTransactionErrorReason/<SendRequestAsync>d__2::MoveNext()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CSendRequestAsyncU3Ed__2_MoveNext_mDF0F81A90396CBE16570BDCEB77AF6E9B3910D0B (U3CSendRequestAsyncU3Ed__2_t620A679FE13A3D919AFF550C2DB3D598D630D84F* __this, const RuntimeMethod* method) ;
+// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.String>::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+inline void AsyncTaskMethodBuilder_1_SetStateMachine_mE4D48B78E50CA2A3650A856ACF86A3CFBA249C30 (AsyncTaskMethodBuilder_1_tA28B0962049DC249BEC0054E2394B1962E28E90E* __this, RuntimeObject* ___stateMachine0, const RuntimeMethod* method)
+{
+	((  void (*) (AsyncTaskMethodBuilder_1_tA28B0962049DC249BEC0054E2394B1962E28E90E*, RuntimeObject*, const RuntimeMethod*))AsyncTaskMethodBuilder_1_SetStateMachine_m3BE54983634ABF5BE05200C7894AD0F9F20BDD65_gshared)(__this, ___stateMachine0, method);
+}
+// System.Void Nethereum.Contracts.Services.EthGetContractTransactionErrorReason/<SendRequestAsync>d__2::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CSendRequestAsyncU3Ed__2_SetStateMachine_mFA8FBC02AC98F92F89BEC3DD61000108B651B069 (U3CSendRequestAsyncU3Ed__2_t620A679FE13A3D919AFF550C2DB3D598D630D84F* __this, RuntimeObject* ___stateMachine0, const RuntimeMethod* method) ;
+// System.Void Nethereum.Contracts.QueryHandlers.MultiCall.CallBase::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CallBase__ctor_mE2E8519A635816141A864EFF8EF5B635F4D35CD6 (CallBase_tDE3DC215CB2F6161608011057953C24D0C5F2D3F* __this, const RuntimeMethod* method) ;
+// System.Void Nethereum.Contracts.QueryHandlers.MultiCall.AggregateFunctionBase::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AggregateFunctionBase__ctor_m967981D8F6AB510D5E0DE75D6B729F1A83351D1C (AggregateFunctionBase_tED9275D4B009322E4C25321783EF2376CC47A98D* __this, const RuntimeMethod* method) ;
+// System.Void Nethereum.Contracts.FunctionMessage::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FunctionMessage__ctor_m1951B5B47D9E572EF741370BDB5B09FB937D7E79 (FunctionMessage_t6C573C6BC76231A80D41D066556324BB97620287* __this, const RuntimeMethod* method) ;
+// System.Void Nethereum.Contracts.QueryHandlers.MultiCall.AggregateOutputDTOBase::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AggregateOutputDTOBase__ctor_m5E79DE99677489978B207998452A3DEAC947465C (AggregateOutputDTOBase_tBD69D9D5ECA62C1432573218AD544A42BD82ACA6* __this, const RuntimeMethod* method) ;
+// System.Void Nethereum.Contracts.QueryHandlers.MultiCall.ResultBase::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ResultBase__ctor_m1D88588340B5C33293FE67A628E288244F60A90B (ResultBase_t3EE4F4314BE00242DA42DCAE822CB8859C6A95E5* __this, const RuntimeMethod* method) ;
+// System.Void Nethereum.Contracts.QueryHandlers.MultiCall.Call3Base::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Call3Base__ctor_m9186F3EBD4D18465893C59A9735C50511CAEFCBC (Call3Base_t2A9271175C8D98BBDC18239AAFEC4C820E539B2E* __this, const RuntimeMethod* method) ;
+// System.Void Nethereum.Contracts.QueryHandlers.MultiCall.Call3ValueBase::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Call3ValueBase__ctor_m94484BDF7B3FCB80740D1FB7D23054F49706F0E4 (Call3ValueBase_t43018F8986C4307D6CE2C2BCE8C2E1ACB8E84978* __this, const RuntimeMethod* method) ;
+// System.Void Nethereum.Contracts.QueryHandlers.MultiCall.Aggregate3FunctionBase::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Aggregate3FunctionBase__ctor_m91F6821310885CAC088877253750916E793869BF (Aggregate3FunctionBase_t598C9701594935BF1D7F126FAE3A698C5D285C36* __this, const RuntimeMethod* method) ;
+// System.Void Nethereum.Contracts.QueryHandlers.MultiCall.Aggregate3ValueFunctionBase::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Aggregate3ValueFunctionBase__ctor_m2FB6F9C64A3F0416882C397C013D91BE9B1E8F0A (Aggregate3ValueFunctionBase_t771A483E57D1D3F216B1DFF5AD95F952BFA640F4* __this, const RuntimeMethod* method) ;
+// System.Void Nethereum.Contracts.QueryHandlers.MultiCall.Aggregate3OutputDTOBase::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Aggregate3OutputDTOBase__ctor_m6A81BCAB13DC1B2A6D8F39380D9F4BF158197623 (Aggregate3OutputDTOBase_tB7BB06CA8F766C33AF48AD8E5D67D74E0317D126* __this, const RuntimeMethod* method) ;
+// System.Void Nethereum.Contracts.QueryHandlers.MultiCall.Aggregate3ValueOutputDTOBase::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Aggregate3ValueOutputDTOBase__ctor_mC8334F03A9F9FAEC770B9D09363248EE7DB540F4 (Aggregate3ValueOutputDTOBase_tDC53C967E48195592E4D38448A65DA8A8388FDF7* __this, const RuntimeMethod* method) ;
+// System.Void Nethereum.Contracts.QueryHandlers.MultiCall.MultiQueryHandler::set_ContractAddress(System.String)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void MultiQueryHandler_set_ContractAddress_m2F7FAEFB64E27D89D5EB2AA5F97A62BA997CE49B_inline (MultiQueryHandler_tD5E9074899A83693F74D77C94F903D4AA15753CE* __this, String_t* ___value0, const RuntimeMethod* method) ;
+// System.Void Nethereum.Contracts.QueryHandlers.QueryToDTOHandler`2<Nethereum.Contracts.QueryHandlers.MultiCall.AggregateFunction,Nethereum.Contracts.QueryHandlers.MultiCall.AggregateOutputDTO>::.ctor(Nethereum.JsonRpc.Client.IClient,System.String,Nethereum.RPC.Eth.DTOs.BlockParameter)
+inline void QueryToDTOHandler_2__ctor_m4A57C1F8A844F4DC1353B3BEF8955734DC42BC7A (QueryToDTOHandler_2_t64FE28F3E7A92C671B9E70A24D8300951F42BBF7* __this, RuntimeObject* ___client0, String_t* ___defaultAddressFrom1, BlockParameter_t13CF5CC9CDE990ACD945748B2FA7F19EA0A06AD9* ___defaultBlockParameter2, const RuntimeMethod* method)
+{
+	((  void (*) (QueryToDTOHandler_2_t64FE28F3E7A92C671B9E70A24D8300951F42BBF7*, RuntimeObject*, String_t*, BlockParameter_t13CF5CC9CDE990ACD945748B2FA7F19EA0A06AD9*, const RuntimeMethod*))QueryToDTOHandler_2__ctor_m4D7557CFD6BC4AE48ADE13F1127C1B16926A0B90_gshared)(__this, ___client0, ___defaultAddressFrom1, ___defaultBlockParameter2, method);
+}
+// System.Void Nethereum.Contracts.QueryHandlers.QueryToDTOHandler`2<Nethereum.Contracts.QueryHandlers.MultiCall.Aggregate3Function,Nethereum.Contracts.QueryHandlers.MultiCall.Aggregate3OutputDTO>::.ctor(Nethereum.JsonRpc.Client.IClient,System.String,Nethereum.RPC.Eth.DTOs.BlockParameter)
+inline void QueryToDTOHandler_2__ctor_mED56E92453BE3550B2614270409F077A76CAC156 (QueryToDTOHandler_2_t7D6D14A0D064D41148382C0FCC8E4921D012F2F6* __this, RuntimeObject* ___client0, String_t* ___defaultAddressFrom1, BlockParameter_t13CF5CC9CDE990ACD945748B2FA7F19EA0A06AD9* ___defaultBlockParameter2, const RuntimeMethod* method)
+{
+	((  void (*) (QueryToDTOHandler_2_t7D6D14A0D064D41148382C0FCC8E4921D012F2F6*, RuntimeObject*, String_t*, BlockParameter_t13CF5CC9CDE990ACD945748B2FA7F19EA0A06AD9*, const RuntimeMethod*))QueryToDTOHandler_2__ctor_m4D7557CFD6BC4AE48ADE13F1127C1B16926A0B90_gshared)(__this, ___client0, ___defaultAddressFrom1, ___defaultBlockParameter2, method);
+}
+// System.Void Nethereum.Contracts.QueryHandlers.QueryToDTOHandler`2<Nethereum.Contracts.QueryHandlers.MultiCall.Aggregate3ValueFunction,Nethereum.Contracts.QueryHandlers.MultiCall.Aggregate3ValueOutputDTO>::.ctor(Nethereum.JsonRpc.Client.IClient,System.String,Nethereum.RPC.Eth.DTOs.BlockParameter)
+inline void QueryToDTOHandler_2__ctor_m793B56FA96BC10E5889BC2ADB2946F952E77000C (QueryToDTOHandler_2_tC8135E5F07B2BB7F4F689C6CD58C234921665415* __this, RuntimeObject* ___client0, String_t* ___defaultAddressFrom1, BlockParameter_t13CF5CC9CDE990ACD945748B2FA7F19EA0A06AD9* ___defaultBlockParameter2, const RuntimeMethod* method)
+{
+	((  void (*) (QueryToDTOHandler_2_tC8135E5F07B2BB7F4F689C6CD58C234921665415*, RuntimeObject*, String_t*, BlockParameter_t13CF5CC9CDE990ACD945748B2FA7F19EA0A06AD9*, const RuntimeMethod*))QueryToDTOHandler_2__ctor_m4D7557CFD6BC4AE48ADE13F1127C1B16926A0B90_gshared)(__this, ___client0, ___defaultAddressFrom1, ___defaultBlockParameter2, method);
+}
+// System.Threading.Tasks.Task`1<Nethereum.Contracts.QueryHandlers.MultiCall.IMulticallInputOutput[]> Nethereum.Contracts.QueryHandlers.MultiCall.MultiQueryHandler::MultiCallV1Async(Nethereum.RPC.Eth.DTOs.BlockParameter,Nethereum.Contracts.QueryHandlers.MultiCall.IMulticallInputOutput[])
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Task_1_t42FA6B88BB8F441CF56D1DCEF1570387FCEC4DE9* MultiQueryHandler_MultiCallV1Async_m81729666406CB74C67639081B28CDF5662CFEDF3 (MultiQueryHandler_tD5E9074899A83693F74D77C94F903D4AA15753CE* __this, BlockParameter_t13CF5CC9CDE990ACD945748B2FA7F19EA0A06AD9* ___block0, IMulticallInputOutputU5BU5D_t7D33DBDC42EE714A687264BC9F3C6C6AED3885F7* ___multiCalls1, const RuntimeMethod* method) ;
+// System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<TResult> System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<Nethereum.Contracts.QueryHandlers.MultiCall.IMulticallInputOutput[]>::Create()
+inline AsyncTaskMethodBuilder_1_tFF884780053FBFD2BEEA42DC0DFF882656BBE992 AsyncTaskMethodBuilder_1_Create_m197A98AAF3107177592BEB247F89AA1031D34F04 (const RuntimeMethod* method)
+{
+	return ((  AsyncTaskMethodBuilder_1_tFF884780053FBFD2BEEA42DC0DFF882656BBE992 (*) (const RuntimeMethod*))AsyncTaskMethodBuilder_1_Create_m6A59453D00C0143F178809ADFD98C90E8C291ABB_gshared)(method);
+}
+// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<Nethereum.Contracts.QueryHandlers.MultiCall.IMulticallInputOutput[]>::Start<Nethereum.Contracts.QueryHandlers.MultiCall.MultiQueryHandler/<MultiCallV1Async>d__10>(TStateMachine&)
+inline void AsyncTaskMethodBuilder_1_Start_TisU3CMultiCallV1AsyncU3Ed__10_t6910A8C2210A3573C94630F3B1F18F910914F89B_mF89E7F8E89F2F692DDC77FA5369701D03D6DB834 (AsyncTaskMethodBuilder_1_tFF884780053FBFD2BEEA42DC0DFF882656BBE992* __this, U3CMultiCallV1AsyncU3Ed__10_t6910A8C2210A3573C94630F3B1F18F910914F89B* ___stateMachine0, const RuntimeMethod* method)
+{
+	((  void (*) (AsyncTaskMethodBuilder_1_tFF884780053FBFD2BEEA42DC0DFF882656BBE992*, U3CMultiCallV1AsyncU3Ed__10_t6910A8C2210A3573C94630F3B1F18F910914F89B*, const RuntimeMethod*))AsyncTaskMethodBuilder_1_Start_TisU3CMultiCallV1AsyncU3Ed__10_t6910A8C2210A3573C94630F3B1F18F910914F89B_mBF6CE6978B95637D4AA3732D51886CB99A456235_gshared)(__this, ___stateMachine0, method);
+}
+// System.Threading.Tasks.Task`1<TResult> System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<Nethereum.Contracts.QueryHandlers.MultiCall.IMulticallInputOutput[]>::get_Task()
+inline Task_1_t42FA6B88BB8F441CF56D1DCEF1570387FCEC4DE9* AsyncTaskMethodBuilder_1_get_Task_mAF86E2BC0C8EC0F757C00619A9215EA8084DD705 (AsyncTaskMethodBuilder_1_tFF884780053FBFD2BEEA42DC0DFF882656BBE992* __this, const RuntimeMethod* method)
+{
+	return ((  Task_1_t42FA6B88BB8F441CF56D1DCEF1570387FCEC4DE9* (*) (AsyncTaskMethodBuilder_1_tFF884780053FBFD2BEEA42DC0DFF882656BBE992*, const RuntimeMethod*))AsyncTaskMethodBuilder_1_get_Task_mEA092EC6F1324A9D694CF6056FA8583F2A2BDC89_gshared)(__this, method);
+}
+// System.Threading.Tasks.Task`1<Nethereum.Contracts.QueryHandlers.MultiCall.IMulticallInputOutput[]> Nethereum.Contracts.QueryHandlers.MultiCall.MultiQueryHandler::MultiCallAsync(Nethereum.RPC.Eth.DTOs.BlockParameter,System.Int32,Nethereum.Contracts.QueryHandlers.MultiCall.IMulticallInputOutput[])
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Task_1_t42FA6B88BB8F441CF56D1DCEF1570387FCEC4DE9* MultiQueryHandler_MultiCallAsync_mFDEC1BADA86AB86EBE756BC2C34B7809D09BBEA7 (MultiQueryHandler_tD5E9074899A83693F74D77C94F903D4AA15753CE* __this, BlockParameter_t13CF5CC9CDE990ACD945748B2FA7F19EA0A06AD9* ___block0, int32_t ___pageSize1, IMulticallInputOutputU5BU5D_t7D33DBDC42EE714A687264BC9F3C6C6AED3885F7* ___multiCalls2, const RuntimeMethod* method) ;
+// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<Nethereum.Contracts.QueryHandlers.MultiCall.IMulticallInputOutput[]>::Start<Nethereum.Contracts.QueryHandlers.MultiCall.MultiQueryHandler/<MultiCallAsync>d__13>(TStateMachine&)
+inline void AsyncTaskMethodBuilder_1_Start_TisU3CMultiCallAsyncU3Ed__13_t7A391C1FA6573DA0FC973869DE104C0D039BBC62_m07E08B26709F71422F875F8CC3E8A83EEFC433C9 (AsyncTaskMethodBuilder_1_tFF884780053FBFD2BEEA42DC0DFF882656BBE992* __this, U3CMultiCallAsyncU3Ed__13_t7A391C1FA6573DA0FC973869DE104C0D039BBC62* ___stateMachine0, const RuntimeMethod* method)
+{
+	((  void (*) (AsyncTaskMethodBuilder_1_tFF884780053FBFD2BEEA42DC0DFF882656BBE992*, U3CMultiCallAsyncU3Ed__13_t7A391C1FA6573DA0FC973869DE104C0D039BBC62*, const RuntimeMethod*))AsyncTaskMethodBuilder_1_Start_TisU3CMultiCallAsyncU3Ed__13_t7A391C1FA6573DA0FC973869DE104C0D039BBC62_m34F7037990E13CFA9E3A10F40DB3E199D72E515A_gshared)(__this, ___stateMachine0, method);
+}
+// System.Void Nethereum.Contracts.QueryHandlers.MultiCall.MultiQueryHandler/<>c::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__ctor_m182B2B7484D69463834A5E4E9B986BCE8CB24B05 (U3CU3Ec_t00AE82A6DB248488B8693FE413EA91A294DF7971* __this, const RuntimeMethod* method) ;
+// System.Boolean System.Numerics.BigInteger::op_GreaterThan(System.Numerics.BigInteger,System.Int64)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool BigInteger_op_GreaterThan_mE2855EC97576062A6EFBFA9F7B74BBC3D7A4B8DE (BigInteger_tF7779A0AA6D6B9BE0E0C1C293E7708765DEF7D0F ___left0, int64_t ___right1, const RuntimeMethod* method) ;
+// System.Void System.Func`2<Nethereum.Contracts.QueryHandlers.MultiCall.IMulticallInputOutput,System.Boolean>::.ctor(System.Object,System.IntPtr)
+inline void Func_2__ctor_m7F0AAE4A85A25A55AA586B6D514F5C1026FEB3BD (Func_2_tC7D8CC18CA3EE41739FE11EB4C3AF3F712E0FAA8* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method)
+{
+	((  void (*) (Func_2_tC7D8CC18CA3EE41739FE11EB4C3AF3F712E0FAA8*, RuntimeObject*, intptr_t, const RuntimeMethod*))Func_2__ctor_m13C0A7F33154D861E2A041B52E88461832DA1697_gshared)(__this, ___object0, ___method1, method);
+}
+// System.Boolean System.Linq.Enumerable::Any<Nethereum.Contracts.QueryHandlers.MultiCall.IMulticallInputOutput>(System.Collections.Generic.IEnumerable`1<TSource>,System.Func`2<TSource,System.Boolean>)
+inline bool Enumerable_Any_TisIMulticallInputOutput_t72FE874FCD4D853123B64A7D57DEDF51D2660F7D_m438E5DF4C41F2F395150B23440552AEBF4EA9E3F (RuntimeObject* ___source0, Func_2_tC7D8CC18CA3EE41739FE11EB4C3AF3F712E0FAA8* ___predicate1, const RuntimeMethod* method)
+{
+	return ((  bool (*) (RuntimeObject*, Func_2_tC7D8CC18CA3EE41739FE11EB4C3AF3F712E0FAA8*, const RuntimeMethod*))Enumerable_Any_TisRuntimeObject_mF6C6AC8DF8971883615734832D09C9210B956F0F_gshared)(___source0, ___predicate1, method);
+}
+// System.Void System.Collections.Generic.List`1<Nethereum.Contracts.QueryHandlers.MultiCall.Result>::.ctor()
+inline void List_1__ctor_m92A69918A8E69207437628E483BD3228129B0A53 (List_1_t4C68E546060D764C99C1B962BB2C011B0A5EBA19* __this, const RuntimeMethod* method)
+{
+	((  void (*) (List_1_t4C68E546060D764C99C1B962BB2C011B0A5EBA19*, const RuntimeMethod*))List_1__ctor_m7F078BB342729BDF11327FD89D7872265328F690_gshared)(__this, method);
+}
+// System.Collections.Generic.IEnumerable`1<System.Collections.Generic.IEnumerable`1<T>> Nethereum.Util.EnumerableExtensions::Batch<Nethereum.Contracts.QueryHandlers.MultiCall.IMulticallInputOutput>(System.Collections.Generic.IEnumerable`1<T>,System.Int32)
+inline RuntimeObject* EnumerableExtensions_Batch_TisIMulticallInputOutput_t72FE874FCD4D853123B64A7D57DEDF51D2660F7D_m4F5C7CDEFE512961CD86B9AE752ACDF140598484 (RuntimeObject* ___source0, int32_t ___size1, const RuntimeMethod* method)
+{
+	return ((  RuntimeObject* (*) (RuntimeObject*, int32_t, const RuntimeMethod*))EnumerableExtensions_Batch_TisRuntimeObject_mA509C55AA52324E7EA7E11C7E6AC8DF24F239A6A_gshared)(___source0, ___size1, method);
+}
+// System.Void System.Collections.Generic.List`1<Nethereum.Contracts.QueryHandlers.MultiCall.Call3Value>::.ctor()
+inline void List_1__ctor_mB94853C492429E068CE0F34FD22E6F6CF58228C4 (List_1_t376C4E85EFA0FB2C83DA6AEC65B0D3D437A82B0E* __this, const RuntimeMethod* method)
+{
+	((  void (*) (List_1_t376C4E85EFA0FB2C83DA6AEC65B0D3D437A82B0E*, const RuntimeMethod*))List_1__ctor_m7F078BB342729BDF11327FD89D7872265328F690_gshared)(__this, method);
+}
+// System.Void Nethereum.Contracts.QueryHandlers.MultiCall.Call3Value::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Call3Value__ctor_mC7EA809839A1CD0B62BC5F957E5E53EC6090AF9E (Call3Value_t18A4350E7B502FCB224229CDA7B21BF37C8C6DA6* __this, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.List`1<Nethereum.Contracts.QueryHandlers.MultiCall.Call3Value>::Add(T)
+inline void List_1_Add_m8EBF3734BC2E70B315260F2E835D3E0CAA8D49D1_inline (List_1_t376C4E85EFA0FB2C83DA6AEC65B0D3D437A82B0E* __this, Call3Value_t18A4350E7B502FCB224229CDA7B21BF37C8C6DA6* ___item0, const RuntimeMethod* method)
+{
+	((  void (*) (List_1_t376C4E85EFA0FB2C83DA6AEC65B0D3D437A82B0E*, Call3Value_t18A4350E7B502FCB224229CDA7B21BF37C8C6DA6*, const RuntimeMethod*))List_1_Add_mEBCF994CC3814631017F46A387B1A192ED6C85C7_gshared_inline)(__this, ___item0, method);
+}
+// System.Void Nethereum.Contracts.QueryHandlers.MultiCall.Aggregate3ValueFunction::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Aggregate3ValueFunction__ctor_m19B61856A3D5F6553B8D552CF67889881C2DC782 (Aggregate3ValueFunction_t7255D88599D2644B8FD0B19D72639F0F5D2521CC* __this, const RuntimeMethod* method) ;
+// System.String Nethereum.Contracts.QueryHandlers.MultiCall.MultiQueryHandler::get_ContractAddress()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR String_t* MultiQueryHandler_get_ContractAddress_mA39F6E0DCEB03E242771B68672D8951137779325_inline (MultiQueryHandler_tD5E9074899A83693F74D77C94F903D4AA15753CE* __this, const RuntimeMethod* method) ;
+// System.Threading.Tasks.Task`1<TFunctionOutput> Nethereum.Contracts.QueryHandlers.QueryDecoderBaseHandler`2<Nethereum.Contracts.QueryHandlers.MultiCall.Aggregate3ValueFunction,Nethereum.Contracts.QueryHandlers.MultiCall.Aggregate3ValueOutputDTO>::QueryAsync(System.String,TFunctionMessage,Nethereum.RPC.Eth.DTOs.BlockParameter)
+inline Task_1_tD3F902260C8A6DA85461A6EF5CF3A103F3E9AE63* QueryDecoderBaseHandler_2_QueryAsync_m862AE7AF6A7CF60A0252E0696CE231A3C21C486B (QueryDecoderBaseHandler_2_tB4222E2288471D78079D35681CEDE89D5895BB43* __this, String_t* ___contractAddress0, Aggregate3ValueFunction_t7255D88599D2644B8FD0B19D72639F0F5D2521CC* ___functionMessage1, BlockParameter_t13CF5CC9CDE990ACD945748B2FA7F19EA0A06AD9* ___block2, const RuntimeMethod* method)
+{
+	return ((  Task_1_tD3F902260C8A6DA85461A6EF5CF3A103F3E9AE63* (*) (QueryDecoderBaseHandler_2_tB4222E2288471D78079D35681CEDE89D5895BB43*, String_t*, Aggregate3ValueFunction_t7255D88599D2644B8FD0B19D72639F0F5D2521CC*, BlockParameter_t13CF5CC9CDE990ACD945748B2FA7F19EA0A06AD9*, const RuntimeMethod*))QueryDecoderBaseHandler_2_QueryAsync_m02A5FF9F3738CF9544DE5898CDAD544599FF73C3_gshared)(__this, ___contractAddress0, ___functionMessage1, ___block2, method);
+}
+// System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1<TResult> System.Threading.Tasks.Task`1<Nethereum.Contracts.QueryHandlers.MultiCall.Aggregate3ValueOutputDTO>::ConfigureAwait(System.Boolean)
+inline ConfiguredTaskAwaitable_1_tD71E26673BB72B8E28E8980B13ED24DD0D0B27BE Task_1_ConfigureAwait_mC8640660BF0553DAB850EB5EAA4412E8C813DE46 (Task_1_tD3F902260C8A6DA85461A6EF5CF3A103F3E9AE63* __this, bool ___continueOnCapturedContext0, const RuntimeMethod* method)
+{
+	return ((  ConfiguredTaskAwaitable_1_tD71E26673BB72B8E28E8980B13ED24DD0D0B27BE (*) (Task_1_tD3F902260C8A6DA85461A6EF5CF3A103F3E9AE63*, bool, const RuntimeMethod*))Task_1_ConfigureAwait_m9D6420C859925B7C250DED7586DD770C91632070_gshared)(__this, ___continueOnCapturedContext0, method);
+}
+// System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1/ConfiguredTaskAwaiter<TResult> System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1<Nethereum.Contracts.QueryHandlers.MultiCall.Aggregate3ValueOutputDTO>::GetAwaiter()
+inline ConfiguredTaskAwaiter_tEDA8191B4B5EA1357682A9F21488544BE1C12100 ConfiguredTaskAwaitable_1_GetAwaiter_m499517F289AF7608AFB263C64EFF096A2AB6FFD2_inline (ConfiguredTaskAwaitable_1_tD71E26673BB72B8E28E8980B13ED24DD0D0B27BE* __this, const RuntimeMethod* method)
+{
+	return ((  ConfiguredTaskAwaiter_tEDA8191B4B5EA1357682A9F21488544BE1C12100 (*) (ConfiguredTaskAwaitable_1_tD71E26673BB72B8E28E8980B13ED24DD0D0B27BE*, const RuntimeMethod*))ConfiguredTaskAwaitable_1_GetAwaiter_m10364C3B0A904803E890B2D75674665F986BDAB2_gshared_inline)(__this, method);
+}
+// System.Boolean System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1/ConfiguredTaskAwaiter<Nethereum.Contracts.QueryHandlers.MultiCall.Aggregate3ValueOutputDTO>::get_IsCompleted()
+inline bool ConfiguredTaskAwaiter_get_IsCompleted_m00EDE1ABFF674F0D8F1558BAFAA61CF3F5D95CF2 (ConfiguredTaskAwaiter_tEDA8191B4B5EA1357682A9F21488544BE1C12100* __this, const RuntimeMethod* method)
+{
+	return ((  bool (*) (ConfiguredTaskAwaiter_tEDA8191B4B5EA1357682A9F21488544BE1C12100*, const RuntimeMethod*))ConfiguredTaskAwaiter_get_IsCompleted_mD6243A7544181F96816A5F81459F4B66908ADB5E_gshared)(__this, method);
+}
+// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<Nethereum.Contracts.QueryHandlers.MultiCall.IMulticallInputOutput[]>::AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1/ConfiguredTaskAwaiter<Nethereum.Contracts.QueryHandlers.MultiCall.Aggregate3ValueOutputDTO>,Nethereum.Contracts.QueryHandlers.MultiCall.MultiQueryHandler/<MultiCallAsync>d__13>(TAwaiter&,TStateMachine&)
+inline void AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisConfiguredTaskAwaiter_tEDA8191B4B5EA1357682A9F21488544BE1C12100_TisU3CMultiCallAsyncU3Ed__13_t7A391C1FA6573DA0FC973869DE104C0D039BBC62_m8F32A56B1A2F50A23E021F6155437462690E5FB8 (AsyncTaskMethodBuilder_1_tFF884780053FBFD2BEEA42DC0DFF882656BBE992* __this, ConfiguredTaskAwaiter_tEDA8191B4B5EA1357682A9F21488544BE1C12100* ___awaiter0, U3CMultiCallAsyncU3Ed__13_t7A391C1FA6573DA0FC973869DE104C0D039BBC62* ___stateMachine1, const RuntimeMethod* method)
+{
+	((  void (*) (AsyncTaskMethodBuilder_1_tFF884780053FBFD2BEEA42DC0DFF882656BBE992*, ConfiguredTaskAwaiter_tEDA8191B4B5EA1357682A9F21488544BE1C12100*, U3CMultiCallAsyncU3Ed__13_t7A391C1FA6573DA0FC973869DE104C0D039BBC62*, const RuntimeMethod*))AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisConfiguredTaskAwaiter_t28A5A60199BBE7F1F31159301DD211EFDCF955E2_TisU3CMultiCallAsyncU3Ed__13_t7A391C1FA6573DA0FC973869DE104C0D039BBC62_m256962C2F6D7196426D006E57205A4C842F5855F_gshared)(__this, ___awaiter0, ___stateMachine1, method);
+}
+// TResult System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1/ConfiguredTaskAwaiter<Nethereum.Contracts.QueryHandlers.MultiCall.Aggregate3ValueOutputDTO>::GetResult()
+inline Aggregate3ValueOutputDTO_t2FF1DDFC969071DBBB8DA771D7B60CA9C378093E* ConfiguredTaskAwaiter_GetResult_mA9FAFA1779F3BA781AEF8E4D1ABCF6AAF9AAEC92 (ConfiguredTaskAwaiter_tEDA8191B4B5EA1357682A9F21488544BE1C12100* __this, const RuntimeMethod* method)
+{
+	return ((  Aggregate3ValueOutputDTO_t2FF1DDFC969071DBBB8DA771D7B60CA9C378093E* (*) (ConfiguredTaskAwaiter_tEDA8191B4B5EA1357682A9F21488544BE1C12100*, const RuntimeMethod*))ConfiguredTaskAwaiter_GetResult_m00ABE5C46A983C38086438B7A7CB2C62296B3383_gshared)(__this, method);
+}
+// System.Void System.Collections.Generic.List`1<Nethereum.Contracts.QueryHandlers.MultiCall.Result>::AddRange(System.Collections.Generic.IEnumerable`1<T>)
+inline void List_1_AddRange_m4E73F27EF20C2FEFA3C915E077897B44B81AB3ED (List_1_t4C68E546060D764C99C1B962BB2C011B0A5EBA19* __this, RuntimeObject* ___collection0, const RuntimeMethod* method)
+{
+	((  void (*) (List_1_t4C68E546060D764C99C1B962BB2C011B0A5EBA19*, RuntimeObject*, const RuntimeMethod*))List_1_AddRange_m1F76B300133150E6046C5FED00E88B5DE0A02E17_gshared)(__this, ___collection0, method);
+}
+// T System.Collections.Generic.List`1<Nethereum.Contracts.QueryHandlers.MultiCall.Result>::get_Item(System.Int32)
+inline Result_t865E183DF9D3C68AAB7A99BD699A08BD8CBC9CF4* List_1_get_Item_mD79820936BC671C6A1F274AECEDF5055A0D441C6 (List_1_t4C68E546060D764C99C1B962BB2C011B0A5EBA19* __this, int32_t ___index0, const RuntimeMethod* method)
+{
+	return ((  Result_t865E183DF9D3C68AAB7A99BD699A08BD8CBC9CF4* (*) (List_1_t4C68E546060D764C99C1B962BB2C011B0A5EBA19*, int32_t, const RuntimeMethod*))List_1_get_Item_m33561245D64798C2AB07584C0EC4F240E4839A38_gshared)(__this, ___index0, method);
+}
+// System.Int32 System.Collections.Generic.List`1<Nethereum.Contracts.QueryHandlers.MultiCall.Result>::get_Count()
+inline int32_t List_1_get_Count_m8F228A7E2CCAB2F477D8C2F7BB27E6993FF5A8F5_inline (List_1_t4C68E546060D764C99C1B962BB2C011B0A5EBA19* __this, const RuntimeMethod* method)
+{
+	return ((  int32_t (*) (List_1_t4C68E546060D764C99C1B962BB2C011B0A5EBA19*, const RuntimeMethod*))List_1_get_Count_m4407E4C389F22B8CEC282C15D56516658746C383_gshared_inline)(__this, method);
+}
+// System.Void System.Collections.Generic.List`1<Nethereum.Contracts.QueryHandlers.MultiCall.Call3>::.ctor()
+inline void List_1__ctor_m610C0A18A37462C4A1E9690E11480C43E03E9037 (List_1_t913451B7A13CEE27B44C60CE4E1378612824AE38* __this, const RuntimeMethod* method)
+{
+	((  void (*) (List_1_t913451B7A13CEE27B44C60CE4E1378612824AE38*, const RuntimeMethod*))List_1__ctor_m7F078BB342729BDF11327FD89D7872265328F690_gshared)(__this, method);
+}
+// System.Void Nethereum.Contracts.QueryHandlers.MultiCall.Call3::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Call3__ctor_mDDD303DDE46EDDA5D1552C7150394B7F51BA3490 (Call3_t7D0A3BDA2EE93E4FE48F20496F1A5C2723BABB8D* __this, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.List`1<Nethereum.Contracts.QueryHandlers.MultiCall.Call3>::Add(T)
+inline void List_1_Add_m4C91A565FE73573B12913F69B8E7A133EB249306_inline (List_1_t913451B7A13CEE27B44C60CE4E1378612824AE38* __this, Call3_t7D0A3BDA2EE93E4FE48F20496F1A5C2723BABB8D* ___item0, const RuntimeMethod* method)
+{
+	((  void (*) (List_1_t913451B7A13CEE27B44C60CE4E1378612824AE38*, Call3_t7D0A3BDA2EE93E4FE48F20496F1A5C2723BABB8D*, const RuntimeMethod*))List_1_Add_mEBCF994CC3814631017F46A387B1A192ED6C85C7_gshared_inline)(__this, ___item0, method);
+}
+// System.Void Nethereum.Contracts.QueryHandlers.MultiCall.Aggregate3Function::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Aggregate3Function__ctor_m43D67CAE2120D44899607E23F0C7816206A235A6 (Aggregate3Function_t22B497CF7B74F9B7EAE57E49F180946D62DE0A80* __this, const RuntimeMethod* method) ;
+// System.Threading.Tasks.Task`1<TFunctionOutput> Nethereum.Contracts.QueryHandlers.QueryDecoderBaseHandler`2<Nethereum.Contracts.QueryHandlers.MultiCall.Aggregate3Function,Nethereum.Contracts.QueryHandlers.MultiCall.Aggregate3OutputDTO>::QueryAsync(System.String,TFunctionMessage,Nethereum.RPC.Eth.DTOs.BlockParameter)
+inline Task_1_t843D0B7FB99859F077CD3346AAB26D9728AC86A7* QueryDecoderBaseHandler_2_QueryAsync_m454BDD4BDB95AD7364754A4E35D76B686BDB15EE (QueryDecoderBaseHandler_2_t08FE3A73CCE55581281E2C0024779BB19E26AB1A* __this, String_t* ___contractAddress0, Aggregate3Function_t22B497CF7B74F9B7EAE57E49F180946D62DE0A80* ___functionMessage1, BlockParameter_t13CF5CC9CDE990ACD945748B2FA7F19EA0A06AD9* ___block2, const RuntimeMethod* method)
+{
+	return ((  Task_1_t843D0B7FB99859F077CD3346AAB26D9728AC86A7* (*) (QueryDecoderBaseHandler_2_t08FE3A73CCE55581281E2C0024779BB19E26AB1A*, String_t*, Aggregate3Function_t22B497CF7B74F9B7EAE57E49F180946D62DE0A80*, BlockParameter_t13CF5CC9CDE990ACD945748B2FA7F19EA0A06AD9*, const RuntimeMethod*))QueryDecoderBaseHandler_2_QueryAsync_m02A5FF9F3738CF9544DE5898CDAD544599FF73C3_gshared)(__this, ___contractAddress0, ___functionMessage1, ___block2, method);
+}
+// System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1<TResult> System.Threading.Tasks.Task`1<Nethereum.Contracts.QueryHandlers.MultiCall.Aggregate3OutputDTO>::ConfigureAwait(System.Boolean)
+inline ConfiguredTaskAwaitable_1_tF3AC4E3112F1EDA66879A90506A46AD05294E357 Task_1_ConfigureAwait_m02A78FAEA35BD451D79DC5320BC6ACAAC3B4B9BB (Task_1_t843D0B7FB99859F077CD3346AAB26D9728AC86A7* __this, bool ___continueOnCapturedContext0, const RuntimeMethod* method)
+{
+	return ((  ConfiguredTaskAwaitable_1_tF3AC4E3112F1EDA66879A90506A46AD05294E357 (*) (Task_1_t843D0B7FB99859F077CD3346AAB26D9728AC86A7*, bool, const RuntimeMethod*))Task_1_ConfigureAwait_m9D6420C859925B7C250DED7586DD770C91632070_gshared)(__this, ___continueOnCapturedContext0, method);
+}
+// System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1/ConfiguredTaskAwaiter<TResult> System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1<Nethereum.Contracts.QueryHandlers.MultiCall.Aggregate3OutputDTO>::GetAwaiter()
+inline ConfiguredTaskAwaiter_t2FB4C6E80ED7E994AC6CEEEB6572E51978E07756 ConfiguredTaskAwaitable_1_GetAwaiter_mD759E8CEA360EE798DDC6FA31F3DD751A0716921_inline (ConfiguredTaskAwaitable_1_tF3AC4E3112F1EDA66879A90506A46AD05294E357* __this, const RuntimeMethod* method)
+{
+	return ((  ConfiguredTaskAwaiter_t2FB4C6E80ED7E994AC6CEEEB6572E51978E07756 (*) (ConfiguredTaskAwaitable_1_tF3AC4E3112F1EDA66879A90506A46AD05294E357*, const RuntimeMethod*))ConfiguredTaskAwaitable_1_GetAwaiter_m10364C3B0A904803E890B2D75674665F986BDAB2_gshared_inline)(__this, method);
+}
+// System.Boolean System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1/ConfiguredTaskAwaiter<Nethereum.Contracts.QueryHandlers.MultiCall.Aggregate3OutputDTO>::get_IsCompleted()
+inline bool ConfiguredTaskAwaiter_get_IsCompleted_m41C944A82DCBFB2F5D4D1607A8127B06D3A11CB0 (ConfiguredTaskAwaiter_t2FB4C6E80ED7E994AC6CEEEB6572E51978E07756* __this, const RuntimeMethod* method)
+{
+	return ((  bool (*) (ConfiguredTaskAwaiter_t2FB4C6E80ED7E994AC6CEEEB6572E51978E07756*, const RuntimeMethod*))ConfiguredTaskAwaiter_get_IsCompleted_mD6243A7544181F96816A5F81459F4B66908ADB5E_gshared)(__this, method);
+}
+// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<Nethereum.Contracts.QueryHandlers.MultiCall.IMulticallInputOutput[]>::AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1/ConfiguredTaskAwaiter<Nethereum.Contracts.QueryHandlers.MultiCall.Aggregate3OutputDTO>,Nethereum.Contracts.QueryHandlers.MultiCall.MultiQueryHandler/<MultiCallAsync>d__13>(TAwaiter&,TStateMachine&)
+inline void AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisConfiguredTaskAwaiter_t2FB4C6E80ED7E994AC6CEEEB6572E51978E07756_TisU3CMultiCallAsyncU3Ed__13_t7A391C1FA6573DA0FC973869DE104C0D039BBC62_m4C47F510C9613FE345CDFF6C20F9320C3448CF9E (AsyncTaskMethodBuilder_1_tFF884780053FBFD2BEEA42DC0DFF882656BBE992* __this, ConfiguredTaskAwaiter_t2FB4C6E80ED7E994AC6CEEEB6572E51978E07756* ___awaiter0, U3CMultiCallAsyncU3Ed__13_t7A391C1FA6573DA0FC973869DE104C0D039BBC62* ___stateMachine1, const RuntimeMethod* method)
+{
+	((  void (*) (AsyncTaskMethodBuilder_1_tFF884780053FBFD2BEEA42DC0DFF882656BBE992*, ConfiguredTaskAwaiter_t2FB4C6E80ED7E994AC6CEEEB6572E51978E07756*, U3CMultiCallAsyncU3Ed__13_t7A391C1FA6573DA0FC973869DE104C0D039BBC62*, const RuntimeMethod*))AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisConfiguredTaskAwaiter_t28A5A60199BBE7F1F31159301DD211EFDCF955E2_TisU3CMultiCallAsyncU3Ed__13_t7A391C1FA6573DA0FC973869DE104C0D039BBC62_m256962C2F6D7196426D006E57205A4C842F5855F_gshared)(__this, ___awaiter0, ___stateMachine1, method);
+}
+// TResult System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1/ConfiguredTaskAwaiter<Nethereum.Contracts.QueryHandlers.MultiCall.Aggregate3OutputDTO>::GetResult()
+inline Aggregate3OutputDTO_t9CA62E1FF9DC2592189ADE0D667CD29C287867DB* ConfiguredTaskAwaiter_GetResult_m9668EE538C7E4E8263EBB5A75BF504D7D9F52CEE (ConfiguredTaskAwaiter_t2FB4C6E80ED7E994AC6CEEEB6572E51978E07756* __this, const RuntimeMethod* method)
+{
+	return ((  Aggregate3OutputDTO_t9CA62E1FF9DC2592189ADE0D667CD29C287867DB* (*) (ConfiguredTaskAwaiter_t2FB4C6E80ED7E994AC6CEEEB6572E51978E07756*, const RuntimeMethod*))ConfiguredTaskAwaiter_GetResult_m00ABE5C46A983C38086438B7A7CB2C62296B3383_gshared)(__this, method);
+}
+// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<Nethereum.Contracts.QueryHandlers.MultiCall.IMulticallInputOutput[]>::SetException(System.Exception)
+inline void AsyncTaskMethodBuilder_1_SetException_m0ACCACB23B9915B4A6998DE6F99A36C4E2A6C813 (AsyncTaskMethodBuilder_1_tFF884780053FBFD2BEEA42DC0DFF882656BBE992* __this, Exception_t* ___exception0, const RuntimeMethod* method)
+{
+	((  void (*) (AsyncTaskMethodBuilder_1_tFF884780053FBFD2BEEA42DC0DFF882656BBE992*, Exception_t*, const RuntimeMethod*))AsyncTaskMethodBuilder_1_SetException_mC2F74B26F5303F9F960965220E2866D777F1A5C6_gshared)(__this, ___exception0, method);
+}
+// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<Nethereum.Contracts.QueryHandlers.MultiCall.IMulticallInputOutput[]>::SetResult(TResult)
+inline void AsyncTaskMethodBuilder_1_SetResult_mD06C693C6C2515CCBE2063E73AB019F42D162F5D (AsyncTaskMethodBuilder_1_tFF884780053FBFD2BEEA42DC0DFF882656BBE992* __this, IMulticallInputOutputU5BU5D_t7D33DBDC42EE714A687264BC9F3C6C6AED3885F7* ___result0, const RuntimeMethod* method)
+{
+	((  void (*) (AsyncTaskMethodBuilder_1_tFF884780053FBFD2BEEA42DC0DFF882656BBE992*, IMulticallInputOutputU5BU5D_t7D33DBDC42EE714A687264BC9F3C6C6AED3885F7*, const RuntimeMethod*))AsyncTaskMethodBuilder_1_SetResult_m0D83195F995F9825D7A6DCDC3835D6917C43B5A6_gshared)(__this, ___result0, method);
+}
+// System.Void Nethereum.Contracts.QueryHandlers.MultiCall.MultiQueryHandler/<MultiCallAsync>d__13::MoveNext()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CMultiCallAsyncU3Ed__13_MoveNext_mD9BDAB256D5451AB7CF221E1D2E7E362DF15CB8D (U3CMultiCallAsyncU3Ed__13_t7A391C1FA6573DA0FC973869DE104C0D039BBC62* __this, const RuntimeMethod* method) ;
+// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<Nethereum.Contracts.QueryHandlers.MultiCall.IMulticallInputOutput[]>::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+inline void AsyncTaskMethodBuilder_1_SetStateMachine_mCC41F473635FB600B7EAF175A3E2950D1F875697 (AsyncTaskMethodBuilder_1_tFF884780053FBFD2BEEA42DC0DFF882656BBE992* __this, RuntimeObject* ___stateMachine0, const RuntimeMethod* method)
+{
+	((  void (*) (AsyncTaskMethodBuilder_1_tFF884780053FBFD2BEEA42DC0DFF882656BBE992*, RuntimeObject*, const RuntimeMethod*))AsyncTaskMethodBuilder_1_SetStateMachine_m3BE54983634ABF5BE05200C7894AD0F9F20BDD65_gshared)(__this, ___stateMachine0, method);
+}
+// System.Void Nethereum.Contracts.QueryHandlers.MultiCall.MultiQueryHandler/<MultiCallAsync>d__13::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CMultiCallAsyncU3Ed__13_SetStateMachine_mCF168071C2C869C3119E3D1CBA0B69AEF91EAB89 (U3CMultiCallAsyncU3Ed__13_t7A391C1FA6573DA0FC973869DE104C0D039BBC62* __this, RuntimeObject* ___stateMachine0, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.List`1<Nethereum.Contracts.QueryHandlers.MultiCall.Call>::.ctor()
+inline void List_1__ctor_mA4C23E545EC9157AD620B777B5A48468C399D99E (List_1_t1CFC44309FCDA176EA29234D4ABE7C7F1C7195FE* __this, const RuntimeMethod* method)
+{
+	((  void (*) (List_1_t1CFC44309FCDA176EA29234D4ABE7C7F1C7195FE*, const RuntimeMethod*))List_1__ctor_m7F078BB342729BDF11327FD89D7872265328F690_gshared)(__this, method);
+}
+// System.Void Nethereum.Contracts.QueryHandlers.MultiCall.Call::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Call__ctor_mBE2F5449E5FA043FC956236BAB99D4E6D1B2C298 (Call_t924086EAD3B3E4D52DE52E6E060F04753C2B15A7* __this, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.List`1<Nethereum.Contracts.QueryHandlers.MultiCall.Call>::Add(T)
+inline void List_1_Add_m5B0347BAF9AB096A5225AAEC5789F1F9F197742F_inline (List_1_t1CFC44309FCDA176EA29234D4ABE7C7F1C7195FE* __this, Call_t924086EAD3B3E4D52DE52E6E060F04753C2B15A7* ___item0, const RuntimeMethod* method)
+{
+	((  void (*) (List_1_t1CFC44309FCDA176EA29234D4ABE7C7F1C7195FE*, Call_t924086EAD3B3E4D52DE52E6E060F04753C2B15A7*, const RuntimeMethod*))List_1_Add_mEBCF994CC3814631017F46A387B1A192ED6C85C7_gshared_inline)(__this, ___item0, method);
+}
+// System.Void Nethereum.Contracts.QueryHandlers.MultiCall.AggregateFunction::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AggregateFunction__ctor_m0633AC43B4C0817BA2B3155C3E9CD2036C248BE2 (AggregateFunction_tFEE01853E17B270CE0A401F2931520B99AE9A0A7* __this, const RuntimeMethod* method) ;
+// System.Threading.Tasks.Task`1<TFunctionOutput> Nethereum.Contracts.QueryHandlers.QueryDecoderBaseHandler`2<Nethereum.Contracts.QueryHandlers.MultiCall.AggregateFunction,Nethereum.Contracts.QueryHandlers.MultiCall.AggregateOutputDTO>::QueryAsync(System.String,TFunctionMessage,Nethereum.RPC.Eth.DTOs.BlockParameter)
+inline Task_1_tA3CF95FC9CBC3CA5879B274CBE93339D68A5CA95* QueryDecoderBaseHandler_2_QueryAsync_m28A5D30F0D4BD1C7BCFA9BCE726DB7663B29A6DB (QueryDecoderBaseHandler_2_t6C60BB3092F1A5B8450054CA473071243BC7D1D3* __this, String_t* ___contractAddress0, AggregateFunction_tFEE01853E17B270CE0A401F2931520B99AE9A0A7* ___functionMessage1, BlockParameter_t13CF5CC9CDE990ACD945748B2FA7F19EA0A06AD9* ___block2, const RuntimeMethod* method)
+{
+	return ((  Task_1_tA3CF95FC9CBC3CA5879B274CBE93339D68A5CA95* (*) (QueryDecoderBaseHandler_2_t6C60BB3092F1A5B8450054CA473071243BC7D1D3*, String_t*, AggregateFunction_tFEE01853E17B270CE0A401F2931520B99AE9A0A7*, BlockParameter_t13CF5CC9CDE990ACD945748B2FA7F19EA0A06AD9*, const RuntimeMethod*))QueryDecoderBaseHandler_2_QueryAsync_m02A5FF9F3738CF9544DE5898CDAD544599FF73C3_gshared)(__this, ___contractAddress0, ___functionMessage1, ___block2, method);
+}
+// System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1<TResult> System.Threading.Tasks.Task`1<Nethereum.Contracts.QueryHandlers.MultiCall.AggregateOutputDTO>::ConfigureAwait(System.Boolean)
+inline ConfiguredTaskAwaitable_1_t5A674999AC76583775E037D3DEB36E00D9D59F81 Task_1_ConfigureAwait_m4F07E8910F092E0463273871F61F91B755100DBF (Task_1_tA3CF95FC9CBC3CA5879B274CBE93339D68A5CA95* __this, bool ___continueOnCapturedContext0, const RuntimeMethod* method)
+{
+	return ((  ConfiguredTaskAwaitable_1_t5A674999AC76583775E037D3DEB36E00D9D59F81 (*) (Task_1_tA3CF95FC9CBC3CA5879B274CBE93339D68A5CA95*, bool, const RuntimeMethod*))Task_1_ConfigureAwait_m9D6420C859925B7C250DED7586DD770C91632070_gshared)(__this, ___continueOnCapturedContext0, method);
+}
+// System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1/ConfiguredTaskAwaiter<TResult> System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1<Nethereum.Contracts.QueryHandlers.MultiCall.AggregateOutputDTO>::GetAwaiter()
+inline ConfiguredTaskAwaiter_tBFC63C1299C54709ABE6BDEB21685AA9B3534BB9 ConfiguredTaskAwaitable_1_GetAwaiter_m1B0B397082EEAA03681ABED612D63AC1E7E429F1_inline (ConfiguredTaskAwaitable_1_t5A674999AC76583775E037D3DEB36E00D9D59F81* __this, const RuntimeMethod* method)
+{
+	return ((  ConfiguredTaskAwaiter_tBFC63C1299C54709ABE6BDEB21685AA9B3534BB9 (*) (ConfiguredTaskAwaitable_1_t5A674999AC76583775E037D3DEB36E00D9D59F81*, const RuntimeMethod*))ConfiguredTaskAwaitable_1_GetAwaiter_m10364C3B0A904803E890B2D75674665F986BDAB2_gshared_inline)(__this, method);
+}
+// System.Boolean System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1/ConfiguredTaskAwaiter<Nethereum.Contracts.QueryHandlers.MultiCall.AggregateOutputDTO>::get_IsCompleted()
+inline bool ConfiguredTaskAwaiter_get_IsCompleted_m8D4E06776CC3D1BCF8762CF6059A4CB0BEBA01AE (ConfiguredTaskAwaiter_tBFC63C1299C54709ABE6BDEB21685AA9B3534BB9* __this, const RuntimeMethod* method)
+{
+	return ((  bool (*) (ConfiguredTaskAwaiter_tBFC63C1299C54709ABE6BDEB21685AA9B3534BB9*, const RuntimeMethod*))ConfiguredTaskAwaiter_get_IsCompleted_mD6243A7544181F96816A5F81459F4B66908ADB5E_gshared)(__this, method);
+}
+// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<Nethereum.Contracts.QueryHandlers.MultiCall.IMulticallInputOutput[]>::AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1/ConfiguredTaskAwaiter<Nethereum.Contracts.QueryHandlers.MultiCall.AggregateOutputDTO>,Nethereum.Contracts.QueryHandlers.MultiCall.MultiQueryHandler/<MultiCallV1Async>d__10>(TAwaiter&,TStateMachine&)
+inline void AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisConfiguredTaskAwaiter_tBFC63C1299C54709ABE6BDEB21685AA9B3534BB9_TisU3CMultiCallV1AsyncU3Ed__10_t6910A8C2210A3573C94630F3B1F18F910914F89B_mCDDB7B2805DAC327EB71B6DF672686F17C1C507D (AsyncTaskMethodBuilder_1_tFF884780053FBFD2BEEA42DC0DFF882656BBE992* __this, ConfiguredTaskAwaiter_tBFC63C1299C54709ABE6BDEB21685AA9B3534BB9* ___awaiter0, U3CMultiCallV1AsyncU3Ed__10_t6910A8C2210A3573C94630F3B1F18F910914F89B* ___stateMachine1, const RuntimeMethod* method)
+{
+	((  void (*) (AsyncTaskMethodBuilder_1_tFF884780053FBFD2BEEA42DC0DFF882656BBE992*, ConfiguredTaskAwaiter_tBFC63C1299C54709ABE6BDEB21685AA9B3534BB9*, U3CMultiCallV1AsyncU3Ed__10_t6910A8C2210A3573C94630F3B1F18F910914F89B*, const RuntimeMethod*))AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisConfiguredTaskAwaiter_t28A5A60199BBE7F1F31159301DD211EFDCF955E2_TisU3CMultiCallV1AsyncU3Ed__10_t6910A8C2210A3573C94630F3B1F18F910914F89B_m0F1FD67F6848D615D0109A9E6554EB934D959722_gshared)(__this, ___awaiter0, ___stateMachine1, method);
+}
+// TResult System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1/ConfiguredTaskAwaiter<Nethereum.Contracts.QueryHandlers.MultiCall.AggregateOutputDTO>::GetResult()
+inline AggregateOutputDTO_t04A6B814396B3EFE20568FF857DC66DEDADB011C* ConfiguredTaskAwaiter_GetResult_m6658C545A7073EF424111F058F5C7E902D3A13FC (ConfiguredTaskAwaiter_tBFC63C1299C54709ABE6BDEB21685AA9B3534BB9* __this, const RuntimeMethod* method)
+{
+	return ((  AggregateOutputDTO_t04A6B814396B3EFE20568FF857DC66DEDADB011C* (*) (ConfiguredTaskAwaiter_tBFC63C1299C54709ABE6BDEB21685AA9B3534BB9*, const RuntimeMethod*))ConfiguredTaskAwaiter_GetResult_m00ABE5C46A983C38086438B7A7CB2C62296B3383_gshared)(__this, method);
+}
+// T System.Collections.Generic.List`1<System.Byte[]>::get_Item(System.Int32)
+inline ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* List_1_get_Item_m2C6A207D8824FE873045A66C942593AE67D90CA6 (List_1_tBFF9DD9FFA06F20E74F9D7AD36610BD754D353A4* __this, int32_t ___index0, const RuntimeMethod* method)
+{
+	return ((  ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* (*) (List_1_tBFF9DD9FFA06F20E74F9D7AD36610BD754D353A4*, int32_t, const RuntimeMethod*))List_1_get_Item_m33561245D64798C2AB07584C0EC4F240E4839A38_gshared)(__this, ___index0, method);
+}
+// System.Int32 System.Collections.Generic.List`1<System.Byte[]>::get_Count()
+inline int32_t List_1_get_Count_m88FEB2D94E35C258B61F53400F7CA20E99A7DAD3_inline (List_1_tBFF9DD9FFA06F20E74F9D7AD36610BD754D353A4* __this, const RuntimeMethod* method)
+{
+	return ((  int32_t (*) (List_1_tBFF9DD9FFA06F20E74F9D7AD36610BD754D353A4*, const RuntimeMethod*))List_1_get_Count_m4407E4C389F22B8CEC282C15D56516658746C383_gshared_inline)(__this, method);
+}
+// System.Void Nethereum.Contracts.QueryHandlers.MultiCall.MultiQueryHandler/<MultiCallV1Async>d__10::MoveNext()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CMultiCallV1AsyncU3Ed__10_MoveNext_m1CC66218AE395FBB66861E7227485467D22CA5B9 (U3CMultiCallV1AsyncU3Ed__10_t6910A8C2210A3573C94630F3B1F18F910914F89B* __this, const RuntimeMethod* method) ;
+// System.Void Nethereum.Contracts.QueryHandlers.MultiCall.MultiQueryHandler/<MultiCallV1Async>d__10::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CMultiCallV1AsyncU3Ed__10_SetStateMachine_m83BE463E79B246BF70A136A44DC53925C2571D2A (U3CMultiCallV1AsyncU3Ed__10_t6910A8C2210A3573C94630F3B1F18F910914F89B* __this, RuntimeObject* ___stateMachine0, const RuntimeMethod* method) ;
+// System.Byte[] Nethereum.Contracts.TransactionHandlers.MultiSend.MultiSendEncoder::EncodeMultiSendList(Nethereum.Contracts.TransactionHandlers.MultiSend.IMultiSendInput[])
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* MultiSendEncoder_EncodeMultiSendList_m38FCCEA840AE38355C62B4580422E9033A79AA10 (IMultiSendInputU5BU5D_t0A5262003FB6442DE35A0573C6BDE76A153EDE8F* ___multiSendInputs0, const RuntimeMethod* method) ;
+// System.Void Nethereum.Contracts.TransactionHandlers.MultiSend.MultiSendFunction::set_Transactions(System.Byte[])
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void MultiSendFunction_set_Transactions_mACB0FB69D49E250572C0DEB9DDC301E0198C8030_inline (MultiSendFunction_t283117F8190279FA3307712FD93408FF3B0EE292* __this, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___value0, const RuntimeMethod* method) ;
+// System.Void Nethereum.ABI.ABIEncode::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ABIEncode__ctor_m9D8B47803B5315F7EE995AB67059A0F411BB9C34 (ABIEncode_t95CFC96B6E0E5D79DC62FF6969A0768A6C90C5CD* __this, const RuntimeMethod* method) ;
+// System.Void Nethereum.ABI.ABIValue::.ctor(System.String,System.Object)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ABIValue__ctor_m1614FE5677DC6505EB509B6FD6608B1F66898D6D (ABIValue_t53C363B3F7F73B7F8F0D7804041B2B3ED1041567* __this, String_t* ___abiType0, RuntimeObject* ___value1, const RuntimeMethod* method) ;
+// System.Byte[] Nethereum.ABI.ABIEncode::GetABIEncodedPacked(Nethereum.ABI.ABIValue[])
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ABIEncode_GetABIEncodedPacked_m2480CB1D189781CBA5528FC3A7E624F52E839C32 (ABIEncode_t95CFC96B6E0E5D79DC62FF6969A0768A6C90C5CD* __this, ABIValueU5BU5D_t5053A4AB39A1EDA3F954A7A8BAD52DF73676F8E5* ___abiValues0, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.List`1<System.Byte>::.ctor()
+inline void List_1__ctor_mC411581553467A7DB76C06E5E5FCA34E4EC621B9 (List_1_t7D15BE3246500BBF1A24C24DBF963B89A876255B* __this, const RuntimeMethod* method)
+{
+	((  void (*) (List_1_t7D15BE3246500BBF1A24C24DBF963B89A876255B*, const RuntimeMethod*))List_1__ctor_mC411581553467A7DB76C06E5E5FCA34E4EC621B9_gshared)(__this, method);
+}
+// System.Void System.Collections.Generic.List`1<System.Byte>::AddRange(System.Collections.Generic.IEnumerable`1<T>)
+inline void List_1_AddRange_mF51C7242A9710C837B9158D0D120549E49E4FB67 (List_1_t7D15BE3246500BBF1A24C24DBF963B89A876255B* __this, RuntimeObject* ___collection0, const RuntimeMethod* method)
+{
+	((  void (*) (List_1_t7D15BE3246500BBF1A24C24DBF963B89A876255B*, RuntimeObject*, const RuntimeMethod*))List_1_AddRange_mF51C7242A9710C837B9158D0D120549E49E4FB67_gshared)(__this, ___collection0, method);
+}
+// T[] System.Collections.Generic.List`1<System.Byte>::ToArray()
+inline ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* List_1_ToArray_m23F8BB7CABADC11EBCAB5AB701B75F56C865BE24 (List_1_t7D15BE3246500BBF1A24C24DBF963B89A876255B* __this, const RuntimeMethod* method)
+{
+	return ((  ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* (*) (List_1_t7D15BE3246500BBF1A24C24DBF963B89A876255B*, const RuntimeMethod*))List_1_ToArray_m23F8BB7CABADC11EBCAB5AB701B75F56C865BE24_gshared)(__this, method);
+}
+// System.Void Nethereum.Contracts.ContractHandlers.ContractHandler::set_AddressFrom(System.String)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void ContractHandler_set_AddressFrom_m5A15E14AA62E196E0FEF17C1741BFDF2F20F4178_inline (ContractHandler_t3CC1E74BCBEFB5D4531C7BA554B008F0149B1DF7* __this, String_t* ___value0, const RuntimeMethod* method) ;
+// System.String Nethereum.Contracts.CQS.ContractMessageBase::get_FromAddress()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR String_t* ContractMessageBase_get_FromAddress_mB6F9F4F562A1B873D315355DFC836F0DD904138B_inline (ContractMessageBase_tA9C9FCA2DAE63DE7A525580AC6E60DD85EBE2EAF* __this, const RuntimeMethod* method) ;
+// System.String Nethereum.Contracts.ContractHandlers.ContractHandler::get_AddressFrom()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR String_t* ContractHandler_get_AddressFrom_mC7790AC8C9C3E2681A0AFAB4B6154EF38C6684A9_inline (ContractHandler_t3CC1E74BCBEFB5D4531C7BA554B008F0149B1DF7* __this, const RuntimeMethod* method) ;
+// System.Void Nethereum.Contracts.CQS.ContractMessageBase::set_FromAddress(System.String)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void ContractMessageBase_set_FromAddress_m692C1139B7BBFE4956E7A727678BE74E0F95F49B_inline (ContractMessageBase_tA9C9FCA2DAE63DE7A525580AC6E60DD85EBE2EAF* __this, String_t* ___value0, const RuntimeMethod* method) ;
+// Nethereum.RPC.Accounts.IAccount Nethereum.Contracts.ContractHandlers.ContractTransactionHandlerBase::get_Account()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* ContractTransactionHandlerBase_get_Account_m1FE88D1891E8AD64508B942A7719EF531AE1C69B_inline (ContractTransactionHandlerBase_t8D5503838C4576B88F52071D89FFF2CAC2ACCF29* __this, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.List`1<System.Object>::AddWithResize(T)
+inline void List_1_AddWithResize_m79A9BF770BEF9C06BE40D5401E55E375F2726CC4 (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, RuntimeObject* ___item0, const RuntimeMethod* method)
+{
+	((  void (*) (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D*, RuntimeObject*, const RuntimeMethod*))List_1_AddWithResize_m79A9BF770BEF9C06BE40D5401E55E375F2726CC4_gshared)(__this, ___item0, method);
+}
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Nethereum.Contracts.Standards.ENS.ENSRegistry.ContractDefinition.TransferEventDTO::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TransferEventDTO__ctor_mD6202CB48E6ECFAB1BEBD6366FAA9E0165D3C7B6 (TransferEventDTO_tD8B5A15190F98A22919D5CFC9AB36EAC39E8572E* __this, const RuntimeMethod* method) 
+{
+	{
+		TransferEventDTOBase__ctor_m763BDC6F1F069EB5B247BB150FB74BD5650D94CA(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Byte[] Nethereum.Contracts.Standards.ENS.ENSRegistry.ContractDefinition.TransferEventDTOBase::get_Node()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* TransferEventDTOBase_get_Node_m2DFACB593CFEC7E5E52BB98B4FAF075DA39AC92A (TransferEventDTOBase_t51D219DAA28F2C3153574E724F5DE845D80E7DF2* __this, const RuntimeMethod* method) 
+{
+	{
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_0 = __this->___U3CNodeU3Ek__BackingField_0;
+		return L_0;
+	}
+}
+// System.Void Nethereum.Contracts.Standards.ENS.ENSRegistry.ContractDefinition.TransferEventDTOBase::set_Node(System.Byte[])
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TransferEventDTOBase_set_Node_m937835FF5C4C3DF0099CAC23A0131C5047C949EB (TransferEventDTOBase_t51D219DAA28F2C3153574E724F5DE845D80E7DF2* __this, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___value0, const RuntimeMethod* method) 
+{
+	{
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_0 = ___value0;
+		__this->___U3CNodeU3Ek__BackingField_0 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CNodeU3Ek__BackingField_0), (void*)L_0);
+		return;
+	}
+}
+// System.String Nethereum.Contracts.Standards.ENS.ENSRegistry.ContractDefinition.TransferEventDTOBase::get_Owner()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* TransferEventDTOBase_get_Owner_mAE3E03519F18E32588ABFA5C6004B2C2822CB062 (TransferEventDTOBase_t51D219DAA28F2C3153574E724F5DE845D80E7DF2* __this, const RuntimeMethod* method) 
+{
+	{
+		String_t* L_0 = __this->___U3COwnerU3Ek__BackingField_1;
+		return L_0;
+	}
+}
+// System.Void Nethereum.Contracts.Standards.ENS.ENSRegistry.ContractDefinition.TransferEventDTOBase::set_Owner(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TransferEventDTOBase_set_Owner_mC546410A727410F8190D8247D6A16F36EBAC69B0 (TransferEventDTOBase_t51D219DAA28F2C3153574E724F5DE845D80E7DF2* __this, String_t* ___value0, const RuntimeMethod* method) 
+{
+	{
+		String_t* L_0 = ___value0;
+		__this->___U3COwnerU3Ek__BackingField_1 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3COwnerU3Ek__BackingField_1), (void*)L_0);
+		return;
+	}
+}
+// System.Void Nethereum.Contracts.Standards.ENS.ENSRegistry.ContractDefinition.TransferEventDTOBase::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TransferEventDTOBase__ctor_m763BDC6F1F069EB5B247BB150FB74BD5650D94CA (TransferEventDTOBase_t51D219DAA28F2C3153574E724F5DE845D80E7DF2* __this, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Nethereum.Contracts.Standards.ENS.ENSRegistry.ContractDefinition.NewOwnerEventDTO::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NewOwnerEventDTO__ctor_m9D9E67B483F70A813CFA2FE664C0467294667519 (NewOwnerEventDTO_tB3ABBA316EFFA6FEA8C4DCE23B41B015FA121FF9* __this, const RuntimeMethod* method) 
+{
+	{
+		NewOwnerEventDTOBase__ctor_m01A3635DD8BBA2B8B08969A0BF3C15171D061924(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Byte[] Nethereum.Contracts.Standards.ENS.ENSRegistry.ContractDefinition.NewOwnerEventDTOBase::get_Node()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* NewOwnerEventDTOBase_get_Node_mFD0E2D47A769BBDE64744216831A4D33A369973D (NewOwnerEventDTOBase_t4F993F65DA1CF39F8C7D70E6FD87B50F4B015AE1* __this, const RuntimeMethod* method) 
+{
+	{
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_0 = __this->___U3CNodeU3Ek__BackingField_0;
+		return L_0;
+	}
+}
+// System.Void Nethereum.Contracts.Standards.ENS.ENSRegistry.ContractDefinition.NewOwnerEventDTOBase::set_Node(System.Byte[])
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NewOwnerEventDTOBase_set_Node_mD8E221403181455E5E1FEEEE6E8FDE04917C1A6E (NewOwnerEventDTOBase_t4F993F65DA1CF39F8C7D70E6FD87B50F4B015AE1* __this, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___value0, const RuntimeMethod* method) 
+{
+	{
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_0 = ___value0;
+		__this->___U3CNodeU3Ek__BackingField_0 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CNodeU3Ek__BackingField_0), (void*)L_0);
+		return;
+	}
+}
+// System.Byte[] Nethereum.Contracts.Standards.ENS.ENSRegistry.ContractDefinition.NewOwnerEventDTOBase::get_Label()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* NewOwnerEventDTOBase_get_Label_m04F3DB129D778D2F1BB3DA64267E5B2DBC544C47 (NewOwnerEventDTOBase_t4F993F65DA1CF39F8C7D70E6FD87B50F4B015AE1* __this, const RuntimeMethod* method) 
+{
+	{
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_0 = __this->___U3CLabelU3Ek__BackingField_1;
+		return L_0;
+	}
+}
+// System.Void Nethereum.Contracts.Standards.ENS.ENSRegistry.ContractDefinition.NewOwnerEventDTOBase::set_Label(System.Byte[])
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NewOwnerEventDTOBase_set_Label_m580A17153C915840DDA125A3468F6BFD339961A9 (NewOwnerEventDTOBase_t4F993F65DA1CF39F8C7D70E6FD87B50F4B015AE1* __this, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___value0, const RuntimeMethod* method) 
+{
+	{
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_0 = ___value0;
+		__this->___U3CLabelU3Ek__BackingField_1 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CLabelU3Ek__BackingField_1), (void*)L_0);
+		return;
+	}
+}
+// System.String Nethereum.Contracts.Standards.ENS.ENSRegistry.ContractDefinition.NewOwnerEventDTOBase::get_Owner()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* NewOwnerEventDTOBase_get_Owner_mB4BCA26190472BBB787237FCA8912BAC6FE7732F (NewOwnerEventDTOBase_t4F993F65DA1CF39F8C7D70E6FD87B50F4B015AE1* __this, const RuntimeMethod* method) 
+{
+	{
+		String_t* L_0 = __this->___U3COwnerU3Ek__BackingField_2;
+		return L_0;
+	}
+}
+// System.Void Nethereum.Contracts.Standards.ENS.ENSRegistry.ContractDefinition.NewOwnerEventDTOBase::set_Owner(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NewOwnerEventDTOBase_set_Owner_mAC584C0A8FB7941D16F47506994E8337633EE3D8 (NewOwnerEventDTOBase_t4F993F65DA1CF39F8C7D70E6FD87B50F4B015AE1* __this, String_t* ___value0, const RuntimeMethod* method) 
+{
+	{
+		String_t* L_0 = ___value0;
+		__this->___U3COwnerU3Ek__BackingField_2 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3COwnerU3Ek__BackingField_2), (void*)L_0);
+		return;
+	}
+}
+// System.Void Nethereum.Contracts.Standards.ENS.ENSRegistry.ContractDefinition.NewOwnerEventDTOBase::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NewOwnerEventDTOBase__ctor_m01A3635DD8BBA2B8B08969A0BF3C15171D061924 (NewOwnerEventDTOBase_t4F993F65DA1CF39F8C7D70E6FD87B50F4B015AE1* __this, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Nethereum.Contracts.Standards.ENS.ENSRegistry.ContractDefinition.NewResolverEventDTO::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NewResolverEventDTO__ctor_mBBA22D59F0F96135D3678FF040CB50FC0F8EE284 (NewResolverEventDTO_t86B8DF397561CAA7804E5A35CBA8CBA918A9CC83* __this, const RuntimeMethod* method) 
+{
+	{
+		NewResolverEventDTOBase__ctor_m7CF80CF98660846D99DEC8FAD03AE871382ABA7B(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Byte[] Nethereum.Contracts.Standards.ENS.ENSRegistry.ContractDefinition.NewResolverEventDTOBase::get_Node()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* NewResolverEventDTOBase_get_Node_mD14A19CC9CE6794E540E7AAB2016A53AA82539BC (NewResolverEventDTOBase_t152850104E6A8E393DBBAEEE524EC6EA5ADC88B7* __this, const RuntimeMethod* method) 
+{
+	{
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_0 = __this->___U3CNodeU3Ek__BackingField_0;
+		return L_0;
+	}
+}
+// System.Void Nethereum.Contracts.Standards.ENS.ENSRegistry.ContractDefinition.NewResolverEventDTOBase::set_Node(System.Byte[])
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NewResolverEventDTOBase_set_Node_m4D2ADD88C34CB5C9A8FE10945F6C4878C642081A (NewResolverEventDTOBase_t152850104E6A8E393DBBAEEE524EC6EA5ADC88B7* __this, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___value0, const RuntimeMethod* method) 
+{
+	{
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_0 = ___value0;
+		__this->___U3CNodeU3Ek__BackingField_0 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CNodeU3Ek__BackingField_0), (void*)L_0);
+		return;
+	}
+}
+// System.String Nethereum.Contracts.Standards.ENS.ENSRegistry.ContractDefinition.NewResolverEventDTOBase::get_Resolver()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* NewResolverEventDTOBase_get_Resolver_m61AE65CDA56002AFD350B2D9DE05A0640AB0AB91 (NewResolverEventDTOBase_t152850104E6A8E393DBBAEEE524EC6EA5ADC88B7* __this, const RuntimeMethod* method) 
+{
+	{
+		String_t* L_0 = __this->___U3CResolverU3Ek__BackingField_1;
+		return L_0;
+	}
+}
+// System.Void Nethereum.Contracts.Standards.ENS.ENSRegistry.ContractDefinition.NewResolverEventDTOBase::set_Resolver(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NewResolverEventDTOBase_set_Resolver_m6BA5B906B8FA5F60F85F3D223E876086ED608292 (NewResolverEventDTOBase_t152850104E6A8E393DBBAEEE524EC6EA5ADC88B7* __this, String_t* ___value0, const RuntimeMethod* method) 
+{
+	{
+		String_t* L_0 = ___value0;
+		__this->___U3CResolverU3Ek__BackingField_1 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CResolverU3Ek__BackingField_1), (void*)L_0);
+		return;
+	}
+}
+// System.Void Nethereum.Contracts.Standards.ENS.ENSRegistry.ContractDefinition.NewResolverEventDTOBase::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NewResolverEventDTOBase__ctor_m7CF80CF98660846D99DEC8FAD03AE871382ABA7B (NewResolverEventDTOBase_t152850104E6A8E393DBBAEEE524EC6EA5ADC88B7* __this, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Nethereum.Contracts.Standards.ENS.ENSRegistry.ContractDefinition.NewTTLEventDTO::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NewTTLEventDTO__ctor_mE706B16A9197D7F49CCE9AAC19DE33B0D6E2F38A (NewTTLEventDTO_t69EC8E72E9CE4B7A187EA528944DBB2BF546040E* __this, const RuntimeMethod* method) 
+{
+	{
+		NewTTLEventDTOBase__ctor_mE12F22BA3985095B605E08FA86E60021639951E5(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Byte[] Nethereum.Contracts.Standards.ENS.ENSRegistry.ContractDefinition.NewTTLEventDTOBase::get_Node()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* NewTTLEventDTOBase_get_Node_mB20636709F351CD449D2957853DC8AE89C1EF71D (NewTTLEventDTOBase_t75B6BF9AFE182206553103335F8A3846297A2684* __this, const RuntimeMethod* method) 
+{
+	{
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_0 = __this->___U3CNodeU3Ek__BackingField_0;
+		return L_0;
+	}
+}
+// System.Void Nethereum.Contracts.Standards.ENS.ENSRegistry.ContractDefinition.NewTTLEventDTOBase::set_Node(System.Byte[])
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NewTTLEventDTOBase_set_Node_m911A45A7119AB118B19900723D7546ECCA7B1660 (NewTTLEventDTOBase_t75B6BF9AFE182206553103335F8A3846297A2684* __this, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___value0, const RuntimeMethod* method) 
+{
+	{
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_0 = ___value0;
+		__this->___U3CNodeU3Ek__BackingField_0 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CNodeU3Ek__BackingField_0), (void*)L_0);
+		return;
+	}
+}
+// System.UInt64 Nethereum.Contracts.Standards.ENS.ENSRegistry.ContractDefinition.NewTTLEventDTOBase::get_Ttl()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t NewTTLEventDTOBase_get_Ttl_m057F2A198679BD8B37F9365BBA99D6CA139E3166 (NewTTLEventDTOBase_t75B6BF9AFE182206553103335F8A3846297A2684* __this, const RuntimeMethod* method) 
+{
+	{
+		uint64_t L_0 = __this->___U3CTtlU3Ek__BackingField_1;
+		return L_0;
+	}
+}
+// System.Void Nethereum.Contracts.Standards.ENS.ENSRegistry.ContractDefinition.NewTTLEventDTOBase::set_Ttl(System.UInt64)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NewTTLEventDTOBase_set_Ttl_m24477B6E180666BEBF8652E4BC4769E3C89F0995 (NewTTLEventDTOBase_t75B6BF9AFE182206553103335F8A3846297A2684* __this, uint64_t ___value0, const RuntimeMethod* method) 
+{
+	{
+		uint64_t L_0 = ___value0;
+		__this->___U3CTtlU3Ek__BackingField_1 = L_0;
+		return;
+	}
+}
+// System.Void Nethereum.Contracts.Standards.ENS.ENSRegistry.ContractDefinition.NewTTLEventDTOBase::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NewTTLEventDTOBase__ctor_mE12F22BA3985095B605E08FA86E60021639951E5 (NewTTLEventDTOBase_t75B6BF9AFE182206553103335F8A3846297A2684* __this, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Nethereum.Contracts.Standards.ENS.ENSRegistry.ContractDefinition.ResolverOutputDTO::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ResolverOutputDTO__ctor_m48EEC01E945894847070559DA734E594B5FF9623 (ResolverOutputDTO_t347A5FFBC91FF2890808777A977A44D4ED316BF1* __this, const RuntimeMethod* method) 
+{
+	{
+		ResolverOutputDTOBase__ctor_mE2EDB849876C6F0B3AB99485153138690E120B69(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.String Nethereum.Contracts.Standards.ENS.ENSRegistry.ContractDefinition.ResolverOutputDTOBase::get_ReturnValue1()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ResolverOutputDTOBase_get_ReturnValue1_m42C5F8C1F54E3603B554E464D05867FEE8F495D5 (ResolverOutputDTOBase_t0CDAA5919146EB924331972B02CE06B77995BCFD* __this, const RuntimeMethod* method) 
+{
+	{
+		String_t* L_0 = __this->___U3CReturnValue1U3Ek__BackingField_0;
+		return L_0;
+	}
+}
+// System.Void Nethereum.Contracts.Standards.ENS.ENSRegistry.ContractDefinition.ResolverOutputDTOBase::set_ReturnValue1(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ResolverOutputDTOBase_set_ReturnValue1_m10DFA5324C19EB65B12F08F2AC114216C1050807 (ResolverOutputDTOBase_t0CDAA5919146EB924331972B02CE06B77995BCFD* __this, String_t* ___value0, const RuntimeMethod* method) 
+{
+	{
+		String_t* L_0 = ___value0;
+		__this->___U3CReturnValue1U3Ek__BackingField_0 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CReturnValue1U3Ek__BackingField_0), (void*)L_0);
+		return;
+	}
+}
+// System.Void Nethereum.Contracts.Standards.ENS.ENSRegistry.ContractDefinition.ResolverOutputDTOBase::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ResolverOutputDTOBase__ctor_mE2EDB849876C6F0B3AB99485153138690E120B69 (ResolverOutputDTOBase_t0CDAA5919146EB924331972B02CE06B77995BCFD* __this, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Nethereum.Contracts.Standards.ENS.ENSRegistry.ContractDefinition.OwnerOutputDTO::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OwnerOutputDTO__ctor_mC96C3D897651E60014B1582FECCB8751D4DF577F (OwnerOutputDTO_t3F2685122A23340F2CB8C78DFBACC55F23636457* __this, const RuntimeMethod* method) 
+{
+	{
+		OwnerOutputDTOBase__ctor_m3144C6DCCED2B58ECD905CBCE1FE54A33F205A2F(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.String Nethereum.Contracts.Standards.ENS.ENSRegistry.ContractDefinition.OwnerOutputDTOBase::get_ReturnValue1()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* OwnerOutputDTOBase_get_ReturnValue1_mD7D1FD080B712508FCA439DFD37050411FF64982 (OwnerOutputDTOBase_t47ACEBC9D43D5A131E505BD251667FC04917D4B4* __this, const RuntimeMethod* method) 
+{
+	{
+		String_t* L_0 = __this->___U3CReturnValue1U3Ek__BackingField_0;
+		return L_0;
+	}
+}
+// System.Void Nethereum.Contracts.Standards.ENS.ENSRegistry.ContractDefinition.OwnerOutputDTOBase::set_ReturnValue1(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OwnerOutputDTOBase_set_ReturnValue1_m89F28BB54431F4832C7ACFC6EEF346DE2011240A (OwnerOutputDTOBase_t47ACEBC9D43D5A131E505BD251667FC04917D4B4* __this, String_t* ___value0, const RuntimeMethod* method) 
+{
+	{
+		String_t* L_0 = ___value0;
+		__this->___U3CReturnValue1U3Ek__BackingField_0 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CReturnValue1U3Ek__BackingField_0), (void*)L_0);
+		return;
+	}
+}
+// System.Void Nethereum.Contracts.Standards.ENS.ENSRegistry.ContractDefinition.OwnerOutputDTOBase::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OwnerOutputDTOBase__ctor_m3144C6DCCED2B58ECD905CBCE1FE54A33F205A2F (OwnerOutputDTOBase_t47ACEBC9D43D5A131E505BD251667FC04917D4B4* __this, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Nethereum.Contracts.Standards.ENS.ENSRegistry.ContractDefinition.TtlOutputDTO::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TtlOutputDTO__ctor_m44764E8DDB94EE87D187CCC2EC565AF46A69AEF5 (TtlOutputDTO_t6CE15EC754EC089DB2F604C281B7363C82F23C8E* __this, const RuntimeMethod* method) 
+{
+	{
+		TtlOutputDTOBase__ctor_m6C163836D29C020FC243B54477D4273899465306(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.UInt64 Nethereum.Contracts.Standards.ENS.ENSRegistry.ContractDefinition.TtlOutputDTOBase::get_ReturnValue1()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t TtlOutputDTOBase_get_ReturnValue1_mCD069257F9B7680BEEE3F285092F33AC105DA75D (TtlOutputDTOBase_tF9B8C65D01AB7B3CD9AB43F3F58629CE0735080C* __this, const RuntimeMethod* method) 
+{
+	{
+		uint64_t L_0 = __this->___U3CReturnValue1U3Ek__BackingField_0;
+		return L_0;
+	}
+}
+// System.Void Nethereum.Contracts.Standards.ENS.ENSRegistry.ContractDefinition.TtlOutputDTOBase::set_ReturnValue1(System.UInt64)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TtlOutputDTOBase_set_ReturnValue1_m33B579CFB777410C20EBE0321A5B889BF7D4C2D1 (TtlOutputDTOBase_tF9B8C65D01AB7B3CD9AB43F3F58629CE0735080C* __this, uint64_t ___value0, const RuntimeMethod* method) 
+{
+	{
+		uint64_t L_0 = ___value0;
+		__this->___U3CReturnValue1U3Ek__BackingField_0 = L_0;
+		return;
+	}
+}
+// System.Void Nethereum.Contracts.Standards.ENS.ENSRegistry.ContractDefinition.TtlOutputDTOBase::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TtlOutputDTOBase__ctor_m6C163836D29C020FC243B54477D4273899465306 (TtlOutputDTOBase_tF9B8C65D01AB7B3CD9AB43F3F58629CE0735080C* __this, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Nethereum.Contracts.Services.EthApiContractService::.ctor(Nethereum.JsonRpc.Client.IClient)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EthApiContractService__ctor_m5C3C9B8788F13ABE39C122EE4ABF4EDE397096EF (EthApiContractService_t59E062A2A158CB66E96C7858A003A32427F337B5* __this, RuntimeObject* ___client0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ERC1155Service_t5929D51764AC25462FF1071BAA5AFD39D39AC0E4_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ERC1271Service_t5D362FEC8F9FB4A4A43BC1094CDC1E4EFE768893_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ERC20Service_tBAC6D3868CE498F01EA1A11F8850CE3724737332_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ERC721Service_tF8C45C07FEEFDEBBD4948DAC26C8BD00047C7EAA_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&EthGetContractTransactionErrorReason_t8880DCF9896FE345F9F9416989019ADDA609BC32_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ProofOfHumanityService_t9FE5FAAF5CE7C444E3C02617BB45765D9D18E0EB_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		RuntimeObject* L_0 = ___client0;
+		EthApiService__ctor_mEFF1038DB28442E1FBCD48BFDBBEB81FD7D2F006(__this, L_0, NULL);
+		RuntimeObject* L_1;
+		L_1 = EthApiService_get_Transactions_m4B7097A8A710C878E1DF28A6A6C26D2C674C4A98_inline(__this, NULL);
+		EthGetContractTransactionErrorReason_t8880DCF9896FE345F9F9416989019ADDA609BC32* L_2 = (EthGetContractTransactionErrorReason_t8880DCF9896FE345F9F9416989019ADDA609BC32*)il2cpp_codegen_object_new(EthGetContractTransactionErrorReason_t8880DCF9896FE345F9F9416989019ADDA609BC32_il2cpp_TypeInfo_var);
+		NullCheck(L_2);
+		EthGetContractTransactionErrorReason__ctor_mBFBDFF70FD43E98EB9AAC700249D860AF12C3485(L_2, L_1, NULL);
+		__this->___U3CGetContractTransactionErrorReasonU3Ek__BackingField_30 = L_2;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CGetContractTransactionErrorReasonU3Ek__BackingField_30), (void*)L_2);
+		ERC721Service_tF8C45C07FEEFDEBBD4948DAC26C8BD00047C7EAA* L_3 = (ERC721Service_tF8C45C07FEEFDEBBD4948DAC26C8BD00047C7EAA*)il2cpp_codegen_object_new(ERC721Service_tF8C45C07FEEFDEBBD4948DAC26C8BD00047C7EAA_il2cpp_TypeInfo_var);
+		NullCheck(L_3);
+		ERC721Service__ctor_mF1F78FBDBE331F844B8B29239377518F82CEF286(L_3, __this, NULL);
+		EthApiContractService_set_ERC721_m91197F6E4ED9F194F72A1B200B02A9BA50616486_inline(__this, L_3, NULL);
+		ERC20Service_tBAC6D3868CE498F01EA1A11F8850CE3724737332* L_4 = (ERC20Service_tBAC6D3868CE498F01EA1A11F8850CE3724737332*)il2cpp_codegen_object_new(ERC20Service_tBAC6D3868CE498F01EA1A11F8850CE3724737332_il2cpp_TypeInfo_var);
+		NullCheck(L_4);
+		ERC20Service__ctor_mCC02F073A5A14E336EC469497D56E08BB9E9EDB5(L_4, __this, NULL);
+		EthApiContractService_set_ERC20_mEFE42BB33ABAFA2C8A95D7BA4016796D77BE8C53_inline(__this, L_4, NULL);
+		ERC1155Service_t5929D51764AC25462FF1071BAA5AFD39D39AC0E4* L_5 = (ERC1155Service_t5929D51764AC25462FF1071BAA5AFD39D39AC0E4*)il2cpp_codegen_object_new(ERC1155Service_t5929D51764AC25462FF1071BAA5AFD39D39AC0E4_il2cpp_TypeInfo_var);
+		NullCheck(L_5);
+		ERC1155Service__ctor_mA256C24471EA1C8040545F8D6F830D792ED8C8CA(L_5, __this, NULL);
+		EthApiContractService_set_ERC1155_mFE87E92E9CD0DECA7D68BABA3DBED9FDB89FFBDF_inline(__this, L_5, NULL);
+		ERC1271Service_t5D362FEC8F9FB4A4A43BC1094CDC1E4EFE768893* L_6 = (ERC1271Service_t5D362FEC8F9FB4A4A43BC1094CDC1E4EFE768893*)il2cpp_codegen_object_new(ERC1271Service_t5D362FEC8F9FB4A4A43BC1094CDC1E4EFE768893_il2cpp_TypeInfo_var);
+		NullCheck(L_6);
+		ERC1271Service__ctor_mACF1E7BAEFDE6750A1AD58F9EE91BC5FA379B5CD(L_6, __this, NULL);
+		EthApiContractService_set_ERC1271_mB4485253ECE12D1A18B3B5962091D5C370244081_inline(__this, L_6, NULL);
+		ProofOfHumanityService_t9FE5FAAF5CE7C444E3C02617BB45765D9D18E0EB* L_7 = (ProofOfHumanityService_t9FE5FAAF5CE7C444E3C02617BB45765D9D18E0EB*)il2cpp_codegen_object_new(ProofOfHumanityService_t9FE5FAAF5CE7C444E3C02617BB45765D9D18E0EB_il2cpp_TypeInfo_var);
+		NullCheck(L_7);
+		ProofOfHumanityService__ctor_mEA98523C2F9B796F9F1A9E6F6A3F7FA25ADF0264(L_7, __this, NULL);
+		EthApiContractService_set_ProofOfHumanity_m088F7E4EDD29B0ECAC3733725EB6378F55D29122_inline(__this, L_7, NULL);
+		return;
+	}
+}
+// System.Void Nethereum.Contracts.Services.EthApiContractService::.ctor(Nethereum.JsonRpc.Client.IClient,Nethereum.RPC.TransactionManagers.ITransactionManager)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EthApiContractService__ctor_m824A3F9680B5AFEA5A6D4592183ED505370D3297 (EthApiContractService_t59E062A2A158CB66E96C7858A003A32427F337B5* __this, RuntimeObject* ___client0, RuntimeObject* ___transactionManager1, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&EthGetContractTransactionErrorReason_t8880DCF9896FE345F9F9416989019ADDA609BC32_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		RuntimeObject* L_0 = ___client0;
+		RuntimeObject* L_1 = ___transactionManager1;
+		EthApiService__ctor_m37BEBAA3F11DB23D5F649BF66B98D245DE36E9D3(__this, L_0, L_1, NULL);
+		RuntimeObject* L_2;
+		L_2 = EthApiService_get_Transactions_m4B7097A8A710C878E1DF28A6A6C26D2C674C4A98_inline(__this, NULL);
+		EthGetContractTransactionErrorReason_t8880DCF9896FE345F9F9416989019ADDA609BC32* L_3 = (EthGetContractTransactionErrorReason_t8880DCF9896FE345F9F9416989019ADDA609BC32*)il2cpp_codegen_object_new(EthGetContractTransactionErrorReason_t8880DCF9896FE345F9F9416989019ADDA609BC32_il2cpp_TypeInfo_var);
+		NullCheck(L_3);
+		EthGetContractTransactionErrorReason__ctor_mBFBDFF70FD43E98EB9AAC700249D860AF12C3485(L_3, L_2, NULL);
+		__this->___U3CGetContractTransactionErrorReasonU3Ek__BackingField_30 = L_3;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CGetContractTransactionErrorReasonU3Ek__BackingField_30), (void*)L_3);
+		return;
+	}
+}
+// Nethereum.Contracts.IDeployContract Nethereum.Contracts.Services.EthApiContractService::get_DeployContract()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* EthApiContractService_get_DeployContract_m7A3BDBE7066FA03700CE4A92180BDE929F8E2F1C (EthApiContractService_t59E062A2A158CB66E96C7858A003A32427F337B5* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&DeployContract_tDA5FAC0330CF3A47EE209848EBC4585CDAC09782_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		RuntimeObject* L_0;
+		L_0 = VirtualFuncInvoker0< RuntimeObject* >::Invoke(32 /* Nethereum.RPC.TransactionManagers.ITransactionManager Nethereum.RPC.EthApiService::get_TransactionManager() */, __this);
+		DeployContract_tDA5FAC0330CF3A47EE209848EBC4585CDAC09782* L_1 = (DeployContract_tDA5FAC0330CF3A47EE209848EBC4585CDAC09782*)il2cpp_codegen_object_new(DeployContract_tDA5FAC0330CF3A47EE209848EBC4585CDAC09782_il2cpp_TypeInfo_var);
+		NullCheck(L_1);
+		DeployContract__ctor_mD06CCD12597A2F995AF58CDD510D74BA2D00FE3A(L_1, L_0, NULL);
+		return L_1;
+	}
+}
+// Nethereum.Contracts.Contract Nethereum.Contracts.Services.EthApiContractService::GetContract(System.String,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Contract_t519479FAD68F68E0E702B217CB2E26140F39C974* EthApiContractService_GetContract_mA67AE396CAFDE5B7A0F7CAD26D38D9A4941E2F85 (EthApiContractService_t59E062A2A158CB66E96C7858A003A32427F337B5* __this, String_t* ___abi0, String_t* ___contractAddress1, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Contract_t519479FAD68F68E0E702B217CB2E26140F39C974_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		String_t* L_0 = ___abi0;
+		String_t* L_1 = ___contractAddress1;
+		Contract_t519479FAD68F68E0E702B217CB2E26140F39C974* L_2 = (Contract_t519479FAD68F68E0E702B217CB2E26140F39C974*)il2cpp_codegen_object_new(Contract_t519479FAD68F68E0E702B217CB2E26140F39C974_il2cpp_TypeInfo_var);
+		NullCheck(L_2);
+		Contract__ctor_m361B8C78A0C962D14BC77F175871AF3CD96D2C2C(L_2, __this, L_0, L_1, NULL);
+		return L_2;
+	}
+}
+// Nethereum.Contracts.ContractHandlers.ContractHandler Nethereum.Contracts.Services.EthApiContractService::GetContractHandler(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ContractHandler_t3CC1E74BCBEFB5D4531C7BA554B008F0149B1DF7* EthApiContractService_GetContractHandler_m30752EEC49D58FC999968497F23A8537C7125389 (EthApiContractService_t59E062A2A158CB66E96C7858A003A32427F337B5* __this, String_t* ___contractAddress0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ContractHandler_t3CC1E74BCBEFB5D4531C7BA554B008F0149B1DF7_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IAccount_t2D498E1E6AF11CFDB79F07A7D78532E396F852D0_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ITransactionManager_t93C7C810748D626CB18E930ADCB2A2571F8426A1_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	String_t* V_0 = NULL;
+	{
+		V_0 = (String_t*)NULL;
+		RuntimeObject* L_0;
+		L_0 = VirtualFuncInvoker0< RuntimeObject* >::Invoke(32 /* Nethereum.RPC.TransactionManagers.ITransactionManager Nethereum.RPC.EthApiService::get_TransactionManager() */, __this);
+		if (!L_0)
+		{
+			goto IL_0028;
+		}
+	}
+	{
+		RuntimeObject* L_1;
+		L_1 = VirtualFuncInvoker0< RuntimeObject* >::Invoke(32 /* Nethereum.RPC.TransactionManagers.ITransactionManager Nethereum.RPC.EthApiService::get_TransactionManager() */, __this);
+		NullCheck(L_1);
+		RuntimeObject* L_2;
+		L_2 = InterfaceFuncInvoker0< RuntimeObject* >::Invoke(6 /* Nethereum.RPC.Accounts.IAccount Nethereum.RPC.TransactionManagers.ITransactionManager::get_Account() */, ITransactionManager_t93C7C810748D626CB18E930ADCB2A2571F8426A1_il2cpp_TypeInfo_var, L_1);
+		if (!L_2)
+		{
+			goto IL_0028;
+		}
+	}
+	{
+		RuntimeObject* L_3;
+		L_3 = VirtualFuncInvoker0< RuntimeObject* >::Invoke(32 /* Nethereum.RPC.TransactionManagers.ITransactionManager Nethereum.RPC.EthApiService::get_TransactionManager() */, __this);
+		NullCheck(L_3);
+		RuntimeObject* L_4;
+		L_4 = InterfaceFuncInvoker0< RuntimeObject* >::Invoke(6 /* Nethereum.RPC.Accounts.IAccount Nethereum.RPC.TransactionManagers.ITransactionManager::get_Account() */, ITransactionManager_t93C7C810748D626CB18E930ADCB2A2571F8426A1_il2cpp_TypeInfo_var, L_3);
+		NullCheck(L_4);
+		String_t* L_5;
+		L_5 = InterfaceFuncInvoker0< String_t* >::Invoke(0 /* System.String Nethereum.RPC.Accounts.IAccount::get_Address() */, IAccount_t2D498E1E6AF11CFDB79F07A7D78532E396F852D0_il2cpp_TypeInfo_var, L_4);
+		V_0 = L_5;
+	}
+
+IL_0028:
+	{
+		String_t* L_6 = ___contractAddress0;
+		String_t* L_7 = V_0;
+		ContractHandler_t3CC1E74BCBEFB5D4531C7BA554B008F0149B1DF7* L_8 = (ContractHandler_t3CC1E74BCBEFB5D4531C7BA554B008F0149B1DF7*)il2cpp_codegen_object_new(ContractHandler_t3CC1E74BCBEFB5D4531C7BA554B008F0149B1DF7_il2cpp_TypeInfo_var);
+		NullCheck(L_8);
+		ContractHandler__ctor_mFCCFE10FD4263A411D09BCD02C96CDFF3CDFCB6E(L_8, L_6, __this, L_7, NULL);
+		return L_8;
+	}
+}
+// Nethereum.Contracts.QueryHandlers.MultiCall.MultiQueryHandler Nethereum.Contracts.Services.EthApiContractService::GetMultiQueryHandler(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR MultiQueryHandler_tD5E9074899A83693F74D77C94F903D4AA15753CE* EthApiContractService_GetMultiQueryHandler_m27F2D9326A40BB7FF6BBC602FA13EE5A36333B98 (EthApiContractService_t59E062A2A158CB66E96C7858A003A32427F337B5* __this, String_t* ___multiContractAdress0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IAccount_t2D498E1E6AF11CFDB79F07A7D78532E396F852D0_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ITransactionManager_t93C7C810748D626CB18E930ADCB2A2571F8426A1_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&MultiQueryHandler_tD5E9074899A83693F74D77C94F903D4AA15753CE_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	RuntimeObject* G_B2_0 = NULL;
+	String_t* G_B2_1 = NULL;
+	RuntimeObject* G_B2_2 = NULL;
+	RuntimeObject* G_B1_0 = NULL;
+	String_t* G_B1_1 = NULL;
+	RuntimeObject* G_B1_2 = NULL;
+	String_t* G_B5_0 = NULL;
+	String_t* G_B5_1 = NULL;
+	RuntimeObject* G_B5_2 = NULL;
+	RuntimeObject* G_B4_0 = NULL;
+	String_t* G_B4_1 = NULL;
+	RuntimeObject* G_B4_2 = NULL;
+	RuntimeObject* G_B3_0 = NULL;
+	String_t* G_B3_1 = NULL;
+	RuntimeObject* G_B3_2 = NULL;
+	{
+		RuntimeObject* L_0;
+		L_0 = RpcClientWrapper_get_Client_m5B5B22840834B279EF50CC2897D0CB69D8E3C059_inline(__this, NULL);
+		String_t* L_1 = ___multiContractAdress0;
+		RuntimeObject* L_2;
+		L_2 = VirtualFuncInvoker0< RuntimeObject* >::Invoke(32 /* Nethereum.RPC.TransactionManagers.ITransactionManager Nethereum.RPC.EthApiService::get_TransactionManager() */, __this);
+		RuntimeObject* L_3 = L_2;
+		G_B1_0 = L_3;
+		G_B1_1 = L_1;
+		G_B1_2 = L_0;
+		if (L_3)
+		{
+			G_B2_0 = L_3;
+			G_B2_1 = L_1;
+			G_B2_2 = L_0;
+			goto IL_0014;
+		}
+	}
+	{
+		G_B5_0 = ((String_t*)(NULL));
+		G_B5_1 = G_B1_1;
+		G_B5_2 = G_B1_2;
+		goto IL_0025;
+	}
+
+IL_0014:
+	{
+		NullCheck(G_B2_0);
+		RuntimeObject* L_4;
+		L_4 = InterfaceFuncInvoker0< RuntimeObject* >::Invoke(6 /* Nethereum.RPC.Accounts.IAccount Nethereum.RPC.TransactionManagers.ITransactionManager::get_Account() */, ITransactionManager_t93C7C810748D626CB18E930ADCB2A2571F8426A1_il2cpp_TypeInfo_var, G_B2_0);
+		RuntimeObject* L_5 = L_4;
+		G_B3_0 = L_5;
+		G_B3_1 = G_B2_1;
+		G_B3_2 = G_B2_2;
+		if (L_5)
+		{
+			G_B4_0 = L_5;
+			G_B4_1 = G_B2_1;
+			G_B4_2 = G_B2_2;
+			goto IL_0020;
+		}
+	}
+	{
+		G_B5_0 = ((String_t*)(NULL));
+		G_B5_1 = G_B3_1;
+		G_B5_2 = G_B3_2;
+		goto IL_0025;
+	}
+
+IL_0020:
+	{
+		NullCheck(G_B4_0);
+		String_t* L_6;
+		L_6 = InterfaceFuncInvoker0< String_t* >::Invoke(0 /* System.String Nethereum.RPC.Accounts.IAccount::get_Address() */, IAccount_t2D498E1E6AF11CFDB79F07A7D78532E396F852D0_il2cpp_TypeInfo_var, G_B4_0);
+		G_B5_0 = L_6;
+		G_B5_1 = G_B4_1;
+		G_B5_2 = G_B4_2;
+	}
+
+IL_0025:
+	{
+		BlockParameter_t13CF5CC9CDE990ACD945748B2FA7F19EA0A06AD9* L_7;
+		L_7 = EthApiService_get_DefaultBlock_m41019BB33B51EA84371191C927EAF9105725D7ED_inline(__this, NULL);
+		MultiQueryHandler_tD5E9074899A83693F74D77C94F903D4AA15753CE* L_8 = (MultiQueryHandler_tD5E9074899A83693F74D77C94F903D4AA15753CE*)il2cpp_codegen_object_new(MultiQueryHandler_tD5E9074899A83693F74D77C94F903D4AA15753CE_il2cpp_TypeInfo_var);
+		NullCheck(L_8);
+		MultiQueryHandler__ctor_m55A94E956618A8B631FBD680D423FA2C3C2257E7(L_8, G_B5_2, G_B5_1, G_B5_0, L_7, NULL);
+		return L_8;
+	}
+}
+// Nethereum.Contracts.Standards.ERC20.ERC20Service Nethereum.Contracts.Services.EthApiContractService::get_ERC20()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ERC20Service_tBAC6D3868CE498F01EA1A11F8850CE3724737332* EthApiContractService_get_ERC20_m28840C8423C0AA71ED807CD08C21FA14FFBAE3D7 (EthApiContractService_t59E062A2A158CB66E96C7858A003A32427F337B5* __this, const RuntimeMethod* method) 
+{
+	{
+		ERC20Service_tBAC6D3868CE498F01EA1A11F8850CE3724737332* L_0 = __this->___U3CERC20U3Ek__BackingField_25;
+		return L_0;
+	}
+}
+// System.Void Nethereum.Contracts.Services.EthApiContractService::set_ERC20(Nethereum.Contracts.Standards.ERC20.ERC20Service)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EthApiContractService_set_ERC20_mEFE42BB33ABAFA2C8A95D7BA4016796D77BE8C53 (EthApiContractService_t59E062A2A158CB66E96C7858A003A32427F337B5* __this, ERC20Service_tBAC6D3868CE498F01EA1A11F8850CE3724737332* ___value0, const RuntimeMethod* method) 
+{
+	{
+		ERC20Service_tBAC6D3868CE498F01EA1A11F8850CE3724737332* L_0 = ___value0;
+		__this->___U3CERC20U3Ek__BackingField_25 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CERC20U3Ek__BackingField_25), (void*)L_0);
+		return;
+	}
+}
+// Nethereum.Contracts.Standards.ERC721.ERC721Service Nethereum.Contracts.Services.EthApiContractService::get_ERC721()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ERC721Service_tF8C45C07FEEFDEBBD4948DAC26C8BD00047C7EAA* EthApiContractService_get_ERC721_mBBF8422411420EC4F27AB63E451CE19D36AA55AE (EthApiContractService_t59E062A2A158CB66E96C7858A003A32427F337B5* __this, const RuntimeMethod* method) 
+{
+	{
+		ERC721Service_tF8C45C07FEEFDEBBD4948DAC26C8BD00047C7EAA* L_0 = __this->___U3CERC721U3Ek__BackingField_26;
+		return L_0;
+	}
+}
+// System.Void Nethereum.Contracts.Services.EthApiContractService::set_ERC721(Nethereum.Contracts.Standards.ERC721.ERC721Service)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EthApiContractService_set_ERC721_m91197F6E4ED9F194F72A1B200B02A9BA50616486 (EthApiContractService_t59E062A2A158CB66E96C7858A003A32427F337B5* __this, ERC721Service_tF8C45C07FEEFDEBBD4948DAC26C8BD00047C7EAA* ___value0, const RuntimeMethod* method) 
+{
+	{
+		ERC721Service_tF8C45C07FEEFDEBBD4948DAC26C8BD00047C7EAA* L_0 = ___value0;
+		__this->___U3CERC721U3Ek__BackingField_26 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CERC721U3Ek__BackingField_26), (void*)L_0);
+		return;
+	}
+}
+// Nethereum.Contracts.Standards.ERC1155.ERC1155Service Nethereum.Contracts.Services.EthApiContractService::get_ERC1155()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ERC1155Service_t5929D51764AC25462FF1071BAA5AFD39D39AC0E4* EthApiContractService_get_ERC1155_mC345D33F73C16481E27111238168FB13AC5D8249 (EthApiContractService_t59E062A2A158CB66E96C7858A003A32427F337B5* __this, const RuntimeMethod* method) 
+{
+	{
+		ERC1155Service_t5929D51764AC25462FF1071BAA5AFD39D39AC0E4* L_0 = __this->___U3CERC1155U3Ek__BackingField_27;
+		return L_0;
+	}
+}
+// System.Void Nethereum.Contracts.Services.EthApiContractService::set_ERC1155(Nethereum.Contracts.Standards.ERC1155.ERC1155Service)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EthApiContractService_set_ERC1155_mFE87E92E9CD0DECA7D68BABA3DBED9FDB89FFBDF (EthApiContractService_t59E062A2A158CB66E96C7858A003A32427F337B5* __this, ERC1155Service_t5929D51764AC25462FF1071BAA5AFD39D39AC0E4* ___value0, const RuntimeMethod* method) 
+{
+	{
+		ERC1155Service_t5929D51764AC25462FF1071BAA5AFD39D39AC0E4* L_0 = ___value0;
+		__this->___U3CERC1155U3Ek__BackingField_27 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CERC1155U3Ek__BackingField_27), (void*)L_0);
+		return;
+	}
+}
+// Nethereum.Contracts.Standards.ERC1271.ERC1271Service Nethereum.Contracts.Services.EthApiContractService::get_ERC1271()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ERC1271Service_t5D362FEC8F9FB4A4A43BC1094CDC1E4EFE768893* EthApiContractService_get_ERC1271_m99A39FA144E949CC711F96C0E735D027257471CC (EthApiContractService_t59E062A2A158CB66E96C7858A003A32427F337B5* __this, const RuntimeMethod* method) 
+{
+	{
+		ERC1271Service_t5D362FEC8F9FB4A4A43BC1094CDC1E4EFE768893* L_0 = __this->___U3CERC1271U3Ek__BackingField_28;
+		return L_0;
+	}
+}
+// System.Void Nethereum.Contracts.Services.EthApiContractService::set_ERC1271(Nethereum.Contracts.Standards.ERC1271.ERC1271Service)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EthApiContractService_set_ERC1271_mB4485253ECE12D1A18B3B5962091D5C370244081 (EthApiContractService_t59E062A2A158CB66E96C7858A003A32427F337B5* __this, ERC1271Service_t5D362FEC8F9FB4A4A43BC1094CDC1E4EFE768893* ___value0, const RuntimeMethod* method) 
+{
+	{
+		ERC1271Service_t5D362FEC8F9FB4A4A43BC1094CDC1E4EFE768893* L_0 = ___value0;
+		__this->___U3CERC1271U3Ek__BackingField_28 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CERC1271U3Ek__BackingField_28), (void*)L_0);
+		return;
+	}
+}
+// Nethereum.Contracts.Standards.ProofOfHumanity.ProofOfHumanityService Nethereum.Contracts.Services.EthApiContractService::get_ProofOfHumanity()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ProofOfHumanityService_t9FE5FAAF5CE7C444E3C02617BB45765D9D18E0EB* EthApiContractService_get_ProofOfHumanity_m8621AF5466B583DC2241A6F5C6068BF42095CFF8 (EthApiContractService_t59E062A2A158CB66E96C7858A003A32427F337B5* __this, const RuntimeMethod* method) 
+{
+	{
+		ProofOfHumanityService_t9FE5FAAF5CE7C444E3C02617BB45765D9D18E0EB* L_0 = __this->___U3CProofOfHumanityU3Ek__BackingField_29;
+		return L_0;
+	}
+}
+// System.Void Nethereum.Contracts.Services.EthApiContractService::set_ProofOfHumanity(Nethereum.Contracts.Standards.ProofOfHumanity.ProofOfHumanityService)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EthApiContractService_set_ProofOfHumanity_m088F7E4EDD29B0ECAC3733725EB6378F55D29122 (EthApiContractService_t59E062A2A158CB66E96C7858A003A32427F337B5* __this, ProofOfHumanityService_t9FE5FAAF5CE7C444E3C02617BB45765D9D18E0EB* ___value0, const RuntimeMethod* method) 
+{
+	{
+		ProofOfHumanityService_t9FE5FAAF5CE7C444E3C02617BB45765D9D18E0EB* L_0 = ___value0;
+		__this->___U3CProofOfHumanityU3Ek__BackingField_29 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CProofOfHumanityU3Ek__BackingField_29), (void*)L_0);
+		return;
+	}
+}
+// Nethereum.Contracts.Standards.ENS.ENSService Nethereum.Contracts.Services.EthApiContractService::GetEnsService(System.String,Nethereum.Contracts.Standards.ENS.IEnsCCIPService)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ENSService_t1AF55C7FB4B642A1E34630FECB36139454F7ACB9* EthApiContractService_GetEnsService_mAA69994FE1EDC87E5A3F1806FC96D4729ECD5DCC (EthApiContractService_t59E062A2A158CB66E96C7858A003A32427F337B5* __this, String_t* ___ensRegistryAddress0, RuntimeObject* ___ensCCIPService1, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ENSService_t1AF55C7FB4B642A1E34630FECB36139454F7ACB9_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		String_t* L_0 = ___ensRegistryAddress0;
+		RuntimeObject* L_1 = ___ensCCIPService1;
+		ENSService_t1AF55C7FB4B642A1E34630FECB36139454F7ACB9* L_2 = (ENSService_t1AF55C7FB4B642A1E34630FECB36139454F7ACB9*)il2cpp_codegen_object_new(ENSService_t1AF55C7FB4B642A1E34630FECB36139454F7ACB9_il2cpp_TypeInfo_var);
+		NullCheck(L_2);
+		ENSService__ctor_m69AAAF005ACC6FA5A1689FBFAD9590F31C495E28(L_2, __this, L_0, L_1, NULL);
+		return L_2;
+	}
+}
+// Nethereum.Contracts.Standards.ENS.EthTLSService Nethereum.Contracts.Services.EthApiContractService::GetEnsEthTlsService(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR EthTLSService_t79D14B3001E560EF02929D4DE7B8AE45E4F53C86* EthApiContractService_GetEnsEthTlsService_m7BA90E54C50AE7E9AF059E826B89E5066E87B428 (EthApiContractService_t59E062A2A158CB66E96C7858A003A32427F337B5* __this, String_t* ___ensRegistryAddress0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&EthTLSService_t79D14B3001E560EF02929D4DE7B8AE45E4F53C86_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		String_t* L_0 = ___ensRegistryAddress0;
+		EthTLSService_t79D14B3001E560EF02929D4DE7B8AE45E4F53C86* L_1 = (EthTLSService_t79D14B3001E560EF02929D4DE7B8AE45E4F53C86*)il2cpp_codegen_object_new(EthTLSService_t79D14B3001E560EF02929D4DE7B8AE45E4F53C86_il2cpp_TypeInfo_var);
+		NullCheck(L_1);
+		EthTLSService__ctor_m5D39DC336114C8589FF0A4DE1875FC0E3802E3FA(L_1, __this, L_0, NULL);
+		return L_1;
+	}
+}
+// Nethereum.Contracts.Services.IEthGetContractTransactionErrorReason Nethereum.Contracts.Services.EthApiContractService::get_GetContractTransactionErrorReason()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* EthApiContractService_get_GetContractTransactionErrorReason_m02FD1F38784390FC49A3B5AA0FCAFA5FEE0A1D8C (EthApiContractService_t59E062A2A158CB66E96C7858A003A32427F337B5* __this, const RuntimeMethod* method) 
+{
+	{
+		RuntimeObject* L_0 = __this->___U3CGetContractTransactionErrorReasonU3Ek__BackingField_30;
+		return L_0;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Nethereum.Contracts.Services.EthGetContractTransactionErrorReason::.ctor(Nethereum.RPC.Eth.Services.IEthApiTransactionsService)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EthGetContractTransactionErrorReason__ctor_mBFBDFF70FD43E98EB9AAC700249D860AF12C3485 (EthGetContractTransactionErrorReason_t8880DCF9896FE345F9F9416989019ADDA609BC32* __this, RuntimeObject* ___apiTransactionsService0, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		RuntimeObject* L_0 = ___apiTransactionsService0;
+		__this->____apiTransactionsService_0 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____apiTransactionsService_0), (void*)L_0);
+		return;
+	}
+}
+// System.Threading.Tasks.Task`1<System.String> Nethereum.Contracts.Services.EthGetContractTransactionErrorReason::SendRequestAsync(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Task_1_t3D7638C82ED289AF156EDBAE76842D8DF4C4A9E0* EthGetContractTransactionErrorReason_SendRequestAsync_m11473FCD8127336356A0D76D272B756B92EA3D66 (EthGetContractTransactionErrorReason_t8880DCF9896FE345F9F9416989019ADDA609BC32* __this, String_t* ___transactionHash0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_Create_mDEA9352DE851695421F6488EC71FDD8FA221422D_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_Start_TisU3CSendRequestAsyncU3Ed__2_t620A679FE13A3D919AFF550C2DB3D598D630D84F_m1C61C0A0E6DAC3B0D7AD3B05F3D66F34ECC828D2_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_get_Task_m01EB243CF4396C9A2645F71572B47CF12151974E_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_tA28B0962049DC249BEC0054E2394B1962E28E90E_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	U3CSendRequestAsyncU3Ed__2_t620A679FE13A3D919AFF550C2DB3D598D630D84F V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		il2cpp_codegen_runtime_class_init_inline(AsyncTaskMethodBuilder_1_tA28B0962049DC249BEC0054E2394B1962E28E90E_il2cpp_TypeInfo_var);
+		AsyncTaskMethodBuilder_1_tA28B0962049DC249BEC0054E2394B1962E28E90E L_0;
+		L_0 = AsyncTaskMethodBuilder_1_Create_mDEA9352DE851695421F6488EC71FDD8FA221422D(AsyncTaskMethodBuilder_1_Create_mDEA9352DE851695421F6488EC71FDD8FA221422D_RuntimeMethod_var);
+		(&V_0)->___U3CU3Et__builder_1 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)&((&(((&(&V_0)->___U3CU3Et__builder_1))->___m_coreState_1))->___m_stateMachine_0), (void*)NULL);
+		#if IL2CPP_ENABLE_STRICT_WRITE_BARRIERS
+		Il2CppCodeGenWriteBarrier((void**)&((&(((&(&V_0)->___U3CU3Et__builder_1))->___m_coreState_1))->___m_defaultContextAction_1), (void*)NULL);
+		#endif
+		#if IL2CPP_ENABLE_STRICT_WRITE_BARRIERS
+		Il2CppCodeGenWriteBarrier((void**)&(((&(&V_0)->___U3CU3Et__builder_1))->___m_task_2), (void*)NULL);
+		#endif
+		(&V_0)->___U3CU3E4__this_2 = __this;
+		Il2CppCodeGenWriteBarrier((void**)(&(&V_0)->___U3CU3E4__this_2), (void*)__this);
+		String_t* L_1 = ___transactionHash0;
+		(&V_0)->___transactionHash_3 = L_1;
+		Il2CppCodeGenWriteBarrier((void**)(&(&V_0)->___transactionHash_3), (void*)L_1);
+		(&V_0)->___U3CU3E1__state_0 = (-1);
+		AsyncTaskMethodBuilder_1_tA28B0962049DC249BEC0054E2394B1962E28E90E* L_2 = (&(&V_0)->___U3CU3Et__builder_1);
+		AsyncTaskMethodBuilder_1_Start_TisU3CSendRequestAsyncU3Ed__2_t620A679FE13A3D919AFF550C2DB3D598D630D84F_m1C61C0A0E6DAC3B0D7AD3B05F3D66F34ECC828D2(L_2, (&V_0), AsyncTaskMethodBuilder_1_Start_TisU3CSendRequestAsyncU3Ed__2_t620A679FE13A3D919AFF550C2DB3D598D630D84F_m1C61C0A0E6DAC3B0D7AD3B05F3D66F34ECC828D2_RuntimeMethod_var);
+		AsyncTaskMethodBuilder_1_tA28B0962049DC249BEC0054E2394B1962E28E90E* L_3 = (&(&V_0)->___U3CU3Et__builder_1);
+		Task_1_t3D7638C82ED289AF156EDBAE76842D8DF4C4A9E0* L_4;
+		L_4 = AsyncTaskMethodBuilder_1_get_Task_m01EB243CF4396C9A2645F71572B47CF12151974E(L_3, AsyncTaskMethodBuilder_1_get_Task_m01EB243CF4396C9A2645F71572B47CF12151974E_RuntimeMethod_var);
+		return L_4;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Nethereum.Contracts.Services.EthGetContractTransactionErrorReason/<SendRequestAsync>d__2::MoveNext()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CSendRequestAsyncU3Ed__2_MoveNext_mDF0F81A90396CBE16570BDCEB77AF6E9B3910D0B (U3CSendRequestAsyncU3Ed__2_t620A679FE13A3D919AFF550C2DB3D598D630D84F* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisConfiguredTaskAwaiter_t09B651400CE1B2687A813877C97A9E352E771CA5_TisU3CSendRequestAsyncU3Ed__2_t620A679FE13A3D919AFF550C2DB3D598D630D84F_m065557E89174F30396CDAEAA063115FE61958D28_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisConfiguredTaskAwaiter_t4E5F0C451DB5E8CE300D5CA0DFA6DB7EBF62A859_TisU3CSendRequestAsyncU3Ed__2_t620A679FE13A3D919AFF550C2DB3D598D630D84F_m81DAE2339E73D43CD44ABAE0969F79B0198BB1AD_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_SetResult_mB79121C0ACAC704500FAA7350ED0FE6604DDA05E_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BlockParameter_t13CF5CC9CDE990ACD945748B2FA7F19EA0A06AD9_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ConfiguredTaskAwaitable_1_GetAwaiter_m9F29BD0034E006094B8D9568472CD418F3918817_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ConfiguredTaskAwaitable_1_GetAwaiter_mC383D8B5E3F54D598A9E5121F4705FF46889A617_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ConfiguredTaskAwaiter_GetResult_m09C74DFD8415A124C885DF96C8F7CE7D85EED9E8_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ConfiguredTaskAwaiter_GetResult_m2B760215FB834DEDFFD926EF768005D4105C9BF2_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ConfiguredTaskAwaiter_get_IsCompleted_m3588018AD46B52E87753241CB7F14FADAF179B06_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ConfiguredTaskAwaiter_get_IsCompleted_mAC1C73BA777A087D963C01165753A73AC932B5A1_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&FunctionCallDecoder_tBF1B971B077F309052FE8984C9EA3C169FF8C150_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&HexRPCType_1_op_Inequality_mABC696C29299C847083DB8364B468AEB2428264F_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IEthApiTransactionsService_t684CA7A5B2E064233016F734CC936F8BA278C99B_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IEthCall_t148594ABBBFFA77CC739613326CA891F33BB4658_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IEthGetTransactionByHash_t0D1C62F99A1E9573145B6BD73A68A4240B3890BE_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&String_t_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Task_1_ConfigureAwait_mAC8032B38D47D60D57BF1E421E6774C1C50A0CB8_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Task_1_ConfigureAwait_mF1D45A54CCDC655FB468D91EBA2D10610F36F8C7_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	EthGetContractTransactionErrorReason_t8880DCF9896FE345F9F9416989019ADDA609BC32* V_1 = NULL;
+	String_t* V_2 = NULL;
+	Transaction_t42AF58898C5DCF5C2ECE238B8C471CD48B389A33* V_3 = NULL;
+	TransactionInput_t1B3DDEE42CE0171754109975B2FEF1C660E20EF2* V_4 = NULL;
+	ConfiguredTaskAwaiter_t4E5F0C451DB5E8CE300D5CA0DFA6DB7EBF62A859 V_5;
+	memset((&V_5), 0, sizeof(V_5));
+	ConfiguredTaskAwaitable_1_t97A3F079869809316CDCF23480421084E5D17CDD V_6;
+	memset((&V_6), 0, sizeof(V_6));
+	String_t* V_7 = NULL;
+	ConfiguredTaskAwaiter_t09B651400CE1B2687A813877C97A9E352E771CA5 V_8;
+	memset((&V_8), 0, sizeof(V_8));
+	ConfiguredTaskAwaitable_1_t5D41ABD05FA368A9CDB3329C907B4DCD69A7A2CC V_9;
+	memset((&V_9), 0, sizeof(V_9));
+	Exception_t* V_10 = NULL;
+	il2cpp::utils::ExceptionSupportStack<RuntimeObject*, 2> __active_exceptions;
+	{
+		int32_t L_0 = __this->___U3CU3E1__state_0;
+		V_0 = L_0;
+		EthGetContractTransactionErrorReason_t8880DCF9896FE345F9F9416989019ADDA609BC32* L_1 = __this->___U3CU3E4__this_2;
+		V_1 = L_1;
+	}
+	try
+	{// begin try (depth: 1)
+		{
+			int32_t L_2 = V_0;
+			if (!L_2)
+			{
+				goto IL_006d_1;
+			}
+		}
+		{
+			int32_t L_3 = V_0;
+			if ((((int32_t)L_3) == ((int32_t)1)))
+			{
+				goto IL_00bc_1;
+			}
+		}
+		{
+			EthGetContractTransactionErrorReason_t8880DCF9896FE345F9F9416989019ADDA609BC32* L_4 = V_1;
+			NullCheck(L_4);
+			RuntimeObject* L_5 = L_4->____apiTransactionsService_0;
+			NullCheck(L_5);
+			RuntimeObject* L_6;
+			L_6 = InterfaceFuncInvoker0< RuntimeObject* >::Invoke(4 /* Nethereum.RPC.Eth.Transactions.IEthGetTransactionByHash Nethereum.RPC.Eth.Services.IEthApiTransactionsService::get_GetTransactionByHash() */, IEthApiTransactionsService_t684CA7A5B2E064233016F734CC936F8BA278C99B_il2cpp_TypeInfo_var, L_5);
+			String_t* L_7 = __this->___transactionHash_3;
+			NullCheck(L_6);
+			Task_1_t07835DF0935336A37DEF7C2A1C6E5057615D6092* L_8;
+			L_8 = InterfaceFuncInvoker2< Task_1_t07835DF0935336A37DEF7C2A1C6E5057615D6092*, String_t*, RuntimeObject* >::Invoke(1 /* System.Threading.Tasks.Task`1<Nethereum.RPC.Eth.DTOs.Transaction> Nethereum.RPC.Eth.Transactions.IEthGetTransactionByHash::SendRequestAsync(System.String,System.Object) */, IEthGetTransactionByHash_t0D1C62F99A1E9573145B6BD73A68A4240B3890BE_il2cpp_TypeInfo_var, L_6, L_7, NULL);
+			NullCheck(L_8);
+			ConfiguredTaskAwaitable_1_t97A3F079869809316CDCF23480421084E5D17CDD L_9;
+			L_9 = Task_1_ConfigureAwait_mF1D45A54CCDC655FB468D91EBA2D10610F36F8C7(L_8, (bool)0, Task_1_ConfigureAwait_mF1D45A54CCDC655FB468D91EBA2D10610F36F8C7_RuntimeMethod_var);
+			V_6 = L_9;
+			ConfiguredTaskAwaiter_t4E5F0C451DB5E8CE300D5CA0DFA6DB7EBF62A859 L_10;
+			L_10 = ConfiguredTaskAwaitable_1_GetAwaiter_m9F29BD0034E006094B8D9568472CD418F3918817_inline((&V_6), ConfiguredTaskAwaitable_1_GetAwaiter_m9F29BD0034E006094B8D9568472CD418F3918817_RuntimeMethod_var);
+			V_5 = L_10;
+			bool L_11;
+			L_11 = ConfiguredTaskAwaiter_get_IsCompleted_m3588018AD46B52E87753241CB7F14FADAF179B06((&V_5), ConfiguredTaskAwaiter_get_IsCompleted_m3588018AD46B52E87753241CB7F14FADAF179B06_RuntimeMethod_var);
+			if (L_11)
+			{
+				goto IL_008a_1;
+			}
+		}
+		{
+			int32_t L_12 = 0;
+			V_0 = L_12;
+			__this->___U3CU3E1__state_0 = L_12;
+			ConfiguredTaskAwaiter_t4E5F0C451DB5E8CE300D5CA0DFA6DB7EBF62A859 L_13 = V_5;
+			__this->___U3CU3Eu__1_5 = L_13;
+			Il2CppCodeGenWriteBarrier((void**)&(((&__this->___U3CU3Eu__1_5))->___m_task_0), (void*)NULL);
+			AsyncTaskMethodBuilder_1_tA28B0962049DC249BEC0054E2394B1962E28E90E* L_14 = (&__this->___U3CU3Et__builder_1);
+			AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisConfiguredTaskAwaiter_t4E5F0C451DB5E8CE300D5CA0DFA6DB7EBF62A859_TisU3CSendRequestAsyncU3Ed__2_t620A679FE13A3D919AFF550C2DB3D598D630D84F_m81DAE2339E73D43CD44ABAE0969F79B0198BB1AD(L_14, (&V_5), __this, AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisConfiguredTaskAwaiter_t4E5F0C451DB5E8CE300D5CA0DFA6DB7EBF62A859_TisU3CSendRequestAsyncU3Ed__2_t620A679FE13A3D919AFF550C2DB3D598D630D84F_m81DAE2339E73D43CD44ABAE0969F79B0198BB1AD_RuntimeMethod_var);
+			goto IL_01a6;
+		}
+
+IL_006d_1:
+		{
+			ConfiguredTaskAwaiter_t4E5F0C451DB5E8CE300D5CA0DFA6DB7EBF62A859 L_15 = __this->___U3CU3Eu__1_5;
+			V_5 = L_15;
+			ConfiguredTaskAwaiter_t4E5F0C451DB5E8CE300D5CA0DFA6DB7EBF62A859* L_16 = (&__this->___U3CU3Eu__1_5);
+			il2cpp_codegen_initobj(L_16, sizeof(ConfiguredTaskAwaiter_t4E5F0C451DB5E8CE300D5CA0DFA6DB7EBF62A859));
+			int32_t L_17 = (-1);
+			V_0 = L_17;
+			__this->___U3CU3E1__state_0 = L_17;
+		}
+
+IL_008a_1:
+		{
+			Transaction_t42AF58898C5DCF5C2ECE238B8C471CD48B389A33* L_18;
+			L_18 = ConfiguredTaskAwaiter_GetResult_m2B760215FB834DEDFFD926EF768005D4105C9BF2((&V_5), ConfiguredTaskAwaiter_GetResult_m2B760215FB834DEDFFD926EF768005D4105C9BF2_RuntimeMethod_var);
+			V_3 = L_18;
+			Transaction_t42AF58898C5DCF5C2ECE238B8C471CD48B389A33* L_19 = V_3;
+			TransactionInput_t1B3DDEE42CE0171754109975B2FEF1C660E20EF2* L_20;
+			L_20 = TransactionExtensions_ConvertToTransactionInput_m558C80A723C98270DE86BE2757C440C2945F68B3(L_19, NULL);
+			V_4 = L_20;
+			FunctionCallDecoder_tBF1B971B077F309052FE8984C9EA3C169FF8C150* L_21 = (FunctionCallDecoder_tBF1B971B077F309052FE8984C9EA3C169FF8C150*)il2cpp_codegen_object_new(FunctionCallDecoder_tBF1B971B077F309052FE8984C9EA3C169FF8C150_il2cpp_TypeInfo_var);
+			NullCheck(L_21);
+			FunctionCallDecoder__ctor_m8A87A93A715C22E9E7C132E60F196DC57794B3B4(L_21, NULL);
+			__this->___U3CfunctionCallDecoderU3E5__2_4 = L_21;
+			Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CfunctionCallDecoderU3E5__2_4), (void*)L_21);
+			TransactionInput_t1B3DDEE42CE0171754109975B2FEF1C660E20EF2* L_22 = V_4;
+			NullCheck(L_22);
+			HexBigInteger_tFD9189302CC4BD35091F94D48E460B5D2D5CA811* L_23;
+			L_23 = CallInput_get_MaxFeePerGas_m7F2F78062F61F145F95095D15F4D2FB8B130E58E_inline(L_22, NULL);
+			bool L_24;
+			L_24 = HexRPCType_1_op_Inequality_mABC696C29299C847083DB8364B468AEB2428264F(L_23, (HexRPCType_1_t0AEB726E19D5EA8BB4CC3B441C661B409A663DE0*)NULL, HexRPCType_1_op_Inequality_mABC696C29299C847083DB8364B468AEB2428264F_RuntimeMethod_var);
+			if (!L_24)
+			{
+				goto IL_00bc_1;
+			}
+		}
+		{
+			TransactionInput_t1B3DDEE42CE0171754109975B2FEF1C660E20EF2* L_25 = V_4;
+			NullCheck(L_25);
+			CallInput_set_GasPrice_m0ACD61757CB8A102B2973AB5663E58BF7C1C4950_inline(L_25, (HexBigInteger_tFD9189302CC4BD35091F94D48E460B5D2D5CA811*)NULL, NULL);
+		}
+
+IL_00bc_1:
+		{
+		}
+		try
+		{// begin try (depth: 2)
+			{
+				int32_t L_26 = V_0;
+				if ((((int32_t)L_26) == ((int32_t)1)))
+				{
+					goto IL_011d_2;
+				}
+			}
+			{
+				EthGetContractTransactionErrorReason_t8880DCF9896FE345F9F9416989019ADDA609BC32* L_27 = V_1;
+				NullCheck(L_27);
+				RuntimeObject* L_28 = L_27->____apiTransactionsService_0;
+				NullCheck(L_28);
+				RuntimeObject* L_29;
+				L_29 = InterfaceFuncInvoker0< RuntimeObject* >::Invoke(0 /* Nethereum.RPC.Eth.Transactions.IEthCall Nethereum.RPC.Eth.Services.IEthApiTransactionsService::get_Call() */, IEthApiTransactionsService_t684CA7A5B2E064233016F734CC936F8BA278C99B_il2cpp_TypeInfo_var, L_28);
+				TransactionInput_t1B3DDEE42CE0171754109975B2FEF1C660E20EF2* L_30 = V_4;
+				Transaction_t42AF58898C5DCF5C2ECE238B8C471CD48B389A33* L_31 = V_3;
+				NullCheck(L_31);
+				HexBigInteger_tFD9189302CC4BD35091F94D48E460B5D2D5CA811* L_32;
+				L_32 = Transaction_get_BlockNumber_m349407369794699D9B18BB6C7A9225033954191F_inline(L_31, NULL);
+				BlockParameter_t13CF5CC9CDE990ACD945748B2FA7F19EA0A06AD9* L_33 = (BlockParameter_t13CF5CC9CDE990ACD945748B2FA7F19EA0A06AD9*)il2cpp_codegen_object_new(BlockParameter_t13CF5CC9CDE990ACD945748B2FA7F19EA0A06AD9_il2cpp_TypeInfo_var);
+				NullCheck(L_33);
+				BlockParameter__ctor_mBEA912394A68B85B1F99EA39DD83B54007CB8D65(L_33, L_32, NULL);
+				NullCheck(L_29);
+				Task_1_t3D7638C82ED289AF156EDBAE76842D8DF4C4A9E0* L_34;
+				L_34 = InterfaceFuncInvoker3< Task_1_t3D7638C82ED289AF156EDBAE76842D8DF4C4A9E0*, CallInput_t134727ED6D63AA0F8722CB06FEC85207CC5D3F9C*, BlockParameter_t13CF5CC9CDE990ACD945748B2FA7F19EA0A06AD9*, RuntimeObject* >::Invoke(4 /* System.Threading.Tasks.Task`1<System.String> Nethereum.RPC.Eth.Transactions.IEthCall::SendRequestAsync(Nethereum.RPC.Eth.DTOs.CallInput,Nethereum.RPC.Eth.DTOs.BlockParameter,System.Object) */, IEthCall_t148594ABBBFFA77CC739613326CA891F33BB4658_il2cpp_TypeInfo_var, L_29, L_30, L_33, NULL);
+				NullCheck(L_34);
+				ConfiguredTaskAwaitable_1_t5D41ABD05FA368A9CDB3329C907B4DCD69A7A2CC L_35;
+				L_35 = Task_1_ConfigureAwait_mAC8032B38D47D60D57BF1E421E6774C1C50A0CB8(L_34, (bool)0, Task_1_ConfigureAwait_mAC8032B38D47D60D57BF1E421E6774C1C50A0CB8_RuntimeMethod_var);
+				V_9 = L_35;
+				ConfiguredTaskAwaiter_t09B651400CE1B2687A813877C97A9E352E771CA5 L_36;
+				L_36 = ConfiguredTaskAwaitable_1_GetAwaiter_mC383D8B5E3F54D598A9E5121F4705FF46889A617_inline((&V_9), ConfiguredTaskAwaitable_1_GetAwaiter_mC383D8B5E3F54D598A9E5121F4705FF46889A617_RuntimeMethod_var);
+				V_8 = L_36;
+				bool L_37;
+				L_37 = ConfiguredTaskAwaiter_get_IsCompleted_mAC1C73BA777A087D963C01165753A73AC932B5A1((&V_8), ConfiguredTaskAwaiter_get_IsCompleted_mAC1C73BA777A087D963C01165753A73AC932B5A1_RuntimeMethod_var);
+				if (L_37)
+				{
+					goto IL_013a_2;
+				}
+			}
+			{
+				int32_t L_38 = 1;
+				V_0 = L_38;
+				__this->___U3CU3E1__state_0 = L_38;
+				ConfiguredTaskAwaiter_t09B651400CE1B2687A813877C97A9E352E771CA5 L_39 = V_8;
+				__this->___U3CU3Eu__2_6 = L_39;
+				Il2CppCodeGenWriteBarrier((void**)&(((&__this->___U3CU3Eu__2_6))->___m_task_0), (void*)NULL);
+				AsyncTaskMethodBuilder_1_tA28B0962049DC249BEC0054E2394B1962E28E90E* L_40 = (&__this->___U3CU3Et__builder_1);
+				AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisConfiguredTaskAwaiter_t09B651400CE1B2687A813877C97A9E352E771CA5_TisU3CSendRequestAsyncU3Ed__2_t620A679FE13A3D919AFF550C2DB3D598D630D84F_m065557E89174F30396CDAEAA063115FE61958D28(L_40, (&V_8), __this, AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisConfiguredTaskAwaiter_t09B651400CE1B2687A813877C97A9E352E771CA5_TisU3CSendRequestAsyncU3Ed__2_t620A679FE13A3D919AFF550C2DB3D598D630D84F_m065557E89174F30396CDAEAA063115FE61958D28_RuntimeMethod_var);
+				goto IL_01a6;
+			}
+
+IL_011d_2:
+			{
+				ConfiguredTaskAwaiter_t09B651400CE1B2687A813877C97A9E352E771CA5 L_41 = __this->___U3CU3Eu__2_6;
+				V_8 = L_41;
+				ConfiguredTaskAwaiter_t09B651400CE1B2687A813877C97A9E352E771CA5* L_42 = (&__this->___U3CU3Eu__2_6);
+				il2cpp_codegen_initobj(L_42, sizeof(ConfiguredTaskAwaiter_t09B651400CE1B2687A813877C97A9E352E771CA5));
+				int32_t L_43 = (-1);
+				V_0 = L_43;
+				__this->___U3CU3E1__state_0 = L_43;
+			}
+
+IL_013a_2:
+			{
+				String_t* L_44;
+				L_44 = ConfiguredTaskAwaiter_GetResult_m09C74DFD8415A124C885DF96C8F7CE7D85EED9E8((&V_8), ConfiguredTaskAwaiter_GetResult_m09C74DFD8415A124C885DF96C8F7CE7D85EED9E8_RuntimeMethod_var);
+				V_7 = L_44;
+				String_t* L_45 = V_7;
+				bool L_46;
+				L_46 = ErrorFunction_IsErrorData_m096A6F42918BE73C8DEA8F7569FDDD52E4B03A08(L_45, NULL);
+				if (!L_46)
+				{
+					goto IL_015c_2;
+				}
+			}
+			{
+				FunctionCallDecoder_tBF1B971B077F309052FE8984C9EA3C169FF8C150* L_47 = __this->___U3CfunctionCallDecoderU3E5__2_4;
+				String_t* L_48 = V_7;
+				NullCheck(L_47);
+				String_t* L_49;
+				L_49 = FunctionCallDecoder_DecodeFunctionErrorMessage_m56696ED69E76865CBD09FE525C67690F0F9B820A(L_47, L_48, NULL);
+				V_2 = L_49;
+				goto IL_018b;
+			}
+
+IL_015c_2:
+			{
+				String_t* L_50 = ((String_t_StaticFields*)il2cpp_codegen_static_fields_for(String_t_il2cpp_TypeInfo_var))->___Empty_6;
+				V_2 = L_50;
+				goto IL_018b;
+			}
+		}// end try (depth: 2)
+		catch(Il2CppExceptionWrapper& e)
+		{
+			if(il2cpp_codegen_class_is_assignable_from (((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&RpcResponseException_tC6370C6CDE2D7E420D34DC0EDC15FF7CDD7B062F_il2cpp_TypeInfo_var)), il2cpp_codegen_object_class(e.ex)))
+			{
+				IL2CPP_PUSH_ACTIVE_EXCEPTION(e.ex);
+				goto CATCH_0164_1;
+			}
+			throw e;
+		}
+
+CATCH_0164_1:
+		{// begin catch(Nethereum.JsonRpc.Client.RpcResponseException)
+			ContractRevertExceptionHandler_HandleContractRevertException_m17EC269000DCCB148B09887F2338153C87B4FC41(((RpcResponseException_tC6370C6CDE2D7E420D34DC0EDC15FF7CDD7B062F*)IL2CPP_GET_ACTIVE_EXCEPTION(RpcResponseException_tC6370C6CDE2D7E420D34DC0EDC15FF7CDD7B062F*)), NULL);
+			IL2CPP_RETHROW_MANAGED_EXCEPTION(IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));
+		}// end catch (depth: 2)
+	}// end try (depth: 1)
+	catch(Il2CppExceptionWrapper& e)
+	{
+		if(il2cpp_codegen_class_is_assignable_from (((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Exception_t_il2cpp_TypeInfo_var)), il2cpp_codegen_object_class(e.ex)))
+		{
+			IL2CPP_PUSH_ACTIVE_EXCEPTION(e.ex);
+			goto CATCH_016b;
+		}
+		throw e;
+	}
+
+CATCH_016b:
+	{// begin catch(System.Exception)
+		V_10 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));
+		__this->___U3CU3E1__state_0 = ((int32_t)-2);
+		__this->___U3CfunctionCallDecoderU3E5__2_4 = (FunctionCallDecoder_tBF1B971B077F309052FE8984C9EA3C169FF8C150*)NULL;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CfunctionCallDecoderU3E5__2_4), (void*)(FunctionCallDecoder_tBF1B971B077F309052FE8984C9EA3C169FF8C150*)NULL);
+		AsyncTaskMethodBuilder_1_tA28B0962049DC249BEC0054E2394B1962E28E90E* L_51 = (&__this->___U3CU3Et__builder_1);
+		Exception_t* L_52 = V_10;
+		AsyncTaskMethodBuilder_1_SetException_m897218C2DB8D7BA446EB263573085805B8F0638C(L_51, L_52, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&AsyncTaskMethodBuilder_1_SetException_m897218C2DB8D7BA446EB263573085805B8F0638C_RuntimeMethod_var)));
+		IL2CPP_POP_ACTIVE_EXCEPTION();
+		goto IL_01a6;
+	}// end catch (depth: 1)
+
+IL_018b:
+	{
+		__this->___U3CU3E1__state_0 = ((int32_t)-2);
+		__this->___U3CfunctionCallDecoderU3E5__2_4 = (FunctionCallDecoder_tBF1B971B077F309052FE8984C9EA3C169FF8C150*)NULL;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CfunctionCallDecoderU3E5__2_4), (void*)(FunctionCallDecoder_tBF1B971B077F309052FE8984C9EA3C169FF8C150*)NULL);
+		AsyncTaskMethodBuilder_1_tA28B0962049DC249BEC0054E2394B1962E28E90E* L_53 = (&__this->___U3CU3Et__builder_1);
+		String_t* L_54 = V_2;
+		AsyncTaskMethodBuilder_1_SetResult_mB79121C0ACAC704500FAA7350ED0FE6604DDA05E(L_53, L_54, AsyncTaskMethodBuilder_1_SetResult_mB79121C0ACAC704500FAA7350ED0FE6604DDA05E_RuntimeMethod_var);
+	}
+
+IL_01a6:
+	{
+		return;
+	}
+}
+IL2CPP_EXTERN_C  void U3CSendRequestAsyncU3Ed__2_MoveNext_mDF0F81A90396CBE16570BDCEB77AF6E9B3910D0B_AdjustorThunk (RuntimeObject* __this, const RuntimeMethod* method)
+{
+	U3CSendRequestAsyncU3Ed__2_t620A679FE13A3D919AFF550C2DB3D598D630D84F* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<U3CSendRequestAsyncU3Ed__2_t620A679FE13A3D919AFF550C2DB3D598D630D84F*>(__this + _offset);
+	U3CSendRequestAsyncU3Ed__2_MoveNext_mDF0F81A90396CBE16570BDCEB77AF6E9B3910D0B(_thisAdjusted, method);
+}
+// System.Void Nethereum.Contracts.Services.EthGetContractTransactionErrorReason/<SendRequestAsync>d__2::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CSendRequestAsyncU3Ed__2_SetStateMachine_mFA8FBC02AC98F92F89BEC3DD61000108B651B069 (U3CSendRequestAsyncU3Ed__2_t620A679FE13A3D919AFF550C2DB3D598D630D84F* __this, RuntimeObject* ___stateMachine0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_SetStateMachine_mE4D48B78E50CA2A3650A856ACF86A3CFBA249C30_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		AsyncTaskMethodBuilder_1_tA28B0962049DC249BEC0054E2394B1962E28E90E* L_0 = (&__this->___U3CU3Et__builder_1);
+		RuntimeObject* L_1 = ___stateMachine0;
+		AsyncTaskMethodBuilder_1_SetStateMachine_mE4D48B78E50CA2A3650A856ACF86A3CFBA249C30(L_0, L_1, AsyncTaskMethodBuilder_1_SetStateMachine_mE4D48B78E50CA2A3650A856ACF86A3CFBA249C30_RuntimeMethod_var);
+		return;
+	}
+}
+IL2CPP_EXTERN_C  void U3CSendRequestAsyncU3Ed__2_SetStateMachine_mFA8FBC02AC98F92F89BEC3DD61000108B651B069_AdjustorThunk (RuntimeObject* __this, RuntimeObject* ___stateMachine0, const RuntimeMethod* method)
+{
+	U3CSendRequestAsyncU3Ed__2_t620A679FE13A3D919AFF550C2DB3D598D630D84F* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<U3CSendRequestAsyncU3Ed__2_t620A679FE13A3D919AFF550C2DB3D598D630D84F*>(__this + _offset);
+	U3CSendRequestAsyncU3Ed__2_SetStateMachine_mFA8FBC02AC98F92F89BEC3DD61000108B651B069(_thisAdjusted, ___stateMachine0, method);
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Nethereum.Contracts.QueryHandlers.MultiCall.Call::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Call__ctor_mBE2F5449E5FA043FC956236BAB99D4E6D1B2C298 (Call_t924086EAD3B3E4D52DE52E6E060F04753C2B15A7* __this, const RuntimeMethod* method) 
+{
+	{
+		CallBase__ctor_mE2E8519A635816141A864EFF8EF5B635F4D35CD6(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.String Nethereum.Contracts.QueryHandlers.MultiCall.CallBase::get_Target()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* CallBase_get_Target_m9131CED6CFF14C4BD9202026B411DA14723B017C (CallBase_tDE3DC215CB2F6161608011057953C24D0C5F2D3F* __this, const RuntimeMethod* method) 
+{
+	{
+		String_t* L_0 = __this->___U3CTargetU3Ek__BackingField_0;
+		return L_0;
+	}
+}
+// System.Void Nethereum.Contracts.QueryHandlers.MultiCall.CallBase::set_Target(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CallBase_set_Target_m9568D0989D927C42BAEA5EE16CC1B697956576B9 (CallBase_tDE3DC215CB2F6161608011057953C24D0C5F2D3F* __this, String_t* ___value0, const RuntimeMethod* method) 
+{
+	{
+		String_t* L_0 = ___value0;
+		__this->___U3CTargetU3Ek__BackingField_0 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CTargetU3Ek__BackingField_0), (void*)L_0);
+		return;
+	}
+}
+// System.Byte[] Nethereum.Contracts.QueryHandlers.MultiCall.CallBase::get_CallData()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* CallBase_get_CallData_m1EB0EC27AD49D1E405717AE6874133C543B7F6D4 (CallBase_tDE3DC215CB2F6161608011057953C24D0C5F2D3F* __this, const RuntimeMethod* method) 
+{
+	{
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_0 = __this->___U3CCallDataU3Ek__BackingField_1;
+		return L_0;
+	}
+}
+// System.Void Nethereum.Contracts.QueryHandlers.MultiCall.CallBase::set_CallData(System.Byte[])
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CallBase_set_CallData_m2C4E5AB405DC63D47F7CD173D10AF2A04AAB0B04 (CallBase_tDE3DC215CB2F6161608011057953C24D0C5F2D3F* __this, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___value0, const RuntimeMethod* method) 
+{
+	{
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_0 = ___value0;
+		__this->___U3CCallDataU3Ek__BackingField_1 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CCallDataU3Ek__BackingField_1), (void*)L_0);
+		return;
+	}
+}
+// System.Void Nethereum.Contracts.QueryHandlers.MultiCall.CallBase::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CallBase__ctor_mE2E8519A635816141A864EFF8EF5B635F4D35CD6 (CallBase_tDE3DC215CB2F6161608011057953C24D0C5F2D3F* __this, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Nethereum.Contracts.QueryHandlers.MultiCall.AggregateFunction::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AggregateFunction__ctor_m0633AC43B4C0817BA2B3155C3E9CD2036C248BE2 (AggregateFunction_tFEE01853E17B270CE0A401F2931520B99AE9A0A7* __this, const RuntimeMethod* method) 
+{
+	{
+		AggregateFunctionBase__ctor_m967981D8F6AB510D5E0DE75D6B729F1A83351D1C(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Collections.Generic.List`1<Nethereum.Contracts.QueryHandlers.MultiCall.Call> Nethereum.Contracts.QueryHandlers.MultiCall.AggregateFunctionBase::get_Calls()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_t1CFC44309FCDA176EA29234D4ABE7C7F1C7195FE* AggregateFunctionBase_get_Calls_mA081033A9D75B0FECD0DCCA9E688D2DF80F0A527 (AggregateFunctionBase_tED9275D4B009322E4C25321783EF2376CC47A98D* __this, const RuntimeMethod* method) 
+{
+	{
+		List_1_t1CFC44309FCDA176EA29234D4ABE7C7F1C7195FE* L_0 = __this->___U3CCallsU3Ek__BackingField_9;
+		return L_0;
+	}
+}
+// System.Void Nethereum.Contracts.QueryHandlers.MultiCall.AggregateFunctionBase::set_Calls(System.Collections.Generic.List`1<Nethereum.Contracts.QueryHandlers.MultiCall.Call>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AggregateFunctionBase_set_Calls_mC49C4764185ADA867126836C9B99689CF163863D (AggregateFunctionBase_tED9275D4B009322E4C25321783EF2376CC47A98D* __this, List_1_t1CFC44309FCDA176EA29234D4ABE7C7F1C7195FE* ___value0, const RuntimeMethod* method) 
+{
+	{
+		List_1_t1CFC44309FCDA176EA29234D4ABE7C7F1C7195FE* L_0 = ___value0;
+		__this->___U3CCallsU3Ek__BackingField_9 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CCallsU3Ek__BackingField_9), (void*)L_0);
+		return;
+	}
+}
+// System.Void Nethereum.Contracts.QueryHandlers.MultiCall.AggregateFunctionBase::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AggregateFunctionBase__ctor_m967981D8F6AB510D5E0DE75D6B729F1A83351D1C (AggregateFunctionBase_tED9275D4B009322E4C25321783EF2376CC47A98D* __this, const RuntimeMethod* method) 
+{
+	{
+		FunctionMessage__ctor_m1951B5B47D9E572EF741370BDB5B09FB937D7E79(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Nethereum.Contracts.QueryHandlers.MultiCall.AggregateOutputDTO::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AggregateOutputDTO__ctor_m42E26D20E7B014067845605D5DFBFBBA0B4DB9AD (AggregateOutputDTO_t04A6B814396B3EFE20568FF857DC66DEDADB011C* __this, const RuntimeMethod* method) 
+{
+	{
+		AggregateOutputDTOBase__ctor_m5E79DE99677489978B207998452A3DEAC947465C(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Numerics.BigInteger Nethereum.Contracts.QueryHandlers.MultiCall.AggregateOutputDTOBase::get_BlockNumber()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR BigInteger_tF7779A0AA6D6B9BE0E0C1C293E7708765DEF7D0F AggregateOutputDTOBase_get_BlockNumber_m5B78B65CA40C3A16A925BA404B5F7866B8123019 (AggregateOutputDTOBase_tBD69D9D5ECA62C1432573218AD544A42BD82ACA6* __this, const RuntimeMethod* method) 
+{
+	{
+		BigInteger_tF7779A0AA6D6B9BE0E0C1C293E7708765DEF7D0F L_0 = __this->___U3CBlockNumberU3Ek__BackingField_0;
+		return L_0;
+	}
+}
+// System.Void Nethereum.Contracts.QueryHandlers.MultiCall.AggregateOutputDTOBase::set_BlockNumber(System.Numerics.BigInteger)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AggregateOutputDTOBase_set_BlockNumber_mBAE281C6A4F71F7EEEECC12FCC4C3FCCE2107D6D (AggregateOutputDTOBase_tBD69D9D5ECA62C1432573218AD544A42BD82ACA6* __this, BigInteger_tF7779A0AA6D6B9BE0E0C1C293E7708765DEF7D0F ___value0, const RuntimeMethod* method) 
+{
+	{
+		BigInteger_tF7779A0AA6D6B9BE0E0C1C293E7708765DEF7D0F L_0 = ___value0;
+		__this->___U3CBlockNumberU3Ek__BackingField_0 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)&(((&__this->___U3CBlockNumberU3Ek__BackingField_0))->____bits_1), (void*)NULL);
+		return;
+	}
+}
+// System.Collections.Generic.List`1<System.Byte[]> Nethereum.Contracts.QueryHandlers.MultiCall.AggregateOutputDTOBase::get_ReturnData()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_tBFF9DD9FFA06F20E74F9D7AD36610BD754D353A4* AggregateOutputDTOBase_get_ReturnData_m23BEEE70A42795A196E56B93F6D8AFF7656EB0A2 (AggregateOutputDTOBase_tBD69D9D5ECA62C1432573218AD544A42BD82ACA6* __this, const RuntimeMethod* method) 
+{
+	{
+		List_1_tBFF9DD9FFA06F20E74F9D7AD36610BD754D353A4* L_0 = __this->___U3CReturnDataU3Ek__BackingField_1;
+		return L_0;
+	}
+}
+// System.Void Nethereum.Contracts.QueryHandlers.MultiCall.AggregateOutputDTOBase::set_ReturnData(System.Collections.Generic.List`1<System.Byte[]>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AggregateOutputDTOBase_set_ReturnData_m833D7DF3858724A89DB4E18A6FFF8464BFE073D6 (AggregateOutputDTOBase_tBD69D9D5ECA62C1432573218AD544A42BD82ACA6* __this, List_1_tBFF9DD9FFA06F20E74F9D7AD36610BD754D353A4* ___value0, const RuntimeMethod* method) 
+{
+	{
+		List_1_tBFF9DD9FFA06F20E74F9D7AD36610BD754D353A4* L_0 = ___value0;
+		__this->___U3CReturnDataU3Ek__BackingField_1 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CReturnDataU3Ek__BackingField_1), (void*)L_0);
+		return;
+	}
+}
+// System.Void Nethereum.Contracts.QueryHandlers.MultiCall.AggregateOutputDTOBase::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AggregateOutputDTOBase__ctor_m5E79DE99677489978B207998452A3DEAC947465C (AggregateOutputDTOBase_tBD69D9D5ECA62C1432573218AD544A42BD82ACA6* __this, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Nethereum.Contracts.QueryHandlers.MultiCall.Result::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Result__ctor_mA42EFBEB4B8CB2C2D0BA97EC7A65C8C2747CCC38 (Result_t865E183DF9D3C68AAB7A99BD699A08BD8CBC9CF4* __this, const RuntimeMethod* method) 
+{
+	{
+		ResultBase__ctor_m1D88588340B5C33293FE67A628E288244F60A90B(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Boolean Nethereum.Contracts.QueryHandlers.MultiCall.ResultBase::get_Success()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ResultBase_get_Success_m1EAA4C0F157787DFC08DE77386851034DA585314 (ResultBase_t3EE4F4314BE00242DA42DCAE822CB8859C6A95E5* __this, const RuntimeMethod* method) 
+{
+	{
+		bool L_0 = __this->___U3CSuccessU3Ek__BackingField_0;
+		return L_0;
+	}
+}
+// System.Void Nethereum.Contracts.QueryHandlers.MultiCall.ResultBase::set_Success(System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ResultBase_set_Success_m45509155799881F0EA050B69C5F4EF9925EE6783 (ResultBase_t3EE4F4314BE00242DA42DCAE822CB8859C6A95E5* __this, bool ___value0, const RuntimeMethod* method) 
+{
+	{
+		bool L_0 = ___value0;
+		__this->___U3CSuccessU3Ek__BackingField_0 = L_0;
+		return;
+	}
+}
+// System.Byte[] Nethereum.Contracts.QueryHandlers.MultiCall.ResultBase::get_ReturnData()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ResultBase_get_ReturnData_mEDC778AB83FFF93402809DD1BC7D1E2320AE15AF (ResultBase_t3EE4F4314BE00242DA42DCAE822CB8859C6A95E5* __this, const RuntimeMethod* method) 
+{
+	{
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_0 = __this->___U3CReturnDataU3Ek__BackingField_1;
+		return L_0;
+	}
+}
+// System.Void Nethereum.Contracts.QueryHandlers.MultiCall.ResultBase::set_ReturnData(System.Byte[])
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ResultBase_set_ReturnData_m4294C3E5FA125ACECD6D9C172F2C4E3B9AA6953C (ResultBase_t3EE4F4314BE00242DA42DCAE822CB8859C6A95E5* __this, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___value0, const RuntimeMethod* method) 
+{
+	{
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_0 = ___value0;
+		__this->___U3CReturnDataU3Ek__BackingField_1 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CReturnDataU3Ek__BackingField_1), (void*)L_0);
+		return;
+	}
+}
+// System.Void Nethereum.Contracts.QueryHandlers.MultiCall.ResultBase::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ResultBase__ctor_m1D88588340B5C33293FE67A628E288244F60A90B (ResultBase_t3EE4F4314BE00242DA42DCAE822CB8859C6A95E5* __this, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Nethereum.Contracts.QueryHandlers.MultiCall.Call3::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Call3__ctor_mDDD303DDE46EDDA5D1552C7150394B7F51BA3490 (Call3_t7D0A3BDA2EE93E4FE48F20496F1A5C2723BABB8D* __this, const RuntimeMethod* method) 
+{
+	{
+		Call3Base__ctor_m9186F3EBD4D18465893C59A9735C50511CAEFCBC(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.String Nethereum.Contracts.QueryHandlers.MultiCall.Call3Base::get_Target()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Call3Base_get_Target_mDB71F2C79F62FC0663F4C58AC9F74BAF1EBE19DA (Call3Base_t2A9271175C8D98BBDC18239AAFEC4C820E539B2E* __this, const RuntimeMethod* method) 
+{
+	{
+		String_t* L_0 = __this->___U3CTargetU3Ek__BackingField_0;
+		return L_0;
+	}
+}
+// System.Void Nethereum.Contracts.QueryHandlers.MultiCall.Call3Base::set_Target(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Call3Base_set_Target_m37CA5C6255F1CF2611C142057C55B7E54DFF730F (Call3Base_t2A9271175C8D98BBDC18239AAFEC4C820E539B2E* __this, String_t* ___value0, const RuntimeMethod* method) 
+{
+	{
+		String_t* L_0 = ___value0;
+		__this->___U3CTargetU3Ek__BackingField_0 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CTargetU3Ek__BackingField_0), (void*)L_0);
+		return;
+	}
+}
+// System.Boolean Nethereum.Contracts.QueryHandlers.MultiCall.Call3Base::get_AllowFailure()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Call3Base_get_AllowFailure_mAD5B6025DECB2E9AD4B1FA87DAC6A955F74BF1F8 (Call3Base_t2A9271175C8D98BBDC18239AAFEC4C820E539B2E* __this, const RuntimeMethod* method) 
+{
+	{
+		bool L_0 = __this->___U3CAllowFailureU3Ek__BackingField_1;
+		return L_0;
+	}
+}
+// System.Void Nethereum.Contracts.QueryHandlers.MultiCall.Call3Base::set_AllowFailure(System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Call3Base_set_AllowFailure_m2722849504B613B57773A1DB03087C15AA08BF43 (Call3Base_t2A9271175C8D98BBDC18239AAFEC4C820E539B2E* __this, bool ___value0, const RuntimeMethod* method) 
+{
+	{
+		bool L_0 = ___value0;
+		__this->___U3CAllowFailureU3Ek__BackingField_1 = L_0;
+		return;
+	}
+}
+// System.Byte[] Nethereum.Contracts.QueryHandlers.MultiCall.Call3Base::get_CallData()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* Call3Base_get_CallData_mBF16C5ED2D059D217A1954D5C330A7E14285C75B (Call3Base_t2A9271175C8D98BBDC18239AAFEC4C820E539B2E* __this, const RuntimeMethod* method) 
+{
+	{
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_0 = __this->___U3CCallDataU3Ek__BackingField_2;
+		return L_0;
+	}
+}
+// System.Void Nethereum.Contracts.QueryHandlers.MultiCall.Call3Base::set_CallData(System.Byte[])
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Call3Base_set_CallData_mB42283C5CA218A813278B3DD2C684C8C234BE924 (Call3Base_t2A9271175C8D98BBDC18239AAFEC4C820E539B2E* __this, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___value0, const RuntimeMethod* method) 
+{
+	{
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_0 = ___value0;
+		__this->___U3CCallDataU3Ek__BackingField_2 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CCallDataU3Ek__BackingField_2), (void*)L_0);
+		return;
+	}
+}
+// System.Void Nethereum.Contracts.QueryHandlers.MultiCall.Call3Base::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Call3Base__ctor_m9186F3EBD4D18465893C59A9735C50511CAEFCBC (Call3Base_t2A9271175C8D98BBDC18239AAFEC4C820E539B2E* __this, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Nethereum.Contracts.QueryHandlers.MultiCall.Call3Value::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Call3Value__ctor_mC7EA809839A1CD0B62BC5F957E5E53EC6090AF9E (Call3Value_t18A4350E7B502FCB224229CDA7B21BF37C8C6DA6* __this, const RuntimeMethod* method) 
+{
+	{
+		Call3ValueBase__ctor_m94484BDF7B3FCB80740D1FB7D23054F49706F0E4(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.String Nethereum.Contracts.QueryHandlers.MultiCall.Call3ValueBase::get_Target()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Call3ValueBase_get_Target_m03DF29C0B7AFC59C6057924B8E0A190B6C3B4781 (Call3ValueBase_t43018F8986C4307D6CE2C2BCE8C2E1ACB8E84978* __this, const RuntimeMethod* method) 
+{
+	{
+		String_t* L_0 = __this->___U3CTargetU3Ek__BackingField_0;
+		return L_0;
+	}
+}
+// System.Void Nethereum.Contracts.QueryHandlers.MultiCall.Call3ValueBase::set_Target(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Call3ValueBase_set_Target_mE4E4B2955B91E94EB22970D86FDF2000179A593F (Call3ValueBase_t43018F8986C4307D6CE2C2BCE8C2E1ACB8E84978* __this, String_t* ___value0, const RuntimeMethod* method) 
+{
+	{
+		String_t* L_0 = ___value0;
+		__this->___U3CTargetU3Ek__BackingField_0 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CTargetU3Ek__BackingField_0), (void*)L_0);
+		return;
+	}
+}
+// System.Boolean Nethereum.Contracts.QueryHandlers.MultiCall.Call3ValueBase::get_AllowFailure()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Call3ValueBase_get_AllowFailure_m0ED4C6F1F40A034015A33102C2A767DD2F01F868 (Call3ValueBase_t43018F8986C4307D6CE2C2BCE8C2E1ACB8E84978* __this, const RuntimeMethod* method) 
+{
+	{
+		bool L_0 = __this->___U3CAllowFailureU3Ek__BackingField_1;
+		return L_0;
+	}
+}
+// System.Void Nethereum.Contracts.QueryHandlers.MultiCall.Call3ValueBase::set_AllowFailure(System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Call3ValueBase_set_AllowFailure_mBF436DFB27E3F9813229E5675AECA440E9575AD4 (Call3ValueBase_t43018F8986C4307D6CE2C2BCE8C2E1ACB8E84978* __this, bool ___value0, const RuntimeMethod* method) 
+{
+	{
+		bool L_0 = ___value0;
+		__this->___U3CAllowFailureU3Ek__BackingField_1 = L_0;
+		return;
+	}
+}
+// System.Numerics.BigInteger Nethereum.Contracts.QueryHandlers.MultiCall.Call3ValueBase::get_Value()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR BigInteger_tF7779A0AA6D6B9BE0E0C1C293E7708765DEF7D0F Call3ValueBase_get_Value_m35CC284363203C817DF59847965C2CC611698C8D (Call3ValueBase_t43018F8986C4307D6CE2C2BCE8C2E1ACB8E84978* __this, const RuntimeMethod* method) 
+{
+	{
+		BigInteger_tF7779A0AA6D6B9BE0E0C1C293E7708765DEF7D0F L_0 = __this->___U3CValueU3Ek__BackingField_2;
+		return L_0;
+	}
+}
+// System.Void Nethereum.Contracts.QueryHandlers.MultiCall.Call3ValueBase::set_Value(System.Numerics.BigInteger)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Call3ValueBase_set_Value_mF26C2398EF3EA71A7CF604CCC26DAF4DD41A4B54 (Call3ValueBase_t43018F8986C4307D6CE2C2BCE8C2E1ACB8E84978* __this, BigInteger_tF7779A0AA6D6B9BE0E0C1C293E7708765DEF7D0F ___value0, const RuntimeMethod* method) 
+{
+	{
+		BigInteger_tF7779A0AA6D6B9BE0E0C1C293E7708765DEF7D0F L_0 = ___value0;
+		__this->___U3CValueU3Ek__BackingField_2 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)&(((&__this->___U3CValueU3Ek__BackingField_2))->____bits_1), (void*)NULL);
+		return;
+	}
+}
+// System.Byte[] Nethereum.Contracts.QueryHandlers.MultiCall.Call3ValueBase::get_CallData()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* Call3ValueBase_get_CallData_m00663F9486004E7DDB36E67F70621C98CF426C53 (Call3ValueBase_t43018F8986C4307D6CE2C2BCE8C2E1ACB8E84978* __this, const RuntimeMethod* method) 
+{
+	{
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_0 = __this->___U3CCallDataU3Ek__BackingField_3;
+		return L_0;
+	}
+}
+// System.Void Nethereum.Contracts.QueryHandlers.MultiCall.Call3ValueBase::set_CallData(System.Byte[])
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Call3ValueBase_set_CallData_m7C03921FA1609E02C21667E599FE80E54C3CA3D9 (Call3ValueBase_t43018F8986C4307D6CE2C2BCE8C2E1ACB8E84978* __this, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___value0, const RuntimeMethod* method) 
+{
+	{
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_0 = ___value0;
+		__this->___U3CCallDataU3Ek__BackingField_3 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CCallDataU3Ek__BackingField_3), (void*)L_0);
+		return;
+	}
+}
+// System.Void Nethereum.Contracts.QueryHandlers.MultiCall.Call3ValueBase::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Call3ValueBase__ctor_m94484BDF7B3FCB80740D1FB7D23054F49706F0E4 (Call3ValueBase_t43018F8986C4307D6CE2C2BCE8C2E1ACB8E84978* __this, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Nethereum.Contracts.QueryHandlers.MultiCall.Aggregate3Function::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Aggregate3Function__ctor_m43D67CAE2120D44899607E23F0C7816206A235A6 (Aggregate3Function_t22B497CF7B74F9B7EAE57E49F180946D62DE0A80* __this, const RuntimeMethod* method) 
+{
+	{
+		Aggregate3FunctionBase__ctor_m91F6821310885CAC088877253750916E793869BF(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Collections.Generic.List`1<Nethereum.Contracts.QueryHandlers.MultiCall.Call3> Nethereum.Contracts.QueryHandlers.MultiCall.Aggregate3FunctionBase::get_Calls()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_t913451B7A13CEE27B44C60CE4E1378612824AE38* Aggregate3FunctionBase_get_Calls_m2BE885BC28959A5BAB84ABD4FE483BCE9B097DDF (Aggregate3FunctionBase_t598C9701594935BF1D7F126FAE3A698C5D285C36* __this, const RuntimeMethod* method) 
+{
+	{
+		List_1_t913451B7A13CEE27B44C60CE4E1378612824AE38* L_0 = __this->___U3CCallsU3Ek__BackingField_9;
+		return L_0;
+	}
+}
+// System.Void Nethereum.Contracts.QueryHandlers.MultiCall.Aggregate3FunctionBase::set_Calls(System.Collections.Generic.List`1<Nethereum.Contracts.QueryHandlers.MultiCall.Call3>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Aggregate3FunctionBase_set_Calls_m613A4BDBC750367B32ADBAD8519248104EF05FE6 (Aggregate3FunctionBase_t598C9701594935BF1D7F126FAE3A698C5D285C36* __this, List_1_t913451B7A13CEE27B44C60CE4E1378612824AE38* ___value0, const RuntimeMethod* method) 
+{
+	{
+		List_1_t913451B7A13CEE27B44C60CE4E1378612824AE38* L_0 = ___value0;
+		__this->___U3CCallsU3Ek__BackingField_9 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CCallsU3Ek__BackingField_9), (void*)L_0);
+		return;
+	}
+}
+// System.Void Nethereum.Contracts.QueryHandlers.MultiCall.Aggregate3FunctionBase::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Aggregate3FunctionBase__ctor_m91F6821310885CAC088877253750916E793869BF (Aggregate3FunctionBase_t598C9701594935BF1D7F126FAE3A698C5D285C36* __this, const RuntimeMethod* method) 
+{
+	{
+		FunctionMessage__ctor_m1951B5B47D9E572EF741370BDB5B09FB937D7E79(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Nethereum.Contracts.QueryHandlers.MultiCall.Aggregate3ValueFunction::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Aggregate3ValueFunction__ctor_m19B61856A3D5F6553B8D552CF67889881C2DC782 (Aggregate3ValueFunction_t7255D88599D2644B8FD0B19D72639F0F5D2521CC* __this, const RuntimeMethod* method) 
+{
+	{
+		Aggregate3ValueFunctionBase__ctor_m2FB6F9C64A3F0416882C397C013D91BE9B1E8F0A(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Collections.Generic.List`1<Nethereum.Contracts.QueryHandlers.MultiCall.Call3Value> Nethereum.Contracts.QueryHandlers.MultiCall.Aggregate3ValueFunctionBase::get_Calls()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_t376C4E85EFA0FB2C83DA6AEC65B0D3D437A82B0E* Aggregate3ValueFunctionBase_get_Calls_mDCF866B5E70D42500C6CDF9589E7F30060142D14 (Aggregate3ValueFunctionBase_t771A483E57D1D3F216B1DFF5AD95F952BFA640F4* __this, const RuntimeMethod* method) 
+{
+	{
+		List_1_t376C4E85EFA0FB2C83DA6AEC65B0D3D437A82B0E* L_0 = __this->___U3CCallsU3Ek__BackingField_9;
+		return L_0;
+	}
+}
+// System.Void Nethereum.Contracts.QueryHandlers.MultiCall.Aggregate3ValueFunctionBase::set_Calls(System.Collections.Generic.List`1<Nethereum.Contracts.QueryHandlers.MultiCall.Call3Value>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Aggregate3ValueFunctionBase_set_Calls_m5AE745CEAD101C6B54C4FB8397A822A8CC5ED451 (Aggregate3ValueFunctionBase_t771A483E57D1D3F216B1DFF5AD95F952BFA640F4* __this, List_1_t376C4E85EFA0FB2C83DA6AEC65B0D3D437A82B0E* ___value0, const RuntimeMethod* method) 
+{
+	{
+		List_1_t376C4E85EFA0FB2C83DA6AEC65B0D3D437A82B0E* L_0 = ___value0;
+		__this->___U3CCallsU3Ek__BackingField_9 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CCallsU3Ek__BackingField_9), (void*)L_0);
+		return;
+	}
+}
+// System.Void Nethereum.Contracts.QueryHandlers.MultiCall.Aggregate3ValueFunctionBase::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Aggregate3ValueFunctionBase__ctor_m2FB6F9C64A3F0416882C397C013D91BE9B1E8F0A (Aggregate3ValueFunctionBase_t771A483E57D1D3F216B1DFF5AD95F952BFA640F4* __this, const RuntimeMethod* method) 
+{
+	{
+		FunctionMessage__ctor_m1951B5B47D9E572EF741370BDB5B09FB937D7E79(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Nethereum.Contracts.QueryHandlers.MultiCall.Aggregate3OutputDTO::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Aggregate3OutputDTO__ctor_m11A3596F91BC75D8CF5BE951A7896172B849B52C (Aggregate3OutputDTO_t9CA62E1FF9DC2592189ADE0D667CD29C287867DB* __this, const RuntimeMethod* method) 
+{
+	{
+		Aggregate3OutputDTOBase__ctor_m6A81BCAB13DC1B2A6D8F39380D9F4BF158197623(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Collections.Generic.List`1<Nethereum.Contracts.QueryHandlers.MultiCall.Result> Nethereum.Contracts.QueryHandlers.MultiCall.Aggregate3OutputDTOBase::get_ReturnData()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_t4C68E546060D764C99C1B962BB2C011B0A5EBA19* Aggregate3OutputDTOBase_get_ReturnData_m9755FE93BFA8CF288949EADFCEF48A8E6139A2BC (Aggregate3OutputDTOBase_tB7BB06CA8F766C33AF48AD8E5D67D74E0317D126* __this, const RuntimeMethod* method) 
+{
+	{
+		List_1_t4C68E546060D764C99C1B962BB2C011B0A5EBA19* L_0 = __this->___U3CReturnDataU3Ek__BackingField_0;
+		return L_0;
+	}
+}
+// System.Void Nethereum.Contracts.QueryHandlers.MultiCall.Aggregate3OutputDTOBase::set_ReturnData(System.Collections.Generic.List`1<Nethereum.Contracts.QueryHandlers.MultiCall.Result>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Aggregate3OutputDTOBase_set_ReturnData_m6DC65E70FB124AADCC679124D0B4403993A41B85 (Aggregate3OutputDTOBase_tB7BB06CA8F766C33AF48AD8E5D67D74E0317D126* __this, List_1_t4C68E546060D764C99C1B962BB2C011B0A5EBA19* ___value0, const RuntimeMethod* method) 
+{
+	{
+		List_1_t4C68E546060D764C99C1B962BB2C011B0A5EBA19* L_0 = ___value0;
+		__this->___U3CReturnDataU3Ek__BackingField_0 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CReturnDataU3Ek__BackingField_0), (void*)L_0);
+		return;
+	}
+}
+// System.Void Nethereum.Contracts.QueryHandlers.MultiCall.Aggregate3OutputDTOBase::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Aggregate3OutputDTOBase__ctor_m6A81BCAB13DC1B2A6D8F39380D9F4BF158197623 (Aggregate3OutputDTOBase_tB7BB06CA8F766C33AF48AD8E5D67D74E0317D126* __this, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Nethereum.Contracts.QueryHandlers.MultiCall.Aggregate3ValueOutputDTO::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Aggregate3ValueOutputDTO__ctor_mEA219959E30C336C4DD28C88DAD2F41335DB6AF3 (Aggregate3ValueOutputDTO_t2FF1DDFC969071DBBB8DA771D7B60CA9C378093E* __this, const RuntimeMethod* method) 
+{
+	{
+		Aggregate3ValueOutputDTOBase__ctor_mC8334F03A9F9FAEC770B9D09363248EE7DB540F4(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Collections.Generic.List`1<Nethereum.Contracts.QueryHandlers.MultiCall.Result> Nethereum.Contracts.QueryHandlers.MultiCall.Aggregate3ValueOutputDTOBase::get_ReturnData()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_t4C68E546060D764C99C1B962BB2C011B0A5EBA19* Aggregate3ValueOutputDTOBase_get_ReturnData_mE446081672F5878C319DEDFB8F11561B832076DB (Aggregate3ValueOutputDTOBase_tDC53C967E48195592E4D38448A65DA8A8388FDF7* __this, const RuntimeMethod* method) 
+{
+	{
+		List_1_t4C68E546060D764C99C1B962BB2C011B0A5EBA19* L_0 = __this->___U3CReturnDataU3Ek__BackingField_0;
+		return L_0;
+	}
+}
+// System.Void Nethereum.Contracts.QueryHandlers.MultiCall.Aggregate3ValueOutputDTOBase::set_ReturnData(System.Collections.Generic.List`1<Nethereum.Contracts.QueryHandlers.MultiCall.Result>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Aggregate3ValueOutputDTOBase_set_ReturnData_m73B5F4C04E837C953A0A061FE917E18466261ECD (Aggregate3ValueOutputDTOBase_tDC53C967E48195592E4D38448A65DA8A8388FDF7* __this, List_1_t4C68E546060D764C99C1B962BB2C011B0A5EBA19* ___value0, const RuntimeMethod* method) 
+{
+	{
+		List_1_t4C68E546060D764C99C1B962BB2C011B0A5EBA19* L_0 = ___value0;
+		__this->___U3CReturnDataU3Ek__BackingField_0 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CReturnDataU3Ek__BackingField_0), (void*)L_0);
+		return;
+	}
+}
+// System.Void Nethereum.Contracts.QueryHandlers.MultiCall.Aggregate3ValueOutputDTOBase::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Aggregate3ValueOutputDTOBase__ctor_mC8334F03A9F9FAEC770B9D09363248EE7DB540F4 (Aggregate3ValueOutputDTOBase_tDC53C967E48195592E4D38448A65DA8A8388FDF7* __this, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.String Nethereum.Contracts.QueryHandlers.MultiCall.MultiQueryHandler::get_ContractAddress()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* MultiQueryHandler_get_ContractAddress_mA39F6E0DCEB03E242771B68672D8951137779325 (MultiQueryHandler_tD5E9074899A83693F74D77C94F903D4AA15753CE* __this, const RuntimeMethod* method) 
+{
+	{
+		String_t* L_0 = __this->___U3CContractAddressU3Ek__BackingField_1;
+		return L_0;
+	}
+}
+// System.Void Nethereum.Contracts.QueryHandlers.MultiCall.MultiQueryHandler::set_ContractAddress(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MultiQueryHandler_set_ContractAddress_m2F7FAEFB64E27D89D5EB2AA5F97A62BA997CE49B (MultiQueryHandler_tD5E9074899A83693F74D77C94F903D4AA15753CE* __this, String_t* ___value0, const RuntimeMethod* method) 
+{
+	{
+		String_t* L_0 = ___value0;
+		__this->___U3CContractAddressU3Ek__BackingField_1 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CContractAddressU3Ek__BackingField_1), (void*)L_0);
+		return;
+	}
+}
+// System.Void Nethereum.Contracts.QueryHandlers.MultiCall.MultiQueryHandler::.ctor(Nethereum.JsonRpc.Client.IClient,System.String,System.String,Nethereum.RPC.Eth.DTOs.BlockParameter)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MultiQueryHandler__ctor_m55A94E956618A8B631FBD680D423FA2C3C2257E7 (MultiQueryHandler_tD5E9074899A83693F74D77C94F903D4AA15753CE* __this, RuntimeObject* ___client0, String_t* ___multiCallContractAdress1, String_t* ___defaultAddressFrom2, BlockParameter_t13CF5CC9CDE990ACD945748B2FA7F19EA0A06AD9* ___defaultBlockParameter3, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&QueryToDTOHandler_2__ctor_m4A57C1F8A844F4DC1353B3BEF8955734DC42BC7A_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&QueryToDTOHandler_2__ctor_m793B56FA96BC10E5889BC2ADB2946F952E77000C_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&QueryToDTOHandler_2__ctor_mED56E92453BE3550B2614270409F077A76CAC156_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&QueryToDTOHandler_2_t64FE28F3E7A92C671B9E70A24D8300951F42BBF7_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&QueryToDTOHandler_2_t7D6D14A0D064D41148382C0FCC8E4921D012F2F6_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&QueryToDTOHandler_2_tC8135E5F07B2BB7F4F689C6CD58C234921665415_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		String_t* L_0 = ___multiCallContractAdress1;
+		MultiQueryHandler_set_ContractAddress_m2F7FAEFB64E27D89D5EB2AA5F97A62BA997CE49B_inline(__this, L_0, NULL);
+		RuntimeObject* L_1 = ___client0;
+		String_t* L_2 = ___defaultAddressFrom2;
+		BlockParameter_t13CF5CC9CDE990ACD945748B2FA7F19EA0A06AD9* L_3 = ___defaultBlockParameter3;
+		QueryToDTOHandler_2_t64FE28F3E7A92C671B9E70A24D8300951F42BBF7* L_4 = (QueryToDTOHandler_2_t64FE28F3E7A92C671B9E70A24D8300951F42BBF7*)il2cpp_codegen_object_new(QueryToDTOHandler_2_t64FE28F3E7A92C671B9E70A24D8300951F42BBF7_il2cpp_TypeInfo_var);
+		NullCheck(L_4);
+		QueryToDTOHandler_2__ctor_m4A57C1F8A844F4DC1353B3BEF8955734DC42BC7A(L_4, L_1, L_2, L_3, QueryToDTOHandler_2__ctor_m4A57C1F8A844F4DC1353B3BEF8955734DC42BC7A_RuntimeMethod_var);
+		__this->____multiQueryV1ToDtoHandler_2 = L_4;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____multiQueryV1ToDtoHandler_2), (void*)L_4);
+		RuntimeObject* L_5 = ___client0;
+		String_t* L_6 = ___defaultAddressFrom2;
+		BlockParameter_t13CF5CC9CDE990ACD945748B2FA7F19EA0A06AD9* L_7 = ___defaultBlockParameter3;
+		QueryToDTOHandler_2_t7D6D14A0D064D41148382C0FCC8E4921D012F2F6* L_8 = (QueryToDTOHandler_2_t7D6D14A0D064D41148382C0FCC8E4921D012F2F6*)il2cpp_codegen_object_new(QueryToDTOHandler_2_t7D6D14A0D064D41148382C0FCC8E4921D012F2F6_il2cpp_TypeInfo_var);
+		NullCheck(L_8);
+		QueryToDTOHandler_2__ctor_mED56E92453BE3550B2614270409F077A76CAC156(L_8, L_5, L_6, L_7, QueryToDTOHandler_2__ctor_mED56E92453BE3550B2614270409F077A76CAC156_RuntimeMethod_var);
+		__this->____multiQueryToDtoHandler_3 = L_8;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____multiQueryToDtoHandler_3), (void*)L_8);
+		RuntimeObject* L_9 = ___client0;
+		String_t* L_10 = ___defaultAddressFrom2;
+		BlockParameter_t13CF5CC9CDE990ACD945748B2FA7F19EA0A06AD9* L_11 = ___defaultBlockParameter3;
+		QueryToDTOHandler_2_tC8135E5F07B2BB7F4F689C6CD58C234921665415* L_12 = (QueryToDTOHandler_2_tC8135E5F07B2BB7F4F689C6CD58C234921665415*)il2cpp_codegen_object_new(QueryToDTOHandler_2_tC8135E5F07B2BB7F4F689C6CD58C234921665415_il2cpp_TypeInfo_var);
+		NullCheck(L_12);
+		QueryToDTOHandler_2__ctor_m793B56FA96BC10E5889BC2ADB2946F952E77000C(L_12, L_9, L_10, L_11, QueryToDTOHandler_2__ctor_m793B56FA96BC10E5889BC2ADB2946F952E77000C_RuntimeMethod_var);
+		__this->____multiQueryToValueDtoHandler_4 = L_12;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____multiQueryToValueDtoHandler_4), (void*)L_12);
+		return;
+	}
+}
+// System.Threading.Tasks.Task`1<Nethereum.Contracts.QueryHandlers.MultiCall.IMulticallInputOutput[]> Nethereum.Contracts.QueryHandlers.MultiCall.MultiQueryHandler::MultiCallV1Async(Nethereum.Contracts.QueryHandlers.MultiCall.IMulticallInputOutput[])
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Task_1_t42FA6B88BB8F441CF56D1DCEF1570387FCEC4DE9* MultiQueryHandler_MultiCallV1Async_m65497C39195AB3963121102797C2FFF878FDAB77 (MultiQueryHandler_tD5E9074899A83693F74D77C94F903D4AA15753CE* __this, IMulticallInputOutputU5BU5D_t7D33DBDC42EE714A687264BC9F3C6C6AED3885F7* ___multiCalls0, const RuntimeMethod* method) 
+{
+	{
+		IMulticallInputOutputU5BU5D_t7D33DBDC42EE714A687264BC9F3C6C6AED3885F7* L_0 = ___multiCalls0;
+		Task_1_t42FA6B88BB8F441CF56D1DCEF1570387FCEC4DE9* L_1;
+		L_1 = MultiQueryHandler_MultiCallV1Async_m81729666406CB74C67639081B28CDF5662CFEDF3(__this, (BlockParameter_t13CF5CC9CDE990ACD945748B2FA7F19EA0A06AD9*)NULL, L_0, NULL);
+		return L_1;
+	}
+}
+// System.Threading.Tasks.Task`1<Nethereum.Contracts.QueryHandlers.MultiCall.IMulticallInputOutput[]> Nethereum.Contracts.QueryHandlers.MultiCall.MultiQueryHandler::MultiCallV1Async(Nethereum.RPC.Eth.DTOs.BlockParameter,Nethereum.Contracts.QueryHandlers.MultiCall.IMulticallInputOutput[])
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Task_1_t42FA6B88BB8F441CF56D1DCEF1570387FCEC4DE9* MultiQueryHandler_MultiCallV1Async_m81729666406CB74C67639081B28CDF5662CFEDF3 (MultiQueryHandler_tD5E9074899A83693F74D77C94F903D4AA15753CE* __this, BlockParameter_t13CF5CC9CDE990ACD945748B2FA7F19EA0A06AD9* ___block0, IMulticallInputOutputU5BU5D_t7D33DBDC42EE714A687264BC9F3C6C6AED3885F7* ___multiCalls1, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_Create_m197A98AAF3107177592BEB247F89AA1031D34F04_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_Start_TisU3CMultiCallV1AsyncU3Ed__10_t6910A8C2210A3573C94630F3B1F18F910914F89B_mF89E7F8E89F2F692DDC77FA5369701D03D6DB834_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_get_Task_mAF86E2BC0C8EC0F757C00619A9215EA8084DD705_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_tFF884780053FBFD2BEEA42DC0DFF882656BBE992_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	U3CMultiCallV1AsyncU3Ed__10_t6910A8C2210A3573C94630F3B1F18F910914F89B V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		il2cpp_codegen_runtime_class_init_inline(AsyncTaskMethodBuilder_1_tFF884780053FBFD2BEEA42DC0DFF882656BBE992_il2cpp_TypeInfo_var);
+		AsyncTaskMethodBuilder_1_tFF884780053FBFD2BEEA42DC0DFF882656BBE992 L_0;
+		L_0 = AsyncTaskMethodBuilder_1_Create_m197A98AAF3107177592BEB247F89AA1031D34F04(AsyncTaskMethodBuilder_1_Create_m197A98AAF3107177592BEB247F89AA1031D34F04_RuntimeMethod_var);
+		(&V_0)->___U3CU3Et__builder_1 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)&((&(((&(&V_0)->___U3CU3Et__builder_1))->___m_coreState_1))->___m_stateMachine_0), (void*)NULL);
+		#if IL2CPP_ENABLE_STRICT_WRITE_BARRIERS
+		Il2CppCodeGenWriteBarrier((void**)&((&(((&(&V_0)->___U3CU3Et__builder_1))->___m_coreState_1))->___m_defaultContextAction_1), (void*)NULL);
+		#endif
+		#if IL2CPP_ENABLE_STRICT_WRITE_BARRIERS
+		Il2CppCodeGenWriteBarrier((void**)&(((&(&V_0)->___U3CU3Et__builder_1))->___m_task_2), (void*)NULL);
+		#endif
+		(&V_0)->___U3CU3E4__this_3 = __this;
+		Il2CppCodeGenWriteBarrier((void**)(&(&V_0)->___U3CU3E4__this_3), (void*)__this);
+		BlockParameter_t13CF5CC9CDE990ACD945748B2FA7F19EA0A06AD9* L_1 = ___block0;
+		(&V_0)->___block_4 = L_1;
+		Il2CppCodeGenWriteBarrier((void**)(&(&V_0)->___block_4), (void*)L_1);
+		IMulticallInputOutputU5BU5D_t7D33DBDC42EE714A687264BC9F3C6C6AED3885F7* L_2 = ___multiCalls1;
+		(&V_0)->___multiCalls_2 = L_2;
+		Il2CppCodeGenWriteBarrier((void**)(&(&V_0)->___multiCalls_2), (void*)L_2);
+		(&V_0)->___U3CU3E1__state_0 = (-1);
+		AsyncTaskMethodBuilder_1_tFF884780053FBFD2BEEA42DC0DFF882656BBE992* L_3 = (&(&V_0)->___U3CU3Et__builder_1);
+		AsyncTaskMethodBuilder_1_Start_TisU3CMultiCallV1AsyncU3Ed__10_t6910A8C2210A3573C94630F3B1F18F910914F89B_mF89E7F8E89F2F692DDC77FA5369701D03D6DB834(L_3, (&V_0), AsyncTaskMethodBuilder_1_Start_TisU3CMultiCallV1AsyncU3Ed__10_t6910A8C2210A3573C94630F3B1F18F910914F89B_mF89E7F8E89F2F692DDC77FA5369701D03D6DB834_RuntimeMethod_var);
+		AsyncTaskMethodBuilder_1_tFF884780053FBFD2BEEA42DC0DFF882656BBE992* L_4 = (&(&V_0)->___U3CU3Et__builder_1);
+		Task_1_t42FA6B88BB8F441CF56D1DCEF1570387FCEC4DE9* L_5;
+		L_5 = AsyncTaskMethodBuilder_1_get_Task_mAF86E2BC0C8EC0F757C00619A9215EA8084DD705(L_4, AsyncTaskMethodBuilder_1_get_Task_mAF86E2BC0C8EC0F757C00619A9215EA8084DD705_RuntimeMethod_var);
+		return L_5;
+	}
+}
+// System.Threading.Tasks.Task`1<Nethereum.Contracts.QueryHandlers.MultiCall.IMulticallInputOutput[]> Nethereum.Contracts.QueryHandlers.MultiCall.MultiQueryHandler::MultiCallAsync(Nethereum.Contracts.QueryHandlers.MultiCall.IMulticallInputOutput[])
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Task_1_t42FA6B88BB8F441CF56D1DCEF1570387FCEC4DE9* MultiQueryHandler_MultiCallAsync_mCEAB49E5D5C77DEFAA279B54F6CA4016E197B332 (MultiQueryHandler_tD5E9074899A83693F74D77C94F903D4AA15753CE* __this, IMulticallInputOutputU5BU5D_t7D33DBDC42EE714A687264BC9F3C6C6AED3885F7* ___multiCalls0, const RuntimeMethod* method) 
+{
+	{
+		IMulticallInputOutputU5BU5D_t7D33DBDC42EE714A687264BC9F3C6C6AED3885F7* L_0 = ___multiCalls0;
+		Task_1_t42FA6B88BB8F441CF56D1DCEF1570387FCEC4DE9* L_1;
+		L_1 = MultiQueryHandler_MultiCallAsync_mFDEC1BADA86AB86EBE756BC2C34B7809D09BBEA7(__this, (BlockParameter_t13CF5CC9CDE990ACD945748B2FA7F19EA0A06AD9*)NULL, ((int32_t)3000), L_0, NULL);
+		return L_1;
+	}
+}
+// System.Threading.Tasks.Task`1<Nethereum.Contracts.QueryHandlers.MultiCall.IMulticallInputOutput[]> Nethereum.Contracts.QueryHandlers.MultiCall.MultiQueryHandler::MultiCallAsync(System.Int32,Nethereum.Contracts.QueryHandlers.MultiCall.IMulticallInputOutput[])
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Task_1_t42FA6B88BB8F441CF56D1DCEF1570387FCEC4DE9* MultiQueryHandler_MultiCallAsync_mCB7D275E16A109B2B84FCB2226B716ACE19730B3 (MultiQueryHandler_tD5E9074899A83693F74D77C94F903D4AA15753CE* __this, int32_t ___pageSize0, IMulticallInputOutputU5BU5D_t7D33DBDC42EE714A687264BC9F3C6C6AED3885F7* ___multiCalls1, const RuntimeMethod* method) 
+{
+	{
+		int32_t L_0 = ___pageSize0;
+		IMulticallInputOutputU5BU5D_t7D33DBDC42EE714A687264BC9F3C6C6AED3885F7* L_1 = ___multiCalls1;
+		Task_1_t42FA6B88BB8F441CF56D1DCEF1570387FCEC4DE9* L_2;
+		L_2 = MultiQueryHandler_MultiCallAsync_mFDEC1BADA86AB86EBE756BC2C34B7809D09BBEA7(__this, (BlockParameter_t13CF5CC9CDE990ACD945748B2FA7F19EA0A06AD9*)NULL, L_0, L_1, NULL);
+		return L_2;
+	}
+}
+// System.Threading.Tasks.Task`1<Nethereum.Contracts.QueryHandlers.MultiCall.IMulticallInputOutput[]> Nethereum.Contracts.QueryHandlers.MultiCall.MultiQueryHandler::MultiCallAsync(Nethereum.RPC.Eth.DTOs.BlockParameter,System.Int32,Nethereum.Contracts.QueryHandlers.MultiCall.IMulticallInputOutput[])
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Task_1_t42FA6B88BB8F441CF56D1DCEF1570387FCEC4DE9* MultiQueryHandler_MultiCallAsync_mFDEC1BADA86AB86EBE756BC2C34B7809D09BBEA7 (MultiQueryHandler_tD5E9074899A83693F74D77C94F903D4AA15753CE* __this, BlockParameter_t13CF5CC9CDE990ACD945748B2FA7F19EA0A06AD9* ___block0, int32_t ___pageSize1, IMulticallInputOutputU5BU5D_t7D33DBDC42EE714A687264BC9F3C6C6AED3885F7* ___multiCalls2, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_Create_m197A98AAF3107177592BEB247F89AA1031D34F04_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_Start_TisU3CMultiCallAsyncU3Ed__13_t7A391C1FA6573DA0FC973869DE104C0D039BBC62_m07E08B26709F71422F875F8CC3E8A83EEFC433C9_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_get_Task_mAF86E2BC0C8EC0F757C00619A9215EA8084DD705_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_tFF884780053FBFD2BEEA42DC0DFF882656BBE992_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	U3CMultiCallAsyncU3Ed__13_t7A391C1FA6573DA0FC973869DE104C0D039BBC62 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		il2cpp_codegen_runtime_class_init_inline(AsyncTaskMethodBuilder_1_tFF884780053FBFD2BEEA42DC0DFF882656BBE992_il2cpp_TypeInfo_var);
+		AsyncTaskMethodBuilder_1_tFF884780053FBFD2BEEA42DC0DFF882656BBE992 L_0;
+		L_0 = AsyncTaskMethodBuilder_1_Create_m197A98AAF3107177592BEB247F89AA1031D34F04(AsyncTaskMethodBuilder_1_Create_m197A98AAF3107177592BEB247F89AA1031D34F04_RuntimeMethod_var);
+		(&V_0)->___U3CU3Et__builder_1 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)&((&(((&(&V_0)->___U3CU3Et__builder_1))->___m_coreState_1))->___m_stateMachine_0), (void*)NULL);
+		#if IL2CPP_ENABLE_STRICT_WRITE_BARRIERS
+		Il2CppCodeGenWriteBarrier((void**)&((&(((&(&V_0)->___U3CU3Et__builder_1))->___m_coreState_1))->___m_defaultContextAction_1), (void*)NULL);
+		#endif
+		#if IL2CPP_ENABLE_STRICT_WRITE_BARRIERS
+		Il2CppCodeGenWriteBarrier((void**)&(((&(&V_0)->___U3CU3Et__builder_1))->___m_task_2), (void*)NULL);
+		#endif
+		(&V_0)->___U3CU3E4__this_4 = __this;
+		Il2CppCodeGenWriteBarrier((void**)(&(&V_0)->___U3CU3E4__this_4), (void*)__this);
+		BlockParameter_t13CF5CC9CDE990ACD945748B2FA7F19EA0A06AD9* L_1 = ___block0;
+		(&V_0)->___block_5 = L_1;
+		Il2CppCodeGenWriteBarrier((void**)(&(&V_0)->___block_5), (void*)L_1);
+		int32_t L_2 = ___pageSize1;
+		(&V_0)->___pageSize_3 = L_2;
+		IMulticallInputOutputU5BU5D_t7D33DBDC42EE714A687264BC9F3C6C6AED3885F7* L_3 = ___multiCalls2;
+		(&V_0)->___multiCalls_2 = L_3;
+		Il2CppCodeGenWriteBarrier((void**)(&(&V_0)->___multiCalls_2), (void*)L_3);
+		(&V_0)->___U3CU3E1__state_0 = (-1);
+		AsyncTaskMethodBuilder_1_tFF884780053FBFD2BEEA42DC0DFF882656BBE992* L_4 = (&(&V_0)->___U3CU3Et__builder_1);
+		AsyncTaskMethodBuilder_1_Start_TisU3CMultiCallAsyncU3Ed__13_t7A391C1FA6573DA0FC973869DE104C0D039BBC62_m07E08B26709F71422F875F8CC3E8A83EEFC433C9(L_4, (&V_0), AsyncTaskMethodBuilder_1_Start_TisU3CMultiCallAsyncU3Ed__13_t7A391C1FA6573DA0FC973869DE104C0D039BBC62_m07E08B26709F71422F875F8CC3E8A83EEFC433C9_RuntimeMethod_var);
+		AsyncTaskMethodBuilder_1_tFF884780053FBFD2BEEA42DC0DFF882656BBE992* L_5 = (&(&V_0)->___U3CU3Et__builder_1);
+		Task_1_t42FA6B88BB8F441CF56D1DCEF1570387FCEC4DE9* L_6;
+		L_6 = AsyncTaskMethodBuilder_1_get_Task_mAF86E2BC0C8EC0F757C00619A9215EA8084DD705(L_5, AsyncTaskMethodBuilder_1_get_Task_mAF86E2BC0C8EC0F757C00619A9215EA8084DD705_RuntimeMethod_var);
+		return L_6;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Nethereum.Contracts.QueryHandlers.MultiCall.MultiQueryHandler/<>c::.cctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__cctor_m5B289A48E1C33CA766E71C18F9C1EF3810C12DC5 (const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec_t00AE82A6DB248488B8693FE413EA91A294DF7971_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		U3CU3Ec_t00AE82A6DB248488B8693FE413EA91A294DF7971* L_0 = (U3CU3Ec_t00AE82A6DB248488B8693FE413EA91A294DF7971*)il2cpp_codegen_object_new(U3CU3Ec_t00AE82A6DB248488B8693FE413EA91A294DF7971_il2cpp_TypeInfo_var);
+		NullCheck(L_0);
+		U3CU3Ec__ctor_m182B2B7484D69463834A5E4E9B986BCE8CB24B05(L_0, NULL);
+		((U3CU3Ec_t00AE82A6DB248488B8693FE413EA91A294DF7971_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_t00AE82A6DB248488B8693FE413EA91A294DF7971_il2cpp_TypeInfo_var))->___U3CU3E9_0 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&((U3CU3Ec_t00AE82A6DB248488B8693FE413EA91A294DF7971_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_t00AE82A6DB248488B8693FE413EA91A294DF7971_il2cpp_TypeInfo_var))->___U3CU3E9_0), (void*)L_0);
+		return;
+	}
+}
+// System.Void Nethereum.Contracts.QueryHandlers.MultiCall.MultiQueryHandler/<>c::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__ctor_m182B2B7484D69463834A5E4E9B986BCE8CB24B05 (U3CU3Ec_t00AE82A6DB248488B8693FE413EA91A294DF7971* __this, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		return;
+	}
+}
+// System.Boolean Nethereum.Contracts.QueryHandlers.MultiCall.MultiQueryHandler/<>c::<MultiCallAsync>b__13_0(Nethereum.Contracts.QueryHandlers.MultiCall.IMulticallInputOutput)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CU3Ec_U3CMultiCallAsyncU3Eb__13_0_m9085E65816C8AA2400803ABA0B2FE7EFC7087D67 (U3CU3Ec_t00AE82A6DB248488B8693FE413EA91A294DF7971* __this, RuntimeObject* ___x0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BigInteger_tF7779A0AA6D6B9BE0E0C1C293E7708765DEF7D0F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IMulticallInputOutput_t72FE874FCD4D853123B64A7D57DEDF51D2660F7D_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		RuntimeObject* L_0 = ___x0;
+		NullCheck(L_0);
+		BigInteger_tF7779A0AA6D6B9BE0E0C1C293E7708765DEF7D0F L_1;
+		L_1 = InterfaceFuncInvoker0< BigInteger_tF7779A0AA6D6B9BE0E0C1C293E7708765DEF7D0F >::Invoke(8 /* System.Numerics.BigInteger Nethereum.Contracts.QueryHandlers.MultiCall.IMulticallInputOutput::get_Value() */, IMulticallInputOutput_t72FE874FCD4D853123B64A7D57DEDF51D2660F7D_il2cpp_TypeInfo_var, L_0);
+		il2cpp_codegen_runtime_class_init_inline(BigInteger_tF7779A0AA6D6B9BE0E0C1C293E7708765DEF7D0F_il2cpp_TypeInfo_var);
+		bool L_2;
+		L_2 = BigInteger_op_GreaterThan_mE2855EC97576062A6EFBFA9F7B74BBC3D7A4B8DE(L_1, ((int64_t)0), NULL);
+		return L_2;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Nethereum.Contracts.QueryHandlers.MultiCall.MultiQueryHandler/<MultiCallAsync>d__13::MoveNext()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CMultiCallAsyncU3Ed__13_MoveNext_mD9BDAB256D5451AB7CF221E1D2E7E362DF15CB8D (U3CMultiCallAsyncU3Ed__13_t7A391C1FA6573DA0FC973869DE104C0D039BBC62* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Aggregate3Function_t22B497CF7B74F9B7EAE57E49F180946D62DE0A80_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Aggregate3ValueFunction_t7255D88599D2644B8FD0B19D72639F0F5D2521CC_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisConfiguredTaskAwaiter_t2FB4C6E80ED7E994AC6CEEEB6572E51978E07756_TisU3CMultiCallAsyncU3Ed__13_t7A391C1FA6573DA0FC973869DE104C0D039BBC62_m4C47F510C9613FE345CDFF6C20F9320C3448CF9E_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisConfiguredTaskAwaiter_tEDA8191B4B5EA1357682A9F21488544BE1C12100_TisU3CMultiCallAsyncU3Ed__13_t7A391C1FA6573DA0FC973869DE104C0D039BBC62_m8F32A56B1A2F50A23E021F6155437462690E5FB8_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_SetResult_mD06C693C6C2515CCBE2063E73AB019F42D162F5D_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Call3Value_t18A4350E7B502FCB224229CDA7B21BF37C8C6DA6_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Call3_t7D0A3BDA2EE93E4FE48F20496F1A5C2723BABB8D_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ConfiguredTaskAwaitable_1_GetAwaiter_m499517F289AF7608AFB263C64EFF096A2AB6FFD2_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ConfiguredTaskAwaitable_1_GetAwaiter_mD759E8CEA360EE798DDC6FA31F3DD751A0716921_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ConfiguredTaskAwaiter_GetResult_m9668EE538C7E4E8263EBB5A75BF504D7D9F52CEE_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ConfiguredTaskAwaiter_GetResult_mA9FAFA1779F3BA781AEF8E4D1ABCF6AAF9AAEC92_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ConfiguredTaskAwaiter_get_IsCompleted_m00EDE1ABFF674F0D8F1558BAFAA61CF3F5D95CF2_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ConfiguredTaskAwaiter_get_IsCompleted_m41C944A82DCBFB2F5D4D1607A8127B06D3A11CB0_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&EnumerableExtensions_Batch_TisIMulticallInputOutput_t72FE874FCD4D853123B64A7D57DEDF51D2660F7D_m4F5C7CDEFE512961CD86B9AE752ACDF140598484_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerable_Any_TisIMulticallInputOutput_t72FE874FCD4D853123B64A7D57DEDF51D2660F7D_m438E5DF4C41F2F395150B23440552AEBF4EA9E3F_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Func_2_tC7D8CC18CA3EE41739FE11EB4C3AF3F712E0FAA8_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IEnumerable_1_t44EC2B417A72A41ECF9FD69EF8C384E088A8515B_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IEnumerable_1_t745534CF81650D4254BC02BFCD2B1B8820E7BF29_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IEnumerator_1_tC8E01656282D76E53F1878036BBE73A4500CBF53_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IEnumerator_1_tCF8E0EFC32EEDED984386ADF4EA697E26CEED336_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IEnumerator_t7B609C2FFA6EB5167D9C62A0C32A21DE2F666DAA_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IMulticallInputOutput_t72FE874FCD4D853123B64A7D57DEDF51D2660F7D_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_AddRange_m4E73F27EF20C2FEFA3C915E077897B44B81AB3ED_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_Add_m4C91A565FE73573B12913F69B8E7A133EB249306_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_Add_m8EBF3734BC2E70B315260F2E835D3E0CAA8D49D1_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1__ctor_m610C0A18A37462C4A1E9690E11480C43E03E9037_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1__ctor_m92A69918A8E69207437628E483BD3228129B0A53_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1__ctor_mB94853C492429E068CE0F34FD22E6F6CF58228C4_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_get_Count_m8F228A7E2CCAB2F477D8C2F7BB27E6993FF5A8F5_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_get_Item_mD79820936BC671C6A1F274AECEDF5055A0D441C6_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_t376C4E85EFA0FB2C83DA6AEC65B0D3D437A82B0E_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_t4C68E546060D764C99C1B962BB2C011B0A5EBA19_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_t913451B7A13CEE27B44C60CE4E1378612824AE38_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&QueryDecoderBaseHandler_2_QueryAsync_m454BDD4BDB95AD7364754A4E35D76B686BDB15EE_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&QueryDecoderBaseHandler_2_QueryAsync_m862AE7AF6A7CF60A0252E0696CE231A3C21C486B_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Task_1_ConfigureAwait_m02A78FAEA35BD451D79DC5320BC6ACAAC3B4B9BB_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Task_1_ConfigureAwait_mC8640660BF0553DAB850EB5EAA4412E8C813DE46_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec_U3CMultiCallAsyncU3Eb__13_0_m9085E65816C8AA2400803ABA0B2FE7EFC7087D67_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec_t00AE82A6DB248488B8693FE413EA91A294DF7971_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	MultiQueryHandler_tD5E9074899A83693F74D77C94F903D4AA15753CE* V_1 = NULL;
+	IMulticallInputOutputU5BU5D_t7D33DBDC42EE714A687264BC9F3C6C6AED3885F7* V_2 = NULL;
+	List_1_t376C4E85EFA0FB2C83DA6AEC65B0D3D437A82B0E* V_3 = NULL;
+	Aggregate3ValueFunction_t7255D88599D2644B8FD0B19D72639F0F5D2521CC* V_4 = NULL;
+	Aggregate3ValueOutputDTO_t2FF1DDFC969071DBBB8DA771D7B60CA9C378093E* V_5 = NULL;
+	RuntimeObject* V_6 = NULL;
+	RuntimeObject* V_7 = NULL;
+	ConfiguredTaskAwaiter_tEDA8191B4B5EA1357682A9F21488544BE1C12100 V_8;
+	memset((&V_8), 0, sizeof(V_8));
+	ConfiguredTaskAwaitable_1_tD71E26673BB72B8E28E8980B13ED24DD0D0B27BE V_9;
+	memset((&V_9), 0, sizeof(V_9));
+	int32_t V_10 = 0;
+	List_1_t913451B7A13CEE27B44C60CE4E1378612824AE38* V_11 = NULL;
+	Aggregate3Function_t22B497CF7B74F9B7EAE57E49F180946D62DE0A80* V_12 = NULL;
+	Aggregate3OutputDTO_t9CA62E1FF9DC2592189ADE0D667CD29C287867DB* V_13 = NULL;
+	RuntimeObject* V_14 = NULL;
+	ConfiguredTaskAwaiter_t2FB4C6E80ED7E994AC6CEEEB6572E51978E07756 V_15;
+	memset((&V_15), 0, sizeof(V_15));
+	ConfiguredTaskAwaitable_1_tF3AC4E3112F1EDA66879A90506A46AD05294E357 V_16;
+	memset((&V_16), 0, sizeof(V_16));
+	int32_t V_17 = 0;
+	Exception_t* V_18 = NULL;
+	il2cpp::utils::ExceptionSupportStack<RuntimeObject*, 1> __active_exceptions;
+	Func_2_tC7D8CC18CA3EE41739FE11EB4C3AF3F712E0FAA8* G_B5_0 = NULL;
+	IMulticallInputOutputU5BU5D_t7D33DBDC42EE714A687264BC9F3C6C6AED3885F7* G_B5_1 = NULL;
+	Func_2_tC7D8CC18CA3EE41739FE11EB4C3AF3F712E0FAA8* G_B4_0 = NULL;
+	IMulticallInputOutputU5BU5D_t7D33DBDC42EE714A687264BC9F3C6C6AED3885F7* G_B4_1 = NULL;
+	{
+		int32_t L_0 = __this->___U3CU3E1__state_0;
+		V_0 = L_0;
+		MultiQueryHandler_tD5E9074899A83693F74D77C94F903D4AA15753CE* L_1 = __this->___U3CU3E4__this_4;
+		V_1 = L_1;
+	}
+	try
+	{// begin try (depth: 1)
+		{
+			int32_t L_2 = V_0;
+			if (!L_2)
+			{
+				goto IL_006e_1;
+			}
+		}
+		{
+			int32_t L_3 = V_0;
+			if ((((int32_t)L_3) == ((int32_t)1)))
+			{
+				goto IL_0267_1;
+			}
+		}
+		{
+			IMulticallInputOutputU5BU5D_t7D33DBDC42EE714A687264BC9F3C6C6AED3885F7* L_4 = __this->___multiCalls_2;
+			il2cpp_codegen_runtime_class_init_inline(U3CU3Ec_t00AE82A6DB248488B8693FE413EA91A294DF7971_il2cpp_TypeInfo_var);
+			Func_2_tC7D8CC18CA3EE41739FE11EB4C3AF3F712E0FAA8* L_5 = ((U3CU3Ec_t00AE82A6DB248488B8693FE413EA91A294DF7971_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_t00AE82A6DB248488B8693FE413EA91A294DF7971_il2cpp_TypeInfo_var))->___U3CU3E9__13_0_1;
+			Func_2_tC7D8CC18CA3EE41739FE11EB4C3AF3F712E0FAA8* L_6 = L_5;
+			G_B4_0 = L_6;
+			G_B4_1 = L_4;
+			if (L_6)
+			{
+				G_B5_0 = L_6;
+				G_B5_1 = L_4;
+				goto IL_003d_1;
+			}
+		}
+		{
+			il2cpp_codegen_runtime_class_init_inline(U3CU3Ec_t00AE82A6DB248488B8693FE413EA91A294DF7971_il2cpp_TypeInfo_var);
+			U3CU3Ec_t00AE82A6DB248488B8693FE413EA91A294DF7971* L_7 = ((U3CU3Ec_t00AE82A6DB248488B8693FE413EA91A294DF7971_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_t00AE82A6DB248488B8693FE413EA91A294DF7971_il2cpp_TypeInfo_var))->___U3CU3E9_0;
+			Func_2_tC7D8CC18CA3EE41739FE11EB4C3AF3F712E0FAA8* L_8 = (Func_2_tC7D8CC18CA3EE41739FE11EB4C3AF3F712E0FAA8*)il2cpp_codegen_object_new(Func_2_tC7D8CC18CA3EE41739FE11EB4C3AF3F712E0FAA8_il2cpp_TypeInfo_var);
+			NullCheck(L_8);
+			Func_2__ctor_m7F0AAE4A85A25A55AA586B6D514F5C1026FEB3BD(L_8, L_7, (intptr_t)((void*)U3CU3Ec_U3CMultiCallAsyncU3Eb__13_0_m9085E65816C8AA2400803ABA0B2FE7EFC7087D67_RuntimeMethod_var), NULL);
+			Func_2_tC7D8CC18CA3EE41739FE11EB4C3AF3F712E0FAA8* L_9 = L_8;
+			((U3CU3Ec_t00AE82A6DB248488B8693FE413EA91A294DF7971_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_t00AE82A6DB248488B8693FE413EA91A294DF7971_il2cpp_TypeInfo_var))->___U3CU3E9__13_0_1 = L_9;
+			Il2CppCodeGenWriteBarrier((void**)(&((U3CU3Ec_t00AE82A6DB248488B8693FE413EA91A294DF7971_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_t00AE82A6DB248488B8693FE413EA91A294DF7971_il2cpp_TypeInfo_var))->___U3CU3E9__13_0_1), (void*)L_9);
+			G_B5_0 = L_9;
+			G_B5_1 = G_B4_1;
+		}
+
+IL_003d_1:
+		{
+			bool L_10;
+			L_10 = Enumerable_Any_TisIMulticallInputOutput_t72FE874FCD4D853123B64A7D57DEDF51D2660F7D_m438E5DF4C41F2F395150B23440552AEBF4EA9E3F((RuntimeObject*)G_B5_1, G_B5_0, Enumerable_Any_TisIMulticallInputOutput_t72FE874FCD4D853123B64A7D57DEDF51D2660F7D_m438E5DF4C41F2F395150B23440552AEBF4EA9E3F_RuntimeMethod_var);
+			if (!L_10)
+			{
+				goto IL_0240_1;
+			}
+		}
+		{
+			List_1_t4C68E546060D764C99C1B962BB2C011B0A5EBA19* L_11 = (List_1_t4C68E546060D764C99C1B962BB2C011B0A5EBA19*)il2cpp_codegen_object_new(List_1_t4C68E546060D764C99C1B962BB2C011B0A5EBA19_il2cpp_TypeInfo_var);
+			NullCheck(L_11);
+			List_1__ctor_m92A69918A8E69207437628E483BD3228129B0A53(L_11, List_1__ctor_m92A69918A8E69207437628E483BD3228129B0A53_RuntimeMethod_var);
+			__this->___U3CresultsU3E5__2_6 = L_11;
+			Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CresultsU3E5__2_6), (void*)L_11);
+			IMulticallInputOutputU5BU5D_t7D33DBDC42EE714A687264BC9F3C6C6AED3885F7* L_12 = __this->___multiCalls_2;
+			int32_t L_13 = __this->___pageSize_3;
+			RuntimeObject* L_14;
+			L_14 = EnumerableExtensions_Batch_TisIMulticallInputOutput_t72FE874FCD4D853123B64A7D57DEDF51D2660F7D_m4F5C7CDEFE512961CD86B9AE752ACDF140598484((RuntimeObject*)L_12, L_13, EnumerableExtensions_Batch_TisIMulticallInputOutput_t72FE874FCD4D853123B64A7D57DEDF51D2660F7D_m4F5C7CDEFE512961CD86B9AE752ACDF140598484_RuntimeMethod_var);
+			NullCheck(L_14);
+			RuntimeObject* L_15;
+			L_15 = InterfaceFuncInvoker0< RuntimeObject* >::Invoke(0 /* System.Collections.Generic.IEnumerator`1<T> System.Collections.Generic.IEnumerable`1<System.Collections.Generic.IEnumerable`1<Nethereum.Contracts.QueryHandlers.MultiCall.IMulticallInputOutput>>::GetEnumerator() */, IEnumerable_1_t745534CF81650D4254BC02BFCD2B1B8820E7BF29_il2cpp_TypeInfo_var, L_14);
+			__this->___U3CU3E7__wrap2_7 = L_15;
+			Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E7__wrap2_7), (void*)L_15);
+		}
+
+IL_006e_1:
+		{
+		}
+		{
+			auto __finallyBlock = il2cpp::utils::Finally([&]
+			{
+
+FINALLY_01a7_1:
+				{// begin finally (depth: 2)
+					{
+						int32_t L_16 = V_0;
+						if ((((int32_t)L_16) >= ((int32_t)0)))
+						{
+							goto IL_01be_1;
+						}
+					}
+					{
+						RuntimeObject* L_17 = __this->___U3CU3E7__wrap2_7;
+						if (!L_17)
+						{
+							goto IL_01be_1;
+						}
+					}
+					{
+						RuntimeObject* L_18 = __this->___U3CU3E7__wrap2_7;
+						NullCheck(L_18);
+						InterfaceActionInvoker0::Invoke(0 /* System.Void System.IDisposable::Dispose() */, IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var, L_18);
+					}
+
+IL_01be_1:
+					{
+						return;
+					}
+				}// end finally (depth: 2)
+			});
+			try
+			{// begin try (depth: 2)
+				{
+					int32_t L_19 = V_0;
+					if (!L_19)
+					{
+						goto IL_015d_2;
+					}
+				}
+				{
+					goto IL_0195_2;
+				}
+
+IL_007a_2:
+				{
+					RuntimeObject* L_20 = __this->___U3CU3E7__wrap2_7;
+					NullCheck(L_20);
+					RuntimeObject* L_21;
+					L_21 = InterfaceFuncInvoker0< RuntimeObject* >::Invoke(0 /* T System.Collections.Generic.IEnumerator`1<System.Collections.Generic.IEnumerable`1<Nethereum.Contracts.QueryHandlers.MultiCall.IMulticallInputOutput>>::get_Current() */, IEnumerator_1_tCF8E0EFC32EEDED984386ADF4EA697E26CEED336_il2cpp_TypeInfo_var, L_20);
+					List_1_t376C4E85EFA0FB2C83DA6AEC65B0D3D437A82B0E* L_22 = (List_1_t376C4E85EFA0FB2C83DA6AEC65B0D3D437A82B0E*)il2cpp_codegen_object_new(List_1_t376C4E85EFA0FB2C83DA6AEC65B0D3D437A82B0E_il2cpp_TypeInfo_var);
+					NullCheck(L_22);
+					List_1__ctor_mB94853C492429E068CE0F34FD22E6F6CF58228C4(L_22, List_1__ctor_mB94853C492429E068CE0F34FD22E6F6CF58228C4_RuntimeMethod_var);
+					V_3 = L_22;
+					NullCheck(L_21);
+					RuntimeObject* L_23;
+					L_23 = InterfaceFuncInvoker0< RuntimeObject* >::Invoke(0 /* System.Collections.Generic.IEnumerator`1<T> System.Collections.Generic.IEnumerable`1<Nethereum.Contracts.QueryHandlers.MultiCall.IMulticallInputOutput>::GetEnumerator() */, IEnumerable_1_t44EC2B417A72A41ECF9FD69EF8C384E088A8515B_il2cpp_TypeInfo_var, L_21);
+					V_6 = L_23;
+				}
+				{
+					auto __finallyBlock = il2cpp::utils::Finally([&]
+					{
+
+FINALLY_00e7_2:
+						{// begin finally (depth: 3)
+							{
+								int32_t L_24 = V_0;
+								if ((((int32_t)L_24) >= ((int32_t)0)))
+								{
+									goto IL_00f6_2;
+								}
+							}
+							{
+								RuntimeObject* L_25 = V_6;
+								if (!L_25)
+								{
+									goto IL_00f6_2;
+								}
+							}
+							{
+								RuntimeObject* L_26 = V_6;
+								NullCheck(L_26);
+								InterfaceActionInvoker0::Invoke(0 /* System.Void System.IDisposable::Dispose() */, IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var, L_26);
+							}
+
+IL_00f6_2:
+							{
+								return;
+							}
+						}// end finally (depth: 3)
+					});
+					try
+					{// begin try (depth: 3)
+						{
+							goto IL_00dc_3;
+						}
+
+IL_0094_3:
+						{
+							RuntimeObject* L_27 = V_6;
+							NullCheck(L_27);
+							RuntimeObject* L_28;
+							L_28 = InterfaceFuncInvoker0< RuntimeObject* >::Invoke(0 /* T System.Collections.Generic.IEnumerator`1<Nethereum.Contracts.QueryHandlers.MultiCall.IMulticallInputOutput>::get_Current() */, IEnumerator_1_tC8E01656282D76E53F1878036BBE73A4500CBF53_il2cpp_TypeInfo_var, L_27);
+							V_7 = L_28;
+							List_1_t376C4E85EFA0FB2C83DA6AEC65B0D3D437A82B0E* L_29 = V_3;
+							Call3Value_t18A4350E7B502FCB224229CDA7B21BF37C8C6DA6* L_30 = (Call3Value_t18A4350E7B502FCB224229CDA7B21BF37C8C6DA6*)il2cpp_codegen_object_new(Call3Value_t18A4350E7B502FCB224229CDA7B21BF37C8C6DA6_il2cpp_TypeInfo_var);
+							NullCheck(L_30);
+							Call3Value__ctor_mC7EA809839A1CD0B62BC5F957E5E53EC6090AF9E(L_30, NULL);
+							Call3Value_t18A4350E7B502FCB224229CDA7B21BF37C8C6DA6* L_31 = L_30;
+							RuntimeObject* L_32 = V_7;
+							NullCheck(L_32);
+							ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_33;
+							L_33 = InterfaceFuncInvoker0< ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* >::Invoke(2 /* System.Byte[] Nethereum.Contracts.QueryHandlers.MultiCall.IMulticallInputOutput::GetCallData() */, IMulticallInputOutput_t72FE874FCD4D853123B64A7D57DEDF51D2660F7D_il2cpp_TypeInfo_var, L_32);
+							NullCheck(L_31);
+							VirtualActionInvoker1< ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* >::Invoke(11 /* System.Void Nethereum.Contracts.QueryHandlers.MultiCall.Call3ValueBase::set_CallData(System.Byte[]) */, L_31, L_33);
+							Call3Value_t18A4350E7B502FCB224229CDA7B21BF37C8C6DA6* L_34 = L_31;
+							RuntimeObject* L_35 = V_7;
+							NullCheck(L_35);
+							String_t* L_36;
+							L_36 = InterfaceFuncInvoker0< String_t* >::Invoke(0 /* System.String Nethereum.Contracts.QueryHandlers.MultiCall.IMulticallInputOutput::get_Target() */, IMulticallInputOutput_t72FE874FCD4D853123B64A7D57DEDF51D2660F7D_il2cpp_TypeInfo_var, L_35);
+							NullCheck(L_34);
+							VirtualActionInvoker1< String_t* >::Invoke(5 /* System.Void Nethereum.Contracts.QueryHandlers.MultiCall.Call3ValueBase::set_Target(System.String) */, L_34, L_36);
+							Call3Value_t18A4350E7B502FCB224229CDA7B21BF37C8C6DA6* L_37 = L_34;
+							RuntimeObject* L_38 = V_7;
+							NullCheck(L_38);
+							bool L_39;
+							L_39 = InterfaceFuncInvoker0< bool >::Invoke(6 /* System.Boolean Nethereum.Contracts.QueryHandlers.MultiCall.IMulticallInputOutput::get_AllowFailure() */, IMulticallInputOutput_t72FE874FCD4D853123B64A7D57DEDF51D2660F7D_il2cpp_TypeInfo_var, L_38);
+							NullCheck(L_37);
+							VirtualActionInvoker1< bool >::Invoke(7 /* System.Void Nethereum.Contracts.QueryHandlers.MultiCall.Call3ValueBase::set_AllowFailure(System.Boolean) */, L_37, L_39);
+							Call3Value_t18A4350E7B502FCB224229CDA7B21BF37C8C6DA6* L_40 = L_37;
+							RuntimeObject* L_41 = V_7;
+							NullCheck(L_41);
+							BigInteger_tF7779A0AA6D6B9BE0E0C1C293E7708765DEF7D0F L_42;
+							L_42 = InterfaceFuncInvoker0< BigInteger_tF7779A0AA6D6B9BE0E0C1C293E7708765DEF7D0F >::Invoke(8 /* System.Numerics.BigInteger Nethereum.Contracts.QueryHandlers.MultiCall.IMulticallInputOutput::get_Value() */, IMulticallInputOutput_t72FE874FCD4D853123B64A7D57DEDF51D2660F7D_il2cpp_TypeInfo_var, L_41);
+							NullCheck(L_40);
+							VirtualActionInvoker1< BigInteger_tF7779A0AA6D6B9BE0E0C1C293E7708765DEF7D0F >::Invoke(9 /* System.Void Nethereum.Contracts.QueryHandlers.MultiCall.Call3ValueBase::set_Value(System.Numerics.BigInteger) */, L_40, L_42);
+							NullCheck(L_29);
+							List_1_Add_m8EBF3734BC2E70B315260F2E835D3E0CAA8D49D1_inline(L_29, L_40, List_1_Add_m8EBF3734BC2E70B315260F2E835D3E0CAA8D49D1_RuntimeMethod_var);
+						}
+
+IL_00dc_3:
+						{
+							RuntimeObject* L_43 = V_6;
+							NullCheck(L_43);
+							bool L_44;
+							L_44 = InterfaceFuncInvoker0< bool >::Invoke(0 /* System.Boolean System.Collections.IEnumerator::MoveNext() */, IEnumerator_t7B609C2FFA6EB5167D9C62A0C32A21DE2F666DAA_il2cpp_TypeInfo_var, L_43);
+							if (L_44)
+							{
+								goto IL_0094_3;
+							}
+						}
+						{
+							goto IL_00f7_2;
+						}
+					}// end try (depth: 3)
+					catch(Il2CppExceptionWrapper& e)
+					{
+						__finallyBlock.StoreException(e.ex);
+					}
+				}
+
+IL_00f7_2:
+				{
+					Aggregate3ValueFunction_t7255D88599D2644B8FD0B19D72639F0F5D2521CC* L_45 = (Aggregate3ValueFunction_t7255D88599D2644B8FD0B19D72639F0F5D2521CC*)il2cpp_codegen_object_new(Aggregate3ValueFunction_t7255D88599D2644B8FD0B19D72639F0F5D2521CC_il2cpp_TypeInfo_var);
+					NullCheck(L_45);
+					Aggregate3ValueFunction__ctor_m19B61856A3D5F6553B8D552CF67889881C2DC782(L_45, NULL);
+					V_4 = L_45;
+					Aggregate3ValueFunction_t7255D88599D2644B8FD0B19D72639F0F5D2521CC* L_46 = V_4;
+					List_1_t376C4E85EFA0FB2C83DA6AEC65B0D3D437A82B0E* L_47 = V_3;
+					NullCheck(L_46);
+					VirtualActionInvoker1< List_1_t376C4E85EFA0FB2C83DA6AEC65B0D3D437A82B0E* >::Invoke(5 /* System.Void Nethereum.Contracts.QueryHandlers.MultiCall.Aggregate3ValueFunctionBase::set_Calls(System.Collections.Generic.List`1<Nethereum.Contracts.QueryHandlers.MultiCall.Call3Value>) */, L_46, L_47);
+					MultiQueryHandler_tD5E9074899A83693F74D77C94F903D4AA15753CE* L_48 = V_1;
+					NullCheck(L_48);
+					QueryToDTOHandler_2_tC8135E5F07B2BB7F4F689C6CD58C234921665415* L_49 = L_48->____multiQueryToValueDtoHandler_4;
+					MultiQueryHandler_tD5E9074899A83693F74D77C94F903D4AA15753CE* L_50 = V_1;
+					NullCheck(L_50);
+					String_t* L_51;
+					L_51 = MultiQueryHandler_get_ContractAddress_mA39F6E0DCEB03E242771B68672D8951137779325_inline(L_50, NULL);
+					Aggregate3ValueFunction_t7255D88599D2644B8FD0B19D72639F0F5D2521CC* L_52 = V_4;
+					BlockParameter_t13CF5CC9CDE990ACD945748B2FA7F19EA0A06AD9* L_53 = __this->___block_5;
+					NullCheck(L_49);
+					Task_1_tD3F902260C8A6DA85461A6EF5CF3A103F3E9AE63* L_54;
+					L_54 = QueryDecoderBaseHandler_2_QueryAsync_m862AE7AF6A7CF60A0252E0696CE231A3C21C486B(L_49, L_51, L_52, L_53, QueryDecoderBaseHandler_2_QueryAsync_m862AE7AF6A7CF60A0252E0696CE231A3C21C486B_RuntimeMethod_var);
+					NullCheck(L_54);
+					ConfiguredTaskAwaitable_1_tD71E26673BB72B8E28E8980B13ED24DD0D0B27BE L_55;
+					L_55 = Task_1_ConfigureAwait_mC8640660BF0553DAB850EB5EAA4412E8C813DE46(L_54, (bool)0, Task_1_ConfigureAwait_mC8640660BF0553DAB850EB5EAA4412E8C813DE46_RuntimeMethod_var);
+					V_9 = L_55;
+					ConfiguredTaskAwaiter_tEDA8191B4B5EA1357682A9F21488544BE1C12100 L_56;
+					L_56 = ConfiguredTaskAwaitable_1_GetAwaiter_m499517F289AF7608AFB263C64EFF096A2AB6FFD2_inline((&V_9), ConfiguredTaskAwaitable_1_GetAwaiter_m499517F289AF7608AFB263C64EFF096A2AB6FFD2_RuntimeMethod_var);
+					V_8 = L_56;
+					bool L_57;
+					L_57 = ConfiguredTaskAwaiter_get_IsCompleted_m00EDE1ABFF674F0D8F1558BAFAA61CF3F5D95CF2((&V_8), ConfiguredTaskAwaiter_get_IsCompleted_m00EDE1ABFF674F0D8F1558BAFAA61CF3F5D95CF2_RuntimeMethod_var);
+					if (L_57)
+					{
+						goto IL_017a_2;
+					}
+				}
+				{
+					int32_t L_58 = 0;
+					V_0 = L_58;
+					__this->___U3CU3E1__state_0 = L_58;
+					ConfiguredTaskAwaiter_tEDA8191B4B5EA1357682A9F21488544BE1C12100 L_59 = V_8;
+					__this->___U3CU3Eu__1_8 = L_59;
+					Il2CppCodeGenWriteBarrier((void**)&(((&__this->___U3CU3Eu__1_8))->___m_task_0), (void*)NULL);
+					AsyncTaskMethodBuilder_1_tFF884780053FBFD2BEEA42DC0DFF882656BBE992* L_60 = (&__this->___U3CU3Et__builder_1);
+					AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisConfiguredTaskAwaiter_tEDA8191B4B5EA1357682A9F21488544BE1C12100_TisU3CMultiCallAsyncU3Ed__13_t7A391C1FA6573DA0FC973869DE104C0D039BBC62_m8F32A56B1A2F50A23E021F6155437462690E5FB8(L_60, (&V_8), __this, AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisConfiguredTaskAwaiter_tEDA8191B4B5EA1357682A9F21488544BE1C12100_TisU3CMultiCallAsyncU3Ed__13_t7A391C1FA6573DA0FC973869DE104C0D039BBC62_m8F32A56B1A2F50A23E021F6155437462690E5FB8_RuntimeMethod_var);
+					goto IL_045a;
+				}
+
+IL_015d_2:
+				{
+					ConfiguredTaskAwaiter_tEDA8191B4B5EA1357682A9F21488544BE1C12100 L_61 = __this->___U3CU3Eu__1_8;
+					V_8 = L_61;
+					ConfiguredTaskAwaiter_tEDA8191B4B5EA1357682A9F21488544BE1C12100* L_62 = (&__this->___U3CU3Eu__1_8);
+					il2cpp_codegen_initobj(L_62, sizeof(ConfiguredTaskAwaiter_tEDA8191B4B5EA1357682A9F21488544BE1C12100));
+					int32_t L_63 = (-1);
+					V_0 = L_63;
+					__this->___U3CU3E1__state_0 = L_63;
+				}
+
+IL_017a_2:
+				{
+					Aggregate3ValueOutputDTO_t2FF1DDFC969071DBBB8DA771D7B60CA9C378093E* L_64;
+					L_64 = ConfiguredTaskAwaiter_GetResult_mA9FAFA1779F3BA781AEF8E4D1ABCF6AAF9AAEC92((&V_8), ConfiguredTaskAwaiter_GetResult_mA9FAFA1779F3BA781AEF8E4D1ABCF6AAF9AAEC92_RuntimeMethod_var);
+					V_5 = L_64;
+					List_1_t4C68E546060D764C99C1B962BB2C011B0A5EBA19* L_65 = __this->___U3CresultsU3E5__2_6;
+					Aggregate3ValueOutputDTO_t2FF1DDFC969071DBBB8DA771D7B60CA9C378093E* L_66 = V_5;
+					NullCheck(L_66);
+					List_1_t4C68E546060D764C99C1B962BB2C011B0A5EBA19* L_67;
+					L_67 = VirtualFuncInvoker0< List_1_t4C68E546060D764C99C1B962BB2C011B0A5EBA19* >::Invoke(4 /* System.Collections.Generic.List`1<Nethereum.Contracts.QueryHandlers.MultiCall.Result> Nethereum.Contracts.QueryHandlers.MultiCall.Aggregate3ValueOutputDTOBase::get_ReturnData() */, L_66);
+					NullCheck(L_65);
+					List_1_AddRange_m4E73F27EF20C2FEFA3C915E077897B44B81AB3ED(L_65, L_67, List_1_AddRange_m4E73F27EF20C2FEFA3C915E077897B44B81AB3ED_RuntimeMethod_var);
+				}
+
+IL_0195_2:
+				{
+					RuntimeObject* L_68 = __this->___U3CU3E7__wrap2_7;
+					NullCheck(L_68);
+					bool L_69;
+					L_69 = InterfaceFuncInvoker0< bool >::Invoke(0 /* System.Boolean System.Collections.IEnumerator::MoveNext() */, IEnumerator_t7B609C2FFA6EB5167D9C62A0C32A21DE2F666DAA_il2cpp_TypeInfo_var, L_68);
+					if (L_69)
+					{
+						goto IL_007a_2;
+					}
+				}
+				{
+					goto IL_01bf_1;
+				}
+			}// end try (depth: 2)
+			catch(Il2CppExceptionWrapper& e)
+			{
+				__finallyBlock.StoreException(e.ex);
+			}
+		}
+
+IL_01bf_1:
+		{
+			__this->___U3CU3E7__wrap2_7 = (RuntimeObject*)NULL;
+			Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E7__wrap2_7), (void*)(RuntimeObject*)NULL);
+			V_10 = 0;
+			goto IL_0225_1;
+		}
+
+IL_01cb_1:
+		{
+			List_1_t4C68E546060D764C99C1B962BB2C011B0A5EBA19* L_70 = __this->___U3CresultsU3E5__2_6;
+			int32_t L_71 = V_10;
+			NullCheck(L_70);
+			Result_t865E183DF9D3C68AAB7A99BD699A08BD8CBC9CF4* L_72;
+			L_72 = List_1_get_Item_mD79820936BC671C6A1F274AECEDF5055A0D441C6(L_70, L_71, List_1_get_Item_mD79820936BC671C6A1F274AECEDF5055A0D441C6_RuntimeMethod_var);
+			NullCheck(L_72);
+			bool L_73;
+			L_73 = VirtualFuncInvoker0< bool >::Invoke(4 /* System.Boolean Nethereum.Contracts.QueryHandlers.MultiCall.ResultBase::get_Success() */, L_72);
+			if (!L_73)
+			{
+				goto IL_0210_1;
+			}
+		}
+		{
+			IMulticallInputOutputU5BU5D_t7D33DBDC42EE714A687264BC9F3C6C6AED3885F7* L_74 = __this->___multiCalls_2;
+			int32_t L_75 = V_10;
+			NullCheck(L_74);
+			int32_t L_76 = L_75;
+			RuntimeObject* L_77 = (L_74)->GetAt(static_cast<il2cpp_array_size_t>(L_76));
+			List_1_t4C68E546060D764C99C1B962BB2C011B0A5EBA19* L_78 = __this->___U3CresultsU3E5__2_6;
+			int32_t L_79 = V_10;
+			NullCheck(L_78);
+			Result_t865E183DF9D3C68AAB7A99BD699A08BD8CBC9CF4* L_80;
+			L_80 = List_1_get_Item_mD79820936BC671C6A1F274AECEDF5055A0D441C6(L_78, L_79, List_1_get_Item_mD79820936BC671C6A1F274AECEDF5055A0D441C6_RuntimeMethod_var);
+			NullCheck(L_80);
+			ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_81;
+			L_81 = VirtualFuncInvoker0< ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* >::Invoke(6 /* System.Byte[] Nethereum.Contracts.QueryHandlers.MultiCall.ResultBase::get_ReturnData() */, L_80);
+			NullCheck(L_77);
+			InterfaceActionInvoker1< ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* >::Invoke(3 /* System.Void Nethereum.Contracts.QueryHandlers.MultiCall.IMulticallInputOutput::Decode(System.Byte[]) */, IMulticallInputOutput_t72FE874FCD4D853123B64A7D57DEDF51D2660F7D_il2cpp_TypeInfo_var, L_77, L_81);
+			IMulticallInputOutputU5BU5D_t7D33DBDC42EE714A687264BC9F3C6C6AED3885F7* L_82 = __this->___multiCalls_2;
+			int32_t L_83 = V_10;
+			NullCheck(L_82);
+			int32_t L_84 = L_83;
+			RuntimeObject* L_85 = (L_82)->GetAt(static_cast<il2cpp_array_size_t>(L_84));
+			NullCheck(L_85);
+			InterfaceActionInvoker1< bool >::Invoke(5 /* System.Void Nethereum.Contracts.QueryHandlers.MultiCall.IMulticallInputOutput::set_Success(System.Boolean) */, IMulticallInputOutput_t72FE874FCD4D853123B64A7D57DEDF51D2660F7D_il2cpp_TypeInfo_var, L_85, (bool)1);
+			goto IL_021f_1;
+		}
+
+IL_0210_1:
+		{
+			IMulticallInputOutputU5BU5D_t7D33DBDC42EE714A687264BC9F3C6C6AED3885F7* L_86 = __this->___multiCalls_2;
+			int32_t L_87 = V_10;
+			NullCheck(L_86);
+			int32_t L_88 = L_87;
+			RuntimeObject* L_89 = (L_86)->GetAt(static_cast<il2cpp_array_size_t>(L_88));
+			NullCheck(L_89);
+			InterfaceActionInvoker1< bool >::Invoke(5 /* System.Void Nethereum.Contracts.QueryHandlers.MultiCall.IMulticallInputOutput::set_Success(System.Boolean) */, IMulticallInputOutput_t72FE874FCD4D853123B64A7D57DEDF51D2660F7D_il2cpp_TypeInfo_var, L_89, (bool)0);
+		}
+
+IL_021f_1:
+		{
+			int32_t L_90 = V_10;
+			V_10 = ((int32_t)il2cpp_codegen_add(L_90, 1));
+		}
+
+IL_0225_1:
+		{
+			int32_t L_91 = V_10;
+			List_1_t4C68E546060D764C99C1B962BB2C011B0A5EBA19* L_92 = __this->___U3CresultsU3E5__2_6;
+			NullCheck(L_92);
+			int32_t L_93;
+			L_93 = List_1_get_Count_m8F228A7E2CCAB2F477D8C2F7BB27E6993FF5A8F5_inline(L_92, List_1_get_Count_m8F228A7E2CCAB2F477D8C2F7BB27E6993FF5A8F5_RuntimeMethod_var);
+			if ((((int32_t)L_91) < ((int32_t)L_93)))
+			{
+				goto IL_01cb_1;
+			}
+		}
+		{
+			IMulticallInputOutputU5BU5D_t7D33DBDC42EE714A687264BC9F3C6C6AED3885F7* L_94 = __this->___multiCalls_2;
+			V_2 = L_94;
+			goto IL_0446;
+		}
+
+IL_0240_1:
+		{
+			List_1_t4C68E546060D764C99C1B962BB2C011B0A5EBA19* L_95 = (List_1_t4C68E546060D764C99C1B962BB2C011B0A5EBA19*)il2cpp_codegen_object_new(List_1_t4C68E546060D764C99C1B962BB2C011B0A5EBA19_il2cpp_TypeInfo_var);
+			NullCheck(L_95);
+			List_1__ctor_m92A69918A8E69207437628E483BD3228129B0A53(L_95, List_1__ctor_m92A69918A8E69207437628E483BD3228129B0A53_RuntimeMethod_var);
+			__this->___U3CresultsU3E5__2_6 = L_95;
+			Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CresultsU3E5__2_6), (void*)L_95);
+			IMulticallInputOutputU5BU5D_t7D33DBDC42EE714A687264BC9F3C6C6AED3885F7* L_96 = __this->___multiCalls_2;
+			int32_t L_97 = __this->___pageSize_3;
+			RuntimeObject* L_98;
+			L_98 = EnumerableExtensions_Batch_TisIMulticallInputOutput_t72FE874FCD4D853123B64A7D57DEDF51D2660F7D_m4F5C7CDEFE512961CD86B9AE752ACDF140598484((RuntimeObject*)L_96, L_97, EnumerableExtensions_Batch_TisIMulticallInputOutput_t72FE874FCD4D853123B64A7D57DEDF51D2660F7D_m4F5C7CDEFE512961CD86B9AE752ACDF140598484_RuntimeMethod_var);
+			NullCheck(L_98);
+			RuntimeObject* L_99;
+			L_99 = InterfaceFuncInvoker0< RuntimeObject* >::Invoke(0 /* System.Collections.Generic.IEnumerator`1<T> System.Collections.Generic.IEnumerable`1<System.Collections.Generic.IEnumerable`1<Nethereum.Contracts.QueryHandlers.MultiCall.IMulticallInputOutput>>::GetEnumerator() */, IEnumerable_1_t745534CF81650D4254BC02BFCD2B1B8820E7BF29_il2cpp_TypeInfo_var, L_98);
+			__this->___U3CU3E7__wrap2_7 = L_99;
+			Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E7__wrap2_7), (void*)L_99);
+		}
+
+IL_0267_1:
+		{
+		}
+		{
+			auto __finallyBlock = il2cpp::utils::Finally([&]
+			{
+
+FINALLY_0397_1:
+				{// begin finally (depth: 2)
+					{
+						int32_t L_100 = V_0;
+						if ((((int32_t)L_100) >= ((int32_t)0)))
+						{
+							goto IL_03ae_1;
+						}
+					}
+					{
+						RuntimeObject* L_101 = __this->___U3CU3E7__wrap2_7;
+						if (!L_101)
+						{
+							goto IL_03ae_1;
+						}
+					}
+					{
+						RuntimeObject* L_102 = __this->___U3CU3E7__wrap2_7;
+						NullCheck(L_102);
+						InterfaceActionInvoker0::Invoke(0 /* System.Void System.IDisposable::Dispose() */, IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var, L_102);
+					}
+
+IL_03ae_1:
+					{
+						return;
+					}
+				}// end finally (depth: 2)
+			});
+			try
+			{// begin try (depth: 2)
+				{
+					int32_t L_103 = V_0;
+					if ((((int32_t)L_103) == ((int32_t)1)))
+					{
+						goto IL_034d_2;
+					}
+				}
+				{
+					goto IL_0385_2;
+				}
+
+IL_0274_2:
+				{
+					RuntimeObject* L_104 = __this->___U3CU3E7__wrap2_7;
+					NullCheck(L_104);
+					RuntimeObject* L_105;
+					L_105 = InterfaceFuncInvoker0< RuntimeObject* >::Invoke(0 /* T System.Collections.Generic.IEnumerator`1<System.Collections.Generic.IEnumerable`1<Nethereum.Contracts.QueryHandlers.MultiCall.IMulticallInputOutput>>::get_Current() */, IEnumerator_1_tCF8E0EFC32EEDED984386ADF4EA697E26CEED336_il2cpp_TypeInfo_var, L_104);
+					List_1_t913451B7A13CEE27B44C60CE4E1378612824AE38* L_106 = (List_1_t913451B7A13CEE27B44C60CE4E1378612824AE38*)il2cpp_codegen_object_new(List_1_t913451B7A13CEE27B44C60CE4E1378612824AE38_il2cpp_TypeInfo_var);
+					NullCheck(L_106);
+					List_1__ctor_m610C0A18A37462C4A1E9690E11480C43E03E9037(L_106, List_1__ctor_m610C0A18A37462C4A1E9690E11480C43E03E9037_RuntimeMethod_var);
+					V_11 = L_106;
+					NullCheck(L_105);
+					RuntimeObject* L_107;
+					L_107 = InterfaceFuncInvoker0< RuntimeObject* >::Invoke(0 /* System.Collections.Generic.IEnumerator`1<T> System.Collections.Generic.IEnumerable`1<Nethereum.Contracts.QueryHandlers.MultiCall.IMulticallInputOutput>::GetEnumerator() */, IEnumerable_1_t44EC2B417A72A41ECF9FD69EF8C384E088A8515B_il2cpp_TypeInfo_var, L_105);
+					V_6 = L_107;
+				}
+				{
+					auto __finallyBlock = il2cpp::utils::Finally([&]
+					{
+
+FINALLY_02d6_2:
+						{// begin finally (depth: 3)
+							{
+								int32_t L_108 = V_0;
+								if ((((int32_t)L_108) >= ((int32_t)0)))
+								{
+									goto IL_02e5_2;
+								}
+							}
+							{
+								RuntimeObject* L_109 = V_6;
+								if (!L_109)
+								{
+									goto IL_02e5_2;
+								}
+							}
+							{
+								RuntimeObject* L_110 = V_6;
+								NullCheck(L_110);
+								InterfaceActionInvoker0::Invoke(0 /* System.Void System.IDisposable::Dispose() */, IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var, L_110);
+							}
+
+IL_02e5_2:
+							{
+								return;
+							}
+						}// end finally (depth: 3)
+					});
+					try
+					{// begin try (depth: 3)
+						{
+							goto IL_02cb_3;
+						}
+
+IL_028f_3:
+						{
+							RuntimeObject* L_111 = V_6;
+							NullCheck(L_111);
+							RuntimeObject* L_112;
+							L_112 = InterfaceFuncInvoker0< RuntimeObject* >::Invoke(0 /* T System.Collections.Generic.IEnumerator`1<Nethereum.Contracts.QueryHandlers.MultiCall.IMulticallInputOutput>::get_Current() */, IEnumerator_1_tC8E01656282D76E53F1878036BBE73A4500CBF53_il2cpp_TypeInfo_var, L_111);
+							V_14 = L_112;
+							List_1_t913451B7A13CEE27B44C60CE4E1378612824AE38* L_113 = V_11;
+							Call3_t7D0A3BDA2EE93E4FE48F20496F1A5C2723BABB8D* L_114 = (Call3_t7D0A3BDA2EE93E4FE48F20496F1A5C2723BABB8D*)il2cpp_codegen_object_new(Call3_t7D0A3BDA2EE93E4FE48F20496F1A5C2723BABB8D_il2cpp_TypeInfo_var);
+							NullCheck(L_114);
+							Call3__ctor_mDDD303DDE46EDDA5D1552C7150394B7F51BA3490(L_114, NULL);
+							Call3_t7D0A3BDA2EE93E4FE48F20496F1A5C2723BABB8D* L_115 = L_114;
+							RuntimeObject* L_116 = V_14;
+							NullCheck(L_116);
+							ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_117;
+							L_117 = InterfaceFuncInvoker0< ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* >::Invoke(2 /* System.Byte[] Nethereum.Contracts.QueryHandlers.MultiCall.IMulticallInputOutput::GetCallData() */, IMulticallInputOutput_t72FE874FCD4D853123B64A7D57DEDF51D2660F7D_il2cpp_TypeInfo_var, L_116);
+							NullCheck(L_115);
+							VirtualActionInvoker1< ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* >::Invoke(9 /* System.Void Nethereum.Contracts.QueryHandlers.MultiCall.Call3Base::set_CallData(System.Byte[]) */, L_115, L_117);
+							Call3_t7D0A3BDA2EE93E4FE48F20496F1A5C2723BABB8D* L_118 = L_115;
+							RuntimeObject* L_119 = V_14;
+							NullCheck(L_119);
+							String_t* L_120;
+							L_120 = InterfaceFuncInvoker0< String_t* >::Invoke(0 /* System.String Nethereum.Contracts.QueryHandlers.MultiCall.IMulticallInputOutput::get_Target() */, IMulticallInputOutput_t72FE874FCD4D853123B64A7D57DEDF51D2660F7D_il2cpp_TypeInfo_var, L_119);
+							NullCheck(L_118);
+							VirtualActionInvoker1< String_t* >::Invoke(5 /* System.Void Nethereum.Contracts.QueryHandlers.MultiCall.Call3Base::set_Target(System.String) */, L_118, L_120);
+							Call3_t7D0A3BDA2EE93E4FE48F20496F1A5C2723BABB8D* L_121 = L_118;
+							RuntimeObject* L_122 = V_14;
+							NullCheck(L_122);
+							bool L_123;
+							L_123 = InterfaceFuncInvoker0< bool >::Invoke(6 /* System.Boolean Nethereum.Contracts.QueryHandlers.MultiCall.IMulticallInputOutput::get_AllowFailure() */, IMulticallInputOutput_t72FE874FCD4D853123B64A7D57DEDF51D2660F7D_il2cpp_TypeInfo_var, L_122);
+							NullCheck(L_121);
+							VirtualActionInvoker1< bool >::Invoke(7 /* System.Void Nethereum.Contracts.QueryHandlers.MultiCall.Call3Base::set_AllowFailure(System.Boolean) */, L_121, L_123);
+							NullCheck(L_113);
+							List_1_Add_m4C91A565FE73573B12913F69B8E7A133EB249306_inline(L_113, L_121, List_1_Add_m4C91A565FE73573B12913F69B8E7A133EB249306_RuntimeMethod_var);
+						}
+
+IL_02cb_3:
+						{
+							RuntimeObject* L_124 = V_6;
+							NullCheck(L_124);
+							bool L_125;
+							L_125 = InterfaceFuncInvoker0< bool >::Invoke(0 /* System.Boolean System.Collections.IEnumerator::MoveNext() */, IEnumerator_t7B609C2FFA6EB5167D9C62A0C32A21DE2F666DAA_il2cpp_TypeInfo_var, L_124);
+							if (L_125)
+							{
+								goto IL_028f_3;
+							}
+						}
+						{
+							goto IL_02e6_2;
+						}
+					}// end try (depth: 3)
+					catch(Il2CppExceptionWrapper& e)
+					{
+						__finallyBlock.StoreException(e.ex);
+					}
+				}
+
+IL_02e6_2:
+				{
+					Aggregate3Function_t22B497CF7B74F9B7EAE57E49F180946D62DE0A80* L_126 = (Aggregate3Function_t22B497CF7B74F9B7EAE57E49F180946D62DE0A80*)il2cpp_codegen_object_new(Aggregate3Function_t22B497CF7B74F9B7EAE57E49F180946D62DE0A80_il2cpp_TypeInfo_var);
+					NullCheck(L_126);
+					Aggregate3Function__ctor_m43D67CAE2120D44899607E23F0C7816206A235A6(L_126, NULL);
+					V_12 = L_126;
+					Aggregate3Function_t22B497CF7B74F9B7EAE57E49F180946D62DE0A80* L_127 = V_12;
+					List_1_t913451B7A13CEE27B44C60CE4E1378612824AE38* L_128 = V_11;
+					NullCheck(L_127);
+					VirtualActionInvoker1< List_1_t913451B7A13CEE27B44C60CE4E1378612824AE38* >::Invoke(5 /* System.Void Nethereum.Contracts.QueryHandlers.MultiCall.Aggregate3FunctionBase::set_Calls(System.Collections.Generic.List`1<Nethereum.Contracts.QueryHandlers.MultiCall.Call3>) */, L_127, L_128);
+					MultiQueryHandler_tD5E9074899A83693F74D77C94F903D4AA15753CE* L_129 = V_1;
+					NullCheck(L_129);
+					QueryToDTOHandler_2_t7D6D14A0D064D41148382C0FCC8E4921D012F2F6* L_130 = L_129->____multiQueryToDtoHandler_3;
+					MultiQueryHandler_tD5E9074899A83693F74D77C94F903D4AA15753CE* L_131 = V_1;
+					NullCheck(L_131);
+					String_t* L_132;
+					L_132 = MultiQueryHandler_get_ContractAddress_mA39F6E0DCEB03E242771B68672D8951137779325_inline(L_131, NULL);
+					Aggregate3Function_t22B497CF7B74F9B7EAE57E49F180946D62DE0A80* L_133 = V_12;
+					BlockParameter_t13CF5CC9CDE990ACD945748B2FA7F19EA0A06AD9* L_134 = __this->___block_5;
+					NullCheck(L_130);
+					Task_1_t843D0B7FB99859F077CD3346AAB26D9728AC86A7* L_135;
+					L_135 = QueryDecoderBaseHandler_2_QueryAsync_m454BDD4BDB95AD7364754A4E35D76B686BDB15EE(L_130, L_132, L_133, L_134, QueryDecoderBaseHandler_2_QueryAsync_m454BDD4BDB95AD7364754A4E35D76B686BDB15EE_RuntimeMethod_var);
+					NullCheck(L_135);
+					ConfiguredTaskAwaitable_1_tF3AC4E3112F1EDA66879A90506A46AD05294E357 L_136;
+					L_136 = Task_1_ConfigureAwait_m02A78FAEA35BD451D79DC5320BC6ACAAC3B4B9BB(L_135, (bool)0, Task_1_ConfigureAwait_m02A78FAEA35BD451D79DC5320BC6ACAAC3B4B9BB_RuntimeMethod_var);
+					V_16 = L_136;
+					ConfiguredTaskAwaiter_t2FB4C6E80ED7E994AC6CEEEB6572E51978E07756 L_137;
+					L_137 = ConfiguredTaskAwaitable_1_GetAwaiter_mD759E8CEA360EE798DDC6FA31F3DD751A0716921_inline((&V_16), ConfiguredTaskAwaitable_1_GetAwaiter_mD759E8CEA360EE798DDC6FA31F3DD751A0716921_RuntimeMethod_var);
+					V_15 = L_137;
+					bool L_138;
+					L_138 = ConfiguredTaskAwaiter_get_IsCompleted_m41C944A82DCBFB2F5D4D1607A8127B06D3A11CB0((&V_15), ConfiguredTaskAwaiter_get_IsCompleted_m41C944A82DCBFB2F5D4D1607A8127B06D3A11CB0_RuntimeMethod_var);
+					if (L_138)
+					{
+						goto IL_036a_2;
+					}
+				}
+				{
+					int32_t L_139 = 1;
+					V_0 = L_139;
+					__this->___U3CU3E1__state_0 = L_139;
+					ConfiguredTaskAwaiter_t2FB4C6E80ED7E994AC6CEEEB6572E51978E07756 L_140 = V_15;
+					__this->___U3CU3Eu__2_9 = L_140;
+					Il2CppCodeGenWriteBarrier((void**)&(((&__this->___U3CU3Eu__2_9))->___m_task_0), (void*)NULL);
+					AsyncTaskMethodBuilder_1_tFF884780053FBFD2BEEA42DC0DFF882656BBE992* L_141 = (&__this->___U3CU3Et__builder_1);
+					AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisConfiguredTaskAwaiter_t2FB4C6E80ED7E994AC6CEEEB6572E51978E07756_TisU3CMultiCallAsyncU3Ed__13_t7A391C1FA6573DA0FC973869DE104C0D039BBC62_m4C47F510C9613FE345CDFF6C20F9320C3448CF9E(L_141, (&V_15), __this, AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisConfiguredTaskAwaiter_t2FB4C6E80ED7E994AC6CEEEB6572E51978E07756_TisU3CMultiCallAsyncU3Ed__13_t7A391C1FA6573DA0FC973869DE104C0D039BBC62_m4C47F510C9613FE345CDFF6C20F9320C3448CF9E_RuntimeMethod_var);
+					goto IL_045a;
+				}
+
+IL_034d_2:
+				{
+					ConfiguredTaskAwaiter_t2FB4C6E80ED7E994AC6CEEEB6572E51978E07756 L_142 = __this->___U3CU3Eu__2_9;
+					V_15 = L_142;
+					ConfiguredTaskAwaiter_t2FB4C6E80ED7E994AC6CEEEB6572E51978E07756* L_143 = (&__this->___U3CU3Eu__2_9);
+					il2cpp_codegen_initobj(L_143, sizeof(ConfiguredTaskAwaiter_t2FB4C6E80ED7E994AC6CEEEB6572E51978E07756));
+					int32_t L_144 = (-1);
+					V_0 = L_144;
+					__this->___U3CU3E1__state_0 = L_144;
+				}
+
+IL_036a_2:
+				{
+					Aggregate3OutputDTO_t9CA62E1FF9DC2592189ADE0D667CD29C287867DB* L_145;
+					L_145 = ConfiguredTaskAwaiter_GetResult_m9668EE538C7E4E8263EBB5A75BF504D7D9F52CEE((&V_15), ConfiguredTaskAwaiter_GetResult_m9668EE538C7E4E8263EBB5A75BF504D7D9F52CEE_RuntimeMethod_var);
+					V_13 = L_145;
+					List_1_t4C68E546060D764C99C1B962BB2C011B0A5EBA19* L_146 = __this->___U3CresultsU3E5__2_6;
+					Aggregate3OutputDTO_t9CA62E1FF9DC2592189ADE0D667CD29C287867DB* L_147 = V_13;
+					NullCheck(L_147);
+					List_1_t4C68E546060D764C99C1B962BB2C011B0A5EBA19* L_148;
+					L_148 = VirtualFuncInvoker0< List_1_t4C68E546060D764C99C1B962BB2C011B0A5EBA19* >::Invoke(4 /* System.Collections.Generic.List`1<Nethereum.Contracts.QueryHandlers.MultiCall.Result> Nethereum.Contracts.QueryHandlers.MultiCall.Aggregate3OutputDTOBase::get_ReturnData() */, L_147);
+					NullCheck(L_146);
+					List_1_AddRange_m4E73F27EF20C2FEFA3C915E077897B44B81AB3ED(L_146, L_148, List_1_AddRange_m4E73F27EF20C2FEFA3C915E077897B44B81AB3ED_RuntimeMethod_var);
+				}
+
+IL_0385_2:
+				{
+					RuntimeObject* L_149 = __this->___U3CU3E7__wrap2_7;
+					NullCheck(L_149);
+					bool L_150;
+					L_150 = InterfaceFuncInvoker0< bool >::Invoke(0 /* System.Boolean System.Collections.IEnumerator::MoveNext() */, IEnumerator_t7B609C2FFA6EB5167D9C62A0C32A21DE2F666DAA_il2cpp_TypeInfo_var, L_149);
+					if (L_150)
+					{
+						goto IL_0274_2;
+					}
+				}
+				{
+					goto IL_03af_1;
+				}
+			}// end try (depth: 2)
+			catch(Il2CppExceptionWrapper& e)
+			{
+				__finallyBlock.StoreException(e.ex);
+			}
+		}
+
+IL_03af_1:
+		{
+			__this->___U3CU3E7__wrap2_7 = (RuntimeObject*)NULL;
+			Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E7__wrap2_7), (void*)(RuntimeObject*)NULL);
+			V_17 = 0;
+			goto IL_0415_1;
+		}
+
+IL_03bb_1:
+		{
+			List_1_t4C68E546060D764C99C1B962BB2C011B0A5EBA19* L_151 = __this->___U3CresultsU3E5__2_6;
+			int32_t L_152 = V_17;
+			NullCheck(L_151);
+			Result_t865E183DF9D3C68AAB7A99BD699A08BD8CBC9CF4* L_153;
+			L_153 = List_1_get_Item_mD79820936BC671C6A1F274AECEDF5055A0D441C6(L_151, L_152, List_1_get_Item_mD79820936BC671C6A1F274AECEDF5055A0D441C6_RuntimeMethod_var);
+			NullCheck(L_153);
+			bool L_154;
+			L_154 = VirtualFuncInvoker0< bool >::Invoke(4 /* System.Boolean Nethereum.Contracts.QueryHandlers.MultiCall.ResultBase::get_Success() */, L_153);
+			if (!L_154)
+			{
+				goto IL_0400_1;
+			}
+		}
+		{
+			IMulticallInputOutputU5BU5D_t7D33DBDC42EE714A687264BC9F3C6C6AED3885F7* L_155 = __this->___multiCalls_2;
+			int32_t L_156 = V_17;
+			NullCheck(L_155);
+			int32_t L_157 = L_156;
+			RuntimeObject* L_158 = (L_155)->GetAt(static_cast<il2cpp_array_size_t>(L_157));
+			List_1_t4C68E546060D764C99C1B962BB2C011B0A5EBA19* L_159 = __this->___U3CresultsU3E5__2_6;
+			int32_t L_160 = V_17;
+			NullCheck(L_159);
+			Result_t865E183DF9D3C68AAB7A99BD699A08BD8CBC9CF4* L_161;
+			L_161 = List_1_get_Item_mD79820936BC671C6A1F274AECEDF5055A0D441C6(L_159, L_160, List_1_get_Item_mD79820936BC671C6A1F274AECEDF5055A0D441C6_RuntimeMethod_var);
+			NullCheck(L_161);
+			ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_162;
+			L_162 = VirtualFuncInvoker0< ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* >::Invoke(6 /* System.Byte[] Nethereum.Contracts.QueryHandlers.MultiCall.ResultBase::get_ReturnData() */, L_161);
+			NullCheck(L_158);
+			InterfaceActionInvoker1< ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* >::Invoke(3 /* System.Void Nethereum.Contracts.QueryHandlers.MultiCall.IMulticallInputOutput::Decode(System.Byte[]) */, IMulticallInputOutput_t72FE874FCD4D853123B64A7D57DEDF51D2660F7D_il2cpp_TypeInfo_var, L_158, L_162);
+			IMulticallInputOutputU5BU5D_t7D33DBDC42EE714A687264BC9F3C6C6AED3885F7* L_163 = __this->___multiCalls_2;
+			int32_t L_164 = V_17;
+			NullCheck(L_163);
+			int32_t L_165 = L_164;
+			RuntimeObject* L_166 = (L_163)->GetAt(static_cast<il2cpp_array_size_t>(L_165));
+			NullCheck(L_166);
+			InterfaceActionInvoker1< bool >::Invoke(5 /* System.Void Nethereum.Contracts.QueryHandlers.MultiCall.IMulticallInputOutput::set_Success(System.Boolean) */, IMulticallInputOutput_t72FE874FCD4D853123B64A7D57DEDF51D2660F7D_il2cpp_TypeInfo_var, L_166, (bool)1);
+			goto IL_040f_1;
+		}
+
+IL_0400_1:
+		{
+			IMulticallInputOutputU5BU5D_t7D33DBDC42EE714A687264BC9F3C6C6AED3885F7* L_167 = __this->___multiCalls_2;
+			int32_t L_168 = V_17;
+			NullCheck(L_167);
+			int32_t L_169 = L_168;
+			RuntimeObject* L_170 = (L_167)->GetAt(static_cast<il2cpp_array_size_t>(L_169));
+			NullCheck(L_170);
+			InterfaceActionInvoker1< bool >::Invoke(5 /* System.Void Nethereum.Contracts.QueryHandlers.MultiCall.IMulticallInputOutput::set_Success(System.Boolean) */, IMulticallInputOutput_t72FE874FCD4D853123B64A7D57DEDF51D2660F7D_il2cpp_TypeInfo_var, L_170, (bool)0);
+		}
+
+IL_040f_1:
+		{
+			int32_t L_171 = V_17;
+			V_17 = ((int32_t)il2cpp_codegen_add(L_171, 1));
+		}
+
+IL_0415_1:
+		{
+			int32_t L_172 = V_17;
+			List_1_t4C68E546060D764C99C1B962BB2C011B0A5EBA19* L_173 = __this->___U3CresultsU3E5__2_6;
+			NullCheck(L_173);
+			int32_t L_174;
+			L_174 = List_1_get_Count_m8F228A7E2CCAB2F477D8C2F7BB27E6993FF5A8F5_inline(L_173, List_1_get_Count_m8F228A7E2CCAB2F477D8C2F7BB27E6993FF5A8F5_RuntimeMethod_var);
+			if ((((int32_t)L_172) < ((int32_t)L_174)))
+			{
+				goto IL_03bb_1;
+			}
+		}
+		{
+			IMulticallInputOutputU5BU5D_t7D33DBDC42EE714A687264BC9F3C6C6AED3885F7* L_175 = __this->___multiCalls_2;
+			V_2 = L_175;
+			goto IL_0446;
+		}
+	}// end try (depth: 1)
+	catch(Il2CppExceptionWrapper& e)
+	{
+		if(il2cpp_codegen_class_is_assignable_from (((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Exception_t_il2cpp_TypeInfo_var)), il2cpp_codegen_object_class(e.ex)))
+		{
+			IL2CPP_PUSH_ACTIVE_EXCEPTION(e.ex);
+			goto CATCH_042d;
+		}
+		throw e;
+	}
+
+CATCH_042d:
+	{// begin catch(System.Exception)
+		V_18 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));
+		__this->___U3CU3E1__state_0 = ((int32_t)-2);
+		AsyncTaskMethodBuilder_1_tFF884780053FBFD2BEEA42DC0DFF882656BBE992* L_176 = (&__this->___U3CU3Et__builder_1);
+		Exception_t* L_177 = V_18;
+		AsyncTaskMethodBuilder_1_SetException_m0ACCACB23B9915B4A6998DE6F99A36C4E2A6C813(L_176, L_177, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&AsyncTaskMethodBuilder_1_SetException_m0ACCACB23B9915B4A6998DE6F99A36C4E2A6C813_RuntimeMethod_var)));
+		IL2CPP_POP_ACTIVE_EXCEPTION();
+		goto IL_045a;
+	}// end catch (depth: 1)
+
+IL_0446:
+	{
+		__this->___U3CU3E1__state_0 = ((int32_t)-2);
+		AsyncTaskMethodBuilder_1_tFF884780053FBFD2BEEA42DC0DFF882656BBE992* L_178 = (&__this->___U3CU3Et__builder_1);
+		IMulticallInputOutputU5BU5D_t7D33DBDC42EE714A687264BC9F3C6C6AED3885F7* L_179 = V_2;
+		AsyncTaskMethodBuilder_1_SetResult_mD06C693C6C2515CCBE2063E73AB019F42D162F5D(L_178, L_179, AsyncTaskMethodBuilder_1_SetResult_mD06C693C6C2515CCBE2063E73AB019F42D162F5D_RuntimeMethod_var);
+	}
+
+IL_045a:
+	{
+		return;
+	}
+}
+IL2CPP_EXTERN_C  void U3CMultiCallAsyncU3Ed__13_MoveNext_mD9BDAB256D5451AB7CF221E1D2E7E362DF15CB8D_AdjustorThunk (RuntimeObject* __this, const RuntimeMethod* method)
+{
+	U3CMultiCallAsyncU3Ed__13_t7A391C1FA6573DA0FC973869DE104C0D039BBC62* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<U3CMultiCallAsyncU3Ed__13_t7A391C1FA6573DA0FC973869DE104C0D039BBC62*>(__this + _offset);
+	U3CMultiCallAsyncU3Ed__13_MoveNext_mD9BDAB256D5451AB7CF221E1D2E7E362DF15CB8D(_thisAdjusted, method);
+}
+// System.Void Nethereum.Contracts.QueryHandlers.MultiCall.MultiQueryHandler/<MultiCallAsync>d__13::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CMultiCallAsyncU3Ed__13_SetStateMachine_mCF168071C2C869C3119E3D1CBA0B69AEF91EAB89 (U3CMultiCallAsyncU3Ed__13_t7A391C1FA6573DA0FC973869DE104C0D039BBC62* __this, RuntimeObject* ___stateMachine0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_SetStateMachine_mCC41F473635FB600B7EAF175A3E2950D1F875697_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		AsyncTaskMethodBuilder_1_tFF884780053FBFD2BEEA42DC0DFF882656BBE992* L_0 = (&__this->___U3CU3Et__builder_1);
+		RuntimeObject* L_1 = ___stateMachine0;
+		AsyncTaskMethodBuilder_1_SetStateMachine_mCC41F473635FB600B7EAF175A3E2950D1F875697(L_0, L_1, AsyncTaskMethodBuilder_1_SetStateMachine_mCC41F473635FB600B7EAF175A3E2950D1F875697_RuntimeMethod_var);
+		return;
+	}
+}
+IL2CPP_EXTERN_C  void U3CMultiCallAsyncU3Ed__13_SetStateMachine_mCF168071C2C869C3119E3D1CBA0B69AEF91EAB89_AdjustorThunk (RuntimeObject* __this, RuntimeObject* ___stateMachine0, const RuntimeMethod* method)
+{
+	U3CMultiCallAsyncU3Ed__13_t7A391C1FA6573DA0FC973869DE104C0D039BBC62* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<U3CMultiCallAsyncU3Ed__13_t7A391C1FA6573DA0FC973869DE104C0D039BBC62*>(__this + _offset);
+	U3CMultiCallAsyncU3Ed__13_SetStateMachine_mCF168071C2C869C3119E3D1CBA0B69AEF91EAB89(_thisAdjusted, ___stateMachine0, method);
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Nethereum.Contracts.QueryHandlers.MultiCall.MultiQueryHandler/<MultiCallV1Async>d__10::MoveNext()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CMultiCallV1AsyncU3Ed__10_MoveNext_m1CC66218AE395FBB66861E7227485467D22CA5B9 (U3CMultiCallV1AsyncU3Ed__10_t6910A8C2210A3573C94630F3B1F18F910914F89B* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AggregateFunction_tFEE01853E17B270CE0A401F2931520B99AE9A0A7_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisConfiguredTaskAwaiter_tBFC63C1299C54709ABE6BDEB21685AA9B3534BB9_TisU3CMultiCallV1AsyncU3Ed__10_t6910A8C2210A3573C94630F3B1F18F910914F89B_mCDDB7B2805DAC327EB71B6DF672686F17C1C507D_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_SetResult_mD06C693C6C2515CCBE2063E73AB019F42D162F5D_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Call_t924086EAD3B3E4D52DE52E6E060F04753C2B15A7_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ConfiguredTaskAwaitable_1_GetAwaiter_m1B0B397082EEAA03681ABED612D63AC1E7E429F1_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ConfiguredTaskAwaiter_GetResult_m6658C545A7073EF424111F058F5C7E902D3A13FC_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ConfiguredTaskAwaiter_get_IsCompleted_m8D4E06776CC3D1BCF8762CF6059A4CB0BEBA01AE_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IMulticallInputOutput_t72FE874FCD4D853123B64A7D57DEDF51D2660F7D_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_Add_m5B0347BAF9AB096A5225AAEC5789F1F9F197742F_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1__ctor_mA4C23E545EC9157AD620B777B5A48468C399D99E_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_get_Count_m88FEB2D94E35C258B61F53400F7CA20E99A7DAD3_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_get_Item_m2C6A207D8824FE873045A66C942593AE67D90CA6_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_t1CFC44309FCDA176EA29234D4ABE7C7F1C7195FE_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&QueryDecoderBaseHandler_2_QueryAsync_m28A5D30F0D4BD1C7BCFA9BCE726DB7663B29A6DB_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Task_1_ConfigureAwait_m4F07E8910F092E0463273871F61F91B755100DBF_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	MultiQueryHandler_tD5E9074899A83693F74D77C94F903D4AA15753CE* V_1 = NULL;
+	IMulticallInputOutputU5BU5D_t7D33DBDC42EE714A687264BC9F3C6C6AED3885F7* V_2 = NULL;
+	List_1_t1CFC44309FCDA176EA29234D4ABE7C7F1C7195FE* V_3 = NULL;
+	AggregateFunction_tFEE01853E17B270CE0A401F2931520B99AE9A0A7* V_4 = NULL;
+	AggregateOutputDTO_t04A6B814396B3EFE20568FF857DC66DEDADB011C* V_5 = NULL;
+	IMulticallInputOutputU5BU5D_t7D33DBDC42EE714A687264BC9F3C6C6AED3885F7* V_6 = NULL;
+	int32_t V_7 = 0;
+	RuntimeObject* V_8 = NULL;
+	ConfiguredTaskAwaiter_tBFC63C1299C54709ABE6BDEB21685AA9B3534BB9 V_9;
+	memset((&V_9), 0, sizeof(V_9));
+	ConfiguredTaskAwaitable_1_t5A674999AC76583775E037D3DEB36E00D9D59F81 V_10;
+	memset((&V_10), 0, sizeof(V_10));
+	int32_t V_11 = 0;
+	Exception_t* V_12 = NULL;
+	il2cpp::utils::ExceptionSupportStack<RuntimeObject*, 1> __active_exceptions;
+	{
+		int32_t L_0 = __this->___U3CU3E1__state_0;
+		V_0 = L_0;
+		MultiQueryHandler_tD5E9074899A83693F74D77C94F903D4AA15753CE* L_1 = __this->___U3CU3E4__this_3;
+		V_1 = L_1;
+	}
+	try
+	{// begin try (depth: 1)
+		{
+			int32_t L_2 = V_0;
+			if (!L_2)
+			{
+				goto IL_00c7_1;
+			}
+		}
+		{
+			List_1_t1CFC44309FCDA176EA29234D4ABE7C7F1C7195FE* L_3 = (List_1_t1CFC44309FCDA176EA29234D4ABE7C7F1C7195FE*)il2cpp_codegen_object_new(List_1_t1CFC44309FCDA176EA29234D4ABE7C7F1C7195FE_il2cpp_TypeInfo_var);
+			NullCheck(L_3);
+			List_1__ctor_mA4C23E545EC9157AD620B777B5A48468C399D99E(L_3, List_1__ctor_mA4C23E545EC9157AD620B777B5A48468C399D99E_RuntimeMethod_var);
+			V_3 = L_3;
+			IMulticallInputOutputU5BU5D_t7D33DBDC42EE714A687264BC9F3C6C6AED3885F7* L_4 = __this->___multiCalls_2;
+			V_6 = L_4;
+			V_7 = 0;
+			goto IL_0059_1;
+		}
+
+IL_0027_1:
+		{
+			IMulticallInputOutputU5BU5D_t7D33DBDC42EE714A687264BC9F3C6C6AED3885F7* L_5 = V_6;
+			int32_t L_6 = V_7;
+			NullCheck(L_5);
+			int32_t L_7 = L_6;
+			RuntimeObject* L_8 = (L_5)->GetAt(static_cast<il2cpp_array_size_t>(L_7));
+			V_8 = L_8;
+			List_1_t1CFC44309FCDA176EA29234D4ABE7C7F1C7195FE* L_9 = V_3;
+			Call_t924086EAD3B3E4D52DE52E6E060F04753C2B15A7* L_10 = (Call_t924086EAD3B3E4D52DE52E6E060F04753C2B15A7*)il2cpp_codegen_object_new(Call_t924086EAD3B3E4D52DE52E6E060F04753C2B15A7_il2cpp_TypeInfo_var);
+			NullCheck(L_10);
+			Call__ctor_mBE2F5449E5FA043FC956236BAB99D4E6D1B2C298(L_10, NULL);
+			Call_t924086EAD3B3E4D52DE52E6E060F04753C2B15A7* L_11 = L_10;
+			RuntimeObject* L_12 = V_8;
+			NullCheck(L_12);
+			ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_13;
+			L_13 = InterfaceFuncInvoker0< ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* >::Invoke(2 /* System.Byte[] Nethereum.Contracts.QueryHandlers.MultiCall.IMulticallInputOutput::GetCallData() */, IMulticallInputOutput_t72FE874FCD4D853123B64A7D57DEDF51D2660F7D_il2cpp_TypeInfo_var, L_12);
+			NullCheck(L_11);
+			VirtualActionInvoker1< ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* >::Invoke(7 /* System.Void Nethereum.Contracts.QueryHandlers.MultiCall.CallBase::set_CallData(System.Byte[]) */, L_11, L_13);
+			Call_t924086EAD3B3E4D52DE52E6E060F04753C2B15A7* L_14 = L_11;
+			RuntimeObject* L_15 = V_8;
+			NullCheck(L_15);
+			String_t* L_16;
+			L_16 = InterfaceFuncInvoker0< String_t* >::Invoke(0 /* System.String Nethereum.Contracts.QueryHandlers.MultiCall.IMulticallInputOutput::get_Target() */, IMulticallInputOutput_t72FE874FCD4D853123B64A7D57DEDF51D2660F7D_il2cpp_TypeInfo_var, L_15);
+			NullCheck(L_14);
+			VirtualActionInvoker1< String_t* >::Invoke(5 /* System.Void Nethereum.Contracts.QueryHandlers.MultiCall.CallBase::set_Target(System.String) */, L_14, L_16);
+			NullCheck(L_9);
+			List_1_Add_m5B0347BAF9AB096A5225AAEC5789F1F9F197742F_inline(L_9, L_14, List_1_Add_m5B0347BAF9AB096A5225AAEC5789F1F9F197742F_RuntimeMethod_var);
+			int32_t L_17 = V_7;
+			V_7 = ((int32_t)il2cpp_codegen_add(L_17, 1));
+		}
+
+IL_0059_1:
+		{
+			int32_t L_18 = V_7;
+			IMulticallInputOutputU5BU5D_t7D33DBDC42EE714A687264BC9F3C6C6AED3885F7* L_19 = V_6;
+			NullCheck(L_19);
+			if ((((int32_t)L_18) < ((int32_t)((int32_t)(((RuntimeArray*)L_19)->max_length)))))
+			{
+				goto IL_0027_1;
+			}
+		}
+		{
+			AggregateFunction_tFEE01853E17B270CE0A401F2931520B99AE9A0A7* L_20 = (AggregateFunction_tFEE01853E17B270CE0A401F2931520B99AE9A0A7*)il2cpp_codegen_object_new(AggregateFunction_tFEE01853E17B270CE0A401F2931520B99AE9A0A7_il2cpp_TypeInfo_var);
+			NullCheck(L_20);
+			AggregateFunction__ctor_m0633AC43B4C0817BA2B3155C3E9CD2036C248BE2(L_20, NULL);
+			V_4 = L_20;
+			AggregateFunction_tFEE01853E17B270CE0A401F2931520B99AE9A0A7* L_21 = V_4;
+			List_1_t1CFC44309FCDA176EA29234D4ABE7C7F1C7195FE* L_22 = V_3;
+			NullCheck(L_21);
+			VirtualActionInvoker1< List_1_t1CFC44309FCDA176EA29234D4ABE7C7F1C7195FE* >::Invoke(5 /* System.Void Nethereum.Contracts.QueryHandlers.MultiCall.AggregateFunctionBase::set_Calls(System.Collections.Generic.List`1<Nethereum.Contracts.QueryHandlers.MultiCall.Call>) */, L_21, L_22);
+			MultiQueryHandler_tD5E9074899A83693F74D77C94F903D4AA15753CE* L_23 = V_1;
+			NullCheck(L_23);
+			QueryToDTOHandler_2_t64FE28F3E7A92C671B9E70A24D8300951F42BBF7* L_24 = L_23->____multiQueryV1ToDtoHandler_2;
+			MultiQueryHandler_tD5E9074899A83693F74D77C94F903D4AA15753CE* L_25 = V_1;
+			NullCheck(L_25);
+			String_t* L_26;
+			L_26 = MultiQueryHandler_get_ContractAddress_mA39F6E0DCEB03E242771B68672D8951137779325_inline(L_25, NULL);
+			AggregateFunction_tFEE01853E17B270CE0A401F2931520B99AE9A0A7* L_27 = V_4;
+			BlockParameter_t13CF5CC9CDE990ACD945748B2FA7F19EA0A06AD9* L_28 = __this->___block_4;
+			NullCheck(L_24);
+			Task_1_tA3CF95FC9CBC3CA5879B274CBE93339D68A5CA95* L_29;
+			L_29 = QueryDecoderBaseHandler_2_QueryAsync_m28A5D30F0D4BD1C7BCFA9BCE726DB7663B29A6DB(L_24, L_26, L_27, L_28, QueryDecoderBaseHandler_2_QueryAsync_m28A5D30F0D4BD1C7BCFA9BCE726DB7663B29A6DB_RuntimeMethod_var);
+			NullCheck(L_29);
+			ConfiguredTaskAwaitable_1_t5A674999AC76583775E037D3DEB36E00D9D59F81 L_30;
+			L_30 = Task_1_ConfigureAwait_m4F07E8910F092E0463273871F61F91B755100DBF(L_29, (bool)0, Task_1_ConfigureAwait_m4F07E8910F092E0463273871F61F91B755100DBF_RuntimeMethod_var);
+			V_10 = L_30;
+			ConfiguredTaskAwaiter_tBFC63C1299C54709ABE6BDEB21685AA9B3534BB9 L_31;
+			L_31 = ConfiguredTaskAwaitable_1_GetAwaiter_m1B0B397082EEAA03681ABED612D63AC1E7E429F1_inline((&V_10), ConfiguredTaskAwaitable_1_GetAwaiter_m1B0B397082EEAA03681ABED612D63AC1E7E429F1_RuntimeMethod_var);
+			V_9 = L_31;
+			bool L_32;
+			L_32 = ConfiguredTaskAwaiter_get_IsCompleted_m8D4E06776CC3D1BCF8762CF6059A4CB0BEBA01AE((&V_9), ConfiguredTaskAwaiter_get_IsCompleted_m8D4E06776CC3D1BCF8762CF6059A4CB0BEBA01AE_RuntimeMethod_var);
+			if (L_32)
+			{
+				goto IL_00e4_1;
+			}
+		}
+		{
+			int32_t L_33 = 0;
+			V_0 = L_33;
+			__this->___U3CU3E1__state_0 = L_33;
+			ConfiguredTaskAwaiter_tBFC63C1299C54709ABE6BDEB21685AA9B3534BB9 L_34 = V_9;
+			__this->___U3CU3Eu__1_5 = L_34;
+			Il2CppCodeGenWriteBarrier((void**)&(((&__this->___U3CU3Eu__1_5))->___m_task_0), (void*)NULL);
+			AsyncTaskMethodBuilder_1_tFF884780053FBFD2BEEA42DC0DFF882656BBE992* L_35 = (&__this->___U3CU3Et__builder_1);
+			AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisConfiguredTaskAwaiter_tBFC63C1299C54709ABE6BDEB21685AA9B3534BB9_TisU3CMultiCallV1AsyncU3Ed__10_t6910A8C2210A3573C94630F3B1F18F910914F89B_mCDDB7B2805DAC327EB71B6DF672686F17C1C507D(L_35, (&V_9), __this, AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisConfiguredTaskAwaiter_tBFC63C1299C54709ABE6BDEB21685AA9B3534BB9_TisU3CMultiCallV1AsyncU3Ed__10_t6910A8C2210A3573C94630F3B1F18F910914F89B_mCDDB7B2805DAC327EB71B6DF672686F17C1C507D_RuntimeMethod_var);
+			goto IL_015a;
+		}
+
+IL_00c7_1:
+		{
+			ConfiguredTaskAwaiter_tBFC63C1299C54709ABE6BDEB21685AA9B3534BB9 L_36 = __this->___U3CU3Eu__1_5;
+			V_9 = L_36;
+			ConfiguredTaskAwaiter_tBFC63C1299C54709ABE6BDEB21685AA9B3534BB9* L_37 = (&__this->___U3CU3Eu__1_5);
+			il2cpp_codegen_initobj(L_37, sizeof(ConfiguredTaskAwaiter_tBFC63C1299C54709ABE6BDEB21685AA9B3534BB9));
+			int32_t L_38 = (-1);
+			V_0 = L_38;
+			__this->___U3CU3E1__state_0 = L_38;
+		}
+
+IL_00e4_1:
+		{
+			AggregateOutputDTO_t04A6B814396B3EFE20568FF857DC66DEDADB011C* L_39;
+			L_39 = ConfiguredTaskAwaiter_GetResult_m6658C545A7073EF424111F058F5C7E902D3A13FC((&V_9), ConfiguredTaskAwaiter_GetResult_m6658C545A7073EF424111F058F5C7E902D3A13FC_RuntimeMethod_var);
+			V_5 = L_39;
+			V_11 = 0;
+			goto IL_0114_1;
+		}
+
+IL_00f2_1:
+		{
+			IMulticallInputOutputU5BU5D_t7D33DBDC42EE714A687264BC9F3C6C6AED3885F7* L_40 = __this->___multiCalls_2;
+			int32_t L_41 = V_11;
+			NullCheck(L_40);
+			int32_t L_42 = L_41;
+			RuntimeObject* L_43 = (L_40)->GetAt(static_cast<il2cpp_array_size_t>(L_42));
+			AggregateOutputDTO_t04A6B814396B3EFE20568FF857DC66DEDADB011C* L_44 = V_5;
+			NullCheck(L_44);
+			List_1_tBFF9DD9FFA06F20E74F9D7AD36610BD754D353A4* L_45;
+			L_45 = VirtualFuncInvoker0< List_1_tBFF9DD9FFA06F20E74F9D7AD36610BD754D353A4* >::Invoke(6 /* System.Collections.Generic.List`1<System.Byte[]> Nethereum.Contracts.QueryHandlers.MultiCall.AggregateOutputDTOBase::get_ReturnData() */, L_44);
+			int32_t L_46 = V_11;
+			NullCheck(L_45);
+			ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_47;
+			L_47 = List_1_get_Item_m2C6A207D8824FE873045A66C942593AE67D90CA6(L_45, L_46, List_1_get_Item_m2C6A207D8824FE873045A66C942593AE67D90CA6_RuntimeMethod_var);
+			NullCheck(L_43);
+			InterfaceActionInvoker1< ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* >::Invoke(3 /* System.Void Nethereum.Contracts.QueryHandlers.MultiCall.IMulticallInputOutput::Decode(System.Byte[]) */, IMulticallInputOutput_t72FE874FCD4D853123B64A7D57DEDF51D2660F7D_il2cpp_TypeInfo_var, L_43, L_47);
+			int32_t L_48 = V_11;
+			V_11 = ((int32_t)il2cpp_codegen_add(L_48, 1));
+		}
+
+IL_0114_1:
+		{
+			int32_t L_49 = V_11;
+			AggregateOutputDTO_t04A6B814396B3EFE20568FF857DC66DEDADB011C* L_50 = V_5;
+			NullCheck(L_50);
+			List_1_tBFF9DD9FFA06F20E74F9D7AD36610BD754D353A4* L_51;
+			L_51 = VirtualFuncInvoker0< List_1_tBFF9DD9FFA06F20E74F9D7AD36610BD754D353A4* >::Invoke(6 /* System.Collections.Generic.List`1<System.Byte[]> Nethereum.Contracts.QueryHandlers.MultiCall.AggregateOutputDTOBase::get_ReturnData() */, L_50);
+			NullCheck(L_51);
+			int32_t L_52;
+			L_52 = List_1_get_Count_m88FEB2D94E35C258B61F53400F7CA20E99A7DAD3_inline(L_51, List_1_get_Count_m88FEB2D94E35C258B61F53400F7CA20E99A7DAD3_RuntimeMethod_var);
+			if ((((int32_t)L_49) < ((int32_t)L_52)))
+			{
+				goto IL_00f2_1;
+			}
+		}
+		{
+			IMulticallInputOutputU5BU5D_t7D33DBDC42EE714A687264BC9F3C6C6AED3885F7* L_53 = __this->___multiCalls_2;
+			V_2 = L_53;
+			goto IL_0146;
+		}
+	}// end try (depth: 1)
+	catch(Il2CppExceptionWrapper& e)
+	{
+		if(il2cpp_codegen_class_is_assignable_from (((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Exception_t_il2cpp_TypeInfo_var)), il2cpp_codegen_object_class(e.ex)))
+		{
+			IL2CPP_PUSH_ACTIVE_EXCEPTION(e.ex);
+			goto CATCH_012d;
+		}
+		throw e;
+	}
+
+CATCH_012d:
+	{// begin catch(System.Exception)
+		V_12 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));
+		__this->___U3CU3E1__state_0 = ((int32_t)-2);
+		AsyncTaskMethodBuilder_1_tFF884780053FBFD2BEEA42DC0DFF882656BBE992* L_54 = (&__this->___U3CU3Et__builder_1);
+		Exception_t* L_55 = V_12;
+		AsyncTaskMethodBuilder_1_SetException_m0ACCACB23B9915B4A6998DE6F99A36C4E2A6C813(L_54, L_55, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&AsyncTaskMethodBuilder_1_SetException_m0ACCACB23B9915B4A6998DE6F99A36C4E2A6C813_RuntimeMethod_var)));
+		IL2CPP_POP_ACTIVE_EXCEPTION();
+		goto IL_015a;
+	}// end catch (depth: 1)
+
+IL_0146:
+	{
+		__this->___U3CU3E1__state_0 = ((int32_t)-2);
+		AsyncTaskMethodBuilder_1_tFF884780053FBFD2BEEA42DC0DFF882656BBE992* L_56 = (&__this->___U3CU3Et__builder_1);
+		IMulticallInputOutputU5BU5D_t7D33DBDC42EE714A687264BC9F3C6C6AED3885F7* L_57 = V_2;
+		AsyncTaskMethodBuilder_1_SetResult_mD06C693C6C2515CCBE2063E73AB019F42D162F5D(L_56, L_57, AsyncTaskMethodBuilder_1_SetResult_mD06C693C6C2515CCBE2063E73AB019F42D162F5D_RuntimeMethod_var);
+	}
+
+IL_015a:
+	{
+		return;
+	}
+}
+IL2CPP_EXTERN_C  void U3CMultiCallV1AsyncU3Ed__10_MoveNext_m1CC66218AE395FBB66861E7227485467D22CA5B9_AdjustorThunk (RuntimeObject* __this, const RuntimeMethod* method)
+{
+	U3CMultiCallV1AsyncU3Ed__10_t6910A8C2210A3573C94630F3B1F18F910914F89B* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<U3CMultiCallV1AsyncU3Ed__10_t6910A8C2210A3573C94630F3B1F18F910914F89B*>(__this + _offset);
+	U3CMultiCallV1AsyncU3Ed__10_MoveNext_m1CC66218AE395FBB66861E7227485467D22CA5B9(_thisAdjusted, method);
+}
+// System.Void Nethereum.Contracts.QueryHandlers.MultiCall.MultiQueryHandler/<MultiCallV1Async>d__10::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CMultiCallV1AsyncU3Ed__10_SetStateMachine_m83BE463E79B246BF70A136A44DC53925C2571D2A (U3CMultiCallV1AsyncU3Ed__10_t6910A8C2210A3573C94630F3B1F18F910914F89B* __this, RuntimeObject* ___stateMachine0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_SetStateMachine_mCC41F473635FB600B7EAF175A3E2950D1F875697_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		AsyncTaskMethodBuilder_1_tFF884780053FBFD2BEEA42DC0DFF882656BBE992* L_0 = (&__this->___U3CU3Et__builder_1);
+		RuntimeObject* L_1 = ___stateMachine0;
+		AsyncTaskMethodBuilder_1_SetStateMachine_mCC41F473635FB600B7EAF175A3E2950D1F875697(L_0, L_1, AsyncTaskMethodBuilder_1_SetStateMachine_mCC41F473635FB600B7EAF175A3E2950D1F875697_RuntimeMethod_var);
+		return;
+	}
+}
+IL2CPP_EXTERN_C  void U3CMultiCallV1AsyncU3Ed__10_SetStateMachine_m83BE463E79B246BF70A136A44DC53925C2571D2A_AdjustorThunk (RuntimeObject* __this, RuntimeObject* ___stateMachine0, const RuntimeMethod* method)
+{
+	U3CMultiCallV1AsyncU3Ed__10_t6910A8C2210A3573C94630F3B1F18F910914F89B* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<U3CMultiCallV1AsyncU3Ed__10_t6910A8C2210A3573C94630F3B1F18F910914F89B*>(__this + _offset);
+	U3CMultiCallV1AsyncU3Ed__10_SetStateMachine_m83BE463E79B246BF70A136A44DC53925C2571D2A(_thisAdjusted, ___stateMachine0, method);
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Byte[] Nethereum.Contracts.TransactionHandlers.MultiSend.MultiSendFunction::get_Transactions()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* MultiSendFunction_get_Transactions_m037B4EC68B81AADB490374DA3975F87AC511D1C6 (MultiSendFunction_t283117F8190279FA3307712FD93408FF3B0EE292* __this, const RuntimeMethod* method) 
+{
+	{
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_0 = __this->___U3CTransactionsU3Ek__BackingField_9;
+		return L_0;
+	}
+}
+// System.Void Nethereum.Contracts.TransactionHandlers.MultiSend.MultiSendFunction::set_Transactions(System.Byte[])
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MultiSendFunction_set_Transactions_mACB0FB69D49E250572C0DEB9DDC301E0198C8030 (MultiSendFunction_t283117F8190279FA3307712FD93408FF3B0EE292* __this, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___value0, const RuntimeMethod* method) 
+{
+	{
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_0 = ___value0;
+		__this->___U3CTransactionsU3Ek__BackingField_9 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CTransactionsU3Ek__BackingField_9), (void*)L_0);
+		return;
+	}
+}
+// System.Void Nethereum.Contracts.TransactionHandlers.MultiSend.MultiSendFunction::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MultiSendFunction__ctor_mE73F3BAB69D0BEAF6E5A367C61F1ED40C7C2377E (MultiSendFunction_t283117F8190279FA3307712FD93408FF3B0EE292* __this, const RuntimeMethod* method) 
+{
+	{
+		FunctionMessage__ctor_m1951B5B47D9E572EF741370BDB5B09FB937D7E79(__this, NULL);
+		return;
+	}
+}
+// System.Void Nethereum.Contracts.TransactionHandlers.MultiSend.MultiSendFunction::.ctor(Nethereum.Contracts.TransactionHandlers.MultiSend.IMultiSendInput[])
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MultiSendFunction__ctor_m9FBFEB1F7AA1D8B690CE7E52E533880B5AAE4218 (MultiSendFunction_t283117F8190279FA3307712FD93408FF3B0EE292* __this, IMultiSendInputU5BU5D_t0A5262003FB6442DE35A0573C6BDE76A153EDE8F* ___multiSendInputs0, const RuntimeMethod* method) 
+{
+	{
+		FunctionMessage__ctor_m1951B5B47D9E572EF741370BDB5B09FB937D7E79(__this, NULL);
+		IMultiSendInputU5BU5D_t0A5262003FB6442DE35A0573C6BDE76A153EDE8F* L_0 = ___multiSendInputs0;
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_1;
+		L_1 = MultiSendEncoder_EncodeMultiSendList_m38FCCEA840AE38355C62B4580422E9033A79AA10(L_0, NULL);
+		MultiSendFunction_set_Transactions_mACB0FB69D49E250572C0DEB9DDC301E0198C8030_inline(__this, L_1, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Byte[] Nethereum.Contracts.TransactionHandlers.MultiSend.MultiSendEncoder::EncodeMultiSend(Nethereum.Contracts.TransactionHandlers.MultiSend.IMultiSendInput)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* MultiSendEncoder_EncodeMultiSend_m6FBFBFE6B25942117CDCAD0A24D6F4F287B4BBF7 (RuntimeObject* ___multiSendInput0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ABIEncode_t95CFC96B6E0E5D79DC62FF6969A0768A6C90C5CD_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ABIValueU5BU5D_t5053A4AB39A1EDA3F954A7A8BAD52DF73676F8E5_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ABIValue_t53C363B3F7F73B7F8F0D7804041B2B3ED1041567_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BigInteger_tF7779A0AA6D6B9BE0E0C1C293E7708765DEF7D0F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IMultiSendInput_t2E4EFCD4930C58011CC9678D8F9F5F8B704C2C33_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral686CC5FDF9B42C500A69583F7174DE583365E0B8);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral77B615B8ED1ABB8FC1395D85A5AE524A9789D947);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral8A577A5A6848BEDC7A1DBA1211A06E627EEF0057);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral9515720F4DC1A9394D26692B94A1D522D54DED9A);
+		s_Il2CppMethodInitialized = true;
+	}
+	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* V_0 = NULL;
+	{
+		RuntimeObject* L_0 = ___multiSendInput0;
+		NullCheck(L_0);
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_1;
+		L_1 = InterfaceFuncInvoker0< ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* >::Invoke(4 /* System.Byte[] Nethereum.Contracts.TransactionHandlers.MultiSend.IMultiSendInput::GetCallData() */, IMultiSendInput_t2E4EFCD4930C58011CC9678D8F9F5F8B704C2C33_il2cpp_TypeInfo_var, L_0);
+		V_0 = L_1;
+		ABIEncode_t95CFC96B6E0E5D79DC62FF6969A0768A6C90C5CD* L_2 = (ABIEncode_t95CFC96B6E0E5D79DC62FF6969A0768A6C90C5CD*)il2cpp_codegen_object_new(ABIEncode_t95CFC96B6E0E5D79DC62FF6969A0768A6C90C5CD_il2cpp_TypeInfo_var);
+		NullCheck(L_2);
+		ABIEncode__ctor_m9D8B47803B5315F7EE995AB67059A0F411BB9C34(L_2, NULL);
+		ABIValueU5BU5D_t5053A4AB39A1EDA3F954A7A8BAD52DF73676F8E5* L_3 = (ABIValueU5BU5D_t5053A4AB39A1EDA3F954A7A8BAD52DF73676F8E5*)(ABIValueU5BU5D_t5053A4AB39A1EDA3F954A7A8BAD52DF73676F8E5*)SZArrayNew(ABIValueU5BU5D_t5053A4AB39A1EDA3F954A7A8BAD52DF73676F8E5_il2cpp_TypeInfo_var, (uint32_t)5);
+		ABIValueU5BU5D_t5053A4AB39A1EDA3F954A7A8BAD52DF73676F8E5* L_4 = L_3;
+		int32_t L_5 = 0;
+		RuntimeObject* L_6 = Box(Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var, &L_5);
+		ABIValue_t53C363B3F7F73B7F8F0D7804041B2B3ED1041567* L_7 = (ABIValue_t53C363B3F7F73B7F8F0D7804041B2B3ED1041567*)il2cpp_codegen_object_new(ABIValue_t53C363B3F7F73B7F8F0D7804041B2B3ED1041567_il2cpp_TypeInfo_var);
+		NullCheck(L_7);
+		ABIValue__ctor_m1614FE5677DC6505EB509B6FD6608B1F66898D6D(L_7, _stringLiteral9515720F4DC1A9394D26692B94A1D522D54DED9A, L_6, NULL);
+		NullCheck(L_4);
+		ArrayElementTypeCheck (L_4, L_7);
+		(L_4)->SetAt(static_cast<il2cpp_array_size_t>(0), (ABIValue_t53C363B3F7F73B7F8F0D7804041B2B3ED1041567*)L_7);
+		ABIValueU5BU5D_t5053A4AB39A1EDA3F954A7A8BAD52DF73676F8E5* L_8 = L_4;
+		RuntimeObject* L_9 = ___multiSendInput0;
+		NullCheck(L_9);
+		String_t* L_10;
+		L_10 = InterfaceFuncInvoker0< String_t* >::Invoke(0 /* System.String Nethereum.Contracts.TransactionHandlers.MultiSend.IMultiSendInput::get_Target() */, IMultiSendInput_t2E4EFCD4930C58011CC9678D8F9F5F8B704C2C33_il2cpp_TypeInfo_var, L_9);
+		ABIValue_t53C363B3F7F73B7F8F0D7804041B2B3ED1041567* L_11 = (ABIValue_t53C363B3F7F73B7F8F0D7804041B2B3ED1041567*)il2cpp_codegen_object_new(ABIValue_t53C363B3F7F73B7F8F0D7804041B2B3ED1041567_il2cpp_TypeInfo_var);
+		NullCheck(L_11);
+		ABIValue__ctor_m1614FE5677DC6505EB509B6FD6608B1F66898D6D(L_11, _stringLiteral8A577A5A6848BEDC7A1DBA1211A06E627EEF0057, L_10, NULL);
+		NullCheck(L_8);
+		ArrayElementTypeCheck (L_8, L_11);
+		(L_8)->SetAt(static_cast<il2cpp_array_size_t>(1), (ABIValue_t53C363B3F7F73B7F8F0D7804041B2B3ED1041567*)L_11);
+		ABIValueU5BU5D_t5053A4AB39A1EDA3F954A7A8BAD52DF73676F8E5* L_12 = L_8;
+		RuntimeObject* L_13 = ___multiSendInput0;
+		NullCheck(L_13);
+		BigInteger_tF7779A0AA6D6B9BE0E0C1C293E7708765DEF7D0F L_14;
+		L_14 = InterfaceFuncInvoker0< BigInteger_tF7779A0AA6D6B9BE0E0C1C293E7708765DEF7D0F >::Invoke(2 /* System.Numerics.BigInteger Nethereum.Contracts.TransactionHandlers.MultiSend.IMultiSendInput::get_Value() */, IMultiSendInput_t2E4EFCD4930C58011CC9678D8F9F5F8B704C2C33_il2cpp_TypeInfo_var, L_13);
+		BigInteger_tF7779A0AA6D6B9BE0E0C1C293E7708765DEF7D0F L_15 = L_14;
+		RuntimeObject* L_16 = Box(BigInteger_tF7779A0AA6D6B9BE0E0C1C293E7708765DEF7D0F_il2cpp_TypeInfo_var, &L_15);
+		ABIValue_t53C363B3F7F73B7F8F0D7804041B2B3ED1041567* L_17 = (ABIValue_t53C363B3F7F73B7F8F0D7804041B2B3ED1041567*)il2cpp_codegen_object_new(ABIValue_t53C363B3F7F73B7F8F0D7804041B2B3ED1041567_il2cpp_TypeInfo_var);
+		NullCheck(L_17);
+		ABIValue__ctor_m1614FE5677DC6505EB509B6FD6608B1F66898D6D(L_17, _stringLiteral686CC5FDF9B42C500A69583F7174DE583365E0B8, L_16, NULL);
+		NullCheck(L_12);
+		ArrayElementTypeCheck (L_12, L_17);
+		(L_12)->SetAt(static_cast<il2cpp_array_size_t>(2), (ABIValue_t53C363B3F7F73B7F8F0D7804041B2B3ED1041567*)L_17);
+		ABIValueU5BU5D_t5053A4AB39A1EDA3F954A7A8BAD52DF73676F8E5* L_18 = L_12;
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_19 = V_0;
+		NullCheck(L_19);
+		int32_t L_20 = ((int32_t)(((RuntimeArray*)L_19)->max_length));
+		RuntimeObject* L_21 = Box(Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var, &L_20);
+		ABIValue_t53C363B3F7F73B7F8F0D7804041B2B3ED1041567* L_22 = (ABIValue_t53C363B3F7F73B7F8F0D7804041B2B3ED1041567*)il2cpp_codegen_object_new(ABIValue_t53C363B3F7F73B7F8F0D7804041B2B3ED1041567_il2cpp_TypeInfo_var);
+		NullCheck(L_22);
+		ABIValue__ctor_m1614FE5677DC6505EB509B6FD6608B1F66898D6D(L_22, _stringLiteral686CC5FDF9B42C500A69583F7174DE583365E0B8, L_21, NULL);
+		NullCheck(L_18);
+		ArrayElementTypeCheck (L_18, L_22);
+		(L_18)->SetAt(static_cast<il2cpp_array_size_t>(3), (ABIValue_t53C363B3F7F73B7F8F0D7804041B2B3ED1041567*)L_22);
+		ABIValueU5BU5D_t5053A4AB39A1EDA3F954A7A8BAD52DF73676F8E5* L_23 = L_18;
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_24 = V_0;
+		ABIValue_t53C363B3F7F73B7F8F0D7804041B2B3ED1041567* L_25 = (ABIValue_t53C363B3F7F73B7F8F0D7804041B2B3ED1041567*)il2cpp_codegen_object_new(ABIValue_t53C363B3F7F73B7F8F0D7804041B2B3ED1041567_il2cpp_TypeInfo_var);
+		NullCheck(L_25);
+		ABIValue__ctor_m1614FE5677DC6505EB509B6FD6608B1F66898D6D(L_25, _stringLiteral77B615B8ED1ABB8FC1395D85A5AE524A9789D947, (RuntimeObject*)L_24, NULL);
+		NullCheck(L_23);
+		ArrayElementTypeCheck (L_23, L_25);
+		(L_23)->SetAt(static_cast<il2cpp_array_size_t>(4), (ABIValue_t53C363B3F7F73B7F8F0D7804041B2B3ED1041567*)L_25);
+		NullCheck(L_2);
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_26;
+		L_26 = ABIEncode_GetABIEncodedPacked_m2480CB1D189781CBA5528FC3A7E624F52E839C32(L_2, L_23, NULL);
+		return L_26;
+	}
+}
+// System.Byte[] Nethereum.Contracts.TransactionHandlers.MultiSend.MultiSendEncoder::EncodeMultiSendList(Nethereum.Contracts.TransactionHandlers.MultiSend.IMultiSendInput[])
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* MultiSendEncoder_EncodeMultiSendList_m38FCCEA840AE38355C62B4580422E9033A79AA10 (IMultiSendInputU5BU5D_t0A5262003FB6442DE35A0573C6BDE76A153EDE8F* ___multiSendInputs0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IMultiSendInput_t2E4EFCD4930C58011CC9678D8F9F5F8B704C2C33_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_AddRange_mF51C7242A9710C837B9158D0D120549E49E4FB67_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_ToArray_m23F8BB7CABADC11EBCAB5AB701B75F56C865BE24_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1__ctor_mC411581553467A7DB76C06E5E5FCA34E4EC621B9_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_t7D15BE3246500BBF1A24C24DBF963B89A876255B_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	List_1_t7D15BE3246500BBF1A24C24DBF963B89A876255B* V_0 = NULL;
+	IMultiSendInputU5BU5D_t0A5262003FB6442DE35A0573C6BDE76A153EDE8F* V_1 = NULL;
+	int32_t V_2 = 0;
+	RuntimeObject* V_3 = NULL;
+	{
+		List_1_t7D15BE3246500BBF1A24C24DBF963B89A876255B* L_0 = (List_1_t7D15BE3246500BBF1A24C24DBF963B89A876255B*)il2cpp_codegen_object_new(List_1_t7D15BE3246500BBF1A24C24DBF963B89A876255B_il2cpp_TypeInfo_var);
+		NullCheck(L_0);
+		List_1__ctor_mC411581553467A7DB76C06E5E5FCA34E4EC621B9(L_0, List_1__ctor_mC411581553467A7DB76C06E5E5FCA34E4EC621B9_RuntimeMethod_var);
+		V_0 = L_0;
+		IMultiSendInputU5BU5D_t0A5262003FB6442DE35A0573C6BDE76A153EDE8F* L_1 = ___multiSendInputs0;
+		V_1 = L_1;
+		V_2 = 0;
+		goto IL_0020;
+	}
+
+IL_000c:
+	{
+		IMultiSendInputU5BU5D_t0A5262003FB6442DE35A0573C6BDE76A153EDE8F* L_2 = V_1;
+		int32_t L_3 = V_2;
+		NullCheck(L_2);
+		int32_t L_4 = L_3;
+		RuntimeObject* L_5 = (L_2)->GetAt(static_cast<il2cpp_array_size_t>(L_4));
+		V_3 = L_5;
+		List_1_t7D15BE3246500BBF1A24C24DBF963B89A876255B* L_6 = V_0;
+		RuntimeObject* L_7 = V_3;
+		NullCheck(L_7);
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_8;
+		L_8 = InterfaceFuncInvoker0< ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* >::Invoke(5 /* System.Byte[] Nethereum.Contracts.TransactionHandlers.MultiSend.IMultiSendInput::GetTransactionEncoded() */, IMultiSendInput_t2E4EFCD4930C58011CC9678D8F9F5F8B704C2C33_il2cpp_TypeInfo_var, L_7);
+		NullCheck(L_6);
+		List_1_AddRange_mF51C7242A9710C837B9158D0D120549E49E4FB67(L_6, (RuntimeObject*)L_8, List_1_AddRange_mF51C7242A9710C837B9158D0D120549E49E4FB67_RuntimeMethod_var);
+		int32_t L_9 = V_2;
+		V_2 = ((int32_t)il2cpp_codegen_add(L_9, 1));
+	}
+
+IL_0020:
+	{
+		int32_t L_10 = V_2;
+		IMultiSendInputU5BU5D_t0A5262003FB6442DE35A0573C6BDE76A153EDE8F* L_11 = V_1;
+		NullCheck(L_11);
+		if ((((int32_t)L_10) < ((int32_t)((int32_t)(((RuntimeArray*)L_11)->max_length)))))
+		{
+			goto IL_000c;
+		}
+	}
+	{
+		List_1_t7D15BE3246500BBF1A24C24DBF963B89A876255B* L_12 = V_0;
+		NullCheck(L_12);
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_13;
+		L_13 = List_1_ToArray_m23F8BB7CABADC11EBCAB5AB701B75F56C865BE24(L_12, List_1_ToArray_m23F8BB7CABADC11EBCAB5AB701B75F56C865BE24_RuntimeMethod_var);
+		return L_13;
+	}
+}
+// System.Void Nethereum.Contracts.TransactionHandlers.MultiSend.MultiSendEncoder::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MultiSendEncoder__ctor_mCECA6DF8106E710DFAE5C8C1E1CED00403644271 (MultiSendEncoder_t29F9D54EF46EAA3CB6436DF5F12E4E3372D8EF09* __this, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Numerics.BigInteger Nethereum.Contracts.CQS.ContractMessageBase::get_AmountToSend()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR BigInteger_tF7779A0AA6D6B9BE0E0C1C293E7708765DEF7D0F ContractMessageBase_get_AmountToSend_m6397C5FB549A20EE55A4F44B0D3A744114F73B5E (ContractMessageBase_tA9C9FCA2DAE63DE7A525580AC6E60DD85EBE2EAF* __this, const RuntimeMethod* method) 
+{
+	{
+		BigInteger_tF7779A0AA6D6B9BE0E0C1C293E7708765DEF7D0F L_0 = __this->___U3CAmountToSendU3Ek__BackingField_0;
+		return L_0;
+	}
+}
+// System.Void Nethereum.Contracts.CQS.ContractMessageBase::set_AmountToSend(System.Numerics.BigInteger)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ContractMessageBase_set_AmountToSend_mE4BAFA7FA7592AFD8069BC0696741C1A1285548B (ContractMessageBase_tA9C9FCA2DAE63DE7A525580AC6E60DD85EBE2EAF* __this, BigInteger_tF7779A0AA6D6B9BE0E0C1C293E7708765DEF7D0F ___value0, const RuntimeMethod* method) 
+{
+	{
+		BigInteger_tF7779A0AA6D6B9BE0E0C1C293E7708765DEF7D0F L_0 = ___value0;
+		__this->___U3CAmountToSendU3Ek__BackingField_0 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)&(((&__this->___U3CAmountToSendU3Ek__BackingField_0))->____bits_1), (void*)NULL);
+		return;
+	}
+}
+// System.Nullable`1<System.Numerics.BigInteger> Nethereum.Contracts.CQS.ContractMessageBase::get_Gas()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Nullable_1_t4926B6730CE7D5D65A9903F48CFD632867A41E72 ContractMessageBase_get_Gas_m5FF06EAAE5964C5E0B9C8CE3023D5BE0DB19D7E1 (ContractMessageBase_tA9C9FCA2DAE63DE7A525580AC6E60DD85EBE2EAF* __this, const RuntimeMethod* method) 
+{
+	{
+		Nullable_1_t4926B6730CE7D5D65A9903F48CFD632867A41E72 L_0 = __this->___U3CGasU3Ek__BackingField_1;
+		return L_0;
+	}
+}
+// System.Void Nethereum.Contracts.CQS.ContractMessageBase::set_Gas(System.Nullable`1<System.Numerics.BigInteger>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ContractMessageBase_set_Gas_m234E8214B809D7990F1275A030341656EC9A32CC (ContractMessageBase_tA9C9FCA2DAE63DE7A525580AC6E60DD85EBE2EAF* __this, Nullable_1_t4926B6730CE7D5D65A9903F48CFD632867A41E72 ___value0, const RuntimeMethod* method) 
+{
+	{
+		Nullable_1_t4926B6730CE7D5D65A9903F48CFD632867A41E72 L_0 = ___value0;
+		__this->___U3CGasU3Ek__BackingField_1 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)&((&(((&__this->___U3CGasU3Ek__BackingField_1))->___value_1))->____bits_1), (void*)NULL);
+		return;
+	}
+}
+// System.Nullable`1<System.Numerics.BigInteger> Nethereum.Contracts.CQS.ContractMessageBase::get_GasPrice()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Nullable_1_t4926B6730CE7D5D65A9903F48CFD632867A41E72 ContractMessageBase_get_GasPrice_m1A7D0BE3BD7FDC4B6831ABC03399597C55C507CE (ContractMessageBase_tA9C9FCA2DAE63DE7A525580AC6E60DD85EBE2EAF* __this, const RuntimeMethod* method) 
+{
+	{
+		Nullable_1_t4926B6730CE7D5D65A9903F48CFD632867A41E72 L_0 = __this->___U3CGasPriceU3Ek__BackingField_2;
+		return L_0;
+	}
+}
+// System.Void Nethereum.Contracts.CQS.ContractMessageBase::set_GasPrice(System.Nullable`1<System.Numerics.BigInteger>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ContractMessageBase_set_GasPrice_mE9D5867695BEC3E5BFB9F4295819F4A047B54A1E (ContractMessageBase_tA9C9FCA2DAE63DE7A525580AC6E60DD85EBE2EAF* __this, Nullable_1_t4926B6730CE7D5D65A9903F48CFD632867A41E72 ___value0, const RuntimeMethod* method) 
+{
+	{
+		Nullable_1_t4926B6730CE7D5D65A9903F48CFD632867A41E72 L_0 = ___value0;
+		__this->___U3CGasPriceU3Ek__BackingField_2 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)&((&(((&__this->___U3CGasPriceU3Ek__BackingField_2))->___value_1))->____bits_1), (void*)NULL);
+		return;
+	}
+}
+// System.String Nethereum.Contracts.CQS.ContractMessageBase::get_FromAddress()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ContractMessageBase_get_FromAddress_mB6F9F4F562A1B873D315355DFC836F0DD904138B (ContractMessageBase_tA9C9FCA2DAE63DE7A525580AC6E60DD85EBE2EAF* __this, const RuntimeMethod* method) 
+{
+	{
+		String_t* L_0 = __this->___U3CFromAddressU3Ek__BackingField_3;
+		return L_0;
+	}
+}
+// System.Void Nethereum.Contracts.CQS.ContractMessageBase::set_FromAddress(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ContractMessageBase_set_FromAddress_m692C1139B7BBFE4956E7A727678BE74E0F95F49B (ContractMessageBase_tA9C9FCA2DAE63DE7A525580AC6E60DD85EBE2EAF* __this, String_t* ___value0, const RuntimeMethod* method) 
+{
+	{
+		String_t* L_0 = ___value0;
+		__this->___U3CFromAddressU3Ek__BackingField_3 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CFromAddressU3Ek__BackingField_3), (void*)L_0);
+		return;
+	}
+}
+// System.Nullable`1<System.Numerics.BigInteger> Nethereum.Contracts.CQS.ContractMessageBase::get_Nonce()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Nullable_1_t4926B6730CE7D5D65A9903F48CFD632867A41E72 ContractMessageBase_get_Nonce_mD7CF81982FCE1703B2F57A78E97A8549477BE553 (ContractMessageBase_tA9C9FCA2DAE63DE7A525580AC6E60DD85EBE2EAF* __this, const RuntimeMethod* method) 
+{
+	{
+		Nullable_1_t4926B6730CE7D5D65A9903F48CFD632867A41E72 L_0 = __this->___U3CNonceU3Ek__BackingField_4;
+		return L_0;
+	}
+}
+// System.Void Nethereum.Contracts.CQS.ContractMessageBase::set_Nonce(System.Nullable`1<System.Numerics.BigInteger>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ContractMessageBase_set_Nonce_m5B721B5F42986734F5E16821AA7E589607E94DCC (ContractMessageBase_tA9C9FCA2DAE63DE7A525580AC6E60DD85EBE2EAF* __this, Nullable_1_t4926B6730CE7D5D65A9903F48CFD632867A41E72 ___value0, const RuntimeMethod* method) 
+{
+	{
+		Nullable_1_t4926B6730CE7D5D65A9903F48CFD632867A41E72 L_0 = ___value0;
+		__this->___U3CNonceU3Ek__BackingField_4 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)&((&(((&__this->___U3CNonceU3Ek__BackingField_4))->___value_1))->____bits_1), (void*)NULL);
+		return;
+	}
+}
+// System.Nullable`1<System.Numerics.BigInteger> Nethereum.Contracts.CQS.ContractMessageBase::get_MaxFeePerGas()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Nullable_1_t4926B6730CE7D5D65A9903F48CFD632867A41E72 ContractMessageBase_get_MaxFeePerGas_mC0C0A840F18D9843BCB517CD9C2F3E60B26617BD (ContractMessageBase_tA9C9FCA2DAE63DE7A525580AC6E60DD85EBE2EAF* __this, const RuntimeMethod* method) 
+{
+	{
+		Nullable_1_t4926B6730CE7D5D65A9903F48CFD632867A41E72 L_0 = __this->___U3CMaxFeePerGasU3Ek__BackingField_5;
+		return L_0;
+	}
+}
+// System.Void Nethereum.Contracts.CQS.ContractMessageBase::set_MaxFeePerGas(System.Nullable`1<System.Numerics.BigInteger>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ContractMessageBase_set_MaxFeePerGas_mAFE37BEB8F60AA7735003F201436ED9E0C6E9E7F (ContractMessageBase_tA9C9FCA2DAE63DE7A525580AC6E60DD85EBE2EAF* __this, Nullable_1_t4926B6730CE7D5D65A9903F48CFD632867A41E72 ___value0, const RuntimeMethod* method) 
+{
+	{
+		Nullable_1_t4926B6730CE7D5D65A9903F48CFD632867A41E72 L_0 = ___value0;
+		__this->___U3CMaxFeePerGasU3Ek__BackingField_5 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)&((&(((&__this->___U3CMaxFeePerGasU3Ek__BackingField_5))->___value_1))->____bits_1), (void*)NULL);
+		return;
+	}
+}
+// System.Nullable`1<System.Numerics.BigInteger> Nethereum.Contracts.CQS.ContractMessageBase::get_MaxPriorityFeePerGas()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Nullable_1_t4926B6730CE7D5D65A9903F48CFD632867A41E72 ContractMessageBase_get_MaxPriorityFeePerGas_m2A68EA4267011E3F6987A088ADA1B74E091003F2 (ContractMessageBase_tA9C9FCA2DAE63DE7A525580AC6E60DD85EBE2EAF* __this, const RuntimeMethod* method) 
+{
+	{
+		Nullable_1_t4926B6730CE7D5D65A9903F48CFD632867A41E72 L_0 = __this->___U3CMaxPriorityFeePerGasU3Ek__BackingField_6;
+		return L_0;
+	}
+}
+// System.Void Nethereum.Contracts.CQS.ContractMessageBase::set_MaxPriorityFeePerGas(System.Nullable`1<System.Numerics.BigInteger>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ContractMessageBase_set_MaxPriorityFeePerGas_m11B29A91E012D4A99328C9349F410D98BA9222B7 (ContractMessageBase_tA9C9FCA2DAE63DE7A525580AC6E60DD85EBE2EAF* __this, Nullable_1_t4926B6730CE7D5D65A9903F48CFD632867A41E72 ___value0, const RuntimeMethod* method) 
+{
+	{
+		Nullable_1_t4926B6730CE7D5D65A9903F48CFD632867A41E72 L_0 = ___value0;
+		__this->___U3CMaxPriorityFeePerGasU3Ek__BackingField_6 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)&((&(((&__this->___U3CMaxPriorityFeePerGasU3Ek__BackingField_6))->___value_1))->____bits_1), (void*)NULL);
+		return;
+	}
+}
+// System.Nullable`1<System.Byte> Nethereum.Contracts.CQS.ContractMessageBase::get_TransactionType()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Nullable_1_tEB6689CC9747A3600689077DCBF77B8E8B510505 ContractMessageBase_get_TransactionType_m5C8E50E5B7ADD520DCCCDE09DCC3FA942C97222F (ContractMessageBase_tA9C9FCA2DAE63DE7A525580AC6E60DD85EBE2EAF* __this, const RuntimeMethod* method) 
+{
+	{
+		Nullable_1_tEB6689CC9747A3600689077DCBF77B8E8B510505 L_0 = __this->___U3CTransactionTypeU3Ek__BackingField_7;
+		return L_0;
+	}
+}
+// System.Void Nethereum.Contracts.CQS.ContractMessageBase::set_TransactionType(System.Nullable`1<System.Byte>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ContractMessageBase_set_TransactionType_m4C85B0DD5BB79648562248F686894251798C2739 (ContractMessageBase_tA9C9FCA2DAE63DE7A525580AC6E60DD85EBE2EAF* __this, Nullable_1_tEB6689CC9747A3600689077DCBF77B8E8B510505 ___value0, const RuntimeMethod* method) 
+{
+	{
+		Nullable_1_tEB6689CC9747A3600689077DCBF77B8E8B510505 L_0 = ___value0;
+		__this->___U3CTransactionTypeU3Ek__BackingField_7 = L_0;
+		return;
+	}
+}
+// System.Collections.Generic.List`1<Nethereum.RPC.Eth.DTOs.AccessList> Nethereum.Contracts.CQS.ContractMessageBase::get_AccessList()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_t4E11F5D2075471CC5269E680568592D8D061C750* ContractMessageBase_get_AccessList_m8B891536B37B89AB21539B9B71EEC3BCFA9A1C2C (ContractMessageBase_tA9C9FCA2DAE63DE7A525580AC6E60DD85EBE2EAF* __this, const RuntimeMethod* method) 
+{
+	{
+		List_1_t4E11F5D2075471CC5269E680568592D8D061C750* L_0 = __this->___U3CAccessListU3Ek__BackingField_8;
+		return L_0;
+	}
+}
+// System.Void Nethereum.Contracts.CQS.ContractMessageBase::set_AccessList(System.Collections.Generic.List`1<Nethereum.RPC.Eth.DTOs.AccessList>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ContractMessageBase_set_AccessList_m188B2922DBC51A5080A7448B6C8193DD84D877C4 (ContractMessageBase_tA9C9FCA2DAE63DE7A525580AC6E60DD85EBE2EAF* __this, List_1_t4E11F5D2075471CC5269E680568592D8D061C750* ___value0, const RuntimeMethod* method) 
+{
+	{
+		List_1_t4E11F5D2075471CC5269E680568592D8D061C750* L_0 = ___value0;
+		__this->___U3CAccessListU3Ek__BackingField_8 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CAccessListU3Ek__BackingField_8), (void*)L_0);
+		return;
+	}
+}
+// System.Void Nethereum.Contracts.CQS.ContractMessageBase::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ContractMessageBase__ctor_m05612E19FDF7248AF58B6F06DAADEEFB7D35A9D7 (ContractMessageBase_tA9C9FCA2DAE63DE7A525580AC6E60DD85EBE2EAF* __this, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Nethereum.Contracts.ContractHandlers.ContractHandler::.ctor(System.String,Nethereum.Contracts.Services.EthApiContractService,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ContractHandler__ctor_mFCCFE10FD4263A411D09BCD02C96CDFF3CDFCB6E (ContractHandler_t3CC1E74BCBEFB5D4531C7BA554B008F0149B1DF7* __this, String_t* ___contractAddress0, EthApiContractService_t59E062A2A158CB66E96C7858A003A32427F337B5* ___ethApiContractService1, String_t* ___addressFrom2, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		String_t* L_0 = ___contractAddress0;
+		__this->___U3CContractAddressU3Ek__BackingField_1 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CContractAddressU3Ek__BackingField_1), (void*)L_0);
+		EthApiContractService_t59E062A2A158CB66E96C7858A003A32427F337B5* L_1 = ___ethApiContractService1;
+		__this->___U3CEthApiContractServiceU3Ek__BackingField_2 = L_1;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CEthApiContractServiceU3Ek__BackingField_2), (void*)L_1);
+		String_t* L_2 = ___addressFrom2;
+		ContractHandler_set_AddressFrom_m5A15E14AA62E196E0FEF17C1741BFDF2F20F4178_inline(__this, L_2, NULL);
+		return;
+	}
+}
+// System.String Nethereum.Contracts.ContractHandlers.ContractHandler::get_AddressFrom()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ContractHandler_get_AddressFrom_mC7790AC8C9C3E2681A0AFAB4B6154EF38C6684A9 (ContractHandler_t3CC1E74BCBEFB5D4531C7BA554B008F0149B1DF7* __this, const RuntimeMethod* method) 
+{
+	{
+		String_t* L_0 = __this->___U3CAddressFromU3Ek__BackingField_0;
+		return L_0;
+	}
+}
+// System.Void Nethereum.Contracts.ContractHandlers.ContractHandler::set_AddressFrom(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ContractHandler_set_AddressFrom_m5A15E14AA62E196E0FEF17C1741BFDF2F20F4178 (ContractHandler_t3CC1E74BCBEFB5D4531C7BA554B008F0149B1DF7* __this, String_t* ___value0, const RuntimeMethod* method) 
+{
+	{
+		String_t* L_0 = ___value0;
+		__this->___U3CAddressFromU3Ek__BackingField_0 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CAddressFromU3Ek__BackingField_0), (void*)L_0);
+		return;
+	}
+}
+// System.String Nethereum.Contracts.ContractHandlers.ContractHandler::get_ContractAddress()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ContractHandler_get_ContractAddress_m18893BE864EC26C7637C95DA18AC150BE70B6E7F (ContractHandler_t3CC1E74BCBEFB5D4531C7BA554B008F0149B1DF7* __this, const RuntimeMethod* method) 
+{
+	{
+		String_t* L_0 = __this->___U3CContractAddressU3Ek__BackingField_1;
+		return L_0;
+	}
+}
+// Nethereum.Contracts.Services.EthApiContractService Nethereum.Contracts.ContractHandlers.ContractHandler::get_EthApiContractService()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR EthApiContractService_t59E062A2A158CB66E96C7858A003A32427F337B5* ContractHandler_get_EthApiContractService_m23FD312A952FD6FB0D5D870DBC3B3F17EB784E6B (ContractHandler_t3CC1E74BCBEFB5D4531C7BA554B008F0149B1DF7* __this, const RuntimeMethod* method) 
+{
+	{
+		EthApiContractService_t59E062A2A158CB66E96C7858A003A32427F337B5* L_0 = __this->___U3CEthApiContractServiceU3Ek__BackingField_2;
+		return L_0;
+	}
+}
+// System.Void Nethereum.Contracts.ContractHandlers.ContractHandler::SetAddressFrom(Nethereum.Contracts.CQS.ContractMessageBase)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ContractHandler_SetAddressFrom_m6D5B9D8ACC238540321B174665F20693E94DC59E (ContractHandler_t3CC1E74BCBEFB5D4531C7BA554B008F0149B1DF7* __this, ContractMessageBase_tA9C9FCA2DAE63DE7A525580AC6E60DD85EBE2EAF* ___contractMessage0, const RuntimeMethod* method) 
+{
+	String_t* G_B2_0 = NULL;
+	ContractMessageBase_tA9C9FCA2DAE63DE7A525580AC6E60DD85EBE2EAF* G_B2_1 = NULL;
+	String_t* G_B1_0 = NULL;
+	ContractMessageBase_tA9C9FCA2DAE63DE7A525580AC6E60DD85EBE2EAF* G_B1_1 = NULL;
+	{
+		ContractMessageBase_tA9C9FCA2DAE63DE7A525580AC6E60DD85EBE2EAF* L_0 = ___contractMessage0;
+		ContractMessageBase_tA9C9FCA2DAE63DE7A525580AC6E60DD85EBE2EAF* L_1 = ___contractMessage0;
+		NullCheck(L_1);
+		String_t* L_2;
+		L_2 = ContractMessageBase_get_FromAddress_mB6F9F4F562A1B873D315355DFC836F0DD904138B_inline(L_1, NULL);
+		String_t* L_3 = L_2;
+		G_B1_0 = L_3;
+		G_B1_1 = L_0;
+		if (L_3)
+		{
+			G_B2_0 = L_3;
+			G_B2_1 = L_0;
+			goto IL_0011;
+		}
+	}
+	{
+		String_t* L_4;
+		L_4 = ContractHandler_get_AddressFrom_mC7790AC8C9C3E2681A0AFAB4B6154EF38C6684A9_inline(__this, NULL);
+		G_B2_0 = L_4;
+		G_B2_1 = G_B1_1;
+	}
+
+IL_0011:
+	{
+		NullCheck(G_B2_1);
+		ContractMessageBase_set_FromAddress_m692C1139B7BBFE4956E7A727678BE74E0F95F49B_inline(G_B2_1, G_B2_0, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Nethereum.JsonRpc.Client.IClient Nethereum.Contracts.ContractHandlers.ContractTransactionHandlerBase::get_Client()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* ContractTransactionHandlerBase_get_Client_mA91747DE2772D783B2F5C32854B7439DFE624E6C (ContractTransactionHandlerBase_t8D5503838C4576B88F52071D89FFF2CAC2ACCF29* __this, const RuntimeMethod* method) 
+{
+	{
+		RuntimeObject* L_0 = __this->___U3CClientU3Ek__BackingField_0;
+		return L_0;
+	}
+}
+// Nethereum.RPC.Accounts.IAccount Nethereum.Contracts.ContractHandlers.ContractTransactionHandlerBase::get_Account()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* ContractTransactionHandlerBase_get_Account_m1FE88D1891E8AD64508B942A7719EF531AE1C69B (ContractTransactionHandlerBase_t8D5503838C4576B88F52071D89FFF2CAC2ACCF29* __this, const RuntimeMethod* method) 
+{
+	{
+		RuntimeObject* L_0 = __this->___U3CAccountU3Ek__BackingField_1;
+		return L_0;
+	}
+}
+// Nethereum.RPC.TransactionManagers.ITransactionManager Nethereum.Contracts.ContractHandlers.ContractTransactionHandlerBase::get_TransactionManager()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* ContractTransactionHandlerBase_get_TransactionManager_mDFC4DCBF61A4747C985709913A15457F47D88D4A (ContractTransactionHandlerBase_t8D5503838C4576B88F52071D89FFF2CAC2ACCF29* __this, const RuntimeMethod* method) 
+{
+	{
+		RuntimeObject* L_0 = __this->___U3CTransactionManagerU3Ek__BackingField_2;
+		return L_0;
+	}
+}
+// System.Void Nethereum.Contracts.ContractHandlers.ContractTransactionHandlerBase::.ctor(Nethereum.RPC.TransactionManagers.ITransactionManager)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ContractTransactionHandlerBase__ctor_m0AF4E5F952151F889464020EF0AD786DE1A637AE (ContractTransactionHandlerBase_t8D5503838C4576B88F52071D89FFF2CAC2ACCF29* __this, RuntimeObject* ___transactionManager0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ITransactionManager_t93C7C810748D626CB18E930ADCB2A2571F8426A1_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		RuntimeObject* L_0 = ___transactionManager0;
+		NullCheck(L_0);
+		RuntimeObject* L_1;
+		L_1 = InterfaceFuncInvoker0< RuntimeObject* >::Invoke(0 /* Nethereum.JsonRpc.Client.IClient Nethereum.RPC.TransactionManagers.ITransactionManager::get_Client() */, ITransactionManager_t93C7C810748D626CB18E930ADCB2A2571F8426A1_il2cpp_TypeInfo_var, L_0);
+		__this->___U3CClientU3Ek__BackingField_0 = L_1;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CClientU3Ek__BackingField_0), (void*)L_1);
+		RuntimeObject* L_2 = ___transactionManager0;
+		NullCheck(L_2);
+		RuntimeObject* L_3;
+		L_3 = InterfaceFuncInvoker0< RuntimeObject* >::Invoke(6 /* Nethereum.RPC.Accounts.IAccount Nethereum.RPC.TransactionManagers.ITransactionManager::get_Account() */, ITransactionManager_t93C7C810748D626CB18E930ADCB2A2571F8426A1_il2cpp_TypeInfo_var, L_2);
+		__this->___U3CAccountU3Ek__BackingField_1 = L_3;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CAccountU3Ek__BackingField_1), (void*)L_3);
+		RuntimeObject* L_4 = ___transactionManager0;
+		__this->___U3CTransactionManagerU3Ek__BackingField_2 = L_4;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CTransactionManagerU3Ek__BackingField_2), (void*)L_4);
+		return;
+	}
+}
+// System.String Nethereum.Contracts.ContractHandlers.ContractTransactionHandlerBase::GetAccountAddressFrom()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ContractTransactionHandlerBase_GetAccountAddressFrom_m719313F596AD770DC9936F70509FA49B7150FD13 (ContractTransactionHandlerBase_t8D5503838C4576B88F52071D89FFF2CAC2ACCF29* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IAccount_t2D498E1E6AF11CFDB79F07A7D78532E396F852D0_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	RuntimeObject* G_B2_0 = NULL;
+	RuntimeObject* G_B1_0 = NULL;
+	{
+		RuntimeObject* L_0;
+		L_0 = ContractTransactionHandlerBase_get_Account_m1FE88D1891E8AD64508B942A7719EF531AE1C69B_inline(__this, NULL);
+		RuntimeObject* L_1 = L_0;
+		G_B1_0 = L_1;
+		if (L_1)
+		{
+			G_B2_0 = L_1;
+			goto IL_000c;
+		}
+	}
+	{
+		return (String_t*)NULL;
+	}
+
+IL_000c:
+	{
+		NullCheck(G_B2_0);
+		String_t* L_2;
+		L_2 = InterfaceFuncInvoker0< String_t* >::Invoke(0 /* System.String Nethereum.RPC.Accounts.IAccount::get_Address() */, IAccount_t2D498E1E6AF11CFDB79F07A7D78532E396F852D0_il2cpp_TypeInfo_var, G_B2_0);
+		return L_2;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Nethereum.Contracts.Constants.CommonAddresses::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CommonAddresses__ctor_mEB50F446200CF88A31F37CBC5B69960BEA6029E6 (CommonAddresses_tF9534712CEDF086A47D6D13662A614F84F29BACE* __this, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* EthApiService_get_Transactions_m4B7097A8A710C878E1DF28A6A6C26D2C674C4A98_inline (EthApiService_tD9B555F28B0008E999D5B0EEC8A063418522921A* __this, const RuntimeMethod* method) 
+{
+	{
+		RuntimeObject* L_0 = __this->___U3CTransactionsU3Ek__BackingField_13;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void EthApiContractService_set_ERC721_m91197F6E4ED9F194F72A1B200B02A9BA50616486_inline (EthApiContractService_t59E062A2A158CB66E96C7858A003A32427F337B5* __this, ERC721Service_tF8C45C07FEEFDEBBD4948DAC26C8BD00047C7EAA* ___value0, const RuntimeMethod* method) 
+{
+	{
+		ERC721Service_tF8C45C07FEEFDEBBD4948DAC26C8BD00047C7EAA* L_0 = ___value0;
+		__this->___U3CERC721U3Ek__BackingField_26 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CERC721U3Ek__BackingField_26), (void*)L_0);
+		return;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void EthApiContractService_set_ERC20_mEFE42BB33ABAFA2C8A95D7BA4016796D77BE8C53_inline (EthApiContractService_t59E062A2A158CB66E96C7858A003A32427F337B5* __this, ERC20Service_tBAC6D3868CE498F01EA1A11F8850CE3724737332* ___value0, const RuntimeMethod* method) 
+{
+	{
+		ERC20Service_tBAC6D3868CE498F01EA1A11F8850CE3724737332* L_0 = ___value0;
+		__this->___U3CERC20U3Ek__BackingField_25 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CERC20U3Ek__BackingField_25), (void*)L_0);
+		return;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void EthApiContractService_set_ERC1155_mFE87E92E9CD0DECA7D68BABA3DBED9FDB89FFBDF_inline (EthApiContractService_t59E062A2A158CB66E96C7858A003A32427F337B5* __this, ERC1155Service_t5929D51764AC25462FF1071BAA5AFD39D39AC0E4* ___value0, const RuntimeMethod* method) 
+{
+	{
+		ERC1155Service_t5929D51764AC25462FF1071BAA5AFD39D39AC0E4* L_0 = ___value0;
+		__this->___U3CERC1155U3Ek__BackingField_27 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CERC1155U3Ek__BackingField_27), (void*)L_0);
+		return;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void EthApiContractService_set_ERC1271_mB4485253ECE12D1A18B3B5962091D5C370244081_inline (EthApiContractService_t59E062A2A158CB66E96C7858A003A32427F337B5* __this, ERC1271Service_t5D362FEC8F9FB4A4A43BC1094CDC1E4EFE768893* ___value0, const RuntimeMethod* method) 
+{
+	{
+		ERC1271Service_t5D362FEC8F9FB4A4A43BC1094CDC1E4EFE768893* L_0 = ___value0;
+		__this->___U3CERC1271U3Ek__BackingField_28 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CERC1271U3Ek__BackingField_28), (void*)L_0);
+		return;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void EthApiContractService_set_ProofOfHumanity_m088F7E4EDD29B0ECAC3733725EB6378F55D29122_inline (EthApiContractService_t59E062A2A158CB66E96C7858A003A32427F337B5* __this, ProofOfHumanityService_t9FE5FAAF5CE7C444E3C02617BB45765D9D18E0EB* ___value0, const RuntimeMethod* method) 
+{
+	{
+		ProofOfHumanityService_t9FE5FAAF5CE7C444E3C02617BB45765D9D18E0EB* L_0 = ___value0;
+		__this->___U3CProofOfHumanityU3Ek__BackingField_29 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CProofOfHumanityU3Ek__BackingField_29), (void*)L_0);
+		return;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* RpcClientWrapper_get_Client_m5B5B22840834B279EF50CC2897D0CB69D8E3C059_inline (RpcClientWrapper_t639264795AA92FB47F8CBBE7183EEBFE0A565854* __this, const RuntimeMethod* method) 
+{
+	{
+		RuntimeObject* L_0 = __this->___U3CClientU3Ek__BackingField_0;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR BlockParameter_t13CF5CC9CDE990ACD945748B2FA7F19EA0A06AD9* EthApiService_get_DefaultBlock_m41019BB33B51EA84371191C927EAF9105725D7ED_inline (EthApiService_tD9B555F28B0008E999D5B0EEC8A063418522921A* __this, const RuntimeMethod* method) 
+{
+	{
+		BlockParameter_t13CF5CC9CDE990ACD945748B2FA7F19EA0A06AD9* L_0 = __this->____defaultBlock_1;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR HexBigInteger_tFD9189302CC4BD35091F94D48E460B5D2D5CA811* CallInput_get_MaxFeePerGas_m7F2F78062F61F145F95095D15F4D2FB8B130E58E_inline (CallInput_t134727ED6D63AA0F8722CB06FEC85207CC5D3F9C* __this, const RuntimeMethod* method) 
+{
+	{
+		HexBigInteger_tFD9189302CC4BD35091F94D48E460B5D2D5CA811* L_0 = __this->___U3CMaxFeePerGasU3Ek__BackingField_6;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void CallInput_set_GasPrice_m0ACD61757CB8A102B2973AB5663E58BF7C1C4950_inline (CallInput_t134727ED6D63AA0F8722CB06FEC85207CC5D3F9C* __this, HexBigInteger_tFD9189302CC4BD35091F94D48E460B5D2D5CA811* ___value0, const RuntimeMethod* method) 
+{
+	{
+		HexBigInteger_tFD9189302CC4BD35091F94D48E460B5D2D5CA811* L_0 = ___value0;
+		__this->___U3CGasPriceU3Ek__BackingField_4 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CGasPriceU3Ek__BackingField_4), (void*)L_0);
+		return;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR HexBigInteger_tFD9189302CC4BD35091F94D48E460B5D2D5CA811* Transaction_get_BlockNumber_m349407369794699D9B18BB6C7A9225033954191F_inline (Transaction_t42AF58898C5DCF5C2ECE238B8C471CD48B389A33* __this, const RuntimeMethod* method) 
+{
+	{
+		HexBigInteger_tFD9189302CC4BD35091F94D48E460B5D2D5CA811* L_0 = __this->___U3CBlockNumberU3Ek__BackingField_4;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void MultiQueryHandler_set_ContractAddress_m2F7FAEFB64E27D89D5EB2AA5F97A62BA997CE49B_inline (MultiQueryHandler_tD5E9074899A83693F74D77C94F903D4AA15753CE* __this, String_t* ___value0, const RuntimeMethod* method) 
+{
+	{
+		String_t* L_0 = ___value0;
+		__this->___U3CContractAddressU3Ek__BackingField_1 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CContractAddressU3Ek__BackingField_1), (void*)L_0);
+		return;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR String_t* MultiQueryHandler_get_ContractAddress_mA39F6E0DCEB03E242771B68672D8951137779325_inline (MultiQueryHandler_tD5E9074899A83693F74D77C94F903D4AA15753CE* __this, const RuntimeMethod* method) 
+{
+	{
+		String_t* L_0 = __this->___U3CContractAddressU3Ek__BackingField_1;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void MultiSendFunction_set_Transactions_mACB0FB69D49E250572C0DEB9DDC301E0198C8030_inline (MultiSendFunction_t283117F8190279FA3307712FD93408FF3B0EE292* __this, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___value0, const RuntimeMethod* method) 
+{
+	{
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_0 = ___value0;
+		__this->___U3CTransactionsU3Ek__BackingField_9 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CTransactionsU3Ek__BackingField_9), (void*)L_0);
+		return;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void ContractHandler_set_AddressFrom_m5A15E14AA62E196E0FEF17C1741BFDF2F20F4178_inline (ContractHandler_t3CC1E74BCBEFB5D4531C7BA554B008F0149B1DF7* __this, String_t* ___value0, const RuntimeMethod* method) 
+{
+	{
+		String_t* L_0 = ___value0;
+		__this->___U3CAddressFromU3Ek__BackingField_0 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CAddressFromU3Ek__BackingField_0), (void*)L_0);
+		return;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR String_t* ContractMessageBase_get_FromAddress_mB6F9F4F562A1B873D315355DFC836F0DD904138B_inline (ContractMessageBase_tA9C9FCA2DAE63DE7A525580AC6E60DD85EBE2EAF* __this, const RuntimeMethod* method) 
+{
+	{
+		String_t* L_0 = __this->___U3CFromAddressU3Ek__BackingField_3;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR String_t* ContractHandler_get_AddressFrom_mC7790AC8C9C3E2681A0AFAB4B6154EF38C6684A9_inline (ContractHandler_t3CC1E74BCBEFB5D4531C7BA554B008F0149B1DF7* __this, const RuntimeMethod* method) 
+{
+	{
+		String_t* L_0 = __this->___U3CAddressFromU3Ek__BackingField_0;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void ContractMessageBase_set_FromAddress_m692C1139B7BBFE4956E7A727678BE74E0F95F49B_inline (ContractMessageBase_tA9C9FCA2DAE63DE7A525580AC6E60DD85EBE2EAF* __this, String_t* ___value0, const RuntimeMethod* method) 
+{
+	{
+		String_t* L_0 = ___value0;
+		__this->___U3CFromAddressU3Ek__BackingField_3 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CFromAddressU3Ek__BackingField_3), (void*)L_0);
+		return;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* ContractTransactionHandlerBase_get_Account_m1FE88D1891E8AD64508B942A7719EF531AE1C69B_inline (ContractTransactionHandlerBase_t8D5503838C4576B88F52071D89FFF2CAC2ACCF29* __this, const RuntimeMethod* method) 
+{
+	{
+		RuntimeObject* L_0 = __this->___U3CAccountU3Ek__BackingField_1;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ConfiguredTaskAwaiter_t28A5A60199BBE7F1F31159301DD211EFDCF955E2 ConfiguredTaskAwaitable_1_GetAwaiter_m10364C3B0A904803E890B2D75674665F986BDAB2_gshared_inline (ConfiguredTaskAwaitable_1_t97C129EA63015240E6F9E767F4A120CC9122FEF8* __this, const RuntimeMethod* method) 
+{
+	{
+		ConfiguredTaskAwaiter_t28A5A60199BBE7F1F31159301DD211EFDCF955E2 L_0 = (ConfiguredTaskAwaiter_t28A5A60199BBE7F1F31159301DD211EFDCF955E2)__this->___m_configuredTaskAwaiter_0;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void List_1_Add_mEBCF994CC3814631017F46A387B1A192ED6C85C7_gshared_inline (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, RuntimeObject* ___item0, const RuntimeMethod* method) 
+{
+	ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* V_0 = NULL;
+	int32_t V_1 = 0;
+	{
+		int32_t L_0 = (int32_t)__this->____version_3;
+		__this->____version_3 = ((int32_t)il2cpp_codegen_add(L_0, 1));
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_1 = (ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*)__this->____items_1;
+		V_0 = L_1;
+		int32_t L_2 = (int32_t)__this->____size_2;
+		V_1 = L_2;
+		int32_t L_3 = V_1;
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_4 = V_0;
+		NullCheck(L_4);
+		if ((!(((uint32_t)L_3) < ((uint32_t)((int32_t)(((RuntimeArray*)L_4)->max_length))))))
+		{
+			goto IL_0034;
+		}
+	}
+	{
+		int32_t L_5 = V_1;
+		__this->____size_2 = ((int32_t)il2cpp_codegen_add(L_5, 1));
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_6 = V_0;
+		int32_t L_7 = V_1;
+		RuntimeObject* L_8 = ___item0;
+		NullCheck(L_6);
+		(L_6)->SetAt(static_cast<il2cpp_array_size_t>(L_7), (RuntimeObject*)L_8);
+		return;
+	}
+
+IL_0034:
+	{
+		RuntimeObject* L_9 = ___item0;
+		List_1_AddWithResize_m79A9BF770BEF9C06BE40D5401E55E375F2726CC4(__this, L_9, il2cpp_rgctx_method(method->klass->rgctx_data, 14));
+		return;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t List_1_get_Count_m4407E4C389F22B8CEC282C15D56516658746C383_gshared_inline (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, const RuntimeMethod* method) 
+{
+	{
+		int32_t L_0 = (int32_t)__this->____size_2;
+		return L_0;
+	}
+}

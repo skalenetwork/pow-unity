@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using Nethereum.Web3;
 using Nethereum.RPC.Eth.DTOs;
 using System;
+using Nethereum.Unity.Rpc;
 
 public class UIController : MonoBehaviour
 {
@@ -38,14 +39,16 @@ public class UIController : MonoBehaviour
 
     private void Start()
     {
+        
+        SetChain();
+
         btn.onClick.AddListener(OnButtonClick);
 
-        SetChain();
     }
 
-    private async void OnButtonClick()
+    private void OnButtonClick()
     {
-        await SkaleManager.instance.SendFuel();
+        SkaleManager.instance.SendFuel();
     }
 
     public void SetBackground()
@@ -62,7 +65,7 @@ public class UIController : MonoBehaviour
     }
 
     //Set chain variables
-    public async void SetChain()
+    public void SetChain()
     {
         string chain = slected_chainLabel.text;
 
@@ -94,40 +97,27 @@ public class UIController : MonoBehaviour
         Chains chain_object = SkaleManager.instance.GetChainByName(currentChain);
 
         chainInfo_url.text = chain_object.chainInfo_URL;
-
-        await SetFuelBalance();
+        StartCoroutine(SetFuelBalance());
     }
 
-
-    //Set the sFuel wallet balance
-    public async Task SetFuelBalance()
+    public IEnumerator SetFuelBalance()
     {
-        //Variable that contains the diferent chains details
         Chains chain_object = SkaleManager.instance.GetChainByName(currentChain);
 
-        Console.WriteLine("currentChain " + currentChain);
-        Console.WriteLine("chain_object.rpc " + chain_object.rpc);
-
-        Web3 web3 = new Web3(chain_object.rpc);
-
-
-        Console.WriteLine("SkaleManager.instance.account_receiver " + SkaleManager.instance.account_receiver);
-
-
-        var balance = await web3.Eth.GetBalance.SendRequestAsync(SkaleManager.instance.account_receiver);
-
-        var balanceInEther = Web3.Convert.FromWei(balance.Value);
+        var balanceRequest = new EthGetBalanceUnityRequest(chain_object.rpc);
+        yield return balanceRequest.SendRequest(SkaleManager.instance.account_receiver, BlockParameter.CreateLatest());
+        var balanceInEther = Web3.Convert.FromWei(balanceRequest.Result.Value);
 
         float newVal = float.Parse(balanceInEther.ToString());
 
         sfuelBalance.text = newVal.ToString();
     }
 
+
     public void SetTransactionUI(TransactionReceipt transactionReceipt)
     {
         transaction_block.text = SkaleManager.instance.account_receiver;
 
-        Debug.Log("transactionReceipt.BlockHash.ToString() " + transactionReceipt.BlockHash.ToString());
         transaction_hash.text = transactionReceipt.BlockHash.ToString();
     }
 

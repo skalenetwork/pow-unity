@@ -10,6 +10,7 @@ using UnityEngine;
 using BNSharp;
 using Nethereum.ABI.Encoders;
 using Nethereum.ABI;
+using Nethereum.Unity.Rpc;
 
 /**
  * This class implements the POW skale algorithm and is called in the Skale_Send_sFuel script
@@ -21,8 +22,10 @@ public class Miner
     /**
     * Receives the transaction and returns the new gas price
     */
-    public async Task<string> MineGasForTransaction(Web3 web3, TransactionInput tx)
+    public async Task<string> MineGasForTransaction(Chains schain, TransactionInput tx)
     {
+        Web3 web3 = new Web3(new UnityWebRequestRpcTaskClient(new Uri(schain.rpc)));
+
         if (tx.From == null || tx.Nonce == null)
         {
             throw new ArgumentException("Not enough fields for mining gas (from, nonce)");
@@ -56,7 +59,7 @@ public class Miner
         BN divConstant = maxNumber.Div(DIFFICULTY);
         BN candidate = new BN(0);
 
-        long iterations = 0;
+        double iterations = 0;
 
         while (true)
         {
@@ -84,9 +87,9 @@ public class Miner
                  break;
             }
 
-            if (iterations++ % 2_000 == 0)
+            if (iterations++ % 4_000 == 0)
             {
-                await Task.Delay(0);
+                await Task.Delay(2);
             }
         }
 
