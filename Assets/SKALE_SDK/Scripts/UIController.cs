@@ -34,15 +34,15 @@ public class UIController : MonoBehaviour
 
     private void Awake()
     {
-        SetBackground();
+      //  SetBackground();
     }
 
     private void Start()
     {
         
-        SetChain();
+        //SetChain();
 
-        btn.onClick.AddListener(OnButtonClick);
+//        btn.onClick.AddListener(OnButtonClick);
 
     }
 
