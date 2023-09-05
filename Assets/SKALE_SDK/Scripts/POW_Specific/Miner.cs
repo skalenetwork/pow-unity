@@ -87,9 +87,9 @@ public class Miner
                  break;
             }
 
-            if (iterations++ % 4_000 == 0)
+            if (iterations++ % 2_000 == 0)
             {
-                await Task.Delay(2);
+                await Task.Delay(0);
             }
         }
 

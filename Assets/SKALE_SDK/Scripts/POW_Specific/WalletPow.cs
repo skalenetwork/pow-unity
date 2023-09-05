@@ -37,7 +37,10 @@ public class WalletPow : Miner
         web3.TransactionManager.UseLegacyAsDefault = true;
         var contract = web3.Eth.GetContract(pow_contract_abi, current_chain.address);
         var powFunction = contract.GetFunction("pay");
-        
+
+        Debug.Log("aqui ");
+
+
         var transactionInput = new TransactionInput() {
             From = account.Address,
             To = current_chain.address,
@@ -47,6 +50,8 @@ public class WalletPow : Miner
         };
 
         transactionInput.GasPrice = new HexBigInteger(BigInteger.Parse(await MineGasForTransaction(current_chain, transactionInput)));
+
+        Debug.Log("transactionInput.GasPrice "+ transactionInput.GasPrice);
 
         return await powFunction.SendTransactionAndWaitForReceiptAsync(transactionInput,null, receiver_address);
     }

@@ -69,5 +69,5 @@ public class Request_Manager : MonoBehaviour
 
 public enum sFUEL_Distribution
 {
-    transfer, pow, api
+    transfer, pow
 }

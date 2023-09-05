@@ -27,7 +27,16 @@ public class Background_signer
         if (signers.Count <= userId) {
             Account signer = Signer.GenerateSigner();
             signers.Add(signer);
-            await custodial.distribute(signer.Address);
+
+            if(Request_Manager.instance.sfuel_distribution == sFUEL_Distribution.transfer)
+            {
+                await custodial.distribute(sFUEL_Distribution.transfer, signer.Address);
+
+            }else if(Request_Manager.instance.sfuel_distribution == sFUEL_Distribution.pow)
+            {
+                await custodial.distribute(sFUEL_Distribution.pow, signer.Address);
+            }
+
             return signers[userId].Address;
 
         }else

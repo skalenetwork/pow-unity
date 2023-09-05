@@ -51,16 +51,30 @@ public class Custodial
 
     }
 
-    public async Task distribute(string to)
+    public async Task distribute(sFUEL_Distribution type, string to)
     {
-        Web3 custodian_web3 = custodian.GetCustodian();
-      
-        TransactionReceipt receipt_ =  await custodian_web3.Eth.GetEtherTransferService().TransferEtherAndWaitForReceiptAsync(to, 0.0000002m,0.0001m);
+        switch (type)
+        {
+            case sFUEL_Distribution.transfer:
 
-        Debug.Log("receipt_ " + receipt_.TransactionHash);
+                Web3 custodian_web3 = custodian.GetCustodian();
 
-        nonce++;
+                TransactionReceipt receipt_ = await custodian_web3.Eth.GetEtherTransferService().TransferEtherAndWaitForReceiptAsync(to, 0.0000002m, 0.0001m);
 
+                Debug.Log("receipt_transfer " + receipt_.TransactionHash);
+
+                nonce++;
+                break;
+            case sFUEL_Distribution.pow:
+
+                AnonymousWallet wallet = new AnonymousWallet(Request_Manager.instance.current_chain);
+
+                TransactionReceipt transactionReceipt = await wallet.Send(to);
+
+                Debug.Log("receipt_pow " + transactionReceipt.TransactionHash);
+
+                break;
+        }
+            
     }
-
 }
