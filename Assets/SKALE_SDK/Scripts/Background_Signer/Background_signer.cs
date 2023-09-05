@@ -6,6 +6,9 @@ using Nethereum.Web3;
 using System.Threading.Tasks;
 using Nethereum.RPC.Eth.DTOs;
 using Nethereum.Hex.HexTypes;
+using Nethereum.Unity.Rpc;
+using System;
+
 public class Background_signer
 {
 
@@ -58,8 +61,11 @@ public class Background_signer
             Value= new HexBigInteger(1)
         };
 
+#if UNITY_EDITOR
         Web3 web3 = new Web3(signers[userId], Request_Manager.instance.current_chain.rpc);
-
+#else
+        Web3 web3 = new Web3(signers[userId], new UnityWebRequestRpcTaskClient(new Uri(Request_Manager.instance.current_chain.rpc)));
+#endif
         await web3.Eth.TransactionManager.SendTransactionAndWaitForReceiptAsync(tx);
 
 
@@ -70,7 +76,12 @@ public class Background_signer
         string account = signers[userId].Address;
         if (account == null) return;
 
+#if UNITY_EDITOR
         Web3 web3 = new Web3(signers[userId], Request_Manager.instance.current_chain.rpc);
+#else
+        Web3 web3 = new Web3(signers[userId], new UnityWebRequestRpcTaskClient(new Uri(Request_Manager.instance.current_chain.rpc)));
+#endif
+
 
         var contract = web3.Eth.GetContract(contract_abi, contract_address);
         var function = contract.GetFunction(functionName);

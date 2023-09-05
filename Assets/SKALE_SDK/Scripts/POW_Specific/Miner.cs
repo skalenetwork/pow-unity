@@ -89,7 +89,7 @@ public class Miner
 
             if (iterations++ % 2_000 == 0)
             {
-                await Task.Delay(0);
+                await Task.Delay(1);
             }
         }
 
