@@ -2967,6 +2967,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1686097179}
   m_CullTransparentMesh: 1
+--- !u!1 &1738812525 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9137063855137392392, guid: a8f91f2ac3a0c4f2e993b1dd4256fc5c, type: 3}
+  m_PrefabInstance: {fileID: 9137063854381434031}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1738812528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1738812525}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3b2a73dc8dde1f42ab2cc1563aab0b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1741475427
 GameObject:
   m_ObjectHideFlags: 0
@@ -3097,6 +3114,7 @@ MonoBehaviour:
   sfuelBalance: {fileID: 186996163}
   transaction_block: {fileID: 1825139401}
   transaction_hash: {fileID: 212001577}
+  loading_ui: {fileID: 0}
 --- !u!1 &1825139399
 GameObject:
   m_ObjectHideFlags: 0
@@ -3591,6 +3609,10 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 9137063855137392390, guid: a8f91f2ac3a0c4f2e993b1dd4256fc5c, type: 3}
+      propertyPath: pow_miner
+      value: 
+      objectReference: {fileID: 1738812528}
     - target: {fileID: 9137063855137392390, guid: a8f91f2ac3a0c4f2e993b1dd4256fc5c, type: 3}
       propertyPath: ui_script
       value: 

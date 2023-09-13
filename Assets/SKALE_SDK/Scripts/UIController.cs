@@ -29,6 +29,8 @@ public class UIController : MonoBehaviour
     //hash of the transaction
     public TextMeshProUGUI transaction_hash;
 
+    private GameObject loading_ui;
+
     //Current selected chain
     ChainName currentChain;
 
@@ -49,6 +51,7 @@ public class UIController : MonoBehaviour
     private void OnButtonClick()
     {
         SkaleManager.instance.SendFuel();
+        setLoading(true);
     }
 
     public void SetBackground()
@@ -64,6 +67,17 @@ public class UIController : MonoBehaviour
         }
     }
 
+    public void setLoading(bool state)
+    {
+        if (state)
+        {
+            loading_ui = Instantiate(Resources.Load("Prefabs/Loading_Popup") as GameObject, gameObject.transform);
+        }
+        else
+        {
+            loading_ui.gameObject.GetComponent<LoadingController>().UIExit();
+        }
+    }
     //Set chain variables
     public void SetChain()
     {

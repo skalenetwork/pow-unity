@@ -11,20 +11,21 @@ using BNSharp;
 using Nethereum.ABI.Encoders;
 using Nethereum.ABI;
 using Nethereum.Unity.Rpc;
+using System.Collections;
 
 /**
  * This class implements the POW skale algorithm and is called in the Skale_Send_sFuel script
  */
-public class Miner
+public class Miner: MonoBehaviour
 {
    
 
     /**
     * Receives the transaction and returns the new gas price
     */
-    public async Task<string> MineGasForTransaction(Chains schain, TransactionInput tx)
+    public IEnumerator MineGasForTransaction(System.Action<string> callback,Chains schain, TransactionInput tx)
     {
-        Web3 web3 = new Web3(new UnityWebRequestRpcTaskClient(new Uri(schain.rpc)));
+        //Web3 web3 = new Web3(new UnityWebRequestRpcTaskClient(new Uri(schain.rpc)));
 
         if (tx.From == null || tx.Nonce == null)
         {
@@ -32,22 +33,34 @@ public class Miner
         }
         if (tx.Gas == null)
         {
-            tx.Gas = await web3.TransactionManager.EstimateGasAsync(tx);
+            Debug.Log("OOOOOO");
+           // tx.Gas = await web3.TransactionManager.EstimateGasAsync(tx);
         }
 
         var address = tx.From;
         var nonce = (long)(tx.Nonce).Value;
         var gas = (long)(tx.Gas).Value;
 
-        return await MineFreeGas(gas, address, nonce);
+
+        string result = null;
+
+        StartCoroutine(MineFreeGas((value) =>{result = value;}, gas, address, nonce));
+
+        while (result == null)
+        {
+            yield return null;
+        }
+
+        callback(result);
 
     }
 
     /**
      * This function generates a unice gas price
      */
-    private async Task<string> MineFreeGas(long gasAmount, string address,long nonce)
+    public IEnumerator MineFreeGas(System.Action<string> callback,long gasAmount, string address,long nonce)
     {
+
         BN bn_noce_hash = new BN(GetSoliditySha3(nonce),16);
 
         BN bn_address_hash = new BN(GetSoliditySha3(address.HexToByteArray()), 16);
@@ -87,16 +100,36 @@ public class Miner
                  break;
             }
 
-            if (iterations++ % 4_000 == 0)
+            if (iterations++ % 1_00 == 0)
             {
-                await Task.Delay(2);
+                yield return null;
             }
+
         }
 
-        return candidate.ToString();
+
+        callback(candidate.ToString());
     }
 
-   
+    public async Task<string> POW_Caller(Chains schain, TransactionInput tx)
+    {
+        string result = null;
+
+
+        StartCoroutine(MineGasForTransaction((result_) =>
+        {
+            result = result_;
+        }, schain, tx));
+
+        while (result == null)
+        {
+            await Task.Yield(); // Yield to the main Unity thread
+        }
+
+        return result;
+    }
+
+
     /**
      * It works like the function soliditySha3 from the JS package web3-utils 
      */

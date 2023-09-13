@@ -34,7 +34,7 @@ public class LoadingController : MonoBehaviour
 
     public void LoadingAnim()
     {
-        wheel.transform.DORotate(new Vector3(0, 0, -10000), 35, RotateMode.FastBeyond360).SetLoops(-1);
+        wheel.transform.DORotate(new Vector3(0, 0, -10000), 60, RotateMode.FastBeyond360).SetLoops(-1);
     }
 
     public void KillGameObject()

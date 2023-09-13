@@ -11,7 +11,7 @@ using Nethereum.Unity.Rpc;
 using System;
 using Nethereum.Unity.Contracts;
 
-public class WalletPow : Miner
+public class WalletPow
 {
     private Account account;
     private Web3 web3;
@@ -33,6 +33,7 @@ public class WalletPow : Miner
 
     public async Task<TransactionReceipt> Send(string receiver_address)
     {
+
         web3.TransactionReceiptPolling.SetPollingRetryIntervalInMilliseconds(300);
         web3.TransactionManager.UseLegacyAsDefault = true;
         var contract = web3.Eth.GetContract(pow_contract_abi, current_chain.address);
@@ -42,11 +43,13 @@ public class WalletPow : Miner
             From = account.Address,
             To = current_chain.address,
             Nonce = await web3.Eth.Transactions.GetTransactionCount.SendRequestAsync(account.Address),
-            Gas = new HexBigInteger("65000"),
+            Gas = new HexBigInteger("10000"),
             Value = new HexBigInteger("0"),
         };
 
-        transactionInput.GasPrice = new HexBigInteger(BigInteger.Parse(await MineGasForTransaction(current_chain, transactionInput)));
+        string result = await SkaleManager.instance.pow_miner.POW_Caller(current_chain, transactionInput);
+
+        transactionInput.GasPrice = new HexBigInteger(BigInteger.Parse(result));
 
         return await powFunction.SendTransactionAndWaitForReceiptAsync(transactionInput,null, receiver_address);
     }

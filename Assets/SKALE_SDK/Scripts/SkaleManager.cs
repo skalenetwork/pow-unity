@@ -16,6 +16,8 @@ public class SkaleManager : MonoBehaviour
 
     public UIController ui_script;
 
+    public Miner pow_miner;
+
     public void Awake()
     {
         instance = this;
@@ -42,6 +44,7 @@ public class SkaleManager : MonoBehaviour
 
     public async void SendFuel()
     {
+
         Chains currentChain = GetChainByName(ui_script.GetCurrentChain_name());
 
         if (account_receiver == "")
@@ -54,7 +57,9 @@ public class SkaleManager : MonoBehaviour
 
         TransactionReceipt transactionReceipt = await wallet.Send(account_receiver);
 
-        if(ui_script != null)
+        ui_script.setLoading(false);
+
+        if (ui_script != null)
         {          
            StartCoroutine(ui_script.SetFuelBalance());
            ui_script.SetTransactionUI(transactionReceipt);
