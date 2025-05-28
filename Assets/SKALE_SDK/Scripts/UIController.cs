@@ -19,8 +19,6 @@ public class UIController : MonoBehaviour
 
     //Name of the chain selected
     public TextMeshProUGUI slected_chainLabel;
-    //General chain info url
-    public TextMeshProUGUI chainInfo_url;
 
     //sFuel wallet balance
     public TextMeshProUGUI sfuelBalance;
@@ -108,9 +106,6 @@ public class UIController : MonoBehaviour
 
         currentChain = name;
 
-        Chains chain_object = SkaleManager.instance.GetChainByName(currentChain);
-
-        chainInfo_url.text = chain_object.chainInfo_URL;
         StartCoroutine(SetFuelBalance());
     }
 

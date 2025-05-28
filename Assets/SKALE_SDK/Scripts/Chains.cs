@@ -10,7 +10,6 @@ public class Chains: ScriptableObject
     public string rpc;
     public string address;
     public string functionSignature;
-    public string chainInfo_URL;
     public int chain_id;
 }
 
