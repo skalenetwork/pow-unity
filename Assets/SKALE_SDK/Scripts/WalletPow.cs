@@ -47,7 +47,7 @@ public class WalletPow
             Value = new HexBigInteger("0"),
         };
 
-        string result = await SkaleManager.instance.pow_miner.POW_Caller(current_chain, transactionInput);
+        string result = await SkaleManager.instance.minercpp.Mine(transactionInput);
 
         transactionInput.GasPrice = new HexBigInteger(BigInteger.Parse(result));
 

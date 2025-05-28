@@ -2954,7 +2954,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 9137063855137392392, guid: a8f91f2ac3a0c4f2e993b1dd4256fc5c, type: 3}
   m_PrefabInstance: {fileID: 9137063854381434031}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1738812528
+--- !u!114 &1738812532
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2963,7 +2963,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1738812525}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f3b2a73dc8dde1f42ab2cc1563aab0b8, type: 3}
+  m_Script: {fileID: 11500000, guid: 3e06a93495dbc4046ae74abcffbe9424, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1741475427
@@ -3585,9 +3585,13 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 9137063855137392390, guid: a8f91f2ac3a0c4f2e993b1dd4256fc5c, type: 3}
+      propertyPath: minercpp
+      value: 
+      objectReference: {fileID: 1738812532}
+    - target: {fileID: 9137063855137392390, guid: a8f91f2ac3a0c4f2e993b1dd4256fc5c, type: 3}
       propertyPath: pow_miner
       value: 
-      objectReference: {fileID: 1738812528}
+      objectReference: {fileID: 0}
     - target: {fileID: 9137063855137392390, guid: a8f91f2ac3a0c4f2e993b1dd4256fc5c, type: 3}
       propertyPath: ui_script
       value: 
@@ -3662,7 +3666,7 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 9137063855137392392, guid: a8f91f2ac3a0c4f2e993b1dd4256fc5c, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1738812528}
+      addedObject: {fileID: 1738812532}
   m_SourcePrefab: {fileID: 100100000, guid: a8f91f2ac3a0c4f2e993b1dd4256fc5c, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

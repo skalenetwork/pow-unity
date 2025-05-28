@@ -14,8 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: 3
   type: 0
-  rpc: https://staging-v3.skalenodes.com/v1/staging-faint-slimy-achird
-  address: 0xfd56A3456fbAB0fc013213edCc830B9d32403C8B
+  rpc: https://testnet.skalenodes.com/v1/lanky-ill-funny-testnet
+  address: 0x000E9c53C4e2e21F5063f2e232d0AA907318dccb
   functionSignature: 0x0c11dedd
-  chainInfo_URL: https://staging-v3.skalenodes.com/#/chains/staging-faint-slimy-achird
-  chain_id: 503129905
+  chain_id: 37084624
