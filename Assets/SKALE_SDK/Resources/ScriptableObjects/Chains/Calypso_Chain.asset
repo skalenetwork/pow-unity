@@ -14,8 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: 0
   type: 0
-  rpc: https://staging-v3.skalenodes.com/v1/staging-utter-unripe-menkar
-  address: 0xa9eC34461791162Cae8c312C4237C9ddd1D64336
+  rpc: https://testnet.skalenodes.com/v1/giant-half-dual-testnet
+  address: 0x62Fe932FF26e0087Ae383f6080bd2Ed481bA5A8A
   functionSignature: 0x0c11dedd
-  chainInfo_URL: https://staging-v3.skalenodes.com/#/chains/staging-utter-unripe-menkar
-  chain_id: 344106930
+  chain_id: 974399131

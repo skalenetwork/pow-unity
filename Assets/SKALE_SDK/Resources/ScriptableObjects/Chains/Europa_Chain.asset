@@ -14,8 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: 2
   type: 0
-  rpc: https://staging-v3.skalenodes.com/v1/staging-legal-crazy-castor
-  address: 0xa9eC34461791162Cae8c312C4237C9ddd1D64336
+  rpc: https://testnet.skalenodes.com/v1/juicy-low-small-testnet
+  address: 0x366727B410fE55774C8b0B5b5A6E2d74199a088A
   functionSignature: 0x0c11dedd
-  chainInfo_URL: https://staging-v3.skalenodes.com/#/chains/staging-legal-crazy-castor
-  chain_id: 476158412
+  chain_id: 1444673419

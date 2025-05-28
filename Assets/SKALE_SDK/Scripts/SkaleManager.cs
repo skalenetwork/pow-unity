@@ -16,7 +16,10 @@ public class SkaleManager : MonoBehaviour
 
     public UIController ui_script;
 
-    public Miner pow_miner;
+    //public Miner pow_miner;
+
+    //Using a faster miner package written in cpp
+    public MinerCpp minercpp;
 
     public void Awake()
     {

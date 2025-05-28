@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: 4
   type: 0
-  rpc: https://staging-v3.skalenodes.com/v1/staging-aware-chief-gianfar
-  address: 0x2edF5af1896D3d259a1a535e87f18312858E448F
+  rpc: https://testnet.skalenodes.com/v1/aware-fake-trim-testnet
+  address: 0x08f98Af60eb83C18184231591A8F89577E46A4B9
   functionSignature: 0x0c11dedd
-  chainInfo_URL: https://staging-v3.skalenodes.com/#/chains/staging-aware-chief-gianfar
+  chain_id: 1020352220
