@@ -20,7 +20,7 @@ using System.Diagnostics;
 public class Miner: MonoBehaviour
 {
     [Range(10, 1000)] 
-    public int iterationsPerYield = 100;
+    public int iterationsPerYield = 225;
 
     /**
     * Receives the transaction and returns the new gas price
