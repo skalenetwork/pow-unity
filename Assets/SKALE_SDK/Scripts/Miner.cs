@@ -12,18 +12,20 @@ using Nethereum.ABI.Encoders;
 using Nethereum.ABI;
 using Nethereum.Unity.Rpc;
 using System.Collections;
+using System.Diagnostics;
 
 /**
  * This class implements the POW skale algorithm and is called in the Skale_Send_sFuel script
  */
 public class Miner: MonoBehaviour
 {
-   
+    [Range(10, 1000)] 
+    public int iterationsPerYield = 100;
 
     /**
     * Receives the transaction and returns the new gas price
     */
-    public IEnumerator MineGasForTransaction(System.Action<string> callback,Chains schain, TransactionInput tx)
+    IEnumerator MineGasForTransaction(System.Action<string> callback, TransactionInput tx)
     {
         //Web3 web3 = new Web3(new UnityWebRequestRpcTaskClient(new Uri(schain.rpc)));
 
@@ -31,11 +33,7 @@ public class Miner: MonoBehaviour
         {
             throw new ArgumentException("Not enough fields for mining gas (from, nonce)");
         }
-        if (tx.Gas == null)
-        {
-            Debug.Log("OOOOOO");
-           // tx.Gas = await web3.TransactionManager.EstimateGasAsync(tx);
-        }
+
 
         var address = tx.From;
         var nonce = (long)(tx.Nonce).Value;
@@ -58,60 +56,55 @@ public class Miner: MonoBehaviour
     /**
      * This function generates a unice gas price
      */
-    public IEnumerator MineFreeGas(System.Action<string> callback,long gasAmount, string address,long nonce)
+    IEnumerator MineFreeGas(System.Action<string> callback, long gasAmount, string address, long nonce)
     {
 
-        BN bn_noce_hash = new BN(GetSoliditySha3(nonce),16);
-
+        // Pre-calculate constants outside the loop.
+        BN bn_noce_hash = new BN(GetSoliditySha3(nonce), 16);
         BN bn_address_hash = new BN(GetSoliditySha3(address.HexToByteArray()), 16);
-
         BN nonceAddressXOR = bn_noce_hash.Xor(bn_address_hash);
 
         BN maxNumber = new BN(2).Pow(new BN(256)).Sub(new BN(1));
         BN DIFFICULTY = new BN(1);
         BN divConstant = maxNumber.Div(DIFFICULTY);
-        BN candidate = new BN(0);
 
-        double iterations = 0;
+        int iterationsSinceYield = 0;
 
         while (true)
         {
+
+            // Generate a random candidate.
             var candidateBytes = new byte[32];
             using (var random = new RNGCryptoServiceProvider())
             {
                 random.GetBytes(candidateBytes);
             }
 
-            string hexString = BitConverter.ToString(candidateBytes).Replace("-","").ToLowerInvariant();
-
-            candidate = new BN(hexString, 16);
+            string hexString = BitConverter.ToString(candidateBytes).Replace("-", "").ToLowerInvariant();
+            BN candidate = new BN(hexString, 16);
 
             BigInteger candidate_to_bi = BigInteger.Parse(candidate.ToString());
 
-            BN candidateHash = new BN(GetSoliditySha3(candidate_to_bi),16);
-
-
+            BN candidateHash = new BN(GetSoliditySha3(candidate_to_bi), 16);
             BN resultHash = nonceAddressXOR.Xor(candidateHash);
 
             long externalGas = divConstant.Div(resultHash).ToNumber();
 
             if (externalGas >= gasAmount)
-            { 
-                 break;
-            }
-
-            if (iterations++ % 1_00 == 0)
             {
+                callback(candidate.ToString());
+                yield break;             }
+
+            iterationsSinceYield++;
+            if (iterationsSinceYield >= iterationsPerYield)
+            {
+                iterationsSinceYield = 0;
                 yield return null;
             }
-
         }
-
-
-        callback(candidate.ToString());
     }
 
-    public async Task<string> POW_Caller(Chains schain, TransactionInput tx)
+    public async Task<string> POW_Caller(TransactionInput tx)
     {
         string result = null;
 
@@ -119,7 +112,7 @@ public class Miner: MonoBehaviour
         StartCoroutine(MineGasForTransaction((result_) =>
         {
             result = result_;
-        }, schain, tx));
+        }, tx));
 
         while (result == null)
         {

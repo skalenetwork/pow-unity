@@ -38,8 +38,9 @@ public class WalletPow
         web3.TransactionManager.UseLegacyAsDefault = true;
         var contract = web3.Eth.GetContract(pow_contract_abi, current_chain.address);
         var powFunction = contract.GetFunction("pay");
-        
-        var transactionInput = new TransactionInput() {
+
+        var transactionInput = new TransactionInput()
+        {
             From = account.Address,
             To = current_chain.address,
             Nonce = await web3.Eth.Transactions.GetTransactionCount.SendRequestAsync(account.Address),
@@ -47,11 +48,16 @@ public class WalletPow
             Value = new HexBigInteger("0"),
         };
 
-        string result = await SkaleManager.instance.minercpp.Mine(transactionInput);
+//#if UNITY_WEBGL
+        string result = await SkaleManager.instance.pow_miner.POW_Caller(transactionInput);
+//#else
+      //  string result = await SkaleManager.instance.minercpp.Mine(transactionInput);
+//#endif
+
 
         transactionInput.GasPrice = new HexBigInteger(BigInteger.Parse(result));
 
-        return await powFunction.SendTransactionAndWaitForReceiptAsync(transactionInput,null, receiver_address);
+        return await powFunction.SendTransactionAndWaitForReceiptAsync(transactionInput, null, receiver_address);
     }
 
     public string GetAddress()
